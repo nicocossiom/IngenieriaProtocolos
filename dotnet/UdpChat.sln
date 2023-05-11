@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpChat.Lib", "UdpChat.Lib\UdpChat.Lib.csproj", "{7E991064-FED8-47FF-A1F3-47F5AA29A04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpChat.Client", "UdpChat.Client\UdpChat.Client.csproj", "{EE853725-4B57-40FA-954A-E546040CA900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpChat.Server", "UdpChat.Server\UdpChat.Server.csproj", "{9875EF2B-DA17-4A77-9808-E1DAC6CC8D2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E991064-FED8-47FF-A1F3-47F5AA29A04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E991064-FED8-47FF-A1F3-47F5AA29A04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E991064-FED8-47FF-A1F3-47F5AA29A04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E991064-FED8-47FF-A1F3-47F5AA29A04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE853725-4B57-40FA-954A-E546040CA900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE853725-4B57-40FA-954A-E546040CA900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE853725-4B57-40FA-954A-E546040CA900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE853725-4B57-40FA-954A-E546040CA900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9875EF2B-DA17-4A77-9808-E1DAC6CC8D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9875EF2B-DA17-4A77-9808-E1DAC6CC8D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9875EF2B-DA17-4A77-9808-E1DAC6CC8D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9875EF2B-DA17-4A77-9808-E1DAC6CC8D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
