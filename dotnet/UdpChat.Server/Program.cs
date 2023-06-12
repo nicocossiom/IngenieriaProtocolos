@@ -18,8 +18,8 @@ class CentralRetransmissionServer
 {
     private int registerPort { get; set; } = 5000;
     private int retransmissionPort { get; set; } = 5001;
+    private string dbPath { get; set; } = "users.db";
     private SqliteConnection? dbConnection { get; set; }
-
     private UdpState registerServer { get; set; }
     private UdpState retransmissionServer { get; set; }
     private static readonly Dictionary<string, IPEndPoint> clients = new Dictionary<string, IPEndPoint>();
@@ -36,18 +36,18 @@ class CentralRetransmissionServer
     private async void InitializeDB()
     {
         var conString = new SqliteConnectionStringBuilder();
-        conString.DataSource = "users.db";
+        conString.DataSource = this.dbPath;
         conString.Mode = SqliteOpenMode.ReadWriteCreate;
         conString.Cache = SqliteCacheMode.Shared;
         try
         {
-            Console.WriteLine("Opening database");
+            Console.WriteLine("Opening server database");
             dbConnection = new SqliteConnection(conString.ConnectionString);
             await dbConnection.OpenAsync();
             var cmd = dbConnection.CreateCommand();
             cmd.CommandText = "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, address TEXT)";
-            cmd.ExecuteNonQuery();
-            Console.WriteLine("Table users created");
+            var changes = cmd.ExecuteNonQuery();
+            Console.WriteLine($"Users table created with {changes} changes");
         }
         catch (SqliteException e)
         {
@@ -100,84 +100,67 @@ class CentralRetransmissionServer
 
     private void RetransmissionHandler(IAsyncResult res)
     {
-        try
+        if (res.AsyncState == null)
         {
-            if (res.AsyncState is UdpState clientState && clientState.socket != null && clientState.endpoint != null)
-            {
-                // get the message from the client and deserialize it into a ChatMessage
-                byte[] receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint);
-                var message = System.Text.Json.JsonSerializer.Deserialize<ChatMessage>(receiveBytes);
-                if (message == null)
-                {
-                    Console.WriteLine("Error deserializing message");
-                    new ChatMessageResponse(false).SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
-                    return;
-                }
-                Console.WriteLine($"Received message from {message.username} at {message.timestamp}:\n\t{message.message}");
-                // send the message to all clients
-                var sentBytes = new ChatMessageResponse(true).SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
-                Console.WriteLine($"Sent {sentBytes} bytes to {clientState.endpoint}");
-
-            }
-            else
-            {
-                Console.WriteLine("Invalid AsyncState. Unable to receive messages.");
-            }
+            Console.Error.WriteLine("Invalid AsyncState. Unable to receive message.");
+            return;
         }
-        catch (Exception ex)
+        UdpState clientState = (UdpState)res.AsyncState;
+        if (clientState.socket == null || clientState.endpoint == null)
         {
-            Console.WriteLine($"Error in ReceiveCallback: {ex.Message}");
+            Console.Error.WriteLine("Invalid AsyncState. Unable to receive message.");
+            return;
         }
+        var receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint!);
+        var message = System.Text.Json.JsonSerializer.Deserialize<ChatMessage>(receiveBytes);
+        if (message == null)
+        {
+            Console.Error.WriteLine("Error deserializing message");
+            new ChatMessageResponse(false).SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
+            return;
+        }
+        Console.WriteLine($"Received message from {message.user.username}@{message.user.sendEndpoint} at {message.timestamp}:\n\t{message.message}");
+        // send the message to all clients
+        var sentBytes = new ChatMessageResponse(true).SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
+        Console.WriteLine($"Sent {sentBytes} bytes to {clientState.endpoint}");
     }
 
 
     private void RegisterHandler(IAsyncResult ar)
     {
-        try
-        {
-            if (ar.AsyncState is UdpState clientState && clientState.socket != null && clientState.endpoint != null)
-            {
 
-                byte[] receiveBytes = clientState.socket.EndReceive(ar, ref clientState.endpoint);
-                var regReq = System.Text.Json.JsonSerializer.Deserialize<RegisterRequest>(receiveBytes);
-                if (regReq == null)
-                {
-                    Console.WriteLine("Error deserializing message");
-                    return;
-                }
-                Console.WriteLine($"Received register request from {regReq.username} at {regReq.timestamp}");
-                var regRes = new RegisterResponse(RegisterResponse.State.OK, "");
-                try
-                {
-                    this.RegisterUser(regReq.username, clientState.endpoint.Address.ToString());
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine($"Error registering user {regReq.username}: {e.Message}");
-                    regRes.responseState = RegisterResponse.State.ERROR;
-                }
-                var regResBytes = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(regRes);
-                Console.WriteLine($"Sending register response {regRes} to {clientState.endpoint}");
-                var sentBytes = this.registerServer.socket.Send(regResBytes, regResBytes.Length, clientState.endpoint);
-                Console.WriteLine($"Sent {sentBytes} bytes");
+        if (ar.AsyncState is UdpState clientState && clientState.socket != null && clientState.endpoint != null)
+        {
 
-            }
-            else
+            byte[] receiveBytes = clientState.socket.EndReceive(ar, ref clientState.endpoint!);
+            var regReq = System.Text.Json.JsonSerializer.Deserialize<RegisterRequest>(receiveBytes);
+            if (regReq == null)
             {
-                Console.WriteLine("Invalid AsyncState. Unable to receive messages.");
+                Console.WriteLine("Error deserializing message");
+                return;
             }
+            Console.WriteLine($"Received register request from {regReq.username} at {regReq.timestamp}");
+            var regRes = new RegisterResponse(RegisterResponse.State.OK, "");
+            try
+            {
+                this.RegisterUser(regReq.username, clientState.endpoint.Address.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error registering user {regReq.username}: {e.Message}");
+                regRes.responseState = RegisterResponse.State.ERROR;
+            }
+            var regResBytes = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(regRes);
+            Console.WriteLine($"Sending register response {regRes} to {clientState.endpoint}");
+            var sentBytes = this.registerServer.socket.Send(regResBytes, regResBytes.Length, clientState.endpoint);
+            Console.WriteLine($"Sent {sentBytes} bytes");
+
         }
-        catch (ObjectDisposedException)
+        else
         {
-            // Handle the ObjectDisposedException gracefully
-            Console.WriteLine("Server stopped. Unable to receive messages.");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error in ReceiveCallback: {ex.Message}");
+            Console.WriteLine("Invalid AsyncState. Unable to receive messages.");
         }
     }
-
     public Task StartAsync()
     {
         Console.WriteLine("Starting server");

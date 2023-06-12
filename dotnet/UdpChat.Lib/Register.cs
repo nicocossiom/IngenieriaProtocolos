@@ -1,4 +1,10 @@
-﻿namespace UdpChat;
+﻿using System.Net;
+using System.Net.Sockets;
+
+namespace UdpChat;
+/// <summary>
+/// Request to register a user to the server. It has a username and a timestamp.
+/// </summary>
 public class RegisterRequest
 {
     public string username { get; set; }
@@ -12,8 +18,18 @@ public class RegisterRequest
     {
         return $"RegisterRequest: {username} at {timestamp}";
     }
+
+    public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)
+    {
+        var json = System.Text.Json.JsonSerializer.Serialize(this);
+        var bytes = System.Text.Encoding.UTF8.GetBytes(json);
+        return client.Send(bytes, bytes.Length, endpoint);
+    }
 }
 
+/// <summary>
+/// Response from the server to a RegisterRequest from the user. It has a message and a response state.
+/// </summary>
 public class RegisterResponse
 {
     public string message { get; set; }
