@@ -1,0 +1,303 @@
+{
+  "uid": "UdpChat.Client",
+  "isEii": false,
+  "isExtensionMethod": false,
+  "children": [
+    {
+      "inClass": true,
+      "typePropertyName": "inClass",
+      "id": "classes",
+      "children": [
+        {
+          "uid": "UdpChat.Client.ChatClient",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Client.ChatClient.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatClient"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatClient"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatClient"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatClient"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Client.ChatClient"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Client.ChatClient"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">A ChatClient is a client for the chat system.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Client_ChatClient",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Client.Program",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Client.Program.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "Program"
+            },
+            {
+              "lang": "vb",
+              "value": "Program"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Program"
+            },
+            {
+              "lang": "vb",
+              "value": "Program"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Client.Program"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Client.Program"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Client.Program\" text=\"Program\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Client.Program\" text=\"Program\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Client.Program.yml\" sourcestartlinenumber=\"1\">The program class, contains the entry point of the program for the client application</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Client_Program",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    }
+  ],
+  "langs": [
+    "csharp",
+    "vb"
+  ],
+  "name": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Client"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Client"
+    }
+  ],
+  "nameWithType": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Client"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Client"
+    }
+  ],
+  "fullName": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Client"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Client"
+    }
+  ],
+  "type": "namespace",
+  "assemblies": [
+    "UdpChat.Client"
+  ],
+  "level": 0.0,
+  "_appName": "UDPChat",
+  "_appTitle": "UDPChat",
+  "_enableSearch": true,
+  "_systemKeys": [
+    "uid",
+    "isEii",
+    "isExtensionMethod",
+    "parent",
+    "children",
+    "href",
+    "langs",
+    "name",
+    "nameWithType",
+    "fullName",
+    "type",
+    "source",
+    "documentation",
+    "assemblies",
+    "namespace",
+    "summary",
+    "remarks",
+    "example",
+    "syntax",
+    "overridden",
+    "overload",
+    "exceptions",
+    "seealso",
+    "see",
+    "inheritance",
+    "derivedClasses",
+    "level",
+    "implements",
+    "inheritedMembers",
+    "extensionMethods",
+    "conceptual",
+    "platform",
+    "attributes",
+    "additionalNotes"
+  ],
+  "_key": "api/UdpChat.Client.yml",
+  "_navKey": "~/toc.yml",
+  "_navPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "api/UdpChat.Client.html",
+  "_rel": "../",
+  "_tocKey": "~/api/toc.yml",
+  "_tocPath": "api/toc.html",
+  "_tocRel": "toc.html",
+  "__global": {
+    "namespacesInSubtitle": "Namespaces",
+    "classesInSubtitle": "Classes",
+    "structsInSubtitle": "Structs",
+    "interfacesInSubtitle": "Interfaces",
+    "enumsInSubtitle": "Enums",
+    "delegatesInSubtitle": "Delegates",
+    "constructorsInSubtitle": "Constructors",
+    "fieldsInSubtitle": "Fields",
+    "propertiesInSubtitle": "Properties",
+    "methodsInSubtitle": "Methods",
+    "eventsInSubtitle": "Events",
+    "operatorsInSubtitle": "Operators",
+    "eiisInSubtitle": "Explicit Interface Implementations",
+    "functionsInSubtitle": "Functions",
+    "variablesInSubtitle": "Variables",
+    "typeAliasesInSubtitle": "Type Aliases",
+    "membersInSubtitle": "Members",
+    "improveThisDoc": "Improve this Doc",
+    "viewSource": "View Source",
+    "inheritance": "Inheritance",
+    "derived": "Derived",
+    "inheritedMembers": "Inherited Members",
+    "package": "Package",
+    "namespace": "Namespace",
+    "assembly": "Assembly",
+    "syntax": "Syntax",
+    "overrides": "Overrides",
+    "implements": "Implements",
+    "remarks": "Remarks",
+    "examples": "Examples",
+    "seealso": "See Also",
+    "declaration": "Declaration",
+    "parameters": "Parameters",
+    "typeParameters": "Type Parameters",
+    "type": "Type",
+    "name": "Name",
+    "description": "Description",
+    "returns": "Returns",
+    "fieldValue": "Field Value",
+    "propertyValue": "Property Value",
+    "eventType": "Event Type",
+    "variableValue": "Variable Value",
+    "typeAliasType": "Type Alias Type",
+    "exceptions": "Exceptions",
+    "condition": "Condition",
+    "extensionMethods": "Extension Methods",
+    "note": "Note",
+    "warning": "Warning",
+    "tip": "Tip",
+    "important": "Important",
+    "caution": "Caution",
+    "tocToggleButton": "Show / Hide Table of Contents",
+    "tocFilter": "Enter here to filter...",
+    "search": "Search",
+    "searchResults": "Search Results for",
+    "pageFirst": "First",
+    "pagePrev": "Previous",
+    "pageNext": "Next",
+    "pageLast": "Last",
+    "inThisArticle": "In This Article",
+    "backToTop": "Back to top",
+    "_shared": {}
+  },
+  "yamlmime": "ManagedReference",
+  "docurl": "",
+  "sourceurl": "",
+  "summary": "",
+  "remarks": "",
+  "conceptual": "",
+  "syntax": "",
+  "implements": "",
+  "example": "",
+  "seealso": null,
+  "id": "UdpChat_Client",
+  "hideTitleType": false,
+  "hideSubtitle": false,
+  "isNamespace": true,
+  "_disableToc": false,
+  "_disableNextArticle": true
+}

@@ -1,0 +1,570 @@
+{
+  "uid": "UdpChat.Lib.Request.RequestType",
+  "isEii": false,
+  "isExtensionMethod": false,
+  "parent": {
+    "uid": "UdpChat.Lib",
+    "isEii": false,
+    "isExtensionMethod": false,
+    "href": "UdpChat.html",
+    "name": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "nameWithType": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "fullName": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "specName": [
+      {
+        "lang": "csharp",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      },
+      {
+        "lang": "vb",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      }
+    ],
+    "level": 0.0
+  },
+  "children": [
+    {
+      "inField": true,
+      "typePropertyName": "inField",
+      "id": "fields",
+      "children": [
+        {
+          "uid": "UdpChat.Lib.Request.RequestType.LOGIN",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.Request.RequestType",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "LOGIN"
+            },
+            {
+              "lang": "vb",
+              "value": "LOGIN"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Request.RequestType.LOGIN"
+            },
+            {
+              "lang": "vb",
+              "value": "Request.RequestType.LOGIN"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Request.RequestType.LOGIN"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Request.RequestType.LOGIN"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.Request.RequestType.LOGIN\" text=\"LOGIN\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.Request.RequestType.LOGIN\" text=\"LOGIN\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "LOGIN = 1"
+              },
+              {
+                "lang": "vb",
+                "value": "LOGIN = 1"
+              }
+            ],
+            "return": null,
+            "fieldValue": {
+              "type": {
+                "uid": "UdpChat.Lib.Request.RequestType",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "Request.RequestType"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Request.RequestType"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "Request.RequestType"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Request.RequestType"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "UdpChat.Lib.Request.RequestType"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UdpChat.Lib.Request.RequestType"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                  }
+                ]
+              }
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Requests.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "LOGIN",
+            "path": "../UdpChat.Lib/Requests.cs",
+            "startLine": 34.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib",
+          "example": [],
+          "level": 0.0,
+          "type": "field",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_RequestType_LOGIN.md&value=---%0Auid%3A%20UdpChat.Lib.Request.RequestType.LOGIN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L35",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Request_RequestType_LOGIN",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.Request.RequestType.REGISTER",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.Request.RequestType",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "REGISTER"
+            },
+            {
+              "lang": "vb",
+              "value": "REGISTER"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Request.RequestType.REGISTER"
+            },
+            {
+              "lang": "vb",
+              "value": "Request.RequestType.REGISTER"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Request.RequestType.REGISTER"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Request.RequestType.REGISTER"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.Request.RequestType.REGISTER\" text=\"REGISTER\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.Request.RequestType.REGISTER\" text=\"REGISTER\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "REGISTER = 0"
+              },
+              {
+                "lang": "vb",
+                "value": "REGISTER = 0"
+              }
+            ],
+            "return": null,
+            "fieldValue": {
+              "type": {
+                "uid": "UdpChat.Lib.Request.RequestType",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "Request.RequestType"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Request.RequestType"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "Request.RequestType"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Request.RequestType"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "UdpChat.Lib.Request.RequestType"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UdpChat.Lib.Request.RequestType"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                  }
+                ]
+              }
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Requests.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "REGISTER",
+            "path": "../UdpChat.Lib/Requests.cs",
+            "startLine": 32.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib",
+          "example": [],
+          "level": 0.0,
+          "type": "field",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_RequestType_REGISTER.md&value=---%0Auid%3A%20UdpChat.Lib.Request.RequestType.REGISTER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L33",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Request_RequestType_REGISTER",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    }
+  ],
+  "langs": [
+    "csharp",
+    "vb"
+  ],
+  "name": [
+    {
+      "lang": "csharp",
+      "value": "Request.RequestType"
+    },
+    {
+      "lang": "vb",
+      "value": "Request.RequestType"
+    }
+  ],
+  "nameWithType": [
+    {
+      "lang": "csharp",
+      "value": "Request.RequestType"
+    },
+    {
+      "lang": "vb",
+      "value": "Request.RequestType"
+    }
+  ],
+  "fullName": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Lib.Request.RequestType"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Lib.Request.RequestType"
+    }
+  ],
+  "type": "enum",
+  "source": {
+    "remote": {
+      "path": "UdpChat.Lib/Requests.cs",
+      "branch": "master",
+      "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+    },
+    "id": "RequestType",
+    "path": "../UdpChat.Lib/Requests.cs",
+    "startLine": 28.0,
+    "endLine": 0.0,
+    "isExternal": false
+  },
+  "assemblies": [
+    "UdpChat.Lib"
+  ],
+  "namespace": {
+    "uid": "UdpChat.Lib",
+    "isEii": false,
+    "isExtensionMethod": false,
+    "href": "UdpChat.html",
+    "name": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "nameWithType": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "fullName": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "specName": [
+      {
+        "lang": "csharp",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      },
+      {
+        "lang": "vb",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      }
+    ],
+    "level": 0.0
+  },
+  "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.RequestType.yml\" sourcestartlinenumber=\"1\">Represents the type of a request.</p>\n",
+  "example": [],
+  "syntax": {
+    "content": [
+      {
+        "lang": "csharp",
+        "value": "public enum Request.RequestType"
+      },
+      {
+        "lang": "vb",
+        "value": "Public Enum Request.RequestType"
+      }
+    ]
+  },
+  "level": 0.0,
+  "_appName": "UDPChat",
+  "_appTitle": "UDPChat",
+  "_enableSearch": true,
+  "_systemKeys": [
+    "uid",
+    "isEii",
+    "isExtensionMethod",
+    "parent",
+    "children",
+    "href",
+    "langs",
+    "name",
+    "nameWithType",
+    "fullName",
+    "type",
+    "source",
+    "documentation",
+    "assemblies",
+    "namespace",
+    "summary",
+    "remarks",
+    "example",
+    "syntax",
+    "overridden",
+    "overload",
+    "exceptions",
+    "seealso",
+    "see",
+    "inheritance",
+    "derivedClasses",
+    "level",
+    "implements",
+    "inheritedMembers",
+    "extensionMethods",
+    "conceptual",
+    "platform",
+    "attributes",
+    "additionalNotes"
+  ],
+  "_key": "api/UdpChat.Lib.Request.RequestType.yml",
+  "_navKey": "~/toc.yml",
+  "_navPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "api/UdpChat.Lib.Request.RequestType.html",
+  "_rel": "../",
+  "_tocKey": "~/api/toc.yml",
+  "_tocPath": "api/toc.html",
+  "_tocRel": "toc.html",
+  "__global": {
+    "namespacesInSubtitle": "Namespaces",
+    "classesInSubtitle": "Classes",
+    "structsInSubtitle": "Structs",
+    "interfacesInSubtitle": "Interfaces",
+    "enumsInSubtitle": "Enums",
+    "delegatesInSubtitle": "Delegates",
+    "constructorsInSubtitle": "Constructors",
+    "fieldsInSubtitle": "Fields",
+    "propertiesInSubtitle": "Properties",
+    "methodsInSubtitle": "Methods",
+    "eventsInSubtitle": "Events",
+    "operatorsInSubtitle": "Operators",
+    "eiisInSubtitle": "Explicit Interface Implementations",
+    "functionsInSubtitle": "Functions",
+    "variablesInSubtitle": "Variables",
+    "typeAliasesInSubtitle": "Type Aliases",
+    "membersInSubtitle": "Members",
+    "improveThisDoc": "Improve this Doc",
+    "viewSource": "View Source",
+    "inheritance": "Inheritance",
+    "derived": "Derived",
+    "inheritedMembers": "Inherited Members",
+    "package": "Package",
+    "namespace": "Namespace",
+    "assembly": "Assembly",
+    "syntax": "Syntax",
+    "overrides": "Overrides",
+    "implements": "Implements",
+    "remarks": "Remarks",
+    "examples": "Examples",
+    "seealso": "See Also",
+    "declaration": "Declaration",
+    "parameters": "Parameters",
+    "typeParameters": "Type Parameters",
+    "type": "Type",
+    "name": "Name",
+    "description": "Description",
+    "returns": "Returns",
+    "fieldValue": "Field Value",
+    "propertyValue": "Property Value",
+    "eventType": "Event Type",
+    "variableValue": "Variable Value",
+    "typeAliasType": "Type Alias Type",
+    "exceptions": "Exceptions",
+    "condition": "Condition",
+    "extensionMethods": "Extension Methods",
+    "note": "Note",
+    "warning": "Warning",
+    "tip": "Tip",
+    "important": "Important",
+    "caution": "Caution",
+    "tocToggleButton": "Show / Hide Table of Contents",
+    "tocFilter": "Enter here to filter...",
+    "search": "Search",
+    "searchResults": "Search Results for",
+    "pageFirst": "First",
+    "pagePrev": "Previous",
+    "pageNext": "Next",
+    "pageLast": "Last",
+    "inThisArticle": "In This Article",
+    "backToTop": "Back to top",
+    "_shared": {}
+  },
+  "yamlmime": "ManagedReference",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_RequestType.md&value=---%0Auid%3A%20UdpChat.Lib.Request.RequestType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L29",
+  "remarks": "",
+  "conceptual": "",
+  "implements": "",
+  "seealso": null,
+  "id": "UdpChat_Lib_Request_RequestType",
+  "hideTitleType": false,
+  "hideSubtitle": false,
+  "isClass": false,
+  "inEnum": true,
+  "isEnum": true,
+  "_disableToc": false,
+  "_disableNextArticle": true
+}

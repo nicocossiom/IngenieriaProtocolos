@@ -1,0 +1,680 @@
+{
+  "uid": "UdpChat.Lib",
+  "isEii": false,
+  "isExtensionMethod": false,
+  "children": [
+    {
+      "inClass": true,
+      "typePropertyName": "inClass",
+      "id": "classes",
+      "children": [
+        {
+          "uid": "UdpChat.Lib.ChatMessage",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Lib.ChatMessage.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessage"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessage"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessage"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessage"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatMessage"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatMessage"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessage\" text=\"ChatMessage\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessage\" text=\"ChatMessage\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessage.yml\" sourcestartlinenumber=\"1\">A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatMessage",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.ChatMessageResponse",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Lib.ChatMessageResponse.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatMessageResponse"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatMessageResponse"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse\" text=\"ChatMessageResponse\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse\" text=\"ChatMessageResponse\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessageResponse.yml\" sourcestartlinenumber=\"1\">The responnse to a ChatMessage from the server.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatMessageResponse",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.ChatSendable",
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib",
+          "href": "UdpChat.Lib.ChatSendable.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatSendable"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatSendable"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatSendable"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatSendable"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatSendable"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatSendable"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatSendable\" text=\"ChatSendable\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatSendable\" text=\"ChatSendable\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatSendable.yml\" sourcestartlinenumber=\"1\">An abstract class that represents a sendable object in the chat system. For example a <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref> or a <xref href=\"UdpChat.Lib.Response\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatSendable",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.ChatUser",
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib",
+          "href": "UdpChat.Lib.ChatUser.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatUser"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatUser"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatUser"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatUser"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatUser"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatUser"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatUser.yml\" sourcestartlinenumber=\"1\">A ChatUser is a user of the chat system. It has a username and two endpoints, one for sending and one for receiving.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatUser",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.Request",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Lib.Request.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "Request"
+            },
+            {
+              "lang": "vb",
+              "value": "Request"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Request"
+            },
+            {
+              "lang": "vb",
+              "value": "Request"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Request"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Request"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.Request\" text=\"Request\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.Request\" text=\"Request\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Request to register a user to the server. After a <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref> there is associated expected <xref href=\"UdpChat.Lib.Response\" data-throw-if-not-resolved=\"false\"></xref></p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Request",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.Response",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Lib.Response.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "Response"
+            },
+            {
+              "lang": "vb",
+              "value": "Response"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Response"
+            },
+            {
+              "lang": "vb",
+              "value": "Response"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Response"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Response"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.Response\" text=\"Response\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.Response\" text=\"Response\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Response.yml\" sourcestartlinenumber=\"1\">Response to a <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref>. It has a message and a state.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Response",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    },
+    {
+      "inEnum": true,
+      "typePropertyName": "inEnum",
+      "id": "enums",
+      "children": [
+        {
+          "uid": "UdpChat.Lib.Request.RequestType",
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib",
+          "href": "UdpChat.Lib.Request.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "Request.RequestType"
+            },
+            {
+              "lang": "vb",
+              "value": "Request.RequestType"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Request.RequestType"
+            },
+            {
+              "lang": "vb",
+              "value": "Request.RequestType"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Request.RequestType"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Request.RequestType"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+            },
+            {
+              "lang": "vb",
+              "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.RequestType.yml\" sourcestartlinenumber=\"1\">Represents the type of a request.</p>\n",
+          "type": "enum",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Request_RequestType",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.Response.State",
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib",
+          "href": "UdpChat.Lib.Response.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "Response.State"
+            },
+            {
+              "lang": "vb",
+              "value": "Response.State"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Response.State"
+            },
+            {
+              "lang": "vb",
+              "value": "Response.State"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Response.State"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Response.State"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+            },
+            {
+              "lang": "vb",
+              "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Response.State.yml\" sourcestartlinenumber=\"1\">The possible states of a response.</p>\n",
+          "type": "enum",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Response_State",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    }
+  ],
+  "langs": [
+    "csharp",
+    "vb"
+  ],
+  "name": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Lib"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Lib"
+    }
+  ],
+  "nameWithType": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Lib"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Lib"
+    }
+  ],
+  "fullName": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Lib"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Lib"
+    }
+  ],
+  "type": "namespace",
+  "assemblies": [
+    "UdpChat.Lib"
+  ],
+  "level": 0.0,
+  "_appName": "UDPChat",
+  "_appTitle": "UDPChat",
+  "_enableSearch": true,
+  "_systemKeys": [
+    "uid",
+    "isEii",
+    "isExtensionMethod",
+    "parent",
+    "children",
+    "href",
+    "langs",
+    "name",
+    "nameWithType",
+    "fullName",
+    "type",
+    "source",
+    "documentation",
+    "assemblies",
+    "namespace",
+    "summary",
+    "remarks",
+    "example",
+    "syntax",
+    "overridden",
+    "overload",
+    "exceptions",
+    "seealso",
+    "see",
+    "inheritance",
+    "derivedClasses",
+    "level",
+    "implements",
+    "inheritedMembers",
+    "extensionMethods",
+    "conceptual",
+    "platform",
+    "attributes",
+    "additionalNotes"
+  ],
+  "_key": "api/UdpChat.Lib.yml",
+  "_navKey": "~/toc.yml",
+  "_navPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "api/UdpChat.Lib.html",
+  "_rel": "../",
+  "_tocKey": "~/api/toc.yml",
+  "_tocPath": "api/toc.html",
+  "_tocRel": "toc.html",
+  "__global": {
+    "namespacesInSubtitle": "Namespaces",
+    "classesInSubtitle": "Classes",
+    "structsInSubtitle": "Structs",
+    "interfacesInSubtitle": "Interfaces",
+    "enumsInSubtitle": "Enums",
+    "delegatesInSubtitle": "Delegates",
+    "constructorsInSubtitle": "Constructors",
+    "fieldsInSubtitle": "Fields",
+    "propertiesInSubtitle": "Properties",
+    "methodsInSubtitle": "Methods",
+    "eventsInSubtitle": "Events",
+    "operatorsInSubtitle": "Operators",
+    "eiisInSubtitle": "Explicit Interface Implementations",
+    "functionsInSubtitle": "Functions",
+    "variablesInSubtitle": "Variables",
+    "typeAliasesInSubtitle": "Type Aliases",
+    "membersInSubtitle": "Members",
+    "improveThisDoc": "Improve this Doc",
+    "viewSource": "View Source",
+    "inheritance": "Inheritance",
+    "derived": "Derived",
+    "inheritedMembers": "Inherited Members",
+    "package": "Package",
+    "namespace": "Namespace",
+    "assembly": "Assembly",
+    "syntax": "Syntax",
+    "overrides": "Overrides",
+    "implements": "Implements",
+    "remarks": "Remarks",
+    "examples": "Examples",
+    "seealso": "See Also",
+    "declaration": "Declaration",
+    "parameters": "Parameters",
+    "typeParameters": "Type Parameters",
+    "type": "Type",
+    "name": "Name",
+    "description": "Description",
+    "returns": "Returns",
+    "fieldValue": "Field Value",
+    "propertyValue": "Property Value",
+    "eventType": "Event Type",
+    "variableValue": "Variable Value",
+    "typeAliasType": "Type Alias Type",
+    "exceptions": "Exceptions",
+    "condition": "Condition",
+    "extensionMethods": "Extension Methods",
+    "note": "Note",
+    "warning": "Warning",
+    "tip": "Tip",
+    "important": "Important",
+    "caution": "Caution",
+    "tocToggleButton": "Show / Hide Table of Contents",
+    "tocFilter": "Enter here to filter...",
+    "search": "Search",
+    "searchResults": "Search Results for",
+    "pageFirst": "First",
+    "pagePrev": "Previous",
+    "pageNext": "Next",
+    "pageLast": "Last",
+    "inThisArticle": "In This Article",
+    "backToTop": "Back to top",
+    "_shared": {}
+  },
+  "yamlmime": "ManagedReference",
+  "docurl": "",
+  "sourceurl": "",
+  "summary": "",
+  "remarks": "",
+  "conceptual": "",
+  "syntax": "",
+  "implements": "",
+  "example": "",
+  "seealso": null,
+  "id": "UdpChat_Lib",
+  "hideTitleType": false,
+  "hideSubtitle": false,
+  "isNamespace": true,
+  "_disableToc": false,
+  "_disableNextArticle": true
+}

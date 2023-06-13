@@ -4,6 +4,86 @@
     "title": "API Reference of the project | UDPChat",
     "keywords": "API Reference of the project"
   },
+  "api/UdpChat.Client.ChatClient.html": {
+    "href": "api/UdpChat.Client.ChatClient.html",
+    "title": "Class ChatClient | UDPChat",
+    "keywords": "Class ChatClient Namespace UdpChat.Client Assembly UdpChat.Client.dll A ChatClient is a client for the chat system. public class ChatClient Inheritance object ChatClient Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ChatClient(int, string, int) Initializes a new instance of the ChatClient class with the specified client port and central server IP and port. public ChatClient(int clientPort = 4000, string centralServerIP = \"127.0.0.1\", int centralServerPort = 5000) Parameters clientPort int The port number to use for the client. centralServerIP string The IP address of the central server. centralServerPort int The port number to use for the central server. Exceptions ArgumentException Thrown if the receive socket's local endpoint is null. Fields user public ChatUser? user Field Value ChatUser ChatUser instance representing this ChatClient Methods PingCentralServer() Pings the central server to check if it is reachable public bool PingCentralServer() Returns bool true if the central server can be reached, false if not SendAuthRequest(string, string, RequestType) Sends a an auth request of type Request.RequestType to the central server. public void SendAuthRequest(string username, string password, Request.RequestType type) Parameters username string password string type Request.RequestType SendMessage(string) Sends a message if the user is logged in to the central server. public void SendMessage(string msg) Parameters msg string"
+  },
+  "api/UdpChat.Client.html": {
+    "href": "api/UdpChat.Client.html",
+    "title": "Namespace UdpChat.Client | UDPChat",
+    "keywords": "Namespace UdpChat.Client Classes ChatClient A ChatClient is a client for the chat system. Program The program class, contains the entry point of the program for the client application"
+  },
+  "api/UdpChat.Client.Program.html": {
+    "href": "api/UdpChat.Client.Program.html",
+    "title": "Class Program | UDPChat",
+    "keywords": "Class Program Namespace UdpChat.Client Assembly UdpChat.Client.dll The program class, contains the entry point of the program for the client application public class Program Inheritance object Program Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Main(string[]) public void Main(string[] args) Parameters args string[]"
+  },
+  "api/UdpChat.Lib.ChatMessage.html": {
+    "href": "api/UdpChat.Lib.ChatMessage.html",
+    "title": "Class ChatMessage | UDPChat",
+    "keywords": "Class ChatMessage Namespace UdpChat.Lib Assembly UdpChat.Lib.dll A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message. [Serializable] public class ChatMessage Inheritance object ChatMessage Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors ChatMessage(ChatUser, string) public ChatMessage(ChatUser user, string message) Parameters user ChatUser message string Properties Message public string Message { get; set; } Property Value string Timestamp public DateTime Timestamp { get; set; } Property Value DateTime User public ChatUser User { get; set; } Property Value ChatUser Methods SerializeAndSend(ref IPEndPoint, ref UdpClient) public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client) Parameters endpoint IPEndPoint client UdpClient Returns int ToString() Returns a string that represents the current object. public override string ToString() Returns string A string that represents the current object."
+  },
+  "api/UdpChat.Lib.ChatMessageResponse.html": {
+    "href": "api/UdpChat.Lib.ChatMessageResponse.html",
+    "title": "Class ChatMessageResponse | UDPChat",
+    "keywords": "Class ChatMessageResponse Namespace UdpChat.Lib Assembly UdpChat.Lib.dll The responnse to a ChatMessage from the server. [Serializable] public class ChatMessageResponse Inheritance object ChatMessageResponse Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors ChatMessageResponse(bool) public ChatMessageResponse(bool receivedCorrectly) Parameters receivedCorrectly bool Properties ReceivedCorrectly public bool ReceivedCorrectly { get; set; } Property Value bool If true means the server received the message correctly Methods SerializeAndSend(ref IPEndPoint, ref UdpClient) public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client) Parameters endpoint IPEndPoint client UdpClient Returns int ToString() Returns a string that represents the current object. public override string ToString() Returns string A string that represents the current object."
+  },
+  "api/UdpChat.Lib.ChatSendable.html": {
+    "href": "api/UdpChat.Lib.ChatSendable.html",
+    "title": "Class ChatSendable | UDPChat",
+    "keywords": "Class ChatSendable Namespace UdpChat.Lib Assembly UdpChat.Lib.dll An abstract class that represents a sendable object in the chat system. For example a Request or a Response. public class ChatSendable Inheritance object ChatSendable Derived Request Response Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties Timestamp Gets or sets the timestamp of the request. public DateTime Timestamp { get; set; } Property Value DateTime The timestamp of the request. Methods SerializeAndSend(ref IPEndPoint, ref UdpClient) Serializes the object and sends it to the specified endpoint using the specified client. public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient sender) Parameters endpoint IPEndPoint The endpoint to send this ChatSendable to sender UdpClient The UdpClient sending this ChatSendable Returns int The numbers of bytes sent"
+  },
+  "api/UdpChat.Lib.ChatUser.html": {
+    "href": "api/UdpChat.Lib.ChatUser.html",
+    "title": "Class ChatUser | UDPChat",
+    "keywords": "Class ChatUser Namespace UdpChat.Lib Assembly UdpChat.Lib.dll A ChatUser is a user of the chat system. It has a username and two endpoints, one for sending and one for receiving. [Serializable] public class ChatUser Inheritance object ChatUser Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ChatUser(string, string) public ChatUser(string username, string password) Parameters username string password string Properties Password public string Password { get; set; } Property Value string Username public string Username { get; set; } Property Value string"
+  },
+  "api/UdpChat.Lib.html": {
+    "href": "api/UdpChat.Lib.html",
+    "title": "Namespace UdpChat.Lib | UDPChat",
+    "keywords": "Namespace UdpChat.Lib Classes ChatMessage A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message. ChatMessageResponse The responnse to a ChatMessage from the server. ChatSendable An abstract class that represents a sendable object in the chat system. For example a Request or a Response. ChatUser A ChatUser is a user of the chat system. It has a username and two endpoints, one for sending and one for receiving. Request Request to register a user to the server. After a Request there is associated expected Response Response Response to a Request. It has a message and a state. Enums Request.RequestType Represents the type of a request. Response.State The possible states of a response."
+  },
+  "api/UdpChat.Lib.Request.html": {
+    "href": "api/UdpChat.Lib.Request.html",
+    "title": "Class Request | UDPChat",
+    "keywords": "Class Request Namespace UdpChat.Lib Assembly UdpChat.Lib.dll Request to register a user to the server. After a Request there is associated expected Response public class Request : ChatSendable Inheritance object ChatSendable Request Inherited Members ChatSendable.Timestamp ChatSendable.SerializeAndSend(ref IPEndPoint, ref UdpClient) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors Request(string, string, RequestType) Initializes a new instance of the Request class with the specified username, password, and request type. public Request(string username, string password, Request.RequestType type) Parameters username string The username of the user. password string The password of the user. type Request.RequestType The type of the request. Properties Password Sets or gets the password of the user public string Password { get; set; } Property Value string The password of the user Type Gets or sets the type of the request. public Request.RequestType Type { get; set; } Property Value Request.RequestType The type of the request. Username Sets or gets the username of the user public string Username { get; set; } Property Value string The username of the user Methods ToString() Returns a string that represents the current object. public override string ToString() Returns string A string that represents the current object."
+  },
+  "api/UdpChat.Lib.Request.RequestType.html": {
+    "href": "api/UdpChat.Lib.Request.RequestType.html",
+    "title": "Enum Request.RequestType | UDPChat",
+    "keywords": "Enum Request.RequestType Namespace UdpChat.Lib Assembly UdpChat.Lib.dll Represents the type of a request. public enum Request.RequestType Fields LOGIN = 1 REGISTER = 0"
+  },
+  "api/UdpChat.Lib.Response.html": {
+    "href": "api/UdpChat.Lib.Response.html",
+    "title": "Class Response | UDPChat",
+    "keywords": "Class Response Namespace UdpChat.Lib Assembly UdpChat.Lib.dll Response to a Request. It has a message and a state. public class Response : ChatSendable Inheritance object ChatSendable Response Inherited Members ChatSendable.Timestamp ChatSendable.SerializeAndSend(ref IPEndPoint, ref UdpClient) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Constructors Response(State, string) public Response(Response.State responseState, string message) Parameters responseState Response.State message string Properties Message public string Message { get; set; } Property Value string ResponseState public Response.State ResponseState { get; set; } Property Value Response.State Methods ToString() Returns a string that represents the current object. public override string ToString() Returns string A string that represents the current object."
+  },
+  "api/UdpChat.Lib.Response.State.html": {
+    "href": "api/UdpChat.Lib.Response.State.html",
+    "title": "Enum Response.State | UDPChat",
+    "keywords": "Enum Response.State Namespace UdpChat.Lib Assembly UdpChat.Lib.dll The possible states of a response. public enum Response.State Fields ALREADY_REGISTERED = 2 ERROR = 4 LOGIN_FAILED = 3 LOGIN_SUCCESS = 1 REGISTER_SUCCESS = 0"
+  },
+  "api/UdpChat.Server.CentralRetransmissionServer.html": {
+    "href": "api/UdpChat.Server.CentralRetransmissionServer.html",
+    "title": "Class CentralRetransmissionServer | UDPChat",
+    "keywords": "Class CentralRetransmissionServer Namespace UdpChat.Server Assembly UdpChat.Server.dll The central retransmission server for the chat system. It handles auth requests and retransmission of messages. public class CentralRetransmissionServer Inheritance object CentralRetransmissionServer Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors CentralRetransmissionServer(int, int) Creates a new retranmission server with the specified ports public CentralRetransmissionServer(int registerPort = 5000, int retransmissionPort = 5001) Parameters registerPort int retransmissionPort int Methods LoginUser(string, string) public bool LoginUser(string name, string password) Parameters name string password string Returns bool RegisterUser(string, string, string, int) public void RegisterUser(string name, string password, string ipAddress, int port) Parameters name string password string ipAddress string port int Exceptions Exception UserAlreadyRegisteredException Start() Starts the server with the associated services: public void Start() StartAuthenticationService() public void StartAuthenticationService() StartRetransmissionService() public void StartRetransmissionService() Stop() public void Stop()"
+  },
+  "api/UdpChat.Server.html": {
+    "href": "api/UdpChat.Server.html",
+    "title": "Namespace UdpChat.Server | UDPChat",
+    "keywords": "Namespace UdpChat.Server Classes CentralRetransmissionServer The central retransmission server for the chat system. It handles auth requests and retransmission of messages. Program The entry point of the server. Starts a CentralRetransmissionServer with default settings and associated services. Structs UdpState A struct to hold the state of a UdpClient"
+  },
+  "api/UdpChat.Server.Program.html": {
+    "href": "api/UdpChat.Server.Program.html",
+    "title": "Class Program | UDPChat",
+    "keywords": "Class Program Namespace UdpChat.Server Assembly UdpChat.Server.dll The entry point of the server. Starts a CentralRetransmissionServer with default settings and associated services. public class Program Inheritance object Program Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/UdpChat.Server.UdpState.html": {
+    "href": "api/UdpChat.Server.UdpState.html",
+    "title": "Struct UdpState | UDPChat",
+    "keywords": "Struct UdpState Namespace UdpChat.Server Assembly UdpChat.Server.dll A struct to hold the state of a UdpClient public struct UdpState Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors UdpState(UdpClient, IPEndPoint) public UdpState(UdpClient client, IPEndPoint endpoint) Parameters client UdpClient endpoint IPEndPoint Fields endpoint The endpoint of the client public IPEndPoint endpoint Field Value IPEndPoint socket The socket of the client public UdpClient socket Field Value UdpClient"
+  },
   "index.html": {
     "href": "index.html",
     "title": "UDP Multichat CLI Application | UDPChat",

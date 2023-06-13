@@ -1,0 +1,1524 @@
+{
+  "uid": "UdpChat.Lib.ChatMessageResponse",
+  "isEii": false,
+  "isExtensionMethod": false,
+  "parent": {
+    "uid": "UdpChat.Lib",
+    "isEii": false,
+    "isExtensionMethod": false,
+    "href": "UdpChat.html",
+    "name": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "nameWithType": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "fullName": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "specName": [
+      {
+        "lang": "csharp",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      },
+      {
+        "lang": "vb",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      }
+    ],
+    "level": 0.0
+  },
+  "children": [
+    {
+      "inConstructor": true,
+      "typePropertyName": "inConstructor",
+      "id": "constructors",
+      "children": [
+        {
+          "uid": "UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean)",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.ChatMessageResponse",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse(bool)"
+            },
+            {
+              "lang": "vb",
+              "value": "New(Boolean)"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse.ChatMessageResponse(bool)"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse.New(Boolean)"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatMessageResponse.ChatMessageResponse(bool)"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatMessageResponse.New(Boolean)"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean)\" text=\"ChatMessageResponse(bool)\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean)\" text=\"ChatMessageResponse(bool)\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public ChatMessageResponse(bool receivedCorrectly)"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Sub New(receivedCorrectly As Boolean)"
+              }
+            ],
+            "parameters": [
+              {
+                "id": "receivedCorrectly",
+                "type": {
+                  "uid": "System.Boolean",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "bool"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "Boolean"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "bool"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "Boolean"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "bool"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "Boolean"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.Boolean\" text=\"bool\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.Boolean\" text=\"bool\"/>"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Message.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": ".ctor",
+            "path": "../UdpChat.Lib/Message.cs",
+            "startLine": 65.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Lib.ChatMessageResponse.#ctor*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "ChatMessageResponse"
+              },
+              {
+                "lang": "vb",
+                "value": "New"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatMessageResponse.ChatMessageResponse"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatMessageResponse.New"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Lib.ChatMessageResponse.ChatMessageResponse"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Lib.ChatMessageResponse.New"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.#ctor*\" text=\"ChatMessageResponse\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.#ctor*\" text=\"ChatMessageResponse\"/>"
+              }
+            ],
+            "id": "UdpChat_Lib_ChatMessageResponse__ctor_"
+          },
+          "level": 0.0,
+          "type": "constructor",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessageResponse__ctor_System_Boolean_.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessageResponse.%23ctor(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L66",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatMessageResponse__ctor_System_Boolean_",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    },
+    {
+      "inProperty": true,
+      "typePropertyName": "inProperty",
+      "id": "properties",
+      "children": [
+        {
+          "uid": "UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.ChatMessageResponse",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ReceivedCorrectly"
+            },
+            {
+              "lang": "vb",
+              "value": "ReceivedCorrectly"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse.ReceivedCorrectly"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse.ReceivedCorrectly"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly\" text=\"ReceivedCorrectly\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly\" text=\"ReceivedCorrectly\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public bool ReceivedCorrectly { get; set; }"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Property ReceivedCorrectly As Boolean"
+              }
+            ],
+            "parameters": [],
+            "return": null,
+            "propertyValue": {
+              "type": {
+                "uid": "System.Boolean",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "bool"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Boolean"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "bool"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Boolean"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "bool"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Boolean"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<xref uid=\"System.Boolean\" text=\"bool\"/>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<xref uid=\"System.Boolean\" text=\"bool\"/>"
+                  }
+                ]
+              },
+              "description": "<p sourcefile=\"api/UdpChat.Lib.ChatMessageResponse.yml\" sourcestartlinenumber=\"1\">If true means the server received the message correctly</p>\n"
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Message.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "ReceivedCorrectly",
+            "path": "../UdpChat.Lib/Message.cs",
+            "startLine": 63.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "ReceivedCorrectly"
+              },
+              {
+                "lang": "vb",
+                "value": "ReceivedCorrectly"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatMessageResponse.ReceivedCorrectly"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatMessageResponse.ReceivedCorrectly"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly*\" text=\"ReceivedCorrectly\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly*\" text=\"ReceivedCorrectly\"/>"
+              }
+            ],
+            "id": "UdpChat_Lib_ChatMessageResponse_ReceivedCorrectly_"
+          },
+          "level": 0.0,
+          "type": "property",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessageResponse_ReceivedCorrectly.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L64",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatMessageResponse_ReceivedCorrectly",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    },
+    {
+      "inMethod": true,
+      "typePropertyName": "inMethod",
+      "id": "methods",
+      "children": [
+        {
+          "uid": "UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.ChatMessageResponse",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "SerializeAndSend(ref IPEndPoint, ref UdpClient)"
+            },
+            {
+              "lang": "vb",
+              "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse.SerializeAndSend(ref IPEndPoint, ref UdpClient)"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse.SerializeAndSend(IPEndPoint, UdpClient)"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatMessageResponse.SerializeAndSend(ref System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)\" text=\"SerializeAndSend(ref IPEndPoint, ref UdpClient)\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)\" text=\"SerializeAndSend(ref IPEndPoint, ref UdpClient)\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Function SerializeAndSend(endpoint As IPEndPoint, client As UdpClient) As Integer"
+              }
+            ],
+            "parameters": [
+              {
+                "id": "endpoint",
+                "type": {
+                  "uid": "System.Net.IPEndPoint",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "IPEndPoint"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "IPEndPoint"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "IPEndPoint"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "IPEndPoint"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "System.Net.IPEndPoint"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "System.Net.IPEndPoint"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.Net.IPEndPoint\" text=\"IPEndPoint\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.Net.IPEndPoint\" text=\"IPEndPoint\"/>"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "client",
+                "type": {
+                  "uid": "System.Net.Sockets.UdpClient",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "UdpClient"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "UdpClient"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "UdpClient"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "UdpClient"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "System.Net.Sockets.UdpClient"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "System.Net.Sockets.UdpClient"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.Net.Sockets.UdpClient\" text=\"UdpClient\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.Net.Sockets.UdpClient\" text=\"UdpClient\"/>"
+                    }
+                  ]
+                }
+              }
+            ],
+            "return": {
+              "type": {
+                "uid": "System.Int32",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "int"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Integer"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "int"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Integer"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "int"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Integer"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<xref uid=\"System.Int32\" text=\"int\"/>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<xref uid=\"System.Int32\" text=\"int\"/>"
+                  }
+                ]
+              }
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Message.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "SerializeAndSend",
+            "path": "../UdpChat.Lib/Message.cs",
+            "startLine": 71.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Lib.ChatMessageResponse.SerializeAndSend*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "SerializeAndSend"
+              },
+              {
+                "lang": "vb",
+                "value": "SerializeAndSend"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatMessageResponse.SerializeAndSend"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatMessageResponse.SerializeAndSend"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Lib.ChatMessageResponse.SerializeAndSend"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Lib.ChatMessageResponse.SerializeAndSend"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.SerializeAndSend*\" text=\"SerializeAndSend\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.SerializeAndSend*\" text=\"SerializeAndSend\"/>"
+              }
+            ],
+            "id": "UdpChat_Lib_ChatMessageResponse_SerializeAndSend_"
+          },
+          "level": 0.0,
+          "type": "method",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessageResponse_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint%40%2CSystem.Net.Sockets.UdpClient%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L72",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatMessageResponse_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.ChatMessageResponse.ToString",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.ChatMessageResponse",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ToString()"
+            },
+            {
+              "lang": "vb",
+              "value": "ToString()"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse.ToString()"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse.ToString()"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.ChatMessageResponse.ToString()"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.ChatMessageResponse.ToString()"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ToString\" text=\"ToString()\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ToString\" text=\"ToString()\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public override string ToString()"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Overrides Function ToString() As String"
+              }
+            ],
+            "return": {
+              "type": {
+                "uid": "System.String",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "string"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "String"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "string"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "String"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "string"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "String"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<xref uid=\"System.String\" text=\"string\"/>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<xref uid=\"System.String\" text=\"string\"/>"
+                  }
+                ]
+              },
+              "description": "<p sourcefile=\"api/UdpChat.Lib.ChatMessageResponse.yml\" sourcestartlinenumber=\"1\">A string that represents the current object.</p>\n"
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Message.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "ToString",
+            "path": "../UdpChat.Lib/Message.cs",
+            "startLine": 79.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib",
+          "example": [],
+          "overridden": {
+            "uid": "System.Object.ToString",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "ToString()"
+              },
+              {
+                "lang": "vb",
+                "value": "ToString()"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "object.ToString()"
+              },
+              {
+                "lang": "vb",
+                "value": "Object.ToString()"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "object.ToString()"
+              },
+              {
+                "lang": "vb",
+                "value": "Object.ToString()"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.tostring\">ToString</a>()"
+              },
+              {
+                "lang": "vb",
+                "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.tostring\">ToString</a>()"
+              }
+            ]
+          },
+          "overload": {
+            "uid": "UdpChat.Lib.ChatMessageResponse.ToString*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "ToString"
+              },
+              {
+                "lang": "vb",
+                "value": "ToString"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatMessageResponse.ToString"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatMessageResponse.ToString"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Lib.ChatMessageResponse.ToString"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Lib.ChatMessageResponse.ToString"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ToString*\" text=\"ToString\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse.ToString*\" text=\"ToString\"/>"
+              }
+            ],
+            "id": "UdpChat_Lib_ChatMessageResponse_ToString_"
+          },
+          "level": 0.0,
+          "type": "method",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessageResponse.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessageResponse_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessageResponse.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L80",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_ChatMessageResponse_ToString",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    }
+  ],
+  "langs": [
+    "csharp",
+    "vb"
+  ],
+  "name": [
+    {
+      "lang": "csharp",
+      "value": "ChatMessageResponse"
+    },
+    {
+      "lang": "vb",
+      "value": "ChatMessageResponse"
+    }
+  ],
+  "nameWithType": [
+    {
+      "lang": "csharp",
+      "value": "ChatMessageResponse"
+    },
+    {
+      "lang": "vb",
+      "value": "ChatMessageResponse"
+    }
+  ],
+  "fullName": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Lib.ChatMessageResponse"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Lib.ChatMessageResponse"
+    }
+  ],
+  "type": "class",
+  "source": {
+    "remote": {
+      "path": "UdpChat.Lib/Message.cs",
+      "branch": "master",
+      "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+    },
+    "id": "ChatMessageResponse",
+    "path": "../UdpChat.Lib/Message.cs",
+    "startLine": 59.0,
+    "endLine": 0.0,
+    "isExternal": false
+  },
+  "assemblies": [
+    "UdpChat.Lib"
+  ],
+  "namespace": {
+    "uid": "UdpChat.Lib",
+    "isEii": false,
+    "isExtensionMethod": false,
+    "href": "UdpChat.html",
+    "name": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "nameWithType": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "fullName": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Lib"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Lib"
+      }
+    ],
+    "specName": [
+      {
+        "lang": "csharp",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      },
+      {
+        "lang": "vb",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+      }
+    ],
+    "level": 0.0
+  },
+  "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessageResponse.yml\" sourcestartlinenumber=\"1\">The responnse to a ChatMessage from the server.</p>\n",
+  "example": [],
+  "syntax": {
+    "content": [
+      {
+        "lang": "csharp",
+        "value": "[Serializable]\npublic class ChatMessageResponse"
+      },
+      {
+        "lang": "vb",
+        "value": "<Serializable>\nPublic Class ChatMessageResponse"
+      }
+    ]
+  },
+  "inheritance": [
+    {
+      "uid": "System.Object",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "object"
+        },
+        {
+          "lang": "vb",
+          "value": "Object"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object"
+        },
+        {
+          "lang": "vb",
+          "value": "Object"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object"
+        },
+        {
+          "lang": "vb",
+          "value": "Object"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<xref uid=\"System.Object\" text=\"object\"/>"
+        },
+        {
+          "lang": "vb",
+          "value": "<xref uid=\"System.Object\" text=\"object\"/>"
+        }
+      ],
+      "level": 0.0,
+      "index": 0.0
+    }
+  ],
+  "level": 1.0,
+  "inheritedMembers": [
+    {
+      "uid": "System.Object.Equals(System.Object)",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "Equals(object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Equals(Object)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>)"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.Equals(System.Object,System.Object)",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "Equals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Equals(Object, Object)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object, Object)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object, Object)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>)"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.GetHashCode",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.gethashcode",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "GetHashCode()"
+        },
+        {
+          "lang": "vb",
+          "value": "GetHashCode()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.GetHashCode()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetHashCode()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.GetHashCode()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetHashCode()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gethashcode\">GetHashCode</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gethashcode\">GetHashCode</a>()"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.GetType",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.gettype",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "GetType()"
+        },
+        {
+          "lang": "vb",
+          "value": "GetType()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.GetType()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetType()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.GetType()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetType()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gettype\">GetType</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gettype\">GetType</a>()"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.MemberwiseClone",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "MemberwiseClone()"
+        },
+        {
+          "lang": "vb",
+          "value": "MemberwiseClone()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.MemberwiseClone()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.MemberwiseClone()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.MemberwiseClone()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.MemberwiseClone()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone\">MemberwiseClone</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone\">MemberwiseClone</a>()"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.referenceequals",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "ReferenceEquals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "ReferenceEquals(Object, Object)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.ReferenceEquals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.ReferenceEquals(Object, Object)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.ReferenceEquals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.ReferenceEquals(Object, Object)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.referenceequals\">ReferenceEquals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.referenceequals\">ReferenceEquals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>)"
+        }
+      ],
+      "level": 0.0
+    }
+  ],
+  "attributes": [
+    {
+      "type": "System.SerializableAttribute",
+      "ctor": "System.SerializableAttribute.#ctor",
+      "arguments": []
+    }
+  ],
+  "_appName": "UDPChat",
+  "_appTitle": "UDPChat",
+  "_enableSearch": true,
+  "_systemKeys": [
+    "uid",
+    "isEii",
+    "isExtensionMethod",
+    "parent",
+    "children",
+    "href",
+    "langs",
+    "name",
+    "nameWithType",
+    "fullName",
+    "type",
+    "source",
+    "documentation",
+    "assemblies",
+    "namespace",
+    "summary",
+    "remarks",
+    "example",
+    "syntax",
+    "overridden",
+    "overload",
+    "exceptions",
+    "seealso",
+    "see",
+    "inheritance",
+    "derivedClasses",
+    "level",
+    "implements",
+    "inheritedMembers",
+    "extensionMethods",
+    "conceptual",
+    "platform",
+    "attributes",
+    "additionalNotes"
+  ],
+  "_key": "api/UdpChat.Lib.ChatMessageResponse.yml",
+  "_navKey": "~/toc.yml",
+  "_navPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "api/UdpChat.Lib.ChatMessageResponse.html",
+  "_rel": "../",
+  "_tocKey": "~/api/toc.yml",
+  "_tocPath": "api/toc.html",
+  "_tocRel": "toc.html",
+  "__global": {
+    "namespacesInSubtitle": "Namespaces",
+    "classesInSubtitle": "Classes",
+    "structsInSubtitle": "Structs",
+    "interfacesInSubtitle": "Interfaces",
+    "enumsInSubtitle": "Enums",
+    "delegatesInSubtitle": "Delegates",
+    "constructorsInSubtitle": "Constructors",
+    "fieldsInSubtitle": "Fields",
+    "propertiesInSubtitle": "Properties",
+    "methodsInSubtitle": "Methods",
+    "eventsInSubtitle": "Events",
+    "operatorsInSubtitle": "Operators",
+    "eiisInSubtitle": "Explicit Interface Implementations",
+    "functionsInSubtitle": "Functions",
+    "variablesInSubtitle": "Variables",
+    "typeAliasesInSubtitle": "Type Aliases",
+    "membersInSubtitle": "Members",
+    "improveThisDoc": "Improve this Doc",
+    "viewSource": "View Source",
+    "inheritance": "Inheritance",
+    "derived": "Derived",
+    "inheritedMembers": "Inherited Members",
+    "package": "Package",
+    "namespace": "Namespace",
+    "assembly": "Assembly",
+    "syntax": "Syntax",
+    "overrides": "Overrides",
+    "implements": "Implements",
+    "remarks": "Remarks",
+    "examples": "Examples",
+    "seealso": "See Also",
+    "declaration": "Declaration",
+    "parameters": "Parameters",
+    "typeParameters": "Type Parameters",
+    "type": "Type",
+    "name": "Name",
+    "description": "Description",
+    "returns": "Returns",
+    "fieldValue": "Field Value",
+    "propertyValue": "Property Value",
+    "eventType": "Event Type",
+    "variableValue": "Variable Value",
+    "typeAliasType": "Type Alias Type",
+    "exceptions": "Exceptions",
+    "condition": "Condition",
+    "extensionMethods": "Extension Methods",
+    "note": "Note",
+    "warning": "Warning",
+    "tip": "Tip",
+    "important": "Important",
+    "caution": "Caution",
+    "tocToggleButton": "Show / Hide Table of Contents",
+    "tocFilter": "Enter here to filter...",
+    "search": "Search",
+    "searchResults": "Search Results for",
+    "pageFirst": "First",
+    "pagePrev": "Previous",
+    "pageNext": "Next",
+    "pageLast": "Last",
+    "inThisArticle": "In This Article",
+    "backToTop": "Back to top",
+    "_shared": {}
+  },
+  "yamlmime": "ManagedReference",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessageResponse.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessageResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L60",
+  "remarks": "",
+  "conceptual": "",
+  "implements": "",
+  "seealso": null,
+  "id": "UdpChat_Lib_ChatMessageResponse",
+  "hideTitleType": false,
+  "hideSubtitle": false,
+  "isClass": true,
+  "inClass": true,
+  "_disableToc": false,
+  "_disableNextArticle": true
+}

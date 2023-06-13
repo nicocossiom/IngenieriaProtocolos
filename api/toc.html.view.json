@@ -2,12 +2,15 @@
   "items": [
     {
       "name": "UdpChat.Client",
+      "href": "UdpChat.Client.html",
+      "topicHref": "UdpChat.Client.html",
       "topicUid": "UdpChat.Client",
       "items": [
         {
           "name": "ChatClient",
+          "href": "UdpChat.Client.ChatClient.html",
+          "topicHref": "UdpChat.Client.ChatClient.html",
           "topicUid": "UdpChat.Client.ChatClient",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -15,26 +18,29 @@
         },
         {
           "name": "Program",
+          "href": "UdpChat.Client.Program.html",
+          "topicHref": "UdpChat.Client.Program.html",
           "topicUid": "UdpChat.Client.Program",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
           "leaf": true
         }
       ],
-      "topicHref": null,
       "tocHref": null,
       "level": 2.0
     },
     {
       "name": "UdpChat.Lib",
+      "href": "UdpChat.Lib.html",
+      "topicHref": "UdpChat.Lib.html",
       "topicUid": "UdpChat.Lib",
       "items": [
         {
           "name": "ChatMessage",
+          "href": "UdpChat.Lib.ChatMessage.html",
+          "topicHref": "UdpChat.Lib.ChatMessage.html",
           "topicUid": "UdpChat.Lib.ChatMessage",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -42,8 +48,9 @@
         },
         {
           "name": "ChatMessageResponse",
+          "href": "UdpChat.Lib.ChatMessageResponse.html",
+          "topicHref": "UdpChat.Lib.ChatMessageResponse.html",
           "topicUid": "UdpChat.Lib.ChatMessageResponse",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -51,8 +58,9 @@
         },
         {
           "name": "ChatSendable",
+          "href": "UdpChat.Lib.ChatSendable.html",
+          "topicHref": "UdpChat.Lib.ChatSendable.html",
           "topicUid": "UdpChat.Lib.ChatSendable",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -60,8 +68,9 @@
         },
         {
           "name": "ChatUser",
+          "href": "UdpChat.Lib.ChatUser.html",
+          "topicHref": "UdpChat.Lib.ChatUser.html",
           "topicUid": "UdpChat.Lib.ChatUser",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -69,8 +78,9 @@
         },
         {
           "name": "Request",
+          "href": "UdpChat.Lib.Request.html",
+          "topicHref": "UdpChat.Lib.Request.html",
           "topicUid": "UdpChat.Lib.Request",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -78,8 +88,9 @@
         },
         {
           "name": "Request.RequestType",
+          "href": "UdpChat.Lib.Request.RequestType.html",
+          "topicHref": "UdpChat.Lib.Request.RequestType.html",
           "topicUid": "UdpChat.Lib.Request.RequestType",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -87,8 +98,9 @@
         },
         {
           "name": "Response",
+          "href": "UdpChat.Lib.Response.html",
+          "topicHref": "UdpChat.Lib.Response.html",
           "topicUid": "UdpChat.Lib.Response",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -96,26 +108,29 @@
         },
         {
           "name": "Response.State",
+          "href": "UdpChat.Lib.Response.State.html",
+          "topicHref": "UdpChat.Lib.Response.State.html",
           "topicUid": "UdpChat.Lib.Response.State",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
           "leaf": true
         }
       ],
-      "topicHref": null,
       "tocHref": null,
       "level": 2.0
     },
     {
       "name": "UdpChat.Server",
+      "href": "UdpChat.Server.html",
+      "topicHref": "UdpChat.Server.html",
       "topicUid": "UdpChat.Server",
       "items": [
         {
           "name": "CentralRetransmissionServer",
+          "href": "UdpChat.Server.CentralRetransmissionServer.html",
+          "topicHref": "UdpChat.Server.CentralRetransmissionServer.html",
           "topicUid": "UdpChat.Server.CentralRetransmissionServer",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -123,8 +138,9 @@
         },
         {
           "name": "Program",
+          "href": "UdpChat.Server.Program.html",
+          "topicHref": "UdpChat.Server.Program.html",
           "topicUid": "UdpChat.Server.Program",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -132,15 +148,15 @@
         },
         {
           "name": "UdpState",
+          "href": "UdpChat.Server.UdpState.html",
+          "topicHref": "UdpChat.Server.UdpState.html",
           "topicUid": "UdpChat.Server.UdpState",
-          "topicHref": null,
           "tocHref": null,
           "level": 3.0,
           "items": [],
           "leaf": true
         }
       ],
-      "topicHref": null,
       "tocHref": null,
       "level": 2.0
     }

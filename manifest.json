@@ -12,6 +12,166 @@
       }
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Client.ChatClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Client.ChatClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Client.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Client.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Client.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.ChatMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.ChatMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.ChatMessageResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.ChatMessageResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.ChatSendable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.ChatSendable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.ChatUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.ChatUser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Request.RequestType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Request.RequestType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Request.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Response.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Response.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Response.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.CentralRetransmissionServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.CentralRetransmissionServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.UdpState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.UdpState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -22,9 +182,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
