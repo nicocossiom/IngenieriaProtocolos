@@ -27,7 +27,10 @@ jobs:
       - name: Install DocFX
         run: dotnet tool update -g docfx
 
-      - name: Build Docs
+      - name: Build Metadata
+        run: docfx metadata docfx_project/docfx.json
+
+      - name: Build site
         run: docfx build docfx_project/docfx.json
 
       - name: Deploy
