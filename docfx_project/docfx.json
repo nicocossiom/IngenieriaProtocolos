@@ -39,7 +39,14 @@
     "globalMetadata": {
       "_appTitle": "UDPChat",
       "_appName": "UDPChat",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_appLogoPath": "images/logo.png",
+      "_appFaviconPath": "images/favicon.ico",
+      "_appFooter": "UDPChat",
+      "_gitContribute": {
+        "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+        "branch": "gh-pages"
+      }
     },
     "exportViewModel": true,
     "output": "_site",

@@ -1,3 +1,15 @@
-- name: Api Documentation
+- name: Home
+  href: index.md
+  homepage: index.md
+
+- name: Code Documentation
   href: api/
   homepage: api/index.md
+
+- name: Server CLI Documentation
+  href: server/
+  homepage: server/index.md
+
+- name: Client CLI Documentation
+  href: client/
+  homepage: client/index.md

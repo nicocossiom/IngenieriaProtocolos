@@ -5,8 +5,8 @@ items:
   items:
   - uid: UdpChat.Client.ChatClient
     name: ChatClient
-  - uid: UdpChat.Client.Program
-    name: Program
+  - uid: UdpChat.Client.ClientCLI
+    name: ClientCLI
 - uid: UdpChat.Lib
   name: UdpChat.Lib
   items:
@@ -31,8 +31,6 @@ items:
   items:
   - uid: UdpChat.Server.CentralRetransmissionServer
     name: CentralRetransmissionServer
-  - uid: UdpChat.Server.Program
-    name: Program
-  - uid: UdpChat.Server.UdpState
-    name: UdpState
+  - uid: UdpChat.Server.ServerService
+    name: ServerService
 memberLayout: SamePage

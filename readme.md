@@ -14,8 +14,8 @@ En el enlace encontrará:
 
 - Explicación de la solución propuesta.
 
-- Manual de uso de:
-  - Cliente
+- Manual de uso de las aplicaciones de CLI desarrolladas:
+  - [Cliente](https://nicocossiom.github.io/IngenieriaProtocolos/cliente.html)
   - Servidor
 
 - .NET API Docs. Esto es la documentación interna del el código generada de los comentarios en el código.

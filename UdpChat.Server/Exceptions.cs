@@ -1,4 +1,7 @@
-class UserAlreadyRegisteredException : Exception
+namespace UdpChat.Server
 {
-    public UserAlreadyRegisteredException(string message) : base(message) { }
+    class UserAlreadyRegisteredException : Exception
+    {
+        public UserAlreadyRegisteredException(string message) : base(message) { }
+    }
 }

@@ -7,7 +7,7 @@ namespace UdpChat.Server
     /// <summary>
     /// A struct to hold the state of a UdpClient
     /// </summary>
-    public struct UdpState
+    public struct ServerService
     {
         /// <summary>
         /// The socket of the client
@@ -17,9 +17,50 @@ namespace UdpChat.Server
         /// The endpoint of the client
         /// </summary>
         public IPEndPoint endpoint;
-        /// <inheritdoc/>
 
-        public UdpState(UdpClient client, IPEndPoint endpoint)
+        /// <summary>
+        /// A constructor to create a new ServerService with the specified client and endpoint. After a ServerService is created, it can be used to receive messages from the client.
+        /// A handler for the received messages can be specified with the <see cref="UdpClient.BeginReceive(System.AsyncCallback, object)"/> method.
+        /// As a handler can only accept a request at a time, it's recommended to use <see cref="System.Threading.Tasks.Task.Run(System.Action)"/> inside the handler to process the request inside.
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// private void AuthenticationHandler(IAsyncResult res)
+        /// {
+        ///    if (!TryGetStateFromAsyncRes(ref res, out var clientState)) return;
+        ///    byte[] receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint!);
+        ///    Task.Run(() =>
+        ///    {
+        ///        var req = System.Text.Json.JsonSerializer.Deserialize&lt;Request&gt;(receiveBytes);
+        ///        Console.WriteLine($"Received request from {clientState.endpoint}:\n\t{req}");
+        ///        if (req == null)
+        ///        {
+        ///            Console.Error.WriteLine("Error deserializing request");
+        ///            return;
+        ///        }
+        ///        switch (req.Type)
+        ///        {
+        ///            case Request.RequestType.REGISTER:
+        ///                HandleRegisterRequest(req, ref clientState);
+        ///                break;
+        ///            case Request.RequestType.LOGIN:
+        ///                HandleLoginRequest(req, ref clientState);
+        ///                break;
+        ///            default:
+        ///                Console.Error.WriteLine($"Invalid request type {req.Type}");
+        ///                new Response(Response.State.ERROR, $"Invalid request type {req.Type}")
+        ///                    .SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
+        ///                break;
+        ///        }
+        ///    });
+        ///    // Start a new receive operation
+        ///    clientState.socket.BeginReceive(new AsyncCallback(AuthenticationHandler), clientState);
+        /// }
+        /// </code>
+        /// </example>
+        /// <param name="client">The UdpClient used for network communications.</param>
+        /// <param name="endpoint">The network endpoint where the service is located.</param>
+        public ServerService(UdpClient client, IPEndPoint endpoint)
         {
             this.socket = client;
             this.endpoint = endpoint;
@@ -37,8 +78,10 @@ namespace UdpChat.Server
         private int retransmissionPort { get; set; } = 5001;
         private string dbPath { get; set; } = "users.db";
         private SqliteConnection? dbConnection { get; set; }
-        private UdpState authenticationService { get; set; }
-        private UdpState retransmissionService { get; set; }
+        /// <inheritdoc/>
+        public ServerService authenticationService { get; set; }
+        /// <inheritdoc/>
+        public ServerService retransmissionService { get; set; }
         private static readonly Dictionary<string, IPEndPoint> clients = new Dictionary<string, IPEndPoint>();
 
 
@@ -93,12 +136,23 @@ namespace UdpChat.Server
         /// <param name="port"></param>
         /// <exception cref="Exception"></exception>
         /// <exception cref="UserAlreadyRegisteredException"></exception>
-        public void RegisterUser(String name, String password, String ipAddress, int port)
+        public async Task RegisterUserAsync(String name, String password, String ipAddress, int port)
         {
             if (dbConnection == null)
             {
                 Console.WriteLine("Database not initialized");
                 throw new Exception("Database not initialized");
+            }
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(ipAddress))
+            {
+                Console.WriteLine("One or more required string parameters are null or empty");
+                throw new ArgumentNullException();
+            }
+
+            if (port <= 0)
+            {
+                Console.WriteLine("Invalid port number");
+                throw new ArgumentOutOfRangeException();
             }
             var cmd = dbConnection.CreateCommand();
             cmd.CommandText = "INSERT INTO users (username, password, ip_address, port) VALUES (@username, @password, @ip_address, @port)";
@@ -106,15 +160,17 @@ namespace UdpChat.Server
             cmd.Parameters.AddWithValue("@password", password);
             cmd.Parameters.AddWithValue("@ip_address", ipAddress);
             cmd.Parameters.AddWithValue("@port", port);
-            try { cmd.ExecuteNonQuery(); }
+            Console.WriteLine($"Register SQL operation {cmd.CommandText} {cmd.Parameters.ToString()}");
+            try { await cmd.ExecuteNonQueryAsync(); }
             catch (SqliteException)
             {
+                Console.Error.WriteLine($"SQL error {cmd.CommandText} {cmd.Parameters.ToString()}");
                 throw new UserAlreadyRegisteredException($"User {name} already exists");
             }
         }
         /// <inheritdoc/>
 
-        public bool LoginUser(string name, string password)
+        public async Task<bool> LoginUserAsync(string name, string password)
         {
             if (dbConnection == null)
             {
@@ -125,7 +181,7 @@ namespace UdpChat.Server
             cmd.CommandText = "SELECT * FROM users WHERE username = @username AND password = @password";
             cmd.Parameters.AddWithValue("@username", name);
             cmd.Parameters.AddWithValue("@password", password);
-            var reader = cmd.ExecuteReader();
+            var reader = await cmd.ExecuteReaderAsync();
             return reader.HasRows;
         }
         /// <inheritdoc/>
@@ -135,7 +191,7 @@ namespace UdpChat.Server
             var authSocket = new UdpClient(authenticationPort);
             var authEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), authenticationPort);
             Console.WriteLine($"Authentication server started at {authEndpoint}");
-            this.authenticationService = new UdpState(authSocket, authEndpoint);
+            this.authenticationService = new ServerService(authSocket, authEndpoint);
         }
         /// <inheritdoc/>
 
@@ -144,7 +200,7 @@ namespace UdpChat.Server
             var retransmissionSocket = new UdpClient(retransmissionPort);
             var retransmisionEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), retransmissionPort);
             Console.WriteLine($"Retransmission server started at {retransmisionEndpoint}");
-            this.retransmissionService = new UdpState(retransmissionSocket, retransmisionEndpoint);
+            this.retransmissionService = new ServerService(retransmissionSocket, retransmisionEndpoint);
         }
         /// <inheritdoc/>
 
@@ -156,7 +212,7 @@ namespace UdpChat.Server
             dbConnection?.Close();
         }
 
-        private bool TryGetStateFromAsyncRes(ref IAsyncResult res, out UdpState clientState)
+        private bool TryGetStateFromAsyncRes(ref IAsyncResult res, out ServerService clientState)
         {
             clientState = default;
             if (res.AsyncState == null)
@@ -164,7 +220,7 @@ namespace UdpChat.Server
                 Console.Error.WriteLine("Invalid AsyncState. Unable to receive message.");
                 return false;
             }
-            clientState = (UdpState)res.AsyncState;
+            clientState = (ServerService)res.AsyncState;
             if (clientState.socket == null || clientState.endpoint == null)
             {
                 Console.Error.WriteLine("Invalid AsyncState. Unable to receive message.");
@@ -198,13 +254,13 @@ namespace UdpChat.Server
             clientState.socket.BeginReceive(new AsyncCallback(RetransmissionHandler), clientState);
         }
 
-        private void HandleRegisterRequest(Request req, ref UdpState clientState)
+        private void HandleRegisterRequest(Request req, ref ServerService clientState)
         {
             Console.WriteLine($"Received register request from {req.Username} at {req.Timestamp}");
             Response regRes;
             try
             {
-                this.RegisterUser(req.Username, req.Password,
+                this.RegisterUserAsync(req.Username, req.Password,
                 clientState.endpoint.Address.ToString(), clientState.endpoint.Port);
                 regRes = new Response(responseState: Response.State.REGISTER_SUCCESS, "User registered successfully");
             }
@@ -224,10 +280,10 @@ namespace UdpChat.Server
             Console.WriteLine($"Sent {sentBytes} bytes");
         }
 
-        private void HandleLoginRequest(Request req, ref UdpState clientState)
+        private async Task HandleLoginRequestAsync(Request req, ref ServerService clientState)
         {
             Console.WriteLine($"Received login request from {req.Username} at {req.Timestamp}");
-            Response res = LoginUser(req.Username, req.Password) ?
+            Response res = await LoginUserAsync(req.Username, req.Password) ?
                     new Response(responseState: Response.State.LOGIN_SUCCESS, "User logged in successfully")
                     :
                     new Response(responseState: Response.State.LOGIN_FAILED, "Invalid username or password");
@@ -241,6 +297,7 @@ namespace UdpChat.Server
             Task.Run(() =>
             {
                 var req = System.Text.Json.JsonSerializer.Deserialize<Request>(receiveBytes);
+                Console.WriteLine($"Received request from {clientState.endpoint}:\n\t{req}");
                 if (req == null)
                 {
                     Console.Error.WriteLine("Error deserializing request");
@@ -252,7 +309,7 @@ namespace UdpChat.Server
                         HandleRegisterRequest(req, ref clientState);
                         break;
                     case Request.RequestType.LOGIN:
-                        HandleLoginRequest(req, ref clientState);
+                        HandleLoginRequestAsync(req, ref clientState);
                         break;
                     default:
                         Console.Error.WriteLine($"Invalid request type {req.Type}");
@@ -266,11 +323,18 @@ namespace UdpChat.Server
         }
         /// <summary>
         /// Starts the server with the associated services:
-        /// <list>
-        /// <see cref="authenticationService"/> 
-        /// <see cref="retransmissionService"/>
-        /// </list>
         /// </summary>
+        /// <remarks>
+        /// The services started are:
+        /// <list type="bullet">
+        /// <item>
+        /// <term><see cref="CentralRetransmissionServer.authenticationService"/></term>
+        /// </item>
+        /// <item>
+        /// <term><see cref="CentralRetransmissionServer.retransmissionService"/></term>
+        /// </item>
+        /// </list>
+        /// </remarks>
         public void Start()
         {
             Console.WriteLine("Starting server");
@@ -282,18 +346,13 @@ namespace UdpChat.Server
             while (true)
             { }
         }
-    }
-
-    /// <summary>
-    /// The entry point of the server. Starts a <see cref="CentralRetransmissionServer"/> with default settings and associated services.
-    /// </summary>
-    public class Program
-    {
+        /// <summary>
+        /// The entry point of the server. Starts a <see cref="CentralRetransmissionServer"/> with default settings and associated services.
+        /// </summary>
         static void Main(string[] args)
         {
             CentralRetransmissionServer server = new CentralRetransmissionServer();
             server.Start();
         }
-
     }
 }

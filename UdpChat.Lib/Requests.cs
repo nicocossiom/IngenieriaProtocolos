@@ -19,7 +19,7 @@ namespace UdpChat.Lib
         /// <summary>
         /// Gets or sets the type of the request.
         /// </summary>
-        /// <value>The type of the request.</value>
+        /// <value>The type of the request. See <see cref="RequestType"/> for available request types.</value>
         public RequestType Type { get; set; }
 
 
@@ -51,7 +51,7 @@ namespace UdpChat.Lib
         /// <inheritdoc/>
         public override string ToString()
         {
-            return $"RegisterRequest: {Username} at {Timestamp}";
+            return $"Request({Type},{Username},{Password},{Timestamp})";
         }
     }
 
