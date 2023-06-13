@@ -295,5 +295,4 @@ docfx_project/_site_pdf
 *.pdf
 *.db
 .DS_Store
-docfx_project/_site_pdf/docfx_project.json
 docfx_project/.manifest

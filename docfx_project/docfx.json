@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../",
+          "src": "./",
           "files": [
             "**/*.csproj"
           ]
@@ -22,9 +22,12 @@
   "build": {
     "content": [
       {
+        "src": "./",
         "files": [
           "**/*.yml",
-          "**/*.md"
+          "**/*.md",
+          "api/*.yml",
+          "api/*.md"
         ]
       }
     ],
