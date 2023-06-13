@@ -3,5 +3,5 @@
   homepage: index.md
 
 - name: Examples of Server CLI Usage
-  href: examples
-  homepage: examples/index.md
+  href: examples.md
+  homepage: examples.md

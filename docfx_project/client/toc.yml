@@ -2,6 +2,6 @@
   href: index.md
   homepage: index.md
 
-- name: Examples of Client CLI Usage
-  href: examples
-  homepage: examples/index.md
+- name: Examples of Server CLI Usage
+  href: examples.md
+  homepage: examples.md
