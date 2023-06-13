@@ -50,7 +50,7 @@
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false
-  },
+  }
   //   "pdf": {
   //     "content": [
   //       {
@@ -65,4 +65,4 @@
   //     },
   //     "output": "_site_pdf"
   //   }
-  // }
+}
