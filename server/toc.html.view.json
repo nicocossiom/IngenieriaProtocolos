@@ -12,9 +12,9 @@
     },
     {
       "name": "Examples of Server CLI Usage",
-      "href": "examples",
-      "topicHref": "examples/index.html",
-      "homepage": "examples/index.html",
+      "href": "examples.html",
+      "topicHref": "examples.html",
+      "homepage": "examples.html",
       "tocHref": null,
       "level": 2.0,
       "items": [],

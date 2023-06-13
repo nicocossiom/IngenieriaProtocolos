@@ -79,8 +79,8 @@
     "title": "Struct ServerService | UDPChat",
     "keywords": "Struct ServerService Namespace UdpChat.Server Assembly UdpChat.Server.dll A struct to hold the state of a UdpClient public struct ServerService Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors ServerService(UdpClient, IPEndPoint) A constructor to create a new ServerService with the specified client and endpoint. After a ServerService is created, it can be used to receive messages from the client. A handler for the received messages can be specified with the BeginReceive(AsyncCallback, object) method. As a handler can only accept a request at a time, it's recommended to use Run(Action) inside the handler to process the request inside. public ServerService(UdpClient client, IPEndPoint endpoint) Parameters client UdpClient The UdpClient used for network communications. endpoint IPEndPoint The network endpoint where the service is located. Examples private void AuthenticationHandler(IAsyncResult res) { if (!TryGetStateFromAsyncRes(ref res, out var clientState)) return; byte[] receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint!); Task.Run(() => { var req = System.Text.Json.JsonSerializer.Deserialize<Request>(receiveBytes); Console.WriteLine($\"Received request from {clientState.endpoint}:\\n\\t{req}\"); if (req == null) { Console.Error.WriteLine(\"Error deserializing request\"); return; } switch (req.Type) { case Request.RequestType.REGISTER: HandleRegisterRequest(req, ref clientState); break; case Request.RequestType.LOGIN: HandleLoginRequest(req, ref clientState); break; default: Console.Error.WriteLine($\"Invalid request type {req.Type}\"); new Response(Response.State.ERROR, $\"Invalid request type {req.Type}\") .SerializeAndSend(ref clientState.endpoint, ref clientState.socket); break; } }); // Start a new receive operation clientState.socket.BeginReceive(new AsyncCallback(AuthenticationHandler), clientState); } Fields endpoint The endpoint of the client public IPEndPoint endpoint Field Value IPEndPoint socket The socket of the client public UdpClient socket Field Value UdpClient"
   },
-  "client/examples/index.html": {
-    "href": "client/examples/index.html",
+  "client/examples.html": {
+    "href": "client/examples.html",
     "title": "Examples of using the client | UDPChat",
     "keywords": "Examples of using the client This section contains examples of using the client."
   },
@@ -94,8 +94,8 @@
     "title": "UDP Multichat CLI Application | UDPChat",
     "keywords": "UDP Multichat CLI Application This chat app is a simple UDP client/server application that allows multiple clients to connect to a server and send messages to each other. The server is able to handle multiple clients at once and will broadcast messages to all connected clients."
   },
-  "server/examples/index.html": {
-    "href": "server/examples/index.html",
+  "server/examples.html": {
+    "href": "server/examples.html",
     "title": "Examples of using the server | UDPChat",
     "keywords": "Examples of using the server This section contains examples of using the server."
   },

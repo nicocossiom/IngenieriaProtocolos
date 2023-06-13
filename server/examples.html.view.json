@@ -1,9 +1,9 @@
 {
-  "conceptual": "\n<p sourcefile=\"client/examples/index.md\" sourcestartlinenumber=\"3\">This section contains examples of using the client.</p>\n",
+  "conceptual": "\n<p sourcefile=\"server/examples.md\" sourcestartlinenumber=\"3\">This section contains examples of using the server.</p>\n",
   "type": "Conceptual",
   "source": {
     "remote": {
-      "path": "docfx_project/client/examples/index.md",
+      "path": "docfx_project/server/examples.md",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
@@ -11,10 +11,10 @@
     "endLine": 0.0,
     "isExternal": false
   },
-  "path": "client/examples/index.md",
+  "path": "server/examples.md",
   "documentation": {
     "remote": {
-      "path": "docfx_project/client/examples/index.md",
+      "path": "docfx_project/server/examples.md",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
@@ -42,18 +42,18 @@
     "rawTitle",
     "wordCount"
   ],
-  "rawTitle": "<h1 id=\"examples-of-using-the-client\" sourcefile=\"client/examples/index.md\" sourcestartlinenumber=\"1\">Examples of using the client</h1>",
-  "title": "Examples of using the client",
+  "rawTitle": "<h1 id=\"examples-of-using-the-server\" sourcefile=\"server/examples.md\" sourcestartlinenumber=\"1\">Examples of using the server</h1>",
+  "title": "Examples of using the server",
   "wordCount": 8.0,
-  "_key": "client/examples/index.md",
+  "_key": "server/examples.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
-  "_navRel": "../../toc.html",
-  "_path": "client/examples/index.html",
-  "_rel": "../../",
-  "_tocKey": "~/client/toc.yml",
-  "_tocPath": "client/toc.html",
-  "_tocRel": "../toc.html",
+  "_navRel": "../toc.html",
+  "_path": "server/examples.html",
+  "_rel": "../",
+  "_tocKey": "~/server/toc.yml",
+  "_tocPath": "server/toc.html",
+  "_tocRel": "toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",
     "classesInSubtitle": "Classes",
@@ -119,5 +119,5 @@
     "_shared": {}
   },
   "_disableToc": false,
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/client/examples/index.md/#L1"
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/server/examples.md/#L1"
 }
