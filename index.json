@@ -1,0 +1,12 @@
+{
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "API Reference of the project | UDPChat",
+    "keywords": "API Reference of the project"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "UDP Multichat CLI Application | UDPChat",
+    "keywords": "UDP Multichat CLI Application This chat app is a simple UDP client/server application that allows multiple clients to connect to a server and send messages to each other. The server is able to handle multiple clients at once and will broadcast messages to all connected clients."
+  }
+}
