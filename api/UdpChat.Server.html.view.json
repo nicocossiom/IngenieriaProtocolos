@@ -68,67 +68,6 @@
           "id": "UdpChat_Server_CentralRetransmissionServer",
           "hideTitleType": false,
           "hideSubtitle": false
-        },
-        {
-          "uid": "UdpChat.Server.Program",
-          "isExtensionMethod": false,
-          "href": "UdpChat.Server.Program.html",
-          "name": [
-            {
-              "lang": "csharp",
-              "value": "Program"
-            },
-            {
-              "lang": "vb",
-              "value": "Program"
-            }
-          ],
-          "nameWithType": [
-            {
-              "lang": "csharp",
-              "value": "Program"
-            },
-            {
-              "lang": "vb",
-              "value": "Program"
-            }
-          ],
-          "fullName": [
-            {
-              "lang": "csharp",
-              "value": "UdpChat.Server.Program"
-            },
-            {
-              "lang": "vb",
-              "value": "UdpChat.Server.Program"
-            }
-          ],
-          "specName": [
-            {
-              "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.Program\" text=\"Program\"/>"
-            },
-            {
-              "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.Program\" text=\"Program\"/>"
-            }
-          ],
-          "level": 0.0,
-          "summary": "<p sourcefile=\"api/UdpChat.Server.Program.yml\" sourcestartlinenumber=\"1\">The entry point of the server. Starts a <xref href=\"UdpChat.Server.CentralRetransmissionServer\" data-throw-if-not-resolved=\"false\"></xref> with default settings and associated services.</p>\n",
-          "type": "class",
-          "platform": null,
-          "isEii": false,
-          "docurl": "",
-          "sourceurl": "",
-          "remarks": "",
-          "conceptual": "",
-          "syntax": "",
-          "implements": "",
-          "example": "",
-          "seealso": null,
-          "id": "UdpChat_Server_Program",
-          "hideTitleType": false,
-          "hideSubtitle": false
         }
       ]
     },
@@ -138,51 +77,52 @@
       "id": "structs",
       "children": [
         {
-          "uid": "UdpChat.Server.UdpState",
+          "uid": "UdpChat.Server.ServerService",
           "isExtensionMethod": false,
-          "href": "UdpChat.Server.UdpState.html",
+          "parent": "UdpChat.Server",
+          "href": "UdpChat.Server.ServerService.html",
           "name": [
             {
               "lang": "csharp",
-              "value": "UdpState"
+              "value": "ServerService"
             },
             {
               "lang": "vb",
-              "value": "UdpState"
+              "value": "ServerService"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "UdpState"
+              "value": "ServerService"
             },
             {
               "lang": "vb",
-              "value": "UdpState"
+              "value": "ServerService"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.UdpState"
+              "value": "UdpChat.Server.ServerService"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.UdpState"
+              "value": "UdpChat.Server.ServerService"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.UdpState\" text=\"UdpState\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService\" text=\"ServerService\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.UdpState\" text=\"UdpState\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService\" text=\"ServerService\"/>"
             }
           ],
           "level": 0.0,
-          "summary": "<p sourcefile=\"api/UdpChat.Server.UdpState.yml\" sourcestartlinenumber=\"1\">A struct to hold the state of a UdpClient</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">A struct to hold the state of a UdpClient</p>\n",
           "type": "struct",
           "platform": null,
           "isEii": false,
@@ -194,7 +134,7 @@
           "implements": "",
           "example": "",
           "seealso": null,
-          "id": "UdpChat_Server_UdpState",
+          "id": "UdpChat_Server_ServerService",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -240,9 +180,16 @@
     "UdpChat.Server"
   ],
   "level": 0.0,
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",

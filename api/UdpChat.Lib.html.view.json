@@ -549,9 +549,16 @@
     "UdpChat.Lib"
   ],
   "level": 0.0,
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",

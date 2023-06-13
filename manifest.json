@@ -23,10 +23,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Client.Program.yml",
+      "source_relative_path": "api/UdpChat.Client.ClientCLI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Client.Program.html"
+          "relative_path": "api/UdpChat.Client.ClientCLI.html"
         }
       },
       "version": ""
@@ -143,20 +143,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Server.Program.yml",
+      "source_relative_path": "api/UdpChat.Server.ServerService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Server.Program.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Server.UdpState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UdpChat.Server.UdpState.html"
+          "relative_path": "api/UdpChat.Server.ServerService.html"
         }
       },
       "version": ""
@@ -196,10 +186,102 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "client/examples/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "client/examples/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "client/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "client/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "client/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "client/toc.html"
+        },
+        ".json": {
+          "relative_path": "client/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "server/examples/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "server/examples/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "server/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "server/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "server/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "server/toc.html"
+        },
+        ".json": {
+          "relative_path": "server/toc.json"
         }
       },
       "version": ""

@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Struct UdpState
+      <title>Struct ServerService
  | UDPChat </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Struct UdpState
+      <meta name="title" content="Struct ServerService
  | UDPChat ">
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Server_UdpState.md&amp;value=---%0Auid%3A%20UdpChat.Server.UdpState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_ServerService.md&amp;value=---%0Auid%3A%20UdpChat.Server.ServerService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -37,7 +37,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="UDPChat">
+            <img id="logo" class="svg" src="../images/logo.png" alt="UDPChat">
             UDPChat
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,13 +77,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="UdpChat.Server.UdpState">
+        <article data-uid="UdpChat.Server.ServerService">
 
 
 
-  <h1 id="UdpChat_Server_UdpState" data-uid="UdpChat.Server.UdpState" class="text-break">
-    Struct UdpState
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="UdpChat_Server_ServerService" data-uid="UdpChat.Server.ServerService" class="text-break">
+    Struct ServerService
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -96,7 +96,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct UdpState</code></pre>
+    <pre><code class="lang-csharp hljs">public struct ServerService</code></pre>
   </div>
 
 
@@ -137,26 +137,31 @@
 </h2>
 
 
-  <a id="UdpChat_Server_UdpState__ctor_" data-uid="UdpChat.Server.UdpState.#ctor*"></a>
+  <a id="UdpChat_Server_ServerService__ctor_" data-uid="UdpChat.Server.ServerService.#ctor*"></a>
 
-  <h3 id="UdpChat_Server_UdpState__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_" data-uid="UdpChat.Server.UdpState.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)">
-  UdpState(UdpClient, IPEndPoint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Server_ServerService__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_" data-uid="UdpChat.Server.ServerService.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)">
+  ServerService(UdpClient, IPEndPoint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A constructor to create a new ServerService with the specified client and endpoint. After a ServerService is created, it can be used to receive messages from the client.
+A handler for the received messages can be specified with the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient.beginreceive">BeginReceive(AsyncCallback, object)</a> method.
+As a handler can only accept a request at a time, it's recommended to use <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.run#system-threading-tasks-task-run(system-action)">Run(Action)</a> inside the handler to process the request inside.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UdpState(UdpClient client, IPEndPoint endpoint)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServerService(UdpClient client, IPEndPoint endpoint)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>client</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient">UdpClient</a></dt>
-    <dd></dd>
+    <dd><p>The UdpClient used for network communications.</p>
+</dd>
     <dt><code>endpoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
-    <dd></dd>
+    <dd><p>The network endpoint where the service is located.</p>
+</dd>
   </dl>
 
 
@@ -164,6 +169,39 @@
 
 
 
+
+  <h4 class="section" id="UdpChat_Server_ServerService__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint__examples">Examples</h4>
+  <pre><code class="lang-csharp">private void AuthenticationHandler(IAsyncResult res)
+{
+   if (!TryGetStateFromAsyncRes(ref res, out var clientState)) return;
+   byte[] receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint!);
+   Task.Run(() =&gt;
+   {
+       var req = System.Text.Json.JsonSerializer.Deserialize&lt;Request&gt;(receiveBytes);
+       Console.WriteLine($"Received request from {clientState.endpoint}:\n\t{req}");
+       if (req == null)
+       {
+           Console.Error.WriteLine("Error deserializing request");
+           return;
+       }
+       switch (req.Type)
+       {
+           case Request.RequestType.REGISTER:
+               HandleRegisterRequest(req, ref clientState);
+               break;
+           case Request.RequestType.LOGIN:
+               HandleLoginRequest(req, ref clientState);
+               break;
+           default:
+               Console.Error.WriteLine($"Invalid request type {req.Type}");
+               new Response(Response.State.ERROR, $"Invalid request type {req.Type}")
+                   .SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
+               break;
+       }
+   });
+   // Start a new receive operation
+   clientState.socket.BeginReceive(new AsyncCallback(AuthenticationHandler), clientState);
+}</code></pre>
 
 
 
@@ -175,9 +213,9 @@
 
 
 
-  <h3 id="UdpChat_Server_UdpState_endpoint" data-uid="UdpChat.Server.UdpState.endpoint">
+  <h3 id="UdpChat_Server_ServerService_endpoint" data-uid="UdpChat.Server.ServerService.endpoint">
   endpoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The endpoint of the client</p>
@@ -206,9 +244,9 @@
 
 
 
-  <h3 id="UdpChat_Server_UdpState_socket" data-uid="UdpChat.Server.UdpState.socket">
+  <h3 id="UdpChat_Server_ServerService_socket" data-uid="UdpChat.Server.ServerService.socket">
   socket
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The socket of the client</p>
@@ -240,7 +278,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
         
@@ -256,7 +294,7 @@
     <footer class="border-top">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          UDPChat
         </div>
       </div>
     </footer>

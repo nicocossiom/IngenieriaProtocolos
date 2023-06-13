@@ -215,7 +215,7 @@
             },
             "id": ".ctor",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 35.0,
+            "startLine": 32.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -272,8 +272,8 @@
           "type": "constructor",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage__ctor_UdpChat_Lib_ChatUser_System_String_.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.%23ctor(UdpChat.Lib.ChatUser%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L36",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage__ctor_UdpChat_Lib_ChatUser_System_String_.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.%23ctor(UdpChat.Lib.ChatUser%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L33",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -402,7 +402,7 @@
             },
             "id": "Message",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 33.0,
+            "startLine": 30.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -459,8 +459,8 @@
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage_Message.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L34",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_Message.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L31",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -582,7 +582,7 @@
             },
             "id": "Timestamp",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 31.0,
+            "startLine": 28.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -639,8 +639,8 @@
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage_Timestamp.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L32",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_Timestamp.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L29",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -762,7 +762,7 @@
             },
             "id": "User",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 29.0,
+            "startLine": 26.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -819,8 +819,8 @@
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage_User.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L30",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_User.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L27",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -836,278 +836,6 @@
       "typePropertyName": "inMethod",
       "id": "methods",
       "children": [
-        {
-          "uid": "UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)",
-          "isEii": false,
-          "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.ChatMessage",
-          "isExternal": false,
-          "name": [
-            {
-              "lang": "csharp",
-              "value": "SerializeAndSend(ref IPEndPoint, ref UdpClient)"
-            },
-            {
-              "lang": "vb",
-              "value": "SerializeAndSend(IPEndPoint, UdpClient)"
-            }
-          ],
-          "nameWithType": [
-            {
-              "lang": "csharp",
-              "value": "ChatMessage.SerializeAndSend(ref IPEndPoint, ref UdpClient)"
-            },
-            {
-              "lang": "vb",
-              "value": "ChatMessage.SerializeAndSend(IPEndPoint, UdpClient)"
-            }
-          ],
-          "fullName": [
-            {
-              "lang": "csharp",
-              "value": "UdpChat.Lib.ChatMessage.SerializeAndSend(ref System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)"
-            },
-            {
-              "lang": "vb",
-              "value": "UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
-            }
-          ],
-          "specName": [
-            {
-              "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)\" text=\"SerializeAndSend(ref IPEndPoint, ref UdpClient)\"/>"
-            },
-            {
-              "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)\" text=\"SerializeAndSend(ref IPEndPoint, ref UdpClient)\"/>"
-            }
-          ],
-          "syntax": {
-            "content": [
-              {
-                "lang": "csharp",
-                "value": "public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)"
-              },
-              {
-                "lang": "vb",
-                "value": "Public Function SerializeAndSend(endpoint As IPEndPoint, client As UdpClient) As Integer"
-              }
-            ],
-            "parameters": [
-              {
-                "id": "endpoint",
-                "type": {
-                  "uid": "System.Net.IPEndPoint",
-                  "name": [
-                    {
-                      "lang": "csharp",
-                      "value": "IPEndPoint"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "IPEndPoint"
-                    }
-                  ],
-                  "nameWithType": [
-                    {
-                      "lang": "csharp",
-                      "value": "IPEndPoint"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "IPEndPoint"
-                    }
-                  ],
-                  "fullName": [
-                    {
-                      "lang": "csharp",
-                      "value": "System.Net.IPEndPoint"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "System.Net.IPEndPoint"
-                    }
-                  ],
-                  "specName": [
-                    {
-                      "lang": "csharp",
-                      "value": "<xref uid=\"System.Net.IPEndPoint\" text=\"IPEndPoint\"/>"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "<xref uid=\"System.Net.IPEndPoint\" text=\"IPEndPoint\"/>"
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "client",
-                "type": {
-                  "uid": "System.Net.Sockets.UdpClient",
-                  "name": [
-                    {
-                      "lang": "csharp",
-                      "value": "UdpClient"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "UdpClient"
-                    }
-                  ],
-                  "nameWithType": [
-                    {
-                      "lang": "csharp",
-                      "value": "UdpClient"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "UdpClient"
-                    }
-                  ],
-                  "fullName": [
-                    {
-                      "lang": "csharp",
-                      "value": "System.Net.Sockets.UdpClient"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "System.Net.Sockets.UdpClient"
-                    }
-                  ],
-                  "specName": [
-                    {
-                      "lang": "csharp",
-                      "value": "<xref uid=\"System.Net.Sockets.UdpClient\" text=\"UdpClient\"/>"
-                    },
-                    {
-                      "lang": "vb",
-                      "value": "<xref uid=\"System.Net.Sockets.UdpClient\" text=\"UdpClient\"/>"
-                    }
-                  ]
-                }
-              }
-            ],
-            "return": {
-              "type": {
-                "uid": "System.Int32",
-                "name": [
-                  {
-                    "lang": "csharp",
-                    "value": "int"
-                  },
-                  {
-                    "lang": "vb",
-                    "value": "Integer"
-                  }
-                ],
-                "nameWithType": [
-                  {
-                    "lang": "csharp",
-                    "value": "int"
-                  },
-                  {
-                    "lang": "vb",
-                    "value": "Integer"
-                  }
-                ],
-                "fullName": [
-                  {
-                    "lang": "csharp",
-                    "value": "int"
-                  },
-                  {
-                    "lang": "vb",
-                    "value": "Integer"
-                  }
-                ],
-                "specName": [
-                  {
-                    "lang": "csharp",
-                    "value": "<xref uid=\"System.Int32\" text=\"int\"/>"
-                  },
-                  {
-                    "lang": "vb",
-                    "value": "<xref uid=\"System.Int32\" text=\"int\"/>"
-                  }
-                ]
-              }
-            }
-          },
-          "source": {
-            "remote": {
-              "path": "UdpChat.Lib/Message.cs",
-              "branch": "master",
-              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
-            },
-            "id": "SerializeAndSend",
-            "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 46.0,
-            "endLine": 0.0,
-            "isExternal": false
-          },
-          "assemblies": [
-            "UdpChat.Lib"
-          ],
-          "namespace": "UdpChat.Lib",
-          "example": [],
-          "overload": {
-            "uid": "UdpChat.Lib.ChatMessage.SerializeAndSend*",
-            "name": [
-              {
-                "lang": "csharp",
-                "value": "SerializeAndSend"
-              },
-              {
-                "lang": "vb",
-                "value": "SerializeAndSend"
-              }
-            ],
-            "nameWithType": [
-              {
-                "lang": "csharp",
-                "value": "ChatMessage.SerializeAndSend"
-              },
-              {
-                "lang": "vb",
-                "value": "ChatMessage.SerializeAndSend"
-              }
-            ],
-            "fullName": [
-              {
-                "lang": "csharp",
-                "value": "UdpChat.Lib.ChatMessage.SerializeAndSend"
-              },
-              {
-                "lang": "vb",
-                "value": "UdpChat.Lib.ChatMessage.SerializeAndSend"
-              }
-            ],
-            "specName": [
-              {
-                "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.SerializeAndSend*\" text=\"SerializeAndSend\"/>"
-              },
-              {
-                "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.SerializeAndSend*\" text=\"SerializeAndSend\"/>"
-              }
-            ],
-            "id": "UdpChat_Lib_ChatMessage_SerializeAndSend_"
-          },
-          "level": 0.0,
-          "type": "method",
-          "summary": "",
-          "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint%40%2CSystem.Net.Sockets.UdpClient%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L47",
-          "remarks": "",
-          "conceptual": "",
-          "implements": "",
-          "seealso": null,
-          "id": "UdpChat_Lib_ChatMessage_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__",
-          "hideTitleType": false,
-          "hideSubtitle": false
-        },
         {
           "uid": "UdpChat.Lib.ChatMessage.ToString",
           "isEii": false,
@@ -1220,7 +948,7 @@
             },
             "id": "ToString",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 41.0,
+            "startLine": 38.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1320,8 +1048,8 @@
           "type": "method",
           "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessage.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L42",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L39",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -1376,7 +1104,7 @@
     },
     "id": "ChatMessage",
     "path": "../UdpChat.Lib/Message.cs",
-    "startLine": 25.0,
+    "startLine": 22.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -1436,11 +1164,11 @@
     "content": [
       {
         "lang": "csharp",
-        "value": "[Serializable]\npublic class ChatMessage"
+        "value": "[Serializable]\npublic class ChatMessage : ChatSendable"
       },
       {
         "lang": "vb",
-        "value": "<Serializable>\nPublic Class ChatMessage"
+        "value": "<Serializable>\nPublic Class ChatMessage Inherits ChatSendable"
       }
     ]
   },
@@ -1494,10 +1222,215 @@
       ],
       "level": 0.0,
       "index": 0.0
+    },
+    {
+      "uid": "UdpChat.Lib.ChatSendable",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "UdpChat.Lib",
+      "href": "UdpChat.Lib.ChatSendable.html",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "UdpChat.Lib.ChatSendable"
+        },
+        {
+          "lang": "vb",
+          "value": "UdpChat.Lib.ChatSendable"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<xref uid=\"UdpChat.Lib.ChatSendable\" text=\"ChatSendable\"/>"
+        },
+        {
+          "lang": "vb",
+          "value": "<xref uid=\"UdpChat.Lib.ChatSendable\" text=\"ChatSendable\"/>"
+        }
+      ],
+      "level": 0.0,
+      "index": 1.0
     }
   ],
-  "level": 1.0,
+  "level": 2.0,
   "inheritedMembers": [
+    {
+      "uid": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)",
+      "isExtensionMethod": false,
+      "parent": "UdpChat.Lib.ChatSendable",
+      "isExternal": true,
+      "href": "UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "SerializeAndSend(ref IPEndPoint, ref UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable.SerializeAndSend(ref IPEndPoint, ref UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(ref System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)\">SerializeAndSend</a>(ref <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, ref <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        }
+      ],
+      "level": 0.0,
+      "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatSendable.yml\" sourcestartlinenumber=\"1\">Serializes the object and sends it to the specified endpoint using the specified client.</p>\n",
+      "type": "method",
+      "platform": null,
+      "isEii": false
+    },
+    {
+      "uid": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)",
+      "isExtensionMethod": false,
+      "parent": "UdpChat.Lib.ChatSendable",
+      "isExternal": true,
+      "href": "UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "SerializeAndSend(IPEndPoint, ref UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, ref UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, ref <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        }
+      ],
+      "level": 0.0,
+      "summary": null,
+      "type": "method",
+      "platform": null,
+      "isEii": false
+    },
+    {
+      "uid": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)",
+      "isExtensionMethod": false,
+      "parent": "UdpChat.Lib.ChatSendable",
+      "isExternal": true,
+      "href": "UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        }
+      ],
+      "level": 0.0,
+      "summary": null,
+      "type": "method",
+      "platform": null,
+      "isEii": false
+    },
     {
       "uid": "System.Object.Equals(System.Object)",
       "isEii": false,
@@ -1800,9 +1733,16 @@
       "arguments": []
     }
   ],
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",
@@ -1913,8 +1853,8 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_ChatMessage.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L26",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L23",
   "remarks": "",
   "conceptual": "",
   "implements": "",

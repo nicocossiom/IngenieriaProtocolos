@@ -83,28 +83,28 @@ references:
   commentId: F:UdpChat.Client.ChatClient.user
   fullName: UdpChat.Client.ChatClient.user
   nameWithType: ChatClient.user
-- uid: UdpChat.Client.Program
-  name: Program
-  href: api/UdpChat.Client.Program.html
-  commentId: T:UdpChat.Client.Program
-  fullName: UdpChat.Client.Program
-  nameWithType: Program
-- uid: UdpChat.Client.Program.Main(System.String[])
+- uid: UdpChat.Client.ClientCLI
+  name: ClientCLI
+  href: api/UdpChat.Client.ClientCLI.html
+  commentId: T:UdpChat.Client.ClientCLI
+  fullName: UdpChat.Client.ClientCLI
+  nameWithType: ClientCLI
+- uid: UdpChat.Client.ClientCLI.Main(System.String[])
   name: Main(string[])
-  href: api/UdpChat.Client.Program.html#UdpChat_Client_Program_Main_System_String___
-  commentId: M:UdpChat.Client.Program.Main(System.String[])
+  href: api/UdpChat.Client.ClientCLI.html#UdpChat_Client_ClientCLI_Main_System_String___
+  commentId: M:UdpChat.Client.ClientCLI.Main(System.String[])
   name.vb: Main(String())
-  fullName: UdpChat.Client.Program.Main(string[])
-  fullName.vb: UdpChat.Client.Program.Main(String())
-  nameWithType: Program.Main(string[])
-  nameWithType.vb: Program.Main(String())
-- uid: UdpChat.Client.Program.Main*
+  fullName: UdpChat.Client.ClientCLI.Main(string[])
+  fullName.vb: UdpChat.Client.ClientCLI.Main(String())
+  nameWithType: ClientCLI.Main(string[])
+  nameWithType.vb: ClientCLI.Main(String())
+- uid: UdpChat.Client.ClientCLI.Main*
   name: Main
-  href: api/UdpChat.Client.Program.html#UdpChat_Client_Program_Main_
-  commentId: Overload:UdpChat.Client.Program.Main
+  href: api/UdpChat.Client.ClientCLI.html#UdpChat_Client_ClientCLI_Main_
+  commentId: Overload:UdpChat.Client.ClientCLI.Main
   isSpec: "True"
-  fullName: UdpChat.Client.Program.Main
-  nameWithType: Program.Main
+  fullName: UdpChat.Client.ClientCLI.Main
+  nameWithType: ClientCLI.Main
 - uid: UdpChat.Lib
   name: UdpChat.Lib
   href: api/UdpChat.Lib.html
@@ -149,22 +149,6 @@ references:
   isSpec: "True"
   fullName: UdpChat.Lib.ChatMessage.Message
   nameWithType: ChatMessage.Message
-- uid: UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)
-  name: SerializeAndSend(ref IPEndPoint, ref UdpClient)
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__
-  commentId: M:UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)
-  name.vb: SerializeAndSend(IPEndPoint, UdpClient)
-  fullName: UdpChat.Lib.ChatMessage.SerializeAndSend(ref System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)
-  fullName.vb: UdpChat.Lib.ChatMessage.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)
-  nameWithType: ChatMessage.SerializeAndSend(ref IPEndPoint, ref UdpClient)
-  nameWithType.vb: ChatMessage.SerializeAndSend(IPEndPoint, UdpClient)
-- uid: UdpChat.Lib.ChatMessage.SerializeAndSend*
-  name: SerializeAndSend
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_SerializeAndSend_
-  commentId: Overload:UdpChat.Lib.ChatMessage.SerializeAndSend
-  isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessage.SerializeAndSend
-  nameWithType: ChatMessage.SerializeAndSend
 - uid: UdpChat.Lib.ChatMessage.Timestamp
   name: Timestamp
   href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_Timestamp
@@ -210,15 +194,15 @@ references:
   commentId: T:UdpChat.Lib.ChatMessageResponse
   fullName: UdpChat.Lib.ChatMessageResponse
   nameWithType: ChatMessageResponse
-- uid: UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean)
-  name: ChatMessageResponse(bool)
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse__ctor_System_Boolean_
-  commentId: M:UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean)
-  name.vb: New(Boolean)
-  fullName: UdpChat.Lib.ChatMessageResponse.ChatMessageResponse(bool)
-  fullName.vb: UdpChat.Lib.ChatMessageResponse.New(Boolean)
-  nameWithType: ChatMessageResponse.ChatMessageResponse(bool)
-  nameWithType.vb: ChatMessageResponse.New(Boolean)
+- uid: UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean,System.Int32)
+  name: ChatMessageResponse(bool, int)
+  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse__ctor_System_Boolean_System_Int32_
+  commentId: M:UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean,System.Int32)
+  name.vb: New(Boolean, Integer)
+  fullName: UdpChat.Lib.ChatMessageResponse.ChatMessageResponse(bool, int)
+  fullName.vb: UdpChat.Lib.ChatMessageResponse.New(Boolean, Integer)
+  nameWithType: ChatMessageResponse.ChatMessageResponse(bool, int)
+  nameWithType.vb: ChatMessageResponse.New(Boolean, Integer)
 - uid: UdpChat.Lib.ChatMessageResponse.#ctor*
   name: ChatMessageResponse
   href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse__ctor_
@@ -229,35 +213,32 @@ references:
   fullName.vb: UdpChat.Lib.ChatMessageResponse.New
   nameWithType: ChatMessageResponse.ChatMessageResponse
   nameWithType.vb: ChatMessageResponse.New
-- uid: UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly
-  name: ReceivedCorrectly
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_ReceivedCorrectly
-  commentId: P:UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly
-  fullName: UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly
-  nameWithType: ChatMessageResponse.ReceivedCorrectly
-- uid: UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly*
-  name: ReceivedCorrectly
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_ReceivedCorrectly_
-  commentId: Overload:UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly
+- uid: UdpChat.Lib.ChatMessageResponse.Received
+  name: Received
+  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_Received
+  commentId: P:UdpChat.Lib.ChatMessageResponse.Received
+  fullName: UdpChat.Lib.ChatMessageResponse.Received
+  nameWithType: ChatMessageResponse.Received
+- uid: UdpChat.Lib.ChatMessageResponse.Received*
+  name: Received
+  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_Received_
+  commentId: Overload:UdpChat.Lib.ChatMessageResponse.Received
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessageResponse.ReceivedCorrectly
-  nameWithType: ChatMessageResponse.ReceivedCorrectly
-- uid: UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)
-  name: SerializeAndSend(ref IPEndPoint, ref UdpClient)
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__
-  commentId: M:UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)
-  name.vb: SerializeAndSend(IPEndPoint, UdpClient)
-  fullName: UdpChat.Lib.ChatMessageResponse.SerializeAndSend(ref System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)
-  fullName.vb: UdpChat.Lib.ChatMessageResponse.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)
-  nameWithType: ChatMessageResponse.SerializeAndSend(ref IPEndPoint, ref UdpClient)
-  nameWithType.vb: ChatMessageResponse.SerializeAndSend(IPEndPoint, UdpClient)
-- uid: UdpChat.Lib.ChatMessageResponse.SerializeAndSend*
-  name: SerializeAndSend
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_SerializeAndSend_
-  commentId: Overload:UdpChat.Lib.ChatMessageResponse.SerializeAndSend
+  fullName: UdpChat.Lib.ChatMessageResponse.Received
+  nameWithType: ChatMessageResponse.Received
+- uid: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
+  name: RetransmittedNTimes
+  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_RetransmittedNTimes
+  commentId: P:UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
+  fullName: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
+  nameWithType: ChatMessageResponse.RetransmittedNTimes
+- uid: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes*
+  name: RetransmittedNTimes
+  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_RetransmittedNTimes_
+  commentId: Overload:UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessageResponse.SerializeAndSend
-  nameWithType: ChatMessageResponse.SerializeAndSend
+  fullName: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
+  nameWithType: ChatMessageResponse.RetransmittedNTimes
 - uid: UdpChat.Lib.ChatMessageResponse.ToString
   name: ToString()
   href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_ToString
@@ -277,6 +258,21 @@ references:
   commentId: T:UdpChat.Lib.ChatSendable
   fullName: UdpChat.Lib.ChatSendable
   nameWithType: ChatSendable
+- uid: UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)
+  name: SerializeAndSend(IPEndPoint, UdpClient)
+  href: api/UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint_System_Net_Sockets_UdpClient_
+  commentId: M:UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)
+  fullName: UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)
+  nameWithType: ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)
+- uid: UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)
+  name: SerializeAndSend(IPEndPoint, ref UdpClient)
+  href: api/UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint_System_Net_Sockets_UdpClient__
+  commentId: M:UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)
+  name.vb: SerializeAndSend(IPEndPoint, UdpClient)
+  fullName: UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)
+  fullName.vb: UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)
+  nameWithType: ChatSendable.SerializeAndSend(IPEndPoint, ref UdpClient)
+  nameWithType.vb: ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)
 - uid: UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint@,System.Net.Sockets.UdpClient@)
   name: SerializeAndSend(ref IPEndPoint, ref UdpClient)
   href: api/UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__
@@ -583,38 +579,64 @@ references:
   fullName.vb: UdpChat.Server.CentralRetransmissionServer.New
   nameWithType: CentralRetransmissionServer.CentralRetransmissionServer
   nameWithType.vb: CentralRetransmissionServer.New
-- uid: UdpChat.Server.CentralRetransmissionServer.LoginUser(System.String,System.String)
-  name: LoginUser(string, string)
-  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_LoginUser_System_String_System_String_
-  commentId: M:UdpChat.Server.CentralRetransmissionServer.LoginUser(System.String,System.String)
-  name.vb: LoginUser(String, String)
-  fullName: UdpChat.Server.CentralRetransmissionServer.LoginUser(string, string)
-  fullName.vb: UdpChat.Server.CentralRetransmissionServer.LoginUser(String, String)
-  nameWithType: CentralRetransmissionServer.LoginUser(string, string)
-  nameWithType.vb: CentralRetransmissionServer.LoginUser(String, String)
-- uid: UdpChat.Server.CentralRetransmissionServer.LoginUser*
-  name: LoginUser
-  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_LoginUser_
-  commentId: Overload:UdpChat.Server.CentralRetransmissionServer.LoginUser
+- uid: UdpChat.Server.CentralRetransmissionServer.authenticationService
+  name: authenticationService
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_authenticationService
+  commentId: P:UdpChat.Server.CentralRetransmissionServer.authenticationService
+  fullName: UdpChat.Server.CentralRetransmissionServer.authenticationService
+  nameWithType: CentralRetransmissionServer.authenticationService
+- uid: UdpChat.Server.CentralRetransmissionServer.authenticationService*
+  name: authenticationService
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_authenticationService_
+  commentId: Overload:UdpChat.Server.CentralRetransmissionServer.authenticationService
   isSpec: "True"
-  fullName: UdpChat.Server.CentralRetransmissionServer.LoginUser
-  nameWithType: CentralRetransmissionServer.LoginUser
-- uid: UdpChat.Server.CentralRetransmissionServer.RegisterUser(System.String,System.String,System.String,System.Int32)
-  name: RegisterUser(string, string, string, int)
-  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_RegisterUser_System_String_System_String_System_String_System_Int32_
-  commentId: M:UdpChat.Server.CentralRetransmissionServer.RegisterUser(System.String,System.String,System.String,System.Int32)
-  name.vb: RegisterUser(String, String, String, Integer)
-  fullName: UdpChat.Server.CentralRetransmissionServer.RegisterUser(string, string, string, int)
-  fullName.vb: UdpChat.Server.CentralRetransmissionServer.RegisterUser(String, String, String, Integer)
-  nameWithType: CentralRetransmissionServer.RegisterUser(string, string, string, int)
-  nameWithType.vb: CentralRetransmissionServer.RegisterUser(String, String, String, Integer)
-- uid: UdpChat.Server.CentralRetransmissionServer.RegisterUser*
-  name: RegisterUser
-  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_RegisterUser_
-  commentId: Overload:UdpChat.Server.CentralRetransmissionServer.RegisterUser
+  fullName: UdpChat.Server.CentralRetransmissionServer.authenticationService
+  nameWithType: CentralRetransmissionServer.authenticationService
+- uid: UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)
+  name: LoginUserAsync(string, string)
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_
+  commentId: M:UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)
+  name.vb: LoginUserAsync(String, String)
+  fullName: UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(string, string)
+  fullName.vb: UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(String, String)
+  nameWithType: CentralRetransmissionServer.LoginUserAsync(string, string)
+  nameWithType.vb: CentralRetransmissionServer.LoginUserAsync(String, String)
+- uid: UdpChat.Server.CentralRetransmissionServer.LoginUserAsync*
+  name: LoginUserAsync
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_
+  commentId: Overload:UdpChat.Server.CentralRetransmissionServer.LoginUserAsync
   isSpec: "True"
-  fullName: UdpChat.Server.CentralRetransmissionServer.RegisterUser
-  nameWithType: CentralRetransmissionServer.RegisterUser
+  fullName: UdpChat.Server.CentralRetransmissionServer.LoginUserAsync
+  nameWithType: CentralRetransmissionServer.LoginUserAsync
+- uid: UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync(System.String,System.String,System.String,System.Int32)
+  name: RegisterUserAsync(string, string, string, int)
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_RegisterUserAsync_System_String_System_String_System_String_System_Int32_
+  commentId: M:UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync(System.String,System.String,System.String,System.Int32)
+  name.vb: RegisterUserAsync(String, String, String, Integer)
+  fullName: UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync(string, string, string, int)
+  fullName.vb: UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync(String, String, String, Integer)
+  nameWithType: CentralRetransmissionServer.RegisterUserAsync(string, string, string, int)
+  nameWithType.vb: CentralRetransmissionServer.RegisterUserAsync(String, String, String, Integer)
+- uid: UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync*
+  name: RegisterUserAsync
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_RegisterUserAsync_
+  commentId: Overload:UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync
+  isSpec: "True"
+  fullName: UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync
+  nameWithType: CentralRetransmissionServer.RegisterUserAsync
+- uid: UdpChat.Server.CentralRetransmissionServer.retransmissionService
+  name: retransmissionService
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_retransmissionService
+  commentId: P:UdpChat.Server.CentralRetransmissionServer.retransmissionService
+  fullName: UdpChat.Server.CentralRetransmissionServer.retransmissionService
+  nameWithType: CentralRetransmissionServer.retransmissionService
+- uid: UdpChat.Server.CentralRetransmissionServer.retransmissionService*
+  name: retransmissionService
+  href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_retransmissionService_
+  commentId: Overload:UdpChat.Server.CentralRetransmissionServer.retransmissionService
+  isSpec: "True"
+  fullName: UdpChat.Server.CentralRetransmissionServer.retransmissionService
+  nameWithType: CentralRetransmissionServer.retransmissionService
 - uid: UdpChat.Server.CentralRetransmissionServer.Start
   name: Start()
   href: api/UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_Start
@@ -667,46 +689,40 @@ references:
   isSpec: "True"
   fullName: UdpChat.Server.CentralRetransmissionServer.Stop
   nameWithType: CentralRetransmissionServer.Stop
-- uid: UdpChat.Server.Program
-  name: Program
-  href: api/UdpChat.Server.Program.html
-  commentId: T:UdpChat.Server.Program
-  fullName: UdpChat.Server.Program
-  nameWithType: Program
-- uid: UdpChat.Server.UdpState
-  name: UdpState
-  href: api/UdpChat.Server.UdpState.html
-  commentId: T:UdpChat.Server.UdpState
-  fullName: UdpChat.Server.UdpState
-  nameWithType: UdpState
-- uid: UdpChat.Server.UdpState.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
-  name: UdpState(UdpClient, IPEndPoint)
-  href: api/UdpChat.Server.UdpState.html#UdpChat_Server_UdpState__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_
-  commentId: M:UdpChat.Server.UdpState.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
+- uid: UdpChat.Server.ServerService
+  name: ServerService
+  href: api/UdpChat.Server.ServerService.html
+  commentId: T:UdpChat.Server.ServerService
+  fullName: UdpChat.Server.ServerService
+  nameWithType: ServerService
+- uid: UdpChat.Server.ServerService.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
+  name: ServerService(UdpClient, IPEndPoint)
+  href: api/UdpChat.Server.ServerService.html#UdpChat_Server_ServerService__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_
+  commentId: M:UdpChat.Server.ServerService.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
   name.vb: New(UdpClient, IPEndPoint)
-  fullName: UdpChat.Server.UdpState.UdpState(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)
-  fullName.vb: UdpChat.Server.UdpState.New(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)
-  nameWithType: UdpState.UdpState(UdpClient, IPEndPoint)
-  nameWithType.vb: UdpState.New(UdpClient, IPEndPoint)
-- uid: UdpChat.Server.UdpState.#ctor*
-  name: UdpState
-  href: api/UdpChat.Server.UdpState.html#UdpChat_Server_UdpState__ctor_
-  commentId: Overload:UdpChat.Server.UdpState.#ctor
+  fullName: UdpChat.Server.ServerService.ServerService(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)
+  fullName.vb: UdpChat.Server.ServerService.New(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)
+  nameWithType: ServerService.ServerService(UdpClient, IPEndPoint)
+  nameWithType.vb: ServerService.New(UdpClient, IPEndPoint)
+- uid: UdpChat.Server.ServerService.#ctor*
+  name: ServerService
+  href: api/UdpChat.Server.ServerService.html#UdpChat_Server_ServerService__ctor_
+  commentId: Overload:UdpChat.Server.ServerService.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: UdpChat.Server.UdpState.UdpState
-  fullName.vb: UdpChat.Server.UdpState.New
-  nameWithType: UdpState.UdpState
-  nameWithType.vb: UdpState.New
-- uid: UdpChat.Server.UdpState.endpoint
+  fullName: UdpChat.Server.ServerService.ServerService
+  fullName.vb: UdpChat.Server.ServerService.New
+  nameWithType: ServerService.ServerService
+  nameWithType.vb: ServerService.New
+- uid: UdpChat.Server.ServerService.endpoint
   name: endpoint
-  href: api/UdpChat.Server.UdpState.html#UdpChat_Server_UdpState_endpoint
-  commentId: F:UdpChat.Server.UdpState.endpoint
-  fullName: UdpChat.Server.UdpState.endpoint
-  nameWithType: UdpState.endpoint
-- uid: UdpChat.Server.UdpState.socket
+  href: api/UdpChat.Server.ServerService.html#UdpChat_Server_ServerService_endpoint
+  commentId: F:UdpChat.Server.ServerService.endpoint
+  fullName: UdpChat.Server.ServerService.endpoint
+  nameWithType: ServerService.endpoint
+- uid: UdpChat.Server.ServerService.socket
   name: socket
-  href: api/UdpChat.Server.UdpState.html#UdpChat_Server_UdpState_socket
-  commentId: F:UdpChat.Server.UdpState.socket
-  fullName: UdpChat.Server.UdpState.socket
-  nameWithType: UdpState.socket
+  href: api/UdpChat.Server.ServerService.html#UdpChat_Server_ServerService_socket
+  commentId: F:UdpChat.Server.ServerService.socket
+  fullName: UdpChat.Server.ServerService.socket
+  nameWithType: ServerService.socket

@@ -1,7 +1,17 @@
 {
   "items": [
     {
-      "name": "Api Documentation",
+      "name": "Home",
+      "href": "index.html",
+      "topicHref": "index.html",
+      "homepage": "index.html",
+      "tocHref": null,
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Code Documentation",
       "href": "api/index.html",
       "tocHref": "api/toc.html",
       "topicHref": "api/index.html",
@@ -9,11 +19,38 @@
       "level": 2.0,
       "items": [],
       "leaf": true
+    },
+    {
+      "name": "Server CLI Documentation",
+      "href": "server/index.html",
+      "tocHref": "server/toc.html",
+      "topicHref": "server/index.html",
+      "homepage": "server/index.html",
+      "level": 2.0,
+      "items": [],
+      "leaf": true
+    },
+    {
+      "name": "Client CLI Documentation",
+      "href": "client/index.html",
+      "tocHref": "client/toc.html",
+      "topicHref": "client/index.html",
+      "homepage": "client/index.html",
+      "level": 2.0,
+      "items": [],
+      "leaf": true
     }
   ],
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_key": "toc.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",

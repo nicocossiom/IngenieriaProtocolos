@@ -1,5 +1,5 @@
 {
-  "uid": "UdpChat.Client.Program",
+  "uid": "UdpChat.Client.ClientCLI",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
@@ -56,10 +56,10 @@
       "id": "methods",
       "children": [
         {
-          "uid": "UdpChat.Client.Program.Main(System.String[])",
+          "uid": "UdpChat.Client.ClientCLI.Main(System.String[])",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Client.Program",
+          "parent": "UdpChat.Client.ClientCLI",
           "isExternal": false,
           "name": [
             {
@@ -74,42 +74,42 @@
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "Program.Main(string[])"
+              "value": "ClientCLI.Main(string[])"
             },
             {
               "lang": "vb",
-              "value": "Program.Main(String())"
+              "value": "ClientCLI.Main(String())"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.Program.Main(string[])"
+              "value": "UdpChat.Client.ClientCLI.Main(string[])"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.Program.Main(String())"
+              "value": "UdpChat.Client.ClientCLI.Main(String())"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.Program.Main(System.String[])\" text=\"Main(string[])\"/>"
+              "value": "<xref uid=\"UdpChat.Client.ClientCLI.Main(System.String[])\" text=\"Main(string[])\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.Program.Main(System.String[])\" text=\"Main(string[])\"/>"
+              "value": "<xref uid=\"UdpChat.Client.ClientCLI.Main(System.String[])\" text=\"Main(string[])\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public void Main(string[] args)"
+                "value": "public static void Main(string[] args)"
               },
               {
                 "lang": "vb",
-                "value": "Public Sub Main(args As String())"
+                "value": "Public Shared Sub Main(args As String())"
               }
             ],
             "parameters": [
@@ -163,13 +163,13 @@
           },
           "source": {
             "remote": {
-              "path": "UdpChat.Client/Program.cs",
+              "path": "UdpChat.Client/ClientCLI.cs",
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
             "id": "Main",
-            "path": "../UdpChat.Client/Program.cs",
-            "startLine": 217.0,
+            "path": "../UdpChat.Client/ClientCLI.cs",
+            "startLine": 115.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -179,7 +179,7 @@
           "namespace": "UdpChat.Client",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Client.Program.Main*",
+            "uid": "UdpChat.Client.ClientCLI.Main*",
             "name": [
               {
                 "lang": "csharp",
@@ -193,46 +193,46 @@
             "nameWithType": [
               {
                 "lang": "csharp",
-                "value": "Program.Main"
+                "value": "ClientCLI.Main"
               },
               {
                 "lang": "vb",
-                "value": "Program.Main"
+                "value": "ClientCLI.Main"
               }
             ],
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Client.Program.Main"
+                "value": "UdpChat.Client.ClientCLI.Main"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Client.Program.Main"
+                "value": "UdpChat.Client.ClientCLI.Main"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Client.Program.Main*\" text=\"Main\"/>"
+                "value": "<xref uid=\"UdpChat.Client.ClientCLI.Main*\" text=\"Main\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Client.Program.Main*\" text=\"Main\"/>"
+                "value": "<xref uid=\"UdpChat.Client.ClientCLI.Main*\" text=\"Main\"/>"
               }
             ],
-            "id": "UdpChat_Client_Program_Main_"
+            "id": "UdpChat_Client_ClientCLI_Main_"
           },
           "level": 0.0,
           "type": "method",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Client_Program_Main_System_String___.md&value=---%0Auid%3A%20UdpChat.Client.Program.Main(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/Program.cs/#L218",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ClientCLI_Main_System_String___.md&value=---%0Auid%3A%20UdpChat.Client.ClientCLI.Main(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ClientCLI.cs/#L116",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Client_Program_Main_System_String___",
+          "id": "UdpChat_Client_ClientCLI_Main_System_String___",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -246,43 +246,43 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "Program"
+      "value": "ClientCLI"
     },
     {
       "lang": "vb",
-      "value": "Program"
+      "value": "ClientCLI"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "Program"
+      "value": "ClientCLI"
     },
     {
       "lang": "vb",
-      "value": "Program"
+      "value": "ClientCLI"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client.Program"
+      "value": "UdpChat.Client.ClientCLI"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client.Program"
+      "value": "UdpChat.Client.ClientCLI"
     }
   ],
   "type": "class",
   "source": {
     "remote": {
-      "path": "UdpChat.Client/Program.cs",
+      "path": "UdpChat.Client/ClientCLI.cs",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
-    "id": "Program",
-    "path": "../UdpChat.Client/Program.cs",
-    "startLine": 113.0,
+    "id": "ClientCLI",
+    "path": "../UdpChat.Client/ClientCLI.cs",
+    "startLine": 9.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -336,17 +336,17 @@
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Client.Program.yml\" sourcestartlinenumber=\"1\">The program class, contains the entry point of the program for the client application</p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Client.ClientCLI.yml\" sourcestartlinenumber=\"1\">The ClientCLI class is a command line interface for the client.\nIt is used to create a <xref href=\"UdpChat.Client.ChatClient\" data-throw-if-not-resolved=\"false\"></xref> instance with default or custom settings.\nSee <a href=\"/client\">Client CLI Documentation</a> for more information.</p>\n",
   "example": [],
   "syntax": {
     "content": [
       {
         "lang": "csharp",
-        "value": "public class Program"
+        "value": "public class ClientCLI"
       },
       {
         "lang": "vb",
-        "value": "Public Class Program"
+        "value": "Public Class ClientCLI"
       }
     ]
   },
@@ -748,9 +748,16 @@
       "level": 0.0
     }
   ],
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",
@@ -787,11 +794,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Client.Program.yml",
+  "_key": "api/UdpChat.Client.ClientCLI.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Client.Program.html",
+  "_path": "api/UdpChat.Client.ClientCLI.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -861,13 +868,13 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Client_Program.md&value=---%0Auid%3A%20UdpChat.Client.Program%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/Program.cs/#L114",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ClientCLI.md&value=---%0Auid%3A%20UdpChat.Client.ClientCLI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ClientCLI.cs/#L10",
   "remarks": "",
   "conceptual": "",
   "implements": "",
   "seealso": null,
-  "id": "UdpChat_Client_Program",
+  "id": "UdpChat_Client_ClientCLI",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": true,

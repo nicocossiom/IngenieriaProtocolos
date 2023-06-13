@@ -1,9 +1,9 @@
 {
-  "conceptual": "\n<p sourcefile=\"index.md\" sourcestartlinenumber=\"3\">This chat app is a simple UDP client/server application that allows multiple clients\nto connect to a server and send messages to each other. The server is able to handle\nmultiple clients at once and will broadcast messages to all connected clients.</p>\n",
+  "conceptual": "\n<p sourcefile=\"server/index.md\" sourcestartlinenumber=\"4\">This is the documentation for the server CLI of UDPChat.</p>\n<p sourcefile=\"server/index.md\" sourcestartlinenumber=\"6\">This CLI launches a server that can be used for the UDPChat client.</p>\n<h2 id=\"how-to-use\" sourcefile=\"server/index.md\" sourcestartlinenumber=\"8\">How to use</h2>\n",
   "type": "Conceptual",
   "source": {
     "remote": {
-      "path": "docfx_project/index.md",
+      "path": "docfx_project/server/index.md",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
@@ -11,10 +11,10 @@
     "endLine": 0.0,
     "isExternal": false
   },
-  "path": "index.md",
+  "path": "server/index.md",
   "documentation": {
     "remote": {
-      "path": "docfx_project/index.md",
+      "path": "docfx_project/server/index.md",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
@@ -42,17 +42,17 @@
     "rawTitle",
     "wordCount"
   ],
-  "rawTitle": "<h1 id=\"udp-multichat-cli-application\" sourcefile=\"index.md\" sourcestartlinenumber=\"1\">UDP Multichat CLI Application</h1>",
-  "title": "UDP Multichat CLI Application",
-  "wordCount": 42.0,
-  "_key": "index.md",
+  "rawTitle": "<h1 id=\"server-cli-documentation\" sourcefile=\"server/index.md\" sourcestartlinenumber=\"2\">Server CLI Documentation</h1>",
+  "title": "Server CLI Documentation",
+  "wordCount": 26.0,
+  "_key": "server/index.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
-  "_navRel": "toc.html",
-  "_path": "index.html",
-  "_rel": "",
-  "_tocKey": "~/toc.yml",
-  "_tocPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "server/index.html",
+  "_rel": "../",
+  "_tocKey": "~/server/toc.yml",
+  "_tocPath": "server/toc.html",
   "_tocRel": "toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",
@@ -118,6 +118,6 @@
     "backToTop": "Back to top",
     "_shared": {}
   },
-  "_disableToc": true,
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/index.md/#L1"
+  "_disableToc": false,
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/server/index.md/#L1"
 }

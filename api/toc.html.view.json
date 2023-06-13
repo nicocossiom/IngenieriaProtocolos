@@ -17,10 +17,10 @@
           "leaf": true
         },
         {
-          "name": "Program",
-          "href": "UdpChat.Client.Program.html",
-          "topicHref": "UdpChat.Client.Program.html",
-          "topicUid": "UdpChat.Client.Program",
+          "name": "ClientCLI",
+          "href": "UdpChat.Client.ClientCLI.html",
+          "topicHref": "UdpChat.Client.ClientCLI.html",
+          "topicUid": "UdpChat.Client.ClientCLI",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -137,20 +137,10 @@
           "leaf": true
         },
         {
-          "name": "Program",
-          "href": "UdpChat.Server.Program.html",
-          "topicHref": "UdpChat.Server.Program.html",
-          "topicUid": "UdpChat.Server.Program",
-          "tocHref": null,
-          "level": 3.0,
-          "items": [],
-          "leaf": true
-        },
-        {
-          "name": "UdpState",
-          "href": "UdpChat.Server.UdpState.html",
-          "topicHref": "UdpChat.Server.UdpState.html",
-          "topicUid": "UdpChat.Server.UdpState",
+          "name": "ServerService",
+          "href": "UdpChat.Server.ServerService.html",
+          "topicHref": "UdpChat.Server.ServerService.html",
+          "topicUid": "UdpChat.Server.ServerService",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -162,9 +152,16 @@
     }
   ],
   "memberLayout": "SamePage",
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_key": "api/toc.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",

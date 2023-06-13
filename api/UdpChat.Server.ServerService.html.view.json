@@ -1,5 +1,5 @@
 {
-  "uid": "UdpChat.Server.UdpState",
+  "uid": "UdpChat.Server.ServerService",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
@@ -56,15 +56,15 @@
       "id": "constructors",
       "children": [
         {
-          "uid": "UdpChat.Server.UdpState.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)",
+          "uid": "UdpChat.Server.ServerService.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Server.UdpState",
+          "parent": "UdpChat.Server.ServerService",
           "isExternal": false,
           "name": [
             {
               "lang": "csharp",
-              "value": "UdpState(UdpClient, IPEndPoint)"
+              "value": "ServerService(UdpClient, IPEndPoint)"
             },
             {
               "lang": "vb",
@@ -74,38 +74,38 @@
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "UdpState.UdpState(UdpClient, IPEndPoint)"
+              "value": "ServerService.ServerService(UdpClient, IPEndPoint)"
             },
             {
               "lang": "vb",
-              "value": "UdpState.New(UdpClient, IPEndPoint)"
+              "value": "ServerService.New(UdpClient, IPEndPoint)"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.UdpState.UdpState(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)"
+              "value": "UdpChat.Server.ServerService.ServerService(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.UdpState.New(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)"
+              "value": "UdpChat.Server.ServerService.New(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.UdpState.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)\" text=\"UdpState(UdpClient, IPEndPoint)\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)\" text=\"ServerService(UdpClient, IPEndPoint)\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.UdpState.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)\" text=\"UdpState(UdpClient, IPEndPoint)\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)\" text=\"ServerService(UdpClient, IPEndPoint)\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public UdpState(UdpClient client, IPEndPoint endpoint)"
+                "value": "public ServerService(UdpClient client, IPEndPoint endpoint)"
               },
               {
                 "lang": "vb",
@@ -157,7 +157,8 @@
                       "value": "<xref uid=\"System.Net.Sockets.UdpClient\" text=\"UdpClient\"/>"
                     }
                   ]
-                }
+                },
+                "description": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">The UdpClient used for network communications.</p>\n"
               },
               {
                 "id": "endpoint",
@@ -203,19 +204,20 @@
                       "value": "<xref uid=\"System.Net.IPEndPoint\" text=\"IPEndPoint\"/>"
                     }
                   ]
-                }
+                },
+                "description": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">The network endpoint where the service is located.</p>\n"
               }
             ]
           },
           "source": {
             "remote": {
-              "path": "UdpChat.Server/Program.cs",
+              "path": "UdpChat.Server/Server.cs",
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
             "id": ".ctor",
-            "path": "../UdpChat.Server/Program.cs",
-            "startLine": 21.0,
+            "path": "../UdpChat.Server/Server.cs",
+            "startLine": 63.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -223,13 +225,15 @@
             "UdpChat.Server"
           ],
           "namespace": "UdpChat.Server",
-          "example": [],
+          "example": [
+            "<pre><code class=\"lang-csharp\">private void AuthenticationHandler(IAsyncResult res)\n{\n   if (!TryGetStateFromAsyncRes(ref res, out var clientState)) return;\n   byte[] receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint!);\n   Task.Run(() =&gt;\n   {\n       var req = System.Text.Json.JsonSerializer.Deserialize&lt;Request&gt;(receiveBytes);\n       Console.WriteLine($\"Received request from {clientState.endpoint}:\\n\\t{req}\");\n       if (req == null)\n       {\n           Console.Error.WriteLine(\"Error deserializing request\");\n           return;\n       }\n       switch (req.Type)\n       {\n           case Request.RequestType.REGISTER:\n               HandleRegisterRequest(req, ref clientState);\n               break;\n           case Request.RequestType.LOGIN:\n               HandleLoginRequest(req, ref clientState);\n               break;\n           default:\n               Console.Error.WriteLine($\"Invalid request type {req.Type}\");\n               new Response(Response.State.ERROR, $\"Invalid request type {req.Type}\")\n                   .SerializeAndSend(ref clientState.endpoint, ref clientState.socket);\n               break;\n       }\n   });\n   // Start a new receive operation\n   clientState.socket.BeginReceive(new AsyncCallback(AuthenticationHandler), clientState);\n}</code></pre>\n"
+          ],
           "overload": {
-            "uid": "UdpChat.Server.UdpState.#ctor*",
+            "uid": "UdpChat.Server.ServerService.#ctor*",
             "name": [
               {
                 "lang": "csharp",
-                "value": "UdpState"
+                "value": "ServerService"
               },
               {
                 "lang": "vb",
@@ -239,46 +243,46 @@
             "nameWithType": [
               {
                 "lang": "csharp",
-                "value": "UdpState.UdpState"
+                "value": "ServerService.ServerService"
               },
               {
                 "lang": "vb",
-                "value": "UdpState.New"
+                "value": "ServerService.New"
               }
             ],
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Server.UdpState.UdpState"
+                "value": "UdpChat.Server.ServerService.ServerService"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Server.UdpState.New"
+                "value": "UdpChat.Server.ServerService.New"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Server.UdpState.#ctor*\" text=\"UdpState\"/>"
+                "value": "<xref uid=\"UdpChat.Server.ServerService.#ctor*\" text=\"ServerService\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Server.UdpState.#ctor*\" text=\"UdpState\"/>"
+                "value": "<xref uid=\"UdpChat.Server.ServerService.#ctor*\" text=\"ServerService\"/>"
               }
             ],
-            "id": "UdpChat_Server_UdpState__ctor_"
+            "id": "UdpChat_Server_ServerService__ctor_"
           },
           "level": 0.0,
           "type": "constructor",
-          "summary": "",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">A constructor to create a new ServerService with the specified client and endpoint. After a ServerService is created, it can be used to receive messages from the client.\nA handler for the received messages can be specified with the <xref href=\"System.Net.Sockets.UdpClient.BeginReceive(System.AsyncCallback%2cSystem.Object)\" data-throw-if-not-resolved=\"false\"></xref> method.\nAs a handler can only accept a request at a time, it's recommended to use <xref href=\"System.Threading.Tasks.Task.Run(System.Action)\" data-throw-if-not-resolved=\"false\"></xref> inside the handler to process the request inside.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Server_UdpState__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_.md&value=---%0Auid%3A%20UdpChat.Server.UdpState.%23ctor(System.Net.Sockets.UdpClient%2CSystem.Net.IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L22",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_ServerService__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_.md&value=---%0Auid%3A%20UdpChat.Server.ServerService.%23ctor(System.Net.Sockets.UdpClient%2CSystem.Net.IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L64",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_UdpState__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_",
+          "id": "UdpChat_Server_ServerService__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -290,10 +294,10 @@
       "id": "fields",
       "children": [
         {
-          "uid": "UdpChat.Server.UdpState.endpoint",
+          "uid": "UdpChat.Server.ServerService.endpoint",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Server.UdpState",
+          "parent": "UdpChat.Server.ServerService",
           "isExternal": false,
           "name": [
             {
@@ -308,31 +312,31 @@
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "UdpState.endpoint"
+              "value": "ServerService.endpoint"
             },
             {
               "lang": "vb",
-              "value": "UdpState.endpoint"
+              "value": "ServerService.endpoint"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.UdpState.endpoint"
+              "value": "UdpChat.Server.ServerService.endpoint"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.UdpState.endpoint"
+              "value": "UdpChat.Server.ServerService.endpoint"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.UdpState.endpoint\" text=\"endpoint\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService.endpoint\" text=\"endpoint\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.UdpState.endpoint\" text=\"endpoint\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService.endpoint\" text=\"endpoint\"/>"
             }
           ],
           "syntax": {
@@ -395,13 +399,13 @@
           },
           "source": {
             "remote": {
-              "path": "UdpChat.Server/Program.cs",
+              "path": "UdpChat.Server/Server.cs",
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
             "id": "endpoint",
-            "path": "../UdpChat.Server/Program.cs",
-            "startLine": 18.0,
+            "path": "../UdpChat.Server/Server.cs",
+            "startLine": 19.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -412,23 +416,23 @@
           "example": [],
           "level": 0.0,
           "type": "field",
-          "summary": "<p sourcefile=\"api/UdpChat.Server.UdpState.yml\" sourcestartlinenumber=\"1\">The endpoint of the client</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">The endpoint of the client</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Server_UdpState_endpoint.md&value=---%0Auid%3A%20UdpChat.Server.UdpState.endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L19",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_ServerService_endpoint.md&value=---%0Auid%3A%20UdpChat.Server.ServerService.endpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L20",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_UdpState_endpoint",
+          "id": "UdpChat_Server_ServerService_endpoint",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Server.UdpState.socket",
+          "uid": "UdpChat.Server.ServerService.socket",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Server.UdpState",
+          "parent": "UdpChat.Server.ServerService",
           "isExternal": false,
           "name": [
             {
@@ -443,31 +447,31 @@
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "UdpState.socket"
+              "value": "ServerService.socket"
             },
             {
               "lang": "vb",
-              "value": "UdpState.socket"
+              "value": "ServerService.socket"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.UdpState.socket"
+              "value": "UdpChat.Server.ServerService.socket"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.UdpState.socket"
+              "value": "UdpChat.Server.ServerService.socket"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.UdpState.socket\" text=\"socket\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService.socket\" text=\"socket\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.UdpState.socket\" text=\"socket\"/>"
+              "value": "<xref uid=\"UdpChat.Server.ServerService.socket\" text=\"socket\"/>"
             }
           ],
           "syntax": {
@@ -530,13 +534,13 @@
           },
           "source": {
             "remote": {
-              "path": "UdpChat.Server/Program.cs",
+              "path": "UdpChat.Server/Server.cs",
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
             "id": "socket",
-            "path": "../UdpChat.Server/Program.cs",
-            "startLine": 14.0,
+            "path": "../UdpChat.Server/Server.cs",
+            "startLine": 15.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -547,15 +551,15 @@
           "example": [],
           "level": 0.0,
           "type": "field",
-          "summary": "<p sourcefile=\"api/UdpChat.Server.UdpState.yml\" sourcestartlinenumber=\"1\">The socket of the client</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">The socket of the client</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Server_UdpState_socket.md&value=---%0Auid%3A%20UdpChat.Server.UdpState.socket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L15",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_ServerService_socket.md&value=---%0Auid%3A%20UdpChat.Server.ServerService.socket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L16",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_UdpState_socket",
+          "id": "UdpChat_Server_ServerService_socket",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -569,43 +573,43 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "UdpState"
+      "value": "ServerService"
     },
     {
       "lang": "vb",
-      "value": "UdpState"
+      "value": "ServerService"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "UdpState"
+      "value": "ServerService"
     },
     {
       "lang": "vb",
-      "value": "UdpState"
+      "value": "ServerService"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Server.UdpState"
+      "value": "UdpChat.Server.ServerService"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Server.UdpState"
+      "value": "UdpChat.Server.ServerService"
     }
   ],
   "type": "struct",
   "source": {
     "remote": {
-      "path": "UdpChat.Server/Program.cs",
+      "path": "UdpChat.Server/Server.cs",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
-    "id": "UdpState",
-    "path": "../UdpChat.Server/Program.cs",
-    "startLine": 9.0,
+    "id": "ServerService",
+    "path": "../UdpChat.Server/Server.cs",
+    "startLine": 10.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -659,17 +663,17 @@
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Server.UdpState.yml\" sourcestartlinenumber=\"1\">A struct to hold the state of a UdpClient</p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Server.ServerService.yml\" sourcestartlinenumber=\"1\">A struct to hold the state of a UdpClient</p>\n",
   "example": [],
   "syntax": {
     "content": [
       {
         "lang": "csharp",
-        "value": "public struct UdpState"
+        "value": "public struct ServerService"
       },
       {
         "lang": "vb",
-        "value": "Public Structure UdpState"
+        "value": "Public Structure ServerService"
       }
     ]
   },
@@ -970,9 +974,16 @@
       "level": 0.0
     }
   ],
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",
@@ -1009,11 +1020,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Server.UdpState.yml",
+  "_key": "api/UdpChat.Server.ServerService.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Server.UdpState.html",
+  "_path": "api/UdpChat.Server.ServerService.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -1083,13 +1094,13 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Server_UdpState.md&value=---%0Auid%3A%20UdpChat.Server.UdpState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L10",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_ServerService.md&value=---%0Auid%3A%20UdpChat.Server.ServerService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L11",
   "remarks": "",
   "conceptual": "",
   "implements": "",
   "seealso": null,
-  "id": "UdpChat_Server_UdpState",
+  "id": "UdpChat_Server_ServerService",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": true,

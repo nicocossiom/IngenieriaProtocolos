@@ -70,51 +70,51 @@
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Client.Program",
+          "uid": "UdpChat.Client.ClientCLI",
           "isExtensionMethod": false,
-          "href": "UdpChat.Client.Program.html",
+          "href": "UdpChat.Client.ClientCLI.html",
           "name": [
             {
               "lang": "csharp",
-              "value": "Program"
+              "value": "ClientCLI"
             },
             {
               "lang": "vb",
-              "value": "Program"
+              "value": "ClientCLI"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "Program"
+              "value": "ClientCLI"
             },
             {
               "lang": "vb",
-              "value": "Program"
+              "value": "ClientCLI"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.Program"
+              "value": "UdpChat.Client.ClientCLI"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.Program"
+              "value": "UdpChat.Client.ClientCLI"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.Program\" text=\"Program\"/>"
+              "value": "<xref uid=\"UdpChat.Client.ClientCLI\" text=\"ClientCLI\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.Program\" text=\"Program\"/>"
+              "value": "<xref uid=\"UdpChat.Client.ClientCLI\" text=\"ClientCLI\"/>"
             }
           ],
           "level": 0.0,
-          "summary": "<p sourcefile=\"api/UdpChat.Client.Program.yml\" sourcestartlinenumber=\"1\">The program class, contains the entry point of the program for the client application</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Client.ClientCLI.yml\" sourcestartlinenumber=\"1\">The ClientCLI class is a command line interface for the client.\nIt is used to create a <xref href=\"UdpChat.Client.ChatClient\" data-throw-if-not-resolved=\"false\"></xref> instance with default or custom settings.\nSee <a href=\"/client\">Client CLI Documentation</a> for more information.</p>\n",
           "type": "class",
           "platform": null,
           "isEii": false,
@@ -126,7 +126,7 @@
           "implements": "",
           "example": "",
           "seealso": null,
-          "id": "UdpChat_Client_Program",
+          "id": "UdpChat_Client_ClientCLI",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -172,9 +172,16 @@
     "UdpChat.Client"
   ],
   "level": 0.0,
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",

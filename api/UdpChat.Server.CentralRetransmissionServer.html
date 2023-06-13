@@ -8,7 +8,7 @@
       <meta name="title" content="Class CentralRetransmissionServer
  | UDPChat ">
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer.md&amp;value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer.md&amp;value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -37,7 +37,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="UDPChat">
+            <img id="logo" class="svg" src="../images/logo.png" alt="UDPChat">
             UDPChat
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,7 @@
 
   <h1 id="UdpChat_Server_CentralRetransmissionServer" data-uid="UdpChat.Server.CentralRetransmissionServer" class="text-break">
     Class CentralRetransmissionServer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,7 +151,7 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer__ctor_System_Int32_System_Int32_" data-uid="UdpChat.Server.CentralRetransmissionServer.#ctor(System.Int32,System.Int32)">
   CentralRetransmissionServer(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new retranmission server with the specified ports</p>
@@ -181,22 +181,89 @@
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="UdpChat_Server_CentralRetransmissionServer_LoginUser_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUser*"></a>
+  <a id="UdpChat_Server_CentralRetransmissionServer_authenticationService_" data-uid="UdpChat.Server.CentralRetransmissionServer.authenticationService*"></a>
 
-  <h3 id="UdpChat_Server_CentralRetransmissionServer_LoginUser_System_String_System_String_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUser(System.String,System.String)">
-  LoginUser(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_authenticationService" data-uid="UdpChat.Server.CentralRetransmissionServer.authenticationService">
+  authenticationService
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool LoginUser(string name, string password)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServerService authenticationService { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UdpChat_Server_CentralRetransmissionServer_retransmissionService_" data-uid="UdpChat.Server.CentralRetransmissionServer.retransmissionService*"></a>
+
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_retransmissionService" data-uid="UdpChat.Server.CentralRetransmissionServer.retransmissionService">
+  retransmissionService
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerService retransmissionService { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUserAsync*"></a>
+
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)">
+  LoginUserAsync(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Async database query to check if a user exists and has the correct password</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; LoginUserAsync(string name, string password)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -209,8 +276,9 @@
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>An awaitable task which resolves to true if the user exists and has the correct password, false otherwhise</p>
+</dd>
   </dl>
 
 
@@ -220,21 +288,26 @@
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UdpChat.Server.ChatDatabaseNotInitializedException.html">ChatDatabaseNotInitializedException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
-  <a id="UdpChat_Server_CentralRetransmissionServer_RegisterUser_" data-uid="UdpChat.Server.CentralRetransmissionServer.RegisterUser*"></a>
+  <a id="UdpChat_Server_CentralRetransmissionServer_RegisterUserAsync_" data-uid="UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync*"></a>
 
-  <h3 id="UdpChat_Server_CentralRetransmissionServer_RegisterUser_System_String_System_String_System_String_System_Int32_" data-uid="UdpChat.Server.CentralRetransmissionServer.RegisterUser(System.String,System.String,System.String,System.Int32)">
-  RegisterUser(string, string, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_RegisterUserAsync_System_String_System_String_System_String_System_Int32_" data-uid="UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync(System.String,System.String,System.String,System.Int32)">
+  RegisterUserAsync(string, string, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RegisterUser(string name, string password, string ipAddress, int port)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task RegisterUserAsync(string name, string password, string ipAddress, int port)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -249,6 +322,11 @@
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -259,9 +337,9 @@
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dt><a class="xref" href="UdpChat.Server.ChatDatabaseNotInitializedException.html">ChatDatabaseNotInitializedException</a></dt>
     <dd></dd>
-    <dt><a class="xref" href="UserAlreadyRegisteredException.html">UserAlreadyRegisteredException</a></dt>
+    <dt><a class="xref" href="UdpChat.Server.UserAlreadyRegisteredException.html">UserAlreadyRegisteredException</a></dt>
     <dd></dd>
   </dl>
 
@@ -271,7 +349,7 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_Start" data-uid="UdpChat.Server.CentralRetransmissionServer.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L416"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts the server with the associated services:</p>
@@ -290,6 +368,10 @@
 
 
 
+  <h4 class="section" id="UdpChat_Server_CentralRetransmissionServer_Start_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The services started are:</p>
+<ul><li><span class="term"><a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_authenticationService">authenticationService</a></span></li><li><span class="term"><a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_retransmissionService">retransmissionService</a></span></li></ul>
+</div>
 
 
 
@@ -298,10 +380,11 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_StartAuthenticationService" data-uid="UdpChat.Server.CentralRetransmissionServer.StartAuthenticationService">
   StartAuthenticationService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_authenticationService">authenticationService</a> This service is responsible for all authentication operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -316,6 +399,9 @@
 
 
 
+  <h4 class="section" id="UdpChat_Server_CentralRetransmissionServer_StartAuthenticationService_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Starts a <a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a> in localhost (127.0.0.1)with the specified port <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat.Server.CentralRetransmissionServer.authenticationPort">authenticationPort</a>.</p>
+</div>
 
 
 
@@ -324,10 +410,11 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_StartRetransmissionService" data-uid="UdpChat.Server.CentralRetransmissionServer.StartRetransmissionService">
   StartRetransmissionService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_retransmissionService">retransmissionService</a>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -342,6 +429,9 @@
 
 
 
+  <h4 class="section" id="UdpChat_Server_CentralRetransmissionServer_StartRetransmissionService_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Starts a <a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a> in localhost (127.0.0.1)with the specified port <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat.Server.CentralRetransmissionServer.retransmissionPort">retransmissionPort</a>.</p>
+</div>
 
 
 
@@ -350,10 +440,11 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_Stop" data-uid="UdpChat.Server.CentralRetransmissionServer.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Stops the services and closes the database connection</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -376,7 +467,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Program.cs/#L34" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L76" class="edit-link">Edit this page</a>
         </div>
 
         
@@ -392,7 +483,7 @@
     <footer class="border-top">
       <div class="container-xxl">
         <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+          UDPChat
         </div>
       </div>
     </footer>

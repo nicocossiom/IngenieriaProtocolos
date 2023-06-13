@@ -321,7 +321,7 @@
           "type": "constructor",
           "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref> class with the specified username, password, and request type.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request__ctor_System_String_System_String_UdpChat_Lib_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Lib.Request.%23ctor(System.String%2CSystem.String%2CUdpChat.Lib.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request__ctor_System_String_System_String_UdpChat_Lib_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Lib.Request.%23ctor(System.String%2CSystem.String%2CUdpChat.Lib.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L44",
           "remarks": "",
           "conceptual": "",
@@ -509,7 +509,7 @@
           "type": "property",
           "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Sets or gets the password of the user</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_Password.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Password%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_Password.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Password%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L17",
           "remarks": "",
           "conceptual": "",
@@ -622,7 +622,7 @@
                   }
                 ]
               },
-              "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The type of the request.</p>\n"
+              "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The type of the request. See <xref href=\"UdpChat.Lib.Request.RequestType\" data-throw-if-not-resolved=\"false\"></xref> for available request types.</p>\n"
             }
           },
           "source": {
@@ -690,7 +690,7 @@
           "type": "property",
           "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Gets or sets the type of the request.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_Type.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_Type.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L23",
           "remarks": "",
           "conceptual": "",
@@ -871,7 +871,7 @@
           "type": "property",
           "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Sets or gets the username of the user</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_Username.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Username%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_Username.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Username%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L12",
           "remarks": "",
           "conceptual": "",
@@ -1100,7 +1100,7 @@
           "type": "method",
           "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.Request.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.Request.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L52",
           "remarks": "",
           "conceptual": "",
@@ -1431,6 +1431,110 @@
       "isEii": false
     },
     {
+      "uid": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)",
+      "isExtensionMethod": false,
+      "parent": "UdpChat.Lib.ChatSendable",
+      "isExternal": true,
+      "href": "UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "SerializeAndSend(IPEndPoint, ref UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, ref UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, ref System.Net.Sockets.UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, ref <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient@)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        }
+      ],
+      "level": 0.0,
+      "summary": null,
+      "type": "method",
+      "platform": null,
+      "isEii": false
+    },
+    {
+      "uid": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)",
+      "isExtensionMethod": false,
+      "parent": "UdpChat.Lib.ChatSendable",
+      "isExternal": true,
+      "href": "UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        },
+        {
+          "lang": "vb",
+          "value": "UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint, System.Net.Sockets.UdpClient)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"UdpChat.Lib.ChatSendable.html#UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint,System.Net.Sockets.UdpClient)\">SerializeAndSend</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.ipendpoint\">IPEndPoint</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient\">UdpClient</a>)"
+        }
+      ],
+      "level": 0.0,
+      "summary": null,
+      "type": "method",
+      "platform": null,
+      "isEii": false
+    },
+    {
       "uid": "System.Object.Equals(System.Object)",
       "isEii": false,
       "isExtensionMethod": false,
@@ -1725,9 +1829,16 @@
       "level": 0.0
     }
   ],
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
   "_appName": "UDPChat",
   "_appTitle": "UDPChat",
   "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
   "_systemKeys": [
     "uid",
     "isEii",
@@ -1838,7 +1949,7 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/master/apiSpec/new?filename=UdpChat_Lib_Request.md&value=---%0Auid%3A%20UdpChat.Lib.Request%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request.md&value=---%0Auid%3A%20UdpChat.Lib.Request%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
   "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L6",
   "remarks": "",
   "conceptual": "",
