@@ -1,4 +1,4 @@
-namespace UdpChat
+namespace UdpChat.Lib
 {
     /// <summary>
     /// Request to register a user to the server. After a <see cref="Request"/> there is associated expected <see cref="Response"/>

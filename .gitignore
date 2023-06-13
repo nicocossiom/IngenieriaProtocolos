@@ -289,8 +289,11 @@ __pycache__/
 *.xsd.cs
 
 docfx_project/_site
+docfx_project/_site_pdf
 !docfx_project/api/index.md
 
 *.pdf
 *.db
 .DS_Store
+docfx_project/_site_pdf/docfx_project.json
+docfx_project/.manifest

@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace UdpChat
+namespace UdpChat.Lib
 {
     /// <summary>
     /// A ChatUser is a user of the chat system. It has a username and two endpoints, one for sending and one for receiving.

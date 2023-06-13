@@ -51,5 +51,20 @@
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false
+  },
+  "pdf": {
+    "content": [
+      {
+        "files": [
+          "**/*.yml",
+          "**/*.md"
+        ]
+      }
+    ],
+    "wkhtmltopdf": {
+      "filePath": "/usr/local/bin/wkhtmltopdf",
+      "additionalArguments": "--enable-local-file-access"
+    },
+    "output": "_site_pdf"
   }
 }

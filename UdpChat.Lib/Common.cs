@@ -1,9 +1,11 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace UdpChat
+namespace UdpChat.Lib
 {
-    /// <inheritdoc/>
+    /// <summary>
+    /// An abstract class that represents a sendable object in the chat system. For example a <see cref="Request"/> or a <see cref="Response"/>.
+    /// </summary>
     public class ChatSendable
     {
         /// <summary>
