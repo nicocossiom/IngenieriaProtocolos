@@ -1,0 +1,38 @@
+### YamlMime:TableOfContent
+items:
+- uid: UdpChat.Client
+  name: UdpChat.Client
+  items:
+  - uid: UdpChat.Client.ChatClient
+    name: ChatClient
+  - uid: UdpChat.Client.Program
+    name: Program
+- uid: UdpChat.Lib
+  name: UdpChat.Lib
+  items:
+  - uid: UdpChat.Lib.ChatMessage
+    name: ChatMessage
+  - uid: UdpChat.Lib.ChatMessageResponse
+    name: ChatMessageResponse
+  - uid: UdpChat.Lib.ChatSendable
+    name: ChatSendable
+  - uid: UdpChat.Lib.ChatUser
+    name: ChatUser
+  - uid: UdpChat.Lib.Request
+    name: Request
+  - uid: UdpChat.Lib.Request.RequestType
+    name: Request.RequestType
+  - uid: UdpChat.Lib.Response
+    name: Response
+  - uid: UdpChat.Lib.Response.State
+    name: Response.State
+- uid: UdpChat.Server
+  name: UdpChat.Server
+  items:
+  - uid: UdpChat.Server.CentralRetransmissionServer
+    name: CentralRetransmissionServer
+  - uid: UdpChat.Server.Program
+    name: Program
+  - uid: UdpChat.Server.UdpState
+    name: UdpState
+memberLayout: SamePage
