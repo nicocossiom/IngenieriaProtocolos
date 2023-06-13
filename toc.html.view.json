@@ -2,10 +2,10 @@
   "items": [
     {
       "name": "Api Documentation",
-      "href": "api/",
+      "href": "api/index.html",
+      "tocHref": "api/toc.html",
       "topicHref": "api/index.html",
       "homepage": "api/index.html",
-      "tocHref": null,
       "level": 2.0,
       "items": [],
       "leaf": true

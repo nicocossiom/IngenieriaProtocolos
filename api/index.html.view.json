@@ -44,9 +44,9 @@
   "_navRel": "../toc.html",
   "_path": "api/index.html",
   "_rel": "../",
-  "_tocKey": "~/toc.yml",
-  "_tocPath": "toc.html",
-  "_tocRel": "../toc.html",
+  "_tocKey": "~/api/toc.yml",
+  "_tocPath": "api/toc.html",
+  "_tocRel": "toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",
     "classesInSubtitle": "Classes",
@@ -111,6 +111,6 @@
     "backToTop": "Back to top",
     "_shared": {}
   },
-  "_disableToc": true,
+  "_disableToc": false,
   "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/docfx_project/api/index.md/#L1"
 }
