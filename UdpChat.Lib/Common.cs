@@ -30,5 +30,20 @@ namespace UdpChat.Lib
             var bytes = System.Text.Encoding.UTF8.GetBytes(json);
             return sender.Send(bytes, bytes.Length, endpoint);
         }
+        /// <inheritdoc/>
+        public virtual int SerializeAndSend(IPEndPoint endpoint, ref UdpClient sender)
+        {
+            var json = System.Text.Json.JsonSerializer.Serialize(this, GetType());
+            var bytes = System.Text.Encoding.UTF8.GetBytes(json);
+            return sender.Send(bytes, bytes.Length, endpoint);
+        }
+        /// <inheritdoc/>
+
+        public virtual int SerializeAndSend(IPEndPoint endpoint, UdpClient sender)
+        {
+            var json = System.Text.Json.JsonSerializer.Serialize(this, GetType());
+            var bytes = System.Text.Encoding.UTF8.GetBytes(json);
+            return sender.Send(bytes, bytes.Length, endpoint);
+        }
     }
 }

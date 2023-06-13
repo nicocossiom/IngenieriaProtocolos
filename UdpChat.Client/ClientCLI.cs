@@ -3,7 +3,9 @@ using UdpChat.Lib;
 namespace UdpChat.Client
 {
     /// <summary>
-    /// The program class, contains the entry point of the program for the client application
+    /// The ClientCLI class is a command line interface for the client. 
+    /// It is used to create a <see cref="ChatClient"/> instance with default or custom settings. 
+    /// See <see href="/client">Client CLI Documentation</see> for more information.
     /// </summary>
     public class ClientCLI
     {
@@ -14,25 +16,27 @@ namespace UdpChat.Client
         {
             Console.WriteLine("Enter a port for the client (enter for 4000):");
             var port = Console.ReadLine();
+            port = string.IsNullOrEmpty(port) ? "4000" : port;
+
             Console.WriteLine("IP of central server (enter for 127.0.0.1):");
-            var centralServerAdress = Console.ReadLine();
+            var centralServerAddress = Console.ReadLine();
+            centralServerAddress = string.IsNullOrEmpty(centralServerAddress) ? "127.0.0.1" : centralServerAddress;
+
             Console.WriteLine("Port of central server (enter for 5000):");
             var centralServerPort = Console.ReadLine();
-            if (string.IsNullOrEmpty(port) || string.IsNullOrEmpty(centralServerAdress) || string.IsNullOrEmpty(centralServerPort))
-            {
-                Console.Error.WriteLine("Invalid input, retrying...");
-                return ChatClientFromInputCustomConfig();
-            }
+            centralServerPort = string.IsNullOrEmpty(centralServerPort) ? "5000" : centralServerPort;
+
+
             if (!int.TryParse(port, out int portInt) || !int.TryParse(centralServerPort, out int centralServerPortInt))
             {
                 Console.Error.WriteLine("Invalid ports, retrying...");
                 return ChatClientFromInputCustomConfig();
             }
             string settingsString = $@"
-            Client config:
-            Client ports: Recieve{port} - Send {port + 1}
-            Central Server: Adress{centralServerAdress} - Port {centralServerPort}
-            ";
+    Client config:
+        Client ports: Receive={portInt} - Send={portInt + 1}
+        Central Server: Address={centralServerAddress} - Port={centralServerPortInt}
+        ";
             Console.WriteLine(settingsString);
 
             Console.WriteLine("Is this correct? (y/n)");
@@ -45,14 +49,14 @@ namespace UdpChat.Client
                 input = Console.ReadLine();
             }
             if (input == "n" || input == "N") return ChatClientFromInputCustomConfig();
-            return new ChatClient(portInt, centralServerAdress, centralServerPortInt);
+            return new ChatClient(portInt, centralServerAddress, centralServerPortInt);
         }
         /// <summary>
         /// Asks the user if they want to use the default settings or a custom configuration
         /// </summary>
         /// <remarks>
         /// Default settings:
-        /// Client ports: Recieve 4000 - Send 4001
+        /// Client ports: Receive 4000 - Send 4001
         /// Central Server: Adress 127.0.0.1 - Port 5000
         /// </remarks>
         /// 

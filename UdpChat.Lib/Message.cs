@@ -1,6 +1,3 @@
-using System.Net;
-using System.Net.Sockets;
-
 namespace UdpChat.Lib
 {
     /// <summary>
@@ -24,12 +21,12 @@ namespace UdpChat.Lib
     /// A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message.
     /// </summary>
     [Serializable]
-    public class ChatMessage
+    public class ChatMessage : ChatSendable
     {
         /// <inheritdoc/>
         public ChatUser User { get; set; }
         /// <inheritdoc/>
-        public DateTime Timestamp { get; set; } = DateTime.Now;
+        public new DateTime Timestamp { get; set; } = DateTime.Now;
         /// <inheritdoc/>
         public String Message { get; set; }
         /// <inheritdoc/>
@@ -43,13 +40,8 @@ namespace UdpChat.Lib
         {
             return $"ChatMessage: {User.Username} at {Timestamp}: {Message}";
         }
-        /// <inheritdoc/>
-        public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)
-        {
-            var json = System.Text.Json.JsonSerializer.Serialize(this);
-            var bytes = System.Text.Encoding.UTF8.GetBytes(json);
-            return client.Send(bytes, bytes.Length, endpoint);
-        }
+
+
 
     }
 
@@ -58,28 +50,24 @@ namespace UdpChat.Lib
     /// The responnse to a ChatMessage from the server.
     /// </summary>
     [Serializable]
-    public class ChatMessageResponse
+    public class ChatMessageResponse : ChatSendable
     {
         /// <value> If true means the server received the message correctly</value>
-        public Boolean ReceivedCorrectly { get; set; }
+        public Boolean Received { get; set; }
+        /// <value> If true means the server received the message correctly</value>
+        public int RetransmittedNTimes { get; set; }
         /// <inheritdoc/>
-        public ChatMessageResponse(Boolean receivedCorrectly)
+        public ChatMessageResponse(Boolean received, int retransmittedNTimes)
         {
-            this.ReceivedCorrectly = receivedCorrectly;
+            this.Received = received;
+            this.RetransmittedNTimes = retransmittedNTimes;
         }
-        /// <inheritdoc/>
 
-        public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)
-        {
-            var json = System.Text.Json.JsonSerializer.Serialize(this);
-            var bytes = System.Text.Encoding.UTF8.GetBytes(json);
-            return client.Send(bytes, bytes.Length, endpoint);
-        }
         /// <inheritdoc/>
 
         public override string ToString()
         {
-            return $"ChatMessageResponse: {ReceivedCorrectly}";
+            return $"ChatMessageResponse(Received:{Received}, RetransmittedNTimes:{RetransmittedNTimes})";
         }
     }
 }

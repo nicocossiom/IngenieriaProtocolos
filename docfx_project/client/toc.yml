@@ -1,0 +1,7 @@
+- name: Client CLI Documentation
+  href: index.md
+  homepage: index.md
+
+- name: Examples of Client CLI Usage
+  href: examples
+  homepage: examples/index.md

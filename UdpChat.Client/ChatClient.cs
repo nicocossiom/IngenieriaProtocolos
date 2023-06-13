@@ -33,6 +33,10 @@ namespace UdpChat.Client
             this.centralServerRegisterEndpoint = new IPEndPoint(IPAddress.Parse(centralServerIP), centralServerPort);
             this.receiveSocket = new UdpClient(clientPort);
             this.sendSocket = new UdpClient(clientPort + 1);
+            sendSocket.Client.ReceiveTimeout = 5000;
+            sendSocket.Client.SendTimeout = 5000;
+            receiveSocket.Client.ReceiveTimeout = 5000;
+            receiveSocket.Client.SendTimeout = 5000;
             if (receiveSocket.Client.LocalEndPoint == null || sendSocket.Client.LocalEndPoint == null)
                 throw new ArgumentException("recieveSocket.Client.LocalEndPoint is null");
             this.user = null;
@@ -70,13 +74,16 @@ namespace UdpChat.Client
             Console.WriteLine($"Waiting for response from server {centralServerMessageEndpoint}...");
             var response = sendSocket.Receive(ref centralServerMessageEndpoint);
             // deserialize the response into a ChatMessageResponse
-            var responseMessage = System.Text.Json.JsonSerializer.Deserialize<ChatMessageResponse>(response);
-            if (responseMessage == null)
+            var msgResponse = System.Text.Json.JsonSerializer.Deserialize<ChatMessageResponse>(response);
+            if (msgResponse == null)
             {
                 Console.Error.WriteLine("Error deserializing response");
                 return;
             }
-            Console.WriteLine($"Message retransmitted: {responseMessage.ReceivedCorrectly}");
+            if (msgResponse.Received)
+                Console.WriteLine($"Message was received correctly and retransmitted (with no garantees of reaching) to {msgResponse.RetransmittedNTimes} clients");
+            else
+                Console.WriteLine($"Message was rec");
         }
         /// <summary>
         /// Sends a an auth request of type <see cref="Request.RequestType"/> to the central server.
@@ -92,21 +99,30 @@ namespace UdpChat.Client
             Console.WriteLine($"Sent {sentBytes}");
             // await a response from the server
             Console.WriteLine($"Waiting for response from server {centralServerRegisterEndpoint}...");
-            var resSerialized = sendSocket.Receive(ref centralServerRegisterEndpoint);
-            // deserialize the response into a LoginResponse
-            var res = System.Text.Json.JsonSerializer.Deserialize<Response>(resSerialized);
-            if (res == null)
+            try
             {
-                Console.WriteLine("Error deserializing response");
+                var resSerialized = sendSocket.Receive(ref centralServerRegisterEndpoint);
+                // deserialize the response into a LoginResponse
+                var res = System.Text.Json.JsonSerializer.Deserialize<Response>(resSerialized);
+                if (res == null)
+                {
+                    Console.WriteLine("Error deserializing response");
+                    return;
+                }
+
+                Console.WriteLine(res.Message);
+                if (res.ResponseState == Response.State.LOGIN_SUCCESS)
+                {
+                    this.user = new ChatUser(username, password);
+                    Console.WriteLine($"Currently logged in as {username}");
+                }
+            }
+            catch (SocketException e)
+            {
+                Console.Error.WriteLine($"{e.Message}. The server is either down or unreachable from you. Check your settings or try again later.");
                 return;
             }
-
-            Console.WriteLine(res.Message);
-            if (res.ResponseState == Response.State.LOGIN_SUCCESS)
-            {
-                this.user = new ChatUser(username, password);
-                Console.WriteLine($"Currently logged in as {username}");
-            }
         }
+
     }
 }
