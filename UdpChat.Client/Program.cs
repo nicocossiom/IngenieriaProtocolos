@@ -9,7 +9,7 @@ class ChatClient
     /// <value>UDP socket of this ChatClient used to send messages</value>
     private UdpClient sendSocket;
     /// <value>ChatUser instance representing this ChatClient</value>
-    private ChatUser user;
+    public ChatUser? user;
     /// <value>IPEndPoint of the central server used to send messages. Contains port and address</value>
     private IPEndPoint centralServerMessageEndpoint;
     /// <value>IPEndPoint of the central server used to send messages. Contains port and address</value>
@@ -26,9 +26,10 @@ class ChatClient
         this.centralServerMessageEndpoint = new IPEndPoint(IPAddress.Parse(centralServerIP), centralServerPort + 1);
         this.centralServerRegisterEndpoint = new IPEndPoint(IPAddress.Parse(centralServerIP), centralServerPort);
         this.receiveSocket = new UdpClient(clientPort);
-        // check if recieveSocket.Client.LocalEndPoint and sendSocket.Client.LocalEndPoint are null
-        if (receiveSocket.Client.LocalEndPoint == null || sendSocket.Client.LocalEndPoint == null) throw new ArgumentException("recieveSocket.Client.LocalEndPoint is null");
-        this.user = new ChatUser("Client", (IPEndPoint)receiveSocket.Client.LocalEndPoint, (IPEndPoint)sendSocket.Client.LocalEndPoint);
+        this.sendSocket = new UdpClient(clientPort + 1);
+        if (receiveSocket.Client.LocalEndPoint == null || sendSocket.Client.LocalEndPoint == null)
+            throw new ArgumentException("recieveSocket.Client.LocalEndPoint is null");
+        this.user = null;
         Console.WriteLine($"Client created at {clientPort} with central server at {centralServerIP}:{centralServerPort}");
     }
 
@@ -47,6 +48,11 @@ class ChatClient
 
     public void SendMessage(String msg)
     {
+        if (this.user == null)
+        {
+            Console.Error.WriteLine("You must be logged in to send a message");
+            return;
+        }
         ChatMessage message = new ChatMessage(this.user, msg);
         message.SerializeAndSend(ref centralServerMessageEndpoint, ref sendSocket);
         // await a response from the server
@@ -59,23 +65,29 @@ class ChatClient
             Console.Error.WriteLine("Error deserializing response");
             return;
         }
-        Console.WriteLine($"Message retransmitted: {responseMessage.receivedCorrectly}");
+        Console.WriteLine($"Message retransmitted: {responseMessage.ReceivedCorrectly}");
     }
-    public void SendRegister(String username)
+    public void SendAuthRequest(string username, string password, Request.RequestType type)
     {
-        var register = new RegisterRequest(username);
-        register.SerializeAndSend(ref centralServerRegisterEndpoint, ref sendSocket);
+        var login = new Request(username, password, type);
+        login.SerializeAndSend(ref centralServerRegisterEndpoint, ref sendSocket);
         // await a response from the server
         Console.WriteLine($"Waiting for response from server {centralServerRegisterEndpoint}...");
-        var response = sendSocket.Receive(ref centralServerRegisterEndpoint);
-        // deserialize the response into a RegisterResponse
-        var responseMessage = System.Text.Json.JsonSerializer.Deserialize<RegisterResponse>(response);
-        if (responseMessage == null)
+        var resSerialized = sendSocket.Receive(ref centralServerRegisterEndpoint);
+        // deserialize the response into a LoginResponse
+        var res = System.Text.Json.JsonSerializer.Deserialize<Response>(resSerialized);
+        if (res == null)
         {
             Console.WriteLine("Error deserializing response");
             return;
         }
-        Console.WriteLine($"Server response: {responseMessage.message} {responseMessage.responseState}");
+
+        Console.WriteLine(res.Message);
+        if (res.ResponseState == Response.State.LOGIN_SUCCESS)
+        {
+            this.user = new ChatUser(username, password);
+            Console.WriteLine($"Currently logged in as {username}");
+        }
     }
 }
 
@@ -159,6 +171,29 @@ class Program
             }
         }
     }
+
+    /// <summary>
+    /// Asks the user for a username and password until correct values are entered
+    /// </summary>
+    /// <returns> Returns a tuple of (username, password)</returns>
+    private static (string, string) GetUsernameAndPassword()
+    {
+        Console.WriteLine("Enter a username, spaces are allowed, but not empty string: (↩️  after input)");
+        var username = Console.ReadLine();
+        while (string.IsNullOrEmpty(username))
+        {
+            Console.WriteLine("Invalid username, re-enter:");
+            username = Console.ReadLine();
+        }
+        Console.WriteLine("Enter a password, spaces are allowed, but not empty string: (↩️  after input)");
+        var password = Console.ReadLine();
+        while (string.IsNullOrEmpty(password))
+        {
+            Console.WriteLine("Invalid password, re-enter:");
+            password = Console.ReadLine();
+        }
+        return (username, password);
+    }
     static void Main(string[] args)
     {
         Console.WriteLine("Welcome to the UDP chat client!");
@@ -168,15 +203,23 @@ class Program
             Console.WriteLine("Could not reach central server. The server is no online. Exiting...");
             return;
         }
-        Console.WriteLine("Enter a username, spaces are allowed, but not empty string: (↩️  after input)");
-
         while (true)
         {
-            Console.WriteLine("Input a command, available commands are 'send' and 'unregister'");
+            Console.WriteLine(@"Input a command, available commands are 
+            - register
+            - login
+            - send 
+            - unregister
+            ");
             var command = Console.ReadLine();
             switch (command)
             {
                 case "send":
+                    if (client.user == null)
+                    {
+                        Console.Error.WriteLine("You must be logged in to send a message");
+                        continue;
+                    }
                     Console.WriteLine("Enter a message: (↩️  to send, shift +  ↩️  for new line)");
                     var msg = Console.ReadLine();
                     while (string.IsNullOrEmpty(msg))
@@ -187,15 +230,19 @@ class Program
                     client.SendMessage(msg);
                     break;
                 case "register":
-                    var username = Console.ReadLine();
-                    while (string.IsNullOrEmpty(username))
-                    {
-                        Console.WriteLine("Invalid username, re-enter:");
-                        username = Console.ReadLine();
-                    }
-                    client.SendRegister(username);
+                    var (username, password) = GetUsernameAndPassword();
+                    client.SendAuthRequest(username, password, Request.RequestType.REGISTER);
+                    break;
+                case "login":
+                    (username, password) = GetUsernameAndPassword();
+                    client.SendAuthRequest(username, password, Request.RequestType.LOGIN);
                     break;
                 case "unregister":
+                    if (client.user == null)
+                    {
+                        Console.Error.WriteLine("You must be logged as the user you want to unregister");
+                        continue;
+                    }
                     // TODO
                     Console.WriteLine("Unimplemented method 'unregister'");
                     // client.SendRegister(username);

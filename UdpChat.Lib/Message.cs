@@ -9,14 +9,15 @@ namespace UdpChat
     [Serializable]
     public class ChatUser
     {
-        public string username { get; set; }
-        public EndPoint sendEndpoint { get; set; }
-        public EndPoint receiveEndpoint { get; set; }
-        public ChatUser(string username, string address, int port)
+        /// <inheritdoc/>
+        public string Username { get; set; }
+        /// <inheritdoc/>
+        public string Password { get; set; }
+        /// <inheritdoc/>
+        public ChatUser(string username, string password)
         {
-            this.username = username;
-            this.receiveEndpoint = new EndPoint(address, port);
-            this.sendEndpoint = new EndPoint(address, port + 1);
+            this.Username = username;
+            this.Password = password;
         }
     }
     /// <summary>
@@ -25,18 +26,24 @@ namespace UdpChat
     [Serializable]
     public class ChatMessage
     {
-        public ChatUser user { get; set; }
-        public DateTime timestamp { get; set; } = DateTime.Now;
-        public String message { get; set; }
+        /// <inheritdoc/>
+        public ChatUser User { get; set; }
+        /// <inheritdoc/>
+        public DateTime Timestamp { get; set; } = DateTime.Now;
+        /// <inheritdoc/>
+        public String Message { get; set; }
+        /// <inheritdoc/>
         public ChatMessage(ChatUser user, string message)
         {
-            this.user = user;
-            this.message = message;
+            this.User = user;
+            this.Message = message;
         }
+        /// <inheritdoc/>
         public override string ToString()
         {
-            return $"ChatMessage: {user.username} at {timestamp}: {message}";
+            return $"ChatMessage: {User.Username} at {Timestamp}: {Message}";
         }
+        /// <inheritdoc/>
         public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)
         {
             var json = System.Text.Json.JsonSerializer.Serialize(this);
@@ -54,11 +61,13 @@ namespace UdpChat
     public class ChatMessageResponse
     {
         /// <value> If true means the server received the message correctly</value>
-        public Boolean receivedCorrectly { get; set; }
-        public ChatMessageResponse(Boolean successOnRetransmission)
+        public Boolean ReceivedCorrectly { get; set; }
+        /// <inheritdoc/>
+        public ChatMessageResponse(Boolean receivedCorrectly)
         {
-            this.receivedCorrectly = successOnRetransmission;
+            this.ReceivedCorrectly = receivedCorrectly;
         }
+        /// <inheritdoc/>
 
         public int SerializeAndSend(ref IPEndPoint endpoint, ref UdpClient client)
         {
@@ -66,10 +75,11 @@ namespace UdpChat
             var bytes = System.Text.Encoding.UTF8.GetBytes(json);
             return client.Send(bytes, bytes.Length, endpoint);
         }
+        /// <inheritdoc/>
 
         public override string ToString()
         {
-            return $"ChatMessageResponse: {receivedCorrectly}";
+            return $"ChatMessageResponse: {ReceivedCorrectly}";
         }
     }
 }
