@@ -289,7 +289,7 @@ __pycache__/
 *.xsd.cs
 
 docfx_project/_site
-docfx_project/api
+!docfx_project/api/index.md
 
 *.pdf
 *.db
