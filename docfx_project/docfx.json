@@ -51,18 +51,18 @@
     "keepFileLink": false,
     "disableGitFeatures": false
   },
-  "pdf": {
-    "content": [
-      {
-        "files": [
-          "api/**.yml"
-        ]
-      }
-    ],
-    "wkhtmltopdf": {
-      "filePath": "/usr/local/bin/wkhtmltopdf",
-      "additionalArguments": "--enable-local-file-access"
-    },
-    "output": "_site_pdf"
-  }
-}
+  //   "pdf": {
+  //     "content": [
+  //       {
+  //         "files": [
+  //           "api/**.yml"
+  //         ]
+  //       }
+  //     ],
+  //     "wkhtmltopdf": {
+  //       "filePath": "/usr/local/bin/wkhtmltopdf",
+  //       "additionalArguments": "--enable-local-file-access"
+  //     },
+  //     "output": "_site_pdf"
+  //   }
+  // }
