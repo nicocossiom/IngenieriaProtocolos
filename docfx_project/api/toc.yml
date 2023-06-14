@@ -5,6 +5,8 @@ items:
   items:
   - uid: UdpChat.Client.ChatClient
     name: ChatClient
+  - uid: UdpChat.Client.ServerService
+    name: ServerService
 - uid: UdpChat.Client.CLI
   name: UdpChat.Client.CLI
   items:
@@ -15,6 +17,8 @@ items:
   items:
   - uid: UdpChat.Lib.ChatSendable
     name: ChatSendable
+  - uid: UdpChat.Lib.Deserializerer`1
+    name: Deserializerer<T>
 - uid: UdpChat.Lib.Authentication
   name: UdpChat.Lib.Authentication
   items:
@@ -55,6 +59,8 @@ items:
   items:
   - uid: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException
     name: ChatDatabaseNotInitializedException
+  - uid: UdpChat.Server.Exceptions.UserAlreadyLoggedInxception
+    name: UserAlreadyLoggedInxception
   - uid: UdpChat.Server.Exceptions.UserAlreadyRegisteredException
     name: UserAlreadyRegisteredException
 memberLayout: SamePage

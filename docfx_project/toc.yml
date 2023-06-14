@@ -13,3 +13,7 @@
 - name: Client CLI Documentation
   href: client/
   homepage: client/index.md
+
+- name: Downlaod
+  href: download/
+  homepage: download/index.html

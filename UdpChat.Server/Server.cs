@@ -364,7 +364,7 @@ namespace UdpChat.Server
                 usersEndpoints.Add(
                     (
                         username,
-                        new IPEndPoint(IPAddress.Parse(ip), port+1)
+                        new IPEndPoint(IPAddress.Parse(ip), port + 1)
                         ));
             }
 
