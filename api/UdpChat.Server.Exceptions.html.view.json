@@ -1,5 +1,5 @@
 {
-  "uid": "UdpChat.Client",
+  "uid": "UdpChat.Server.Exceptions",
   "isEii": false,
   "isExtensionMethod": false,
   "children": [
@@ -9,51 +9,51 @@
       "id": "classes",
       "children": [
         {
-          "uid": "UdpChat.Client.ChatClient",
+          "uid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
           "isExtensionMethod": false,
-          "href": "UdpChat.Client.ChatClient.html",
+          "href": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html",
           "name": [
             {
               "lang": "csharp",
-              "value": "ChatClient"
+              "value": "ChatDatabaseNotInitializedException"
             },
             {
               "lang": "vb",
-              "value": "ChatClient"
+              "value": "ChatDatabaseNotInitializedException"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "ChatClient"
+              "value": "ChatDatabaseNotInitializedException"
             },
             {
               "lang": "vb",
-              "value": "ChatClient"
+              "value": "ChatDatabaseNotInitializedException"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.ChatClient"
+              "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.ChatClient"
+              "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+              "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+              "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
             }
           ],
           "level": 0.0,
-          "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">A ChatClient is a client for the chat system.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.yml\" sourcestartlinenumber=\"1\">Represents errors that occur during application execution.</p>\n",
           "type": "class",
           "platform": null,
           "isEii": false,
@@ -65,7 +65,68 @@
           "implements": "",
           "example": "",
           "seealso": null,
-          "id": "UdpChat_Client_ChatClient",
+          "id": "UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "UserAlreadyRegisteredException"
+            },
+            {
+              "lang": "vb",
+              "value": "UserAlreadyRegisteredException"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "UserAlreadyRegisteredException"
+            },
+            {
+              "lang": "vb",
+              "value": "UserAlreadyRegisteredException"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyRegisteredException\" text=\"UserAlreadyRegisteredException\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyRegisteredException\" text=\"UserAlreadyRegisteredException\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Server.Exceptions.UserAlreadyRegisteredException.yml\" sourcestartlinenumber=\"1\">Represents errors that occur during application execution.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Server_Exceptions_UserAlreadyRegisteredException",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -79,36 +140,36 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.Exceptions"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.Exceptions"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.Exceptions"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.Exceptions"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.Exceptions"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.Exceptions"
     }
   ],
   "type": "namespace",
   "assemblies": [
-    "UdpChat.Client"
+    "UdpChat.Server"
   ],
   "level": 0.0,
   "_appFaviconPath": "images/favicon.ico",
@@ -157,11 +218,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Client.yml",
+  "_key": "api/UdpChat.Server.Exceptions.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Client.html",
+  "_path": "api/UdpChat.Server.Exceptions.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -240,7 +301,7 @@
   "implements": "",
   "example": "",
   "seealso": null,
-  "id": "UdpChat_Client",
+  "id": "UdpChat_Server_Exceptions",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isNamespace": true,

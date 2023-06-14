@@ -15,12 +15,22 @@
           "level": 3.0,
           "items": [],
           "leaf": true
-        },
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "UdpChat.Client.CLI",
+      "href": "UdpChat.Client.CLI.html",
+      "topicHref": "UdpChat.Client.CLI.html",
+      "topicUid": "UdpChat.Client.CLI",
+      "items": [
         {
           "name": "ClientCLI",
-          "href": "UdpChat.Client.ClientCLI.html",
-          "topicHref": "UdpChat.Client.ClientCLI.html",
-          "topicUid": "UdpChat.Client.ClientCLI",
+          "href": "UdpChat.Client.CLI.ClientCLI.html",
+          "topicHref": "UdpChat.Client.CLI.ClientCLI.html",
+          "topicUid": "UdpChat.Client.CLI.ClientCLI",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -37,26 +47,6 @@
       "topicUid": "UdpChat.Lib",
       "items": [
         {
-          "name": "ChatMessage",
-          "href": "UdpChat.Lib.ChatMessage.html",
-          "topicHref": "UdpChat.Lib.ChatMessage.html",
-          "topicUid": "UdpChat.Lib.ChatMessage",
-          "tocHref": null,
-          "level": 3.0,
-          "items": [],
-          "leaf": true
-        },
-        {
-          "name": "ChatMessageResponse",
-          "href": "UdpChat.Lib.ChatMessageResponse.html",
-          "topicHref": "UdpChat.Lib.ChatMessageResponse.html",
-          "topicUid": "UdpChat.Lib.ChatMessageResponse",
-          "tocHref": null,
-          "level": 3.0,
-          "items": [],
-          "leaf": true
-        },
-        {
           "name": "ChatSendable",
           "href": "UdpChat.Lib.ChatSendable.html",
           "topicHref": "UdpChat.Lib.ChatSendable.html",
@@ -65,22 +55,22 @@
           "level": 3.0,
           "items": [],
           "leaf": true
-        },
-        {
-          "name": "ChatUser",
-          "href": "UdpChat.Lib.ChatUser.html",
-          "topicHref": "UdpChat.Lib.ChatUser.html",
-          "topicUid": "UdpChat.Lib.ChatUser",
-          "tocHref": null,
-          "level": 3.0,
-          "items": [],
-          "leaf": true
-        },
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "UdpChat.Lib.Authentication",
+      "href": "UdpChat.Lib.Authentication.html",
+      "topicHref": "UdpChat.Lib.Authentication.html",
+      "topicUid": "UdpChat.Lib.Authentication",
+      "items": [
         {
           "name": "Request",
-          "href": "UdpChat.Lib.Request.html",
-          "topicHref": "UdpChat.Lib.Request.html",
-          "topicUid": "UdpChat.Lib.Request",
+          "href": "UdpChat.Lib.Authentication.Request.html",
+          "topicHref": "UdpChat.Lib.Authentication.Request.html",
+          "topicUid": "UdpChat.Lib.Authentication.Request",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -88,9 +78,9 @@
         },
         {
           "name": "Request.RequestType",
-          "href": "UdpChat.Lib.Request.RequestType.html",
-          "topicHref": "UdpChat.Lib.Request.RequestType.html",
-          "topicUid": "UdpChat.Lib.Request.RequestType",
+          "href": "UdpChat.Lib.Authentication.Request.RequestType.html",
+          "topicHref": "UdpChat.Lib.Authentication.Request.RequestType.html",
+          "topicUid": "UdpChat.Lib.Authentication.Request.RequestType",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -98,9 +88,9 @@
         },
         {
           "name": "Response",
-          "href": "UdpChat.Lib.Response.html",
-          "topicHref": "UdpChat.Lib.Response.html",
-          "topicUid": "UdpChat.Lib.Response",
+          "href": "UdpChat.Lib.Authentication.Response.html",
+          "topicHref": "UdpChat.Lib.Authentication.Response.html",
+          "topicUid": "UdpChat.Lib.Authentication.Response",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -108,9 +98,59 @@
         },
         {
           "name": "Response.State",
-          "href": "UdpChat.Lib.Response.State.html",
-          "topicHref": "UdpChat.Lib.Response.State.html",
-          "topicUid": "UdpChat.Lib.Response.State",
+          "href": "UdpChat.Lib.Authentication.Response.State.html",
+          "topicHref": "UdpChat.Lib.Authentication.Response.State.html",
+          "topicUid": "UdpChat.Lib.Authentication.Response.State",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "UdpChat.Lib.ChatUser",
+      "href": "UdpChat.Lib.ChatUser.html",
+      "topicHref": "UdpChat.Lib.ChatUser.html",
+      "topicUid": "UdpChat.Lib.ChatUser",
+      "items": [
+        {
+          "name": "ChatUser",
+          "href": "UdpChat.Lib.ChatUser.ChatUser.html",
+          "topicHref": "UdpChat.Lib.ChatUser.ChatUser.html",
+          "topicUid": "UdpChat.Lib.ChatUser.ChatUser",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "UdpChat.Lib.Message",
+      "href": "UdpChat.Lib.Message.html",
+      "topicHref": "UdpChat.Lib.Message.html",
+      "topicUid": "UdpChat.Lib.Message",
+      "items": [
+        {
+          "name": "ChatMessage",
+          "href": "UdpChat.Lib.Message.ChatMessage.html",
+          "topicHref": "UdpChat.Lib.Message.ChatMessage.html",
+          "topicUid": "UdpChat.Lib.Message.ChatMessage",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        },
+        {
+          "name": "ChatMessageResponse",
+          "href": "UdpChat.Lib.Message.ChatMessageResponse.html",
+          "topicHref": "UdpChat.Lib.Message.ChatMessageResponse.html",
+          "topicUid": "UdpChat.Lib.Message.ChatMessageResponse",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -141,6 +181,56 @@
           "href": "UdpChat.Server.ServerService.html",
           "topicHref": "UdpChat.Server.ServerService.html",
           "topicUid": "UdpChat.Server.ServerService",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "UdpChat.Server.CLI",
+      "href": "UdpChat.Server.CLI.html",
+      "topicHref": "UdpChat.Server.CLI.html",
+      "topicUid": "UdpChat.Server.CLI",
+      "items": [
+        {
+          "name": "ServerCLI",
+          "href": "UdpChat.Server.CLI.ServerCLI.html",
+          "topicHref": "UdpChat.Server.CLI.ServerCLI.html",
+          "topicUid": "UdpChat.Server.CLI.ServerCLI",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        }
+      ],
+      "tocHref": null,
+      "level": 2.0
+    },
+    {
+      "name": "UdpChat.Server.Exceptions",
+      "href": "UdpChat.Server.Exceptions.html",
+      "topicHref": "UdpChat.Server.Exceptions.html",
+      "topicUid": "UdpChat.Server.Exceptions",
+      "items": [
+        {
+          "name": "ChatDatabaseNotInitializedException",
+          "href": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html",
+          "topicHref": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html",
+          "topicUid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        },
+        {
+          "name": "UserAlreadyRegisteredException",
+          "href": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html",
+          "topicHref": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html",
+          "topicUid": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException",
           "tocHref": null,
           "level": 3.0,
           "items": [],

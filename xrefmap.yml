@@ -45,13 +45,13 @@ references:
   isSpec: "True"
   fullName: UdpChat.Client.ChatClient.PingCentralServer
   nameWithType: ChatClient.PingCentralServer
-- uid: UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Request.RequestType)
+- uid: UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)
   name: SendAuthRequest(string, string, RequestType)
-  href: api/UdpChat.Client.ChatClient.html#UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Request_RequestType_
-  commentId: M:UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Request.RequestType)
+  href: api/UdpChat.Client.ChatClient.html#UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_
+  commentId: M:UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)
   name.vb: SendAuthRequest(String, String, RequestType)
-  fullName: UdpChat.Client.ChatClient.SendAuthRequest(string, string, UdpChat.Lib.Request.RequestType)
-  fullName.vb: UdpChat.Client.ChatClient.SendAuthRequest(String, String, UdpChat.Lib.Request.RequestType)
+  fullName: UdpChat.Client.ChatClient.SendAuthRequest(string, string, UdpChat.Lib.Authentication.Request.RequestType)
+  fullName.vb: UdpChat.Client.ChatClient.SendAuthRequest(String, String, UdpChat.Lib.Authentication.Request.RequestType)
   nameWithType: ChatClient.SendAuthRequest(string, string, Request.RequestType)
   nameWithType.vb: ChatClient.SendAuthRequest(String, String, Request.RequestType)
 - uid: UdpChat.Client.ChatClient.SendAuthRequest*
@@ -83,27 +83,33 @@ references:
   commentId: F:UdpChat.Client.ChatClient.user
   fullName: UdpChat.Client.ChatClient.user
   nameWithType: ChatClient.user
-- uid: UdpChat.Client.ClientCLI
+- uid: UdpChat.Client.CLI
+  name: UdpChat.Client.CLI
+  href: api/UdpChat.Client.CLI.html
+  commentId: N:UdpChat.Client.CLI
+  fullName: UdpChat.Client.CLI
+  nameWithType: UdpChat.Client.CLI
+- uid: UdpChat.Client.CLI.ClientCLI
   name: ClientCLI
-  href: api/UdpChat.Client.ClientCLI.html
-  commentId: T:UdpChat.Client.ClientCLI
-  fullName: UdpChat.Client.ClientCLI
+  href: api/UdpChat.Client.CLI.ClientCLI.html
+  commentId: T:UdpChat.Client.CLI.ClientCLI
+  fullName: UdpChat.Client.CLI.ClientCLI
   nameWithType: ClientCLI
-- uid: UdpChat.Client.ClientCLI.Main(System.String[])
+- uid: UdpChat.Client.CLI.ClientCLI.Main(System.String[])
   name: Main(string[])
-  href: api/UdpChat.Client.ClientCLI.html#UdpChat_Client_ClientCLI_Main_System_String___
-  commentId: M:UdpChat.Client.ClientCLI.Main(System.String[])
+  href: api/UdpChat.Client.CLI.ClientCLI.html#UdpChat_Client_CLI_ClientCLI_Main_System_String___
+  commentId: M:UdpChat.Client.CLI.ClientCLI.Main(System.String[])
   name.vb: Main(String())
-  fullName: UdpChat.Client.ClientCLI.Main(string[])
-  fullName.vb: UdpChat.Client.ClientCLI.Main(String())
+  fullName: UdpChat.Client.CLI.ClientCLI.Main(string[])
+  fullName.vb: UdpChat.Client.CLI.ClientCLI.Main(String())
   nameWithType: ClientCLI.Main(string[])
   nameWithType.vb: ClientCLI.Main(String())
-- uid: UdpChat.Client.ClientCLI.Main*
+- uid: UdpChat.Client.CLI.ClientCLI.Main*
   name: Main
-  href: api/UdpChat.Client.ClientCLI.html#UdpChat_Client_ClientCLI_Main_
-  commentId: Overload:UdpChat.Client.ClientCLI.Main
+  href: api/UdpChat.Client.CLI.ClientCLI.html#UdpChat_Client_CLI_ClientCLI_Main_
+  commentId: Overload:UdpChat.Client.CLI.ClientCLI.Main
   isSpec: "True"
-  fullName: UdpChat.Client.ClientCLI.Main
+  fullName: UdpChat.Client.CLI.ClientCLI.Main
   nameWithType: ClientCLI.Main
 - uid: UdpChat.Lib
   name: UdpChat.Lib
@@ -111,147 +117,207 @@ references:
   commentId: N:UdpChat.Lib
   fullName: UdpChat.Lib
   nameWithType: UdpChat.Lib
-- uid: UdpChat.Lib.ChatMessage
-  name: ChatMessage
-  href: api/UdpChat.Lib.ChatMessage.html
-  commentId: T:UdpChat.Lib.ChatMessage
-  fullName: UdpChat.Lib.ChatMessage
-  nameWithType: ChatMessage
-- uid: UdpChat.Lib.ChatMessage.#ctor(UdpChat.Lib.ChatUser,System.String)
-  name: ChatMessage(ChatUser, string)
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage__ctor_UdpChat_Lib_ChatUser_System_String_
-  commentId: M:UdpChat.Lib.ChatMessage.#ctor(UdpChat.Lib.ChatUser,System.String)
-  name.vb: New(ChatUser, String)
-  fullName: UdpChat.Lib.ChatMessage.ChatMessage(UdpChat.Lib.ChatUser, string)
-  fullName.vb: UdpChat.Lib.ChatMessage.New(UdpChat.Lib.ChatUser, String)
-  nameWithType: ChatMessage.ChatMessage(ChatUser, string)
-  nameWithType.vb: ChatMessage.New(ChatUser, String)
-- uid: UdpChat.Lib.ChatMessage.#ctor*
-  name: ChatMessage
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage__ctor_
-  commentId: Overload:UdpChat.Lib.ChatMessage.#ctor
+- uid: UdpChat.Lib.Authentication
+  name: UdpChat.Lib.Authentication
+  href: api/UdpChat.Lib.Authentication.html
+  commentId: N:UdpChat.Lib.Authentication
+  fullName: UdpChat.Lib.Authentication
+  nameWithType: UdpChat.Lib.Authentication
+- uid: UdpChat.Lib.Authentication.Request
+  name: Request
+  href: api/UdpChat.Lib.Authentication.Request.html
+  commentId: T:UdpChat.Lib.Authentication.Request
+  fullName: UdpChat.Lib.Authentication.Request
+  nameWithType: Request
+- uid: UdpChat.Lib.Authentication.Request.#ctor(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)
+  name: Request(string, string, RequestType)
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request__ctor_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_
+  commentId: M:UdpChat.Lib.Authentication.Request.#ctor(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)
+  name.vb: New(String, String, RequestType)
+  fullName: UdpChat.Lib.Authentication.Request.Request(string, string, UdpChat.Lib.Authentication.Request.RequestType)
+  fullName.vb: UdpChat.Lib.Authentication.Request.New(String, String, UdpChat.Lib.Authentication.Request.RequestType)
+  nameWithType: Request.Request(string, string, Request.RequestType)
+  nameWithType.vb: Request.New(String, String, Request.RequestType)
+- uid: UdpChat.Lib.Authentication.Request.#ctor*
+  name: Request
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request__ctor_
+  commentId: Overload:UdpChat.Lib.Authentication.Request.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: UdpChat.Lib.ChatMessage.ChatMessage
-  fullName.vb: UdpChat.Lib.ChatMessage.New
-  nameWithType: ChatMessage.ChatMessage
-  nameWithType.vb: ChatMessage.New
-- uid: UdpChat.Lib.ChatMessage.Message
-  name: Message
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_Message
-  commentId: P:UdpChat.Lib.ChatMessage.Message
-  fullName: UdpChat.Lib.ChatMessage.Message
-  nameWithType: ChatMessage.Message
-- uid: UdpChat.Lib.ChatMessage.Message*
-  name: Message
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_Message_
-  commentId: Overload:UdpChat.Lib.ChatMessage.Message
+  fullName: UdpChat.Lib.Authentication.Request.Request
+  fullName.vb: UdpChat.Lib.Authentication.Request.New
+  nameWithType: Request.Request
+  nameWithType.vb: Request.New
+- uid: UdpChat.Lib.Authentication.Request.Password
+  name: Password
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_Password
+  commentId: P:UdpChat.Lib.Authentication.Request.Password
+  fullName: UdpChat.Lib.Authentication.Request.Password
+  nameWithType: Request.Password
+- uid: UdpChat.Lib.Authentication.Request.Password*
+  name: Password
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_Password_
+  commentId: Overload:UdpChat.Lib.Authentication.Request.Password
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessage.Message
-  nameWithType: ChatMessage.Message
-- uid: UdpChat.Lib.ChatMessage.Timestamp
-  name: Timestamp
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_Timestamp
-  commentId: P:UdpChat.Lib.ChatMessage.Timestamp
-  fullName: UdpChat.Lib.ChatMessage.Timestamp
-  nameWithType: ChatMessage.Timestamp
-- uid: UdpChat.Lib.ChatMessage.Timestamp*
-  name: Timestamp
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_Timestamp_
-  commentId: Overload:UdpChat.Lib.ChatMessage.Timestamp
-  isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessage.Timestamp
-  nameWithType: ChatMessage.Timestamp
-- uid: UdpChat.Lib.ChatMessage.ToString
+  fullName: UdpChat.Lib.Authentication.Request.Password
+  nameWithType: Request.Password
+- uid: UdpChat.Lib.Authentication.Request.RequestType
+  name: Request.RequestType
+  href: api/UdpChat.Lib.Authentication.Request.RequestType.html
+  commentId: T:UdpChat.Lib.Authentication.Request.RequestType
+  fullName: UdpChat.Lib.Authentication.Request.RequestType
+  nameWithType: Request.RequestType
+- uid: UdpChat.Lib.Authentication.Request.RequestType.LOGIN
+  name: LOGIN
+  href: api/UdpChat.Lib.Authentication.Request.RequestType.html#UdpChat_Lib_Authentication_Request_RequestType_LOGIN
+  commentId: F:UdpChat.Lib.Authentication.Request.RequestType.LOGIN
+  fullName: UdpChat.Lib.Authentication.Request.RequestType.LOGIN
+  nameWithType: Request.RequestType.LOGIN
+- uid: UdpChat.Lib.Authentication.Request.RequestType.REGISTER
+  name: REGISTER
+  href: api/UdpChat.Lib.Authentication.Request.RequestType.html#UdpChat_Lib_Authentication_Request_RequestType_REGISTER
+  commentId: F:UdpChat.Lib.Authentication.Request.RequestType.REGISTER
+  fullName: UdpChat.Lib.Authentication.Request.RequestType.REGISTER
+  nameWithType: Request.RequestType.REGISTER
+- uid: UdpChat.Lib.Authentication.Request.ToString
   name: ToString()
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_ToString
-  commentId: M:UdpChat.Lib.ChatMessage.ToString
-  fullName: UdpChat.Lib.ChatMessage.ToString()
-  nameWithType: ChatMessage.ToString()
-- uid: UdpChat.Lib.ChatMessage.ToString*
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_ToString
+  commentId: M:UdpChat.Lib.Authentication.Request.ToString
+  fullName: UdpChat.Lib.Authentication.Request.ToString()
+  nameWithType: Request.ToString()
+- uid: UdpChat.Lib.Authentication.Request.ToString*
   name: ToString
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_ToString_
-  commentId: Overload:UdpChat.Lib.ChatMessage.ToString
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_ToString_
+  commentId: Overload:UdpChat.Lib.Authentication.Request.ToString
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessage.ToString
-  nameWithType: ChatMessage.ToString
-- uid: UdpChat.Lib.ChatMessage.User
-  name: User
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_User
-  commentId: P:UdpChat.Lib.ChatMessage.User
-  fullName: UdpChat.Lib.ChatMessage.User
-  nameWithType: ChatMessage.User
-- uid: UdpChat.Lib.ChatMessage.User*
-  name: User
-  href: api/UdpChat.Lib.ChatMessage.html#UdpChat_Lib_ChatMessage_User_
-  commentId: Overload:UdpChat.Lib.ChatMessage.User
+  fullName: UdpChat.Lib.Authentication.Request.ToString
+  nameWithType: Request.ToString
+- uid: UdpChat.Lib.Authentication.Request.Type
+  name: Type
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_Type
+  commentId: P:UdpChat.Lib.Authentication.Request.Type
+  fullName: UdpChat.Lib.Authentication.Request.Type
+  nameWithType: Request.Type
+- uid: UdpChat.Lib.Authentication.Request.Type*
+  name: Type
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_Type_
+  commentId: Overload:UdpChat.Lib.Authentication.Request.Type
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessage.User
-  nameWithType: ChatMessage.User
-- uid: UdpChat.Lib.ChatMessageResponse
-  name: ChatMessageResponse
-  href: api/UdpChat.Lib.ChatMessageResponse.html
-  commentId: T:UdpChat.Lib.ChatMessageResponse
-  fullName: UdpChat.Lib.ChatMessageResponse
-  nameWithType: ChatMessageResponse
-- uid: UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean,System.Int32)
-  name: ChatMessageResponse(bool, int)
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse__ctor_System_Boolean_System_Int32_
-  commentId: M:UdpChat.Lib.ChatMessageResponse.#ctor(System.Boolean,System.Int32)
-  name.vb: New(Boolean, Integer)
-  fullName: UdpChat.Lib.ChatMessageResponse.ChatMessageResponse(bool, int)
-  fullName.vb: UdpChat.Lib.ChatMessageResponse.New(Boolean, Integer)
-  nameWithType: ChatMessageResponse.ChatMessageResponse(bool, int)
-  nameWithType.vb: ChatMessageResponse.New(Boolean, Integer)
-- uid: UdpChat.Lib.ChatMessageResponse.#ctor*
-  name: ChatMessageResponse
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse__ctor_
-  commentId: Overload:UdpChat.Lib.ChatMessageResponse.#ctor
+  fullName: UdpChat.Lib.Authentication.Request.Type
+  nameWithType: Request.Type
+- uid: UdpChat.Lib.Authentication.Request.Username
+  name: Username
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_Username
+  commentId: P:UdpChat.Lib.Authentication.Request.Username
+  fullName: UdpChat.Lib.Authentication.Request.Username
+  nameWithType: Request.Username
+- uid: UdpChat.Lib.Authentication.Request.Username*
+  name: Username
+  href: api/UdpChat.Lib.Authentication.Request.html#UdpChat_Lib_Authentication_Request_Username_
+  commentId: Overload:UdpChat.Lib.Authentication.Request.Username
+  isSpec: "True"
+  fullName: UdpChat.Lib.Authentication.Request.Username
+  nameWithType: Request.Username
+- uid: UdpChat.Lib.Authentication.Response
+  name: Response
+  href: api/UdpChat.Lib.Authentication.Response.html
+  commentId: T:UdpChat.Lib.Authentication.Response
+  fullName: UdpChat.Lib.Authentication.Response
+  nameWithType: Response
+- uid: UdpChat.Lib.Authentication.Response.#ctor(UdpChat.Lib.Authentication.Response.State,System.String)
+  name: Response(State, string)
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response__ctor_UdpChat_Lib_Authentication_Response_State_System_String_
+  commentId: M:UdpChat.Lib.Authentication.Response.#ctor(UdpChat.Lib.Authentication.Response.State,System.String)
+  name.vb: New(State, String)
+  fullName: UdpChat.Lib.Authentication.Response.Response(UdpChat.Lib.Authentication.Response.State, string)
+  fullName.vb: UdpChat.Lib.Authentication.Response.New(UdpChat.Lib.Authentication.Response.State, String)
+  nameWithType: Response.Response(Response.State, string)
+  nameWithType.vb: Response.New(Response.State, String)
+- uid: UdpChat.Lib.Authentication.Response.#ctor*
+  name: Response
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response__ctor_
+  commentId: Overload:UdpChat.Lib.Authentication.Response.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: UdpChat.Lib.ChatMessageResponse.ChatMessageResponse
-  fullName.vb: UdpChat.Lib.ChatMessageResponse.New
-  nameWithType: ChatMessageResponse.ChatMessageResponse
-  nameWithType.vb: ChatMessageResponse.New
-- uid: UdpChat.Lib.ChatMessageResponse.Received
-  name: Received
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_Received
-  commentId: P:UdpChat.Lib.ChatMessageResponse.Received
-  fullName: UdpChat.Lib.ChatMessageResponse.Received
-  nameWithType: ChatMessageResponse.Received
-- uid: UdpChat.Lib.ChatMessageResponse.Received*
-  name: Received
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_Received_
-  commentId: Overload:UdpChat.Lib.ChatMessageResponse.Received
+  fullName: UdpChat.Lib.Authentication.Response.Response
+  fullName.vb: UdpChat.Lib.Authentication.Response.New
+  nameWithType: Response.Response
+  nameWithType.vb: Response.New
+- uid: UdpChat.Lib.Authentication.Response.Message
+  name: Message
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response_Message
+  commentId: P:UdpChat.Lib.Authentication.Response.Message
+  fullName: UdpChat.Lib.Authentication.Response.Message
+  nameWithType: Response.Message
+- uid: UdpChat.Lib.Authentication.Response.Message*
+  name: Message
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response_Message_
+  commentId: Overload:UdpChat.Lib.Authentication.Response.Message
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessageResponse.Received
-  nameWithType: ChatMessageResponse.Received
-- uid: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
-  name: RetransmittedNTimes
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_RetransmittedNTimes
-  commentId: P:UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
-  fullName: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
-  nameWithType: ChatMessageResponse.RetransmittedNTimes
-- uid: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes*
-  name: RetransmittedNTimes
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_RetransmittedNTimes_
-  commentId: Overload:UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
+  fullName: UdpChat.Lib.Authentication.Response.Message
+  nameWithType: Response.Message
+- uid: UdpChat.Lib.Authentication.Response.ResponseState
+  name: ResponseState
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response_ResponseState
+  commentId: P:UdpChat.Lib.Authentication.Response.ResponseState
+  fullName: UdpChat.Lib.Authentication.Response.ResponseState
+  nameWithType: Response.ResponseState
+- uid: UdpChat.Lib.Authentication.Response.ResponseState*
+  name: ResponseState
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response_ResponseState_
+  commentId: Overload:UdpChat.Lib.Authentication.Response.ResponseState
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessageResponse.RetransmittedNTimes
-  nameWithType: ChatMessageResponse.RetransmittedNTimes
-- uid: UdpChat.Lib.ChatMessageResponse.ToString
+  fullName: UdpChat.Lib.Authentication.Response.ResponseState
+  nameWithType: Response.ResponseState
+- uid: UdpChat.Lib.Authentication.Response.State
+  name: Response.State
+  href: api/UdpChat.Lib.Authentication.Response.State.html
+  commentId: T:UdpChat.Lib.Authentication.Response.State
+  fullName: UdpChat.Lib.Authentication.Response.State
+  nameWithType: Response.State
+- uid: UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED
+  name: ALREADY_REGISTERED
+  href: api/UdpChat.Lib.Authentication.Response.State.html#UdpChat_Lib_Authentication_Response_State_ALREADY_REGISTERED
+  commentId: F:UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED
+  fullName: UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED
+  nameWithType: Response.State.ALREADY_REGISTERED
+- uid: UdpChat.Lib.Authentication.Response.State.ERROR
+  name: ERROR
+  href: api/UdpChat.Lib.Authentication.Response.State.html#UdpChat_Lib_Authentication_Response_State_ERROR
+  commentId: F:UdpChat.Lib.Authentication.Response.State.ERROR
+  fullName: UdpChat.Lib.Authentication.Response.State.ERROR
+  nameWithType: Response.State.ERROR
+- uid: UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED
+  name: LOGIN_FAILED
+  href: api/UdpChat.Lib.Authentication.Response.State.html#UdpChat_Lib_Authentication_Response_State_LOGIN_FAILED
+  commentId: F:UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED
+  fullName: UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED
+  nameWithType: Response.State.LOGIN_FAILED
+- uid: UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS
+  name: LOGIN_SUCCESS
+  href: api/UdpChat.Lib.Authentication.Response.State.html#UdpChat_Lib_Authentication_Response_State_LOGIN_SUCCESS
+  commentId: F:UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS
+  fullName: UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS
+  nameWithType: Response.State.LOGIN_SUCCESS
+- uid: UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS
+  name: REGISTER_SUCCESS
+  href: api/UdpChat.Lib.Authentication.Response.State.html#UdpChat_Lib_Authentication_Response_State_REGISTER_SUCCESS
+  commentId: F:UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS
+  fullName: UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS
+  nameWithType: Response.State.REGISTER_SUCCESS
+- uid: UdpChat.Lib.Authentication.Response.ToString
   name: ToString()
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_ToString
-  commentId: M:UdpChat.Lib.ChatMessageResponse.ToString
-  fullName: UdpChat.Lib.ChatMessageResponse.ToString()
-  nameWithType: ChatMessageResponse.ToString()
-- uid: UdpChat.Lib.ChatMessageResponse.ToString*
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response_ToString
+  commentId: M:UdpChat.Lib.Authentication.Response.ToString
+  fullName: UdpChat.Lib.Authentication.Response.ToString()
+  nameWithType: Response.ToString()
+- uid: UdpChat.Lib.Authentication.Response.ToString*
   name: ToString
-  href: api/UdpChat.Lib.ChatMessageResponse.html#UdpChat_Lib_ChatMessageResponse_ToString_
-  commentId: Overload:UdpChat.Lib.ChatMessageResponse.ToString
+  href: api/UdpChat.Lib.Authentication.Response.html#UdpChat_Lib_Authentication_Response_ToString_
+  commentId: Overload:UdpChat.Lib.Authentication.Response.ToString
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatMessageResponse.ToString
-  nameWithType: ChatMessageResponse.ToString
+  fullName: UdpChat.Lib.Authentication.Response.ToString
+  nameWithType: Response.ToString
 - uid: UdpChat.Lib.ChatSendable
   name: ChatSendable
   href: api/UdpChat.Lib.ChatSendable.html
@@ -303,251 +369,209 @@ references:
   fullName: UdpChat.Lib.ChatSendable.Timestamp
   nameWithType: ChatSendable.Timestamp
 - uid: UdpChat.Lib.ChatUser
-  name: ChatUser
+  name: UdpChat.Lib.ChatUser
   href: api/UdpChat.Lib.ChatUser.html
-  commentId: T:UdpChat.Lib.ChatUser
+  commentId: N:UdpChat.Lib.ChatUser
   fullName: UdpChat.Lib.ChatUser
+  nameWithType: UdpChat.Lib.ChatUser
+- uid: UdpChat.Lib.ChatUser.ChatUser
+  name: ChatUser
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html
+  commentId: T:UdpChat.Lib.ChatUser.ChatUser
+  fullName: UdpChat.Lib.ChatUser.ChatUser
   nameWithType: ChatUser
-- uid: UdpChat.Lib.ChatUser.#ctor(System.String,System.String)
+- uid: UdpChat.Lib.ChatUser.ChatUser.#ctor(System.String,System.String)
   name: ChatUser(string, string)
-  href: api/UdpChat.Lib.ChatUser.html#UdpChat_Lib_ChatUser__ctor_System_String_System_String_
-  commentId: M:UdpChat.Lib.ChatUser.#ctor(System.String,System.String)
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html#UdpChat_Lib_ChatUser_ChatUser__ctor_System_String_System_String_
+  commentId: M:UdpChat.Lib.ChatUser.ChatUser.#ctor(System.String,System.String)
   name.vb: New(String, String)
-  fullName: UdpChat.Lib.ChatUser.ChatUser(string, string)
-  fullName.vb: UdpChat.Lib.ChatUser.New(String, String)
+  fullName: UdpChat.Lib.ChatUser.ChatUser.ChatUser(string, string)
+  fullName.vb: UdpChat.Lib.ChatUser.ChatUser.New(String, String)
   nameWithType: ChatUser.ChatUser(string, string)
   nameWithType.vb: ChatUser.New(String, String)
-- uid: UdpChat.Lib.ChatUser.#ctor*
+- uid: UdpChat.Lib.ChatUser.ChatUser.#ctor*
   name: ChatUser
-  href: api/UdpChat.Lib.ChatUser.html#UdpChat_Lib_ChatUser__ctor_
-  commentId: Overload:UdpChat.Lib.ChatUser.#ctor
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html#UdpChat_Lib_ChatUser_ChatUser__ctor_
+  commentId: Overload:UdpChat.Lib.ChatUser.ChatUser.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: UdpChat.Lib.ChatUser.ChatUser
-  fullName.vb: UdpChat.Lib.ChatUser.New
+  fullName: UdpChat.Lib.ChatUser.ChatUser.ChatUser
+  fullName.vb: UdpChat.Lib.ChatUser.ChatUser.New
   nameWithType: ChatUser.ChatUser
   nameWithType.vb: ChatUser.New
-- uid: UdpChat.Lib.ChatUser.Password
+- uid: UdpChat.Lib.ChatUser.ChatUser.Password
   name: Password
-  href: api/UdpChat.Lib.ChatUser.html#UdpChat_Lib_ChatUser_Password
-  commentId: P:UdpChat.Lib.ChatUser.Password
-  fullName: UdpChat.Lib.ChatUser.Password
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html#UdpChat_Lib_ChatUser_ChatUser_Password
+  commentId: P:UdpChat.Lib.ChatUser.ChatUser.Password
+  fullName: UdpChat.Lib.ChatUser.ChatUser.Password
   nameWithType: ChatUser.Password
-- uid: UdpChat.Lib.ChatUser.Password*
+- uid: UdpChat.Lib.ChatUser.ChatUser.Password*
   name: Password
-  href: api/UdpChat.Lib.ChatUser.html#UdpChat_Lib_ChatUser_Password_
-  commentId: Overload:UdpChat.Lib.ChatUser.Password
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html#UdpChat_Lib_ChatUser_ChatUser_Password_
+  commentId: Overload:UdpChat.Lib.ChatUser.ChatUser.Password
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatUser.Password
+  fullName: UdpChat.Lib.ChatUser.ChatUser.Password
   nameWithType: ChatUser.Password
-- uid: UdpChat.Lib.ChatUser.Username
+- uid: UdpChat.Lib.ChatUser.ChatUser.Username
   name: Username
-  href: api/UdpChat.Lib.ChatUser.html#UdpChat_Lib_ChatUser_Username
-  commentId: P:UdpChat.Lib.ChatUser.Username
-  fullName: UdpChat.Lib.ChatUser.Username
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html#UdpChat_Lib_ChatUser_ChatUser_Username
+  commentId: P:UdpChat.Lib.ChatUser.ChatUser.Username
+  fullName: UdpChat.Lib.ChatUser.ChatUser.Username
   nameWithType: ChatUser.Username
-- uid: UdpChat.Lib.ChatUser.Username*
+- uid: UdpChat.Lib.ChatUser.ChatUser.Username*
   name: Username
-  href: api/UdpChat.Lib.ChatUser.html#UdpChat_Lib_ChatUser_Username_
-  commentId: Overload:UdpChat.Lib.ChatUser.Username
+  href: api/UdpChat.Lib.ChatUser.ChatUser.html#UdpChat_Lib_ChatUser_ChatUser_Username_
+  commentId: Overload:UdpChat.Lib.ChatUser.ChatUser.Username
   isSpec: "True"
-  fullName: UdpChat.Lib.ChatUser.Username
+  fullName: UdpChat.Lib.ChatUser.ChatUser.Username
   nameWithType: ChatUser.Username
-- uid: UdpChat.Lib.Request
-  name: Request
-  href: api/UdpChat.Lib.Request.html
-  commentId: T:UdpChat.Lib.Request
-  fullName: UdpChat.Lib.Request
-  nameWithType: Request
-- uid: UdpChat.Lib.Request.#ctor(System.String,System.String,UdpChat.Lib.Request.RequestType)
-  name: Request(string, string, RequestType)
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request__ctor_System_String_System_String_UdpChat_Lib_Request_RequestType_
-  commentId: M:UdpChat.Lib.Request.#ctor(System.String,System.String,UdpChat.Lib.Request.RequestType)
-  name.vb: New(String, String, RequestType)
-  fullName: UdpChat.Lib.Request.Request(string, string, UdpChat.Lib.Request.RequestType)
-  fullName.vb: UdpChat.Lib.Request.New(String, String, UdpChat.Lib.Request.RequestType)
-  nameWithType: Request.Request(string, string, Request.RequestType)
-  nameWithType.vb: Request.New(String, String, Request.RequestType)
-- uid: UdpChat.Lib.Request.#ctor*
-  name: Request
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request__ctor_
-  commentId: Overload:UdpChat.Lib.Request.#ctor
+- uid: UdpChat.Lib.Message
+  name: UdpChat.Lib.Message
+  href: api/UdpChat.Lib.Message.html
+  commentId: N:UdpChat.Lib.Message
+  fullName: UdpChat.Lib.Message
+  nameWithType: UdpChat.Lib.Message
+- uid: UdpChat.Lib.Message.ChatMessage
+  name: ChatMessage
+  href: api/UdpChat.Lib.Message.ChatMessage.html
+  commentId: T:UdpChat.Lib.Message.ChatMessage
+  fullName: UdpChat.Lib.Message.ChatMessage
+  nameWithType: ChatMessage
+- uid: UdpChat.Lib.Message.ChatMessage.#ctor(UdpChat.Lib.ChatUser.ChatUser,System.String)
+  name: ChatMessage(ChatUser, string)
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage__ctor_UdpChat_Lib_ChatUser_ChatUser_System_String_
+  commentId: M:UdpChat.Lib.Message.ChatMessage.#ctor(UdpChat.Lib.ChatUser.ChatUser,System.String)
+  name.vb: New(ChatUser, String)
+  fullName: UdpChat.Lib.Message.ChatMessage.ChatMessage(UdpChat.Lib.ChatUser.ChatUser, string)
+  fullName.vb: UdpChat.Lib.Message.ChatMessage.New(UdpChat.Lib.ChatUser.ChatUser, String)
+  nameWithType: ChatMessage.ChatMessage(ChatUser, string)
+  nameWithType.vb: ChatMessage.New(ChatUser, String)
+- uid: UdpChat.Lib.Message.ChatMessage.#ctor*
+  name: ChatMessage
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage__ctor_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessage.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: UdpChat.Lib.Request.Request
-  fullName.vb: UdpChat.Lib.Request.New
-  nameWithType: Request.Request
-  nameWithType.vb: Request.New
-- uid: UdpChat.Lib.Request.Password
-  name: Password
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_Password
-  commentId: P:UdpChat.Lib.Request.Password
-  fullName: UdpChat.Lib.Request.Password
-  nameWithType: Request.Password
-- uid: UdpChat.Lib.Request.Password*
-  name: Password
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_Password_
-  commentId: Overload:UdpChat.Lib.Request.Password
+  fullName: UdpChat.Lib.Message.ChatMessage.ChatMessage
+  fullName.vb: UdpChat.Lib.Message.ChatMessage.New
+  nameWithType: ChatMessage.ChatMessage
+  nameWithType.vb: ChatMessage.New
+- uid: UdpChat.Lib.Message.ChatMessage.Message
+  name: Message
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_Message
+  commentId: P:UdpChat.Lib.Message.ChatMessage.Message
+  fullName: UdpChat.Lib.Message.ChatMessage.Message
+  nameWithType: ChatMessage.Message
+- uid: UdpChat.Lib.Message.ChatMessage.Message*
+  name: Message
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_Message_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessage.Message
   isSpec: "True"
-  fullName: UdpChat.Lib.Request.Password
-  nameWithType: Request.Password
-- uid: UdpChat.Lib.Request.RequestType
-  name: Request.RequestType
-  href: api/UdpChat.Lib.Request.RequestType.html
-  commentId: T:UdpChat.Lib.Request.RequestType
-  fullName: UdpChat.Lib.Request.RequestType
-  nameWithType: Request.RequestType
-- uid: UdpChat.Lib.Request.RequestType.LOGIN
-  name: LOGIN
-  href: api/UdpChat.Lib.Request.RequestType.html#UdpChat_Lib_Request_RequestType_LOGIN
-  commentId: F:UdpChat.Lib.Request.RequestType.LOGIN
-  fullName: UdpChat.Lib.Request.RequestType.LOGIN
-  nameWithType: Request.RequestType.LOGIN
-- uid: UdpChat.Lib.Request.RequestType.REGISTER
-  name: REGISTER
-  href: api/UdpChat.Lib.Request.RequestType.html#UdpChat_Lib_Request_RequestType_REGISTER
-  commentId: F:UdpChat.Lib.Request.RequestType.REGISTER
-  fullName: UdpChat.Lib.Request.RequestType.REGISTER
-  nameWithType: Request.RequestType.REGISTER
-- uid: UdpChat.Lib.Request.ToString
+  fullName: UdpChat.Lib.Message.ChatMessage.Message
+  nameWithType: ChatMessage.Message
+- uid: UdpChat.Lib.Message.ChatMessage.Timestamp
+  name: Timestamp
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_Timestamp
+  commentId: P:UdpChat.Lib.Message.ChatMessage.Timestamp
+  fullName: UdpChat.Lib.Message.ChatMessage.Timestamp
+  nameWithType: ChatMessage.Timestamp
+- uid: UdpChat.Lib.Message.ChatMessage.Timestamp*
+  name: Timestamp
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_Timestamp_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessage.Timestamp
+  isSpec: "True"
+  fullName: UdpChat.Lib.Message.ChatMessage.Timestamp
+  nameWithType: ChatMessage.Timestamp
+- uid: UdpChat.Lib.Message.ChatMessage.ToString
   name: ToString()
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_ToString
-  commentId: M:UdpChat.Lib.Request.ToString
-  fullName: UdpChat.Lib.Request.ToString()
-  nameWithType: Request.ToString()
-- uid: UdpChat.Lib.Request.ToString*
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_ToString
+  commentId: M:UdpChat.Lib.Message.ChatMessage.ToString
+  fullName: UdpChat.Lib.Message.ChatMessage.ToString()
+  nameWithType: ChatMessage.ToString()
+- uid: UdpChat.Lib.Message.ChatMessage.ToString*
   name: ToString
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_ToString_
-  commentId: Overload:UdpChat.Lib.Request.ToString
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_ToString_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessage.ToString
   isSpec: "True"
-  fullName: UdpChat.Lib.Request.ToString
-  nameWithType: Request.ToString
-- uid: UdpChat.Lib.Request.Type
-  name: Type
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_Type
-  commentId: P:UdpChat.Lib.Request.Type
-  fullName: UdpChat.Lib.Request.Type
-  nameWithType: Request.Type
-- uid: UdpChat.Lib.Request.Type*
-  name: Type
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_Type_
-  commentId: Overload:UdpChat.Lib.Request.Type
+  fullName: UdpChat.Lib.Message.ChatMessage.ToString
+  nameWithType: ChatMessage.ToString
+- uid: UdpChat.Lib.Message.ChatMessage.User
+  name: User
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_User
+  commentId: P:UdpChat.Lib.Message.ChatMessage.User
+  fullName: UdpChat.Lib.Message.ChatMessage.User
+  nameWithType: ChatMessage.User
+- uid: UdpChat.Lib.Message.ChatMessage.User*
+  name: User
+  href: api/UdpChat.Lib.Message.ChatMessage.html#UdpChat_Lib_Message_ChatMessage_User_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessage.User
   isSpec: "True"
-  fullName: UdpChat.Lib.Request.Type
-  nameWithType: Request.Type
-- uid: UdpChat.Lib.Request.Username
-  name: Username
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_Username
-  commentId: P:UdpChat.Lib.Request.Username
-  fullName: UdpChat.Lib.Request.Username
-  nameWithType: Request.Username
-- uid: UdpChat.Lib.Request.Username*
-  name: Username
-  href: api/UdpChat.Lib.Request.html#UdpChat_Lib_Request_Username_
-  commentId: Overload:UdpChat.Lib.Request.Username
-  isSpec: "True"
-  fullName: UdpChat.Lib.Request.Username
-  nameWithType: Request.Username
-- uid: UdpChat.Lib.Response
-  name: Response
-  href: api/UdpChat.Lib.Response.html
-  commentId: T:UdpChat.Lib.Response
-  fullName: UdpChat.Lib.Response
-  nameWithType: Response
-- uid: UdpChat.Lib.Response.#ctor(UdpChat.Lib.Response.State,System.String)
-  name: Response(State, string)
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response__ctor_UdpChat_Lib_Response_State_System_String_
-  commentId: M:UdpChat.Lib.Response.#ctor(UdpChat.Lib.Response.State,System.String)
-  name.vb: New(State, String)
-  fullName: UdpChat.Lib.Response.Response(UdpChat.Lib.Response.State, string)
-  fullName.vb: UdpChat.Lib.Response.New(UdpChat.Lib.Response.State, String)
-  nameWithType: Response.Response(Response.State, string)
-  nameWithType.vb: Response.New(Response.State, String)
-- uid: UdpChat.Lib.Response.#ctor*
-  name: Response
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response__ctor_
-  commentId: Overload:UdpChat.Lib.Response.#ctor
+  fullName: UdpChat.Lib.Message.ChatMessage.User
+  nameWithType: ChatMessage.User
+- uid: UdpChat.Lib.Message.ChatMessageResponse
+  name: ChatMessageResponse
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html
+  commentId: T:UdpChat.Lib.Message.ChatMessageResponse
+  fullName: UdpChat.Lib.Message.ChatMessageResponse
+  nameWithType: ChatMessageResponse
+- uid: UdpChat.Lib.Message.ChatMessageResponse.#ctor(System.Boolean,System.Int32)
+  name: ChatMessageResponse(bool, int)
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse__ctor_System_Boolean_System_Int32_
+  commentId: M:UdpChat.Lib.Message.ChatMessageResponse.#ctor(System.Boolean,System.Int32)
+  name.vb: New(Boolean, Integer)
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.ChatMessageResponse(bool, int)
+  fullName.vb: UdpChat.Lib.Message.ChatMessageResponse.New(Boolean, Integer)
+  nameWithType: ChatMessageResponse.ChatMessageResponse(bool, int)
+  nameWithType.vb: ChatMessageResponse.New(Boolean, Integer)
+- uid: UdpChat.Lib.Message.ChatMessageResponse.#ctor*
+  name: ChatMessageResponse
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse__ctor_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessageResponse.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: UdpChat.Lib.Response.Response
-  fullName.vb: UdpChat.Lib.Response.New
-  nameWithType: Response.Response
-  nameWithType.vb: Response.New
-- uid: UdpChat.Lib.Response.Message
-  name: Message
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response_Message
-  commentId: P:UdpChat.Lib.Response.Message
-  fullName: UdpChat.Lib.Response.Message
-  nameWithType: Response.Message
-- uid: UdpChat.Lib.Response.Message*
-  name: Message
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response_Message_
-  commentId: Overload:UdpChat.Lib.Response.Message
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.ChatMessageResponse
+  fullName.vb: UdpChat.Lib.Message.ChatMessageResponse.New
+  nameWithType: ChatMessageResponse.ChatMessageResponse
+  nameWithType.vb: ChatMessageResponse.New
+- uid: UdpChat.Lib.Message.ChatMessageResponse.Received
+  name: Received
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse_Received
+  commentId: P:UdpChat.Lib.Message.ChatMessageResponse.Received
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.Received
+  nameWithType: ChatMessageResponse.Received
+- uid: UdpChat.Lib.Message.ChatMessageResponse.Received*
+  name: Received
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse_Received_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessageResponse.Received
   isSpec: "True"
-  fullName: UdpChat.Lib.Response.Message
-  nameWithType: Response.Message
-- uid: UdpChat.Lib.Response.ResponseState
-  name: ResponseState
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response_ResponseState
-  commentId: P:UdpChat.Lib.Response.ResponseState
-  fullName: UdpChat.Lib.Response.ResponseState
-  nameWithType: Response.ResponseState
-- uid: UdpChat.Lib.Response.ResponseState*
-  name: ResponseState
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response_ResponseState_
-  commentId: Overload:UdpChat.Lib.Response.ResponseState
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.Received
+  nameWithType: ChatMessageResponse.Received
+- uid: UdpChat.Lib.Message.ChatMessageResponse.RetransmittedNTimes
+  name: RetransmittedNTimes
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse_RetransmittedNTimes
+  commentId: P:UdpChat.Lib.Message.ChatMessageResponse.RetransmittedNTimes
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.RetransmittedNTimes
+  nameWithType: ChatMessageResponse.RetransmittedNTimes
+- uid: UdpChat.Lib.Message.ChatMessageResponse.RetransmittedNTimes*
+  name: RetransmittedNTimes
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse_RetransmittedNTimes_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessageResponse.RetransmittedNTimes
   isSpec: "True"
-  fullName: UdpChat.Lib.Response.ResponseState
-  nameWithType: Response.ResponseState
-- uid: UdpChat.Lib.Response.State
-  name: Response.State
-  href: api/UdpChat.Lib.Response.State.html
-  commentId: T:UdpChat.Lib.Response.State
-  fullName: UdpChat.Lib.Response.State
-  nameWithType: Response.State
-- uid: UdpChat.Lib.Response.State.ALREADY_REGISTERED
-  name: ALREADY_REGISTERED
-  href: api/UdpChat.Lib.Response.State.html#UdpChat_Lib_Response_State_ALREADY_REGISTERED
-  commentId: F:UdpChat.Lib.Response.State.ALREADY_REGISTERED
-  fullName: UdpChat.Lib.Response.State.ALREADY_REGISTERED
-  nameWithType: Response.State.ALREADY_REGISTERED
-- uid: UdpChat.Lib.Response.State.ERROR
-  name: ERROR
-  href: api/UdpChat.Lib.Response.State.html#UdpChat_Lib_Response_State_ERROR
-  commentId: F:UdpChat.Lib.Response.State.ERROR
-  fullName: UdpChat.Lib.Response.State.ERROR
-  nameWithType: Response.State.ERROR
-- uid: UdpChat.Lib.Response.State.LOGIN_FAILED
-  name: LOGIN_FAILED
-  href: api/UdpChat.Lib.Response.State.html#UdpChat_Lib_Response_State_LOGIN_FAILED
-  commentId: F:UdpChat.Lib.Response.State.LOGIN_FAILED
-  fullName: UdpChat.Lib.Response.State.LOGIN_FAILED
-  nameWithType: Response.State.LOGIN_FAILED
-- uid: UdpChat.Lib.Response.State.LOGIN_SUCCESS
-  name: LOGIN_SUCCESS
-  href: api/UdpChat.Lib.Response.State.html#UdpChat_Lib_Response_State_LOGIN_SUCCESS
-  commentId: F:UdpChat.Lib.Response.State.LOGIN_SUCCESS
-  fullName: UdpChat.Lib.Response.State.LOGIN_SUCCESS
-  nameWithType: Response.State.LOGIN_SUCCESS
-- uid: UdpChat.Lib.Response.State.REGISTER_SUCCESS
-  name: REGISTER_SUCCESS
-  href: api/UdpChat.Lib.Response.State.html#UdpChat_Lib_Response_State_REGISTER_SUCCESS
-  commentId: F:UdpChat.Lib.Response.State.REGISTER_SUCCESS
-  fullName: UdpChat.Lib.Response.State.REGISTER_SUCCESS
-  nameWithType: Response.State.REGISTER_SUCCESS
-- uid: UdpChat.Lib.Response.ToString
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.RetransmittedNTimes
+  nameWithType: ChatMessageResponse.RetransmittedNTimes
+- uid: UdpChat.Lib.Message.ChatMessageResponse.ToString
   name: ToString()
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response_ToString
-  commentId: M:UdpChat.Lib.Response.ToString
-  fullName: UdpChat.Lib.Response.ToString()
-  nameWithType: Response.ToString()
-- uid: UdpChat.Lib.Response.ToString*
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse_ToString
+  commentId: M:UdpChat.Lib.Message.ChatMessageResponse.ToString
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.ToString()
+  nameWithType: ChatMessageResponse.ToString()
+- uid: UdpChat.Lib.Message.ChatMessageResponse.ToString*
   name: ToString
-  href: api/UdpChat.Lib.Response.html#UdpChat_Lib_Response_ToString_
-  commentId: Overload:UdpChat.Lib.Response.ToString
+  href: api/UdpChat.Lib.Message.ChatMessageResponse.html#UdpChat_Lib_Message_ChatMessageResponse_ToString_
+  commentId: Overload:UdpChat.Lib.Message.ChatMessageResponse.ToString
   isSpec: "True"
-  fullName: UdpChat.Lib.Response.ToString
-  nameWithType: Response.ToString
+  fullName: UdpChat.Lib.Message.ChatMessageResponse.ToString
+  nameWithType: ChatMessageResponse.ToString
 - uid: UdpChat.Server
   name: UdpChat.Server
   href: api/UdpChat.Server.html
@@ -689,6 +713,90 @@ references:
   isSpec: "True"
   fullName: UdpChat.Server.CentralRetransmissionServer.Stop
   nameWithType: CentralRetransmissionServer.Stop
+- uid: UdpChat.Server.CLI
+  name: UdpChat.Server.CLI
+  href: api/UdpChat.Server.CLI.html
+  commentId: N:UdpChat.Server.CLI
+  fullName: UdpChat.Server.CLI
+  nameWithType: UdpChat.Server.CLI
+- uid: UdpChat.Server.CLI.ServerCLI
+  name: ServerCLI
+  href: api/UdpChat.Server.CLI.ServerCLI.html
+  commentId: T:UdpChat.Server.CLI.ServerCLI
+  fullName: UdpChat.Server.CLI.ServerCLI
+  nameWithType: ServerCLI
+- uid: UdpChat.Server.CLI.ServerCLI.ParseArgs(System.String[])
+  name: ParseArgs(string[])
+  href: api/UdpChat.Server.CLI.ServerCLI.html#UdpChat_Server_CLI_ServerCLI_ParseArgs_System_String___
+  commentId: M:UdpChat.Server.CLI.ServerCLI.ParseArgs(System.String[])
+  name.vb: ParseArgs(String())
+  fullName: UdpChat.Server.CLI.ServerCLI.ParseArgs(string[])
+  fullName.vb: UdpChat.Server.CLI.ServerCLI.ParseArgs(String())
+  nameWithType: ServerCLI.ParseArgs(string[])
+  nameWithType.vb: ServerCLI.ParseArgs(String())
+- uid: UdpChat.Server.CLI.ServerCLI.ParseArgs*
+  name: ParseArgs
+  href: api/UdpChat.Server.CLI.ServerCLI.html#UdpChat_Server_CLI_ServerCLI_ParseArgs_
+  commentId: Overload:UdpChat.Server.CLI.ServerCLI.ParseArgs
+  isSpec: "True"
+  fullName: UdpChat.Server.CLI.ServerCLI.ParseArgs
+  nameWithType: ServerCLI.ParseArgs
+- uid: UdpChat.Server.Exceptions
+  name: UdpChat.Server.Exceptions
+  href: api/UdpChat.Server.Exceptions.html
+  commentId: N:UdpChat.Server.Exceptions
+  fullName: UdpChat.Server.Exceptions
+  nameWithType: UdpChat.Server.Exceptions
+- uid: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException
+  name: ChatDatabaseNotInitializedException
+  href: api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html
+  commentId: T:UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException
+  fullName: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException
+  nameWithType: ChatDatabaseNotInitializedException
+- uid: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor
+  name: ChatDatabaseNotInitializedException()
+  href: api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html#UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException__ctor
+  commentId: M:UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor
+  name.vb: New()
+  fullName: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException()
+  fullName.vb: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.New()
+  nameWithType: ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException()
+  nameWithType.vb: ChatDatabaseNotInitializedException.New()
+- uid: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor*
+  name: ChatDatabaseNotInitializedException
+  href: api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html#UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException__ctor_
+  commentId: Overload:UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException
+  fullName.vb: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.New
+  nameWithType: ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException
+  nameWithType.vb: ChatDatabaseNotInitializedException.New
+- uid: UdpChat.Server.Exceptions.UserAlreadyRegisteredException
+  name: UserAlreadyRegisteredException
+  href: api/UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html
+  commentId: T:UdpChat.Server.Exceptions.UserAlreadyRegisteredException
+  fullName: UdpChat.Server.Exceptions.UserAlreadyRegisteredException
+  nameWithType: UserAlreadyRegisteredException
+- uid: UdpChat.Server.Exceptions.UserAlreadyRegisteredException.#ctor(System.String)
+  name: UserAlreadyRegisteredException(string)
+  href: api/UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html#UdpChat_Server_Exceptions_UserAlreadyRegisteredException__ctor_System_String_
+  commentId: M:UdpChat.Server.Exceptions.UserAlreadyRegisteredException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: UdpChat.Server.Exceptions.UserAlreadyRegisteredException.UserAlreadyRegisteredException(string)
+  fullName.vb: UdpChat.Server.Exceptions.UserAlreadyRegisteredException.New(String)
+  nameWithType: UserAlreadyRegisteredException.UserAlreadyRegisteredException(string)
+  nameWithType.vb: UserAlreadyRegisteredException.New(String)
+- uid: UdpChat.Server.Exceptions.UserAlreadyRegisteredException.#ctor*
+  name: UserAlreadyRegisteredException
+  href: api/UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html#UdpChat_Server_Exceptions_UserAlreadyRegisteredException__ctor_
+  commentId: Overload:UdpChat.Server.Exceptions.UserAlreadyRegisteredException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UdpChat.Server.Exceptions.UserAlreadyRegisteredException.UserAlreadyRegisteredException
+  fullName.vb: UdpChat.Server.Exceptions.UserAlreadyRegisteredException.New
+  nameWithType: UserAlreadyRegisteredException.UserAlreadyRegisteredException
+  nameWithType.vb: UserAlreadyRegisteredException.New
 - uid: UdpChat.Server.ServerService
   name: ServerService
   href: api/UdpChat.Server.ServerService.html

@@ -1,50 +1,50 @@
 {
-  "uid": "UdpChat.Lib.ChatMessage",
+  "uid": "UdpChat.Lib.Message.ChatMessage",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
-    "uid": "UdpChat.Lib",
+    "uid": "UdpChat.Lib.Message",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Message.html\">Message</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Message.html\">Message</a>"
       }
     ],
     "level": 0.0
@@ -56,10 +56,10 @@
       "id": "constructors",
       "children": [
         {
-          "uid": "UdpChat.Lib.ChatMessage.#ctor(UdpChat.Lib.ChatUser,System.String)",
+          "uid": "UdpChat.Lib.Message.ChatMessage.#ctor(UdpChat.Lib.ChatUser.ChatUser,System.String)",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.ChatMessage",
+          "parent": "UdpChat.Lib.Message.ChatMessage",
           "isExternal": false,
           "name": [
             {
@@ -84,21 +84,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.ChatMessage.ChatMessage(UdpChat.Lib.ChatUser, string)"
+              "value": "UdpChat.Lib.Message.ChatMessage.ChatMessage(UdpChat.Lib.ChatUser.ChatUser, string)"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.ChatMessage.New(UdpChat.Lib.ChatUser, String)"
+              "value": "UdpChat.Lib.Message.ChatMessage.New(UdpChat.Lib.ChatUser.ChatUser, String)"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.#ctor(UdpChat.Lib.ChatUser,System.String)\" text=\"ChatMessage(ChatUser, string)\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.#ctor(UdpChat.Lib.ChatUser.ChatUser,System.String)\" text=\"ChatMessage(ChatUser, string)\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.#ctor(UdpChat.Lib.ChatUser,System.String)\" text=\"ChatMessage(ChatUser, string)\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.#ctor(UdpChat.Lib.ChatUser.ChatUser,System.String)\" text=\"ChatMessage(ChatUser, string)\"/>"
             }
           ],
           "syntax": {
@@ -116,7 +116,7 @@
               {
                 "id": "user",
                 "type": {
-                  "uid": "UdpChat.Lib.ChatUser",
+                  "uid": "UdpChat.Lib.ChatUser.ChatUser",
                   "name": [
                     {
                       "lang": "csharp",
@@ -140,21 +140,21 @@
                   "fullName": [
                     {
                       "lang": "csharp",
-                      "value": "UdpChat.Lib.ChatUser"
+                      "value": "UdpChat.Lib.ChatUser.ChatUser"
                     },
                     {
                       "lang": "vb",
-                      "value": "UdpChat.Lib.ChatUser"
+                      "value": "UdpChat.Lib.ChatUser.ChatUser"
                     }
                   ],
                   "specName": [
                     {
                       "lang": "csharp",
-                      "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+                      "value": "<xref uid=\"UdpChat.Lib.ChatUser.ChatUser\" text=\"ChatUser\"/>"
                     },
                     {
                       "lang": "vb",
-                      "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+                      "value": "<xref uid=\"UdpChat.Lib.ChatUser.ChatUser\" text=\"ChatUser\"/>"
                     }
                   ]
                 }
@@ -215,17 +215,17 @@
             },
             "id": ".ctor",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 32.0,
+            "startLine": 17.0,
             "endLine": 0.0,
             "isExternal": false
           },
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Message",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.ChatMessage.#ctor*",
+            "uid": "UdpChat.Lib.Message.ChatMessage.#ctor*",
             "name": [
               {
                 "lang": "csharp",
@@ -249,36 +249,36 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.ChatMessage.ChatMessage"
+                "value": "UdpChat.Lib.Message.ChatMessage.ChatMessage"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.ChatMessage.New"
+                "value": "UdpChat.Lib.Message.ChatMessage.New"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.#ctor*\" text=\"ChatMessage\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.#ctor*\" text=\"ChatMessage\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.#ctor*\" text=\"ChatMessage\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.#ctor*\" text=\"ChatMessage\"/>"
               }
             ],
-            "id": "UdpChat_Lib_ChatMessage__ctor_"
+            "id": "UdpChat_Lib_Message_ChatMessage__ctor_"
           },
           "level": 0.0,
           "type": "constructor",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage__ctor_UdpChat_Lib_ChatUser_System_String_.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.%23ctor(UdpChat.Lib.ChatUser%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L33",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Message_ChatMessage__ctor_UdpChat_Lib_ChatUser_ChatUser_System_String_.md&value=---%0Auid%3A%20UdpChat.Lib.Message.ChatMessage.%23ctor(UdpChat.Lib.ChatUser.ChatUser%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L18",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_ChatMessage__ctor_UdpChat_Lib_ChatUser_System_String_",
+          "id": "UdpChat_Lib_Message_ChatMessage__ctor_UdpChat_Lib_ChatUser_ChatUser_System_String_",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -290,10 +290,10 @@
       "id": "properties",
       "children": [
         {
-          "uid": "UdpChat.Lib.ChatMessage.Message",
+          "uid": "UdpChat.Lib.Message.ChatMessage.Message",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.ChatMessage",
+          "parent": "UdpChat.Lib.Message.ChatMessage",
           "isExternal": false,
           "name": [
             {
@@ -318,21 +318,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.ChatMessage.Message"
+              "value": "UdpChat.Lib.Message.ChatMessage.Message"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.ChatMessage.Message"
+              "value": "UdpChat.Lib.Message.ChatMessage.Message"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Message\" text=\"Message\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Message\" text=\"Message\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Message\" text=\"Message\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Message\" text=\"Message\"/>"
             }
           ],
           "syntax": {
@@ -402,17 +402,17 @@
             },
             "id": "Message",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 30.0,
+            "startLine": 15.0,
             "endLine": 0.0,
             "isExternal": false
           },
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Message",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.ChatMessage.Message*",
+            "uid": "UdpChat.Lib.Message.ChatMessage.Message*",
             "name": [
               {
                 "lang": "csharp",
@@ -436,44 +436,44 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.ChatMessage.Message"
+                "value": "UdpChat.Lib.Message.ChatMessage.Message"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.ChatMessage.Message"
+                "value": "UdpChat.Lib.Message.ChatMessage.Message"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Message*\" text=\"Message\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Message*\" text=\"Message\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Message*\" text=\"Message\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Message*\" text=\"Message\"/>"
               }
             ],
-            "id": "UdpChat_Lib_ChatMessage_Message_"
+            "id": "UdpChat_Lib_Message_ChatMessage_Message_"
           },
           "level": 0.0,
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_Message.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L31",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Message_ChatMessage_Message.md&value=---%0Auid%3A%20UdpChat.Lib.Message.ChatMessage.Message%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L16",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_ChatMessage_Message",
+          "id": "UdpChat_Lib_Message_ChatMessage_Message",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.ChatMessage.Timestamp",
+          "uid": "UdpChat.Lib.Message.ChatMessage.Timestamp",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.ChatMessage",
+          "parent": "UdpChat.Lib.Message.ChatMessage",
           "isExternal": false,
           "name": [
             {
@@ -498,21 +498,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.ChatMessage.Timestamp"
+              "value": "UdpChat.Lib.Message.ChatMessage.Timestamp"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.ChatMessage.Timestamp"
+              "value": "UdpChat.Lib.Message.ChatMessage.Timestamp"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Timestamp\" text=\"Timestamp\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Timestamp\" text=\"Timestamp\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Timestamp\" text=\"Timestamp\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Timestamp\" text=\"Timestamp\"/>"
             }
           ],
           "syntax": {
@@ -582,17 +582,17 @@
             },
             "id": "Timestamp",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 28.0,
+            "startLine": 13.0,
             "endLine": 0.0,
             "isExternal": false
           },
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Message",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.ChatMessage.Timestamp*",
+            "uid": "UdpChat.Lib.Message.ChatMessage.Timestamp*",
             "name": [
               {
                 "lang": "csharp",
@@ -616,44 +616,44 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.ChatMessage.Timestamp"
+                "value": "UdpChat.Lib.Message.ChatMessage.Timestamp"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.ChatMessage.Timestamp"
+                "value": "UdpChat.Lib.Message.ChatMessage.Timestamp"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Timestamp*\" text=\"Timestamp\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Timestamp*\" text=\"Timestamp\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.Timestamp*\" text=\"Timestamp\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.Timestamp*\" text=\"Timestamp\"/>"
               }
             ],
-            "id": "UdpChat_Lib_ChatMessage_Timestamp_"
+            "id": "UdpChat_Lib_Message_ChatMessage_Timestamp_"
           },
           "level": 0.0,
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_Timestamp.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L29",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Message_ChatMessage_Timestamp.md&value=---%0Auid%3A%20UdpChat.Lib.Message.ChatMessage.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L14",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_ChatMessage_Timestamp",
+          "id": "UdpChat_Lib_Message_ChatMessage_Timestamp",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.ChatMessage.User",
+          "uid": "UdpChat.Lib.Message.ChatMessage.User",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.ChatMessage",
+          "parent": "UdpChat.Lib.Message.ChatMessage",
           "isExternal": false,
           "name": [
             {
@@ -678,21 +678,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.ChatMessage.User"
+              "value": "UdpChat.Lib.Message.ChatMessage.User"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.ChatMessage.User"
+              "value": "UdpChat.Lib.Message.ChatMessage.User"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.User\" text=\"User\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.User\" text=\"User\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.User\" text=\"User\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.User\" text=\"User\"/>"
             }
           ],
           "syntax": {
@@ -710,7 +710,7 @@
             "return": null,
             "propertyValue": {
               "type": {
-                "uid": "UdpChat.Lib.ChatUser",
+                "uid": "UdpChat.Lib.ChatUser.ChatUser",
                 "name": [
                   {
                     "lang": "csharp",
@@ -734,21 +734,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.ChatUser"
+                    "value": "UdpChat.Lib.ChatUser.ChatUser"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.ChatUser"
+                    "value": "UdpChat.Lib.ChatUser.ChatUser"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+                    "value": "<xref uid=\"UdpChat.Lib.ChatUser.ChatUser\" text=\"ChatUser\"/>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+                    "value": "<xref uid=\"UdpChat.Lib.ChatUser.ChatUser\" text=\"ChatUser\"/>"
                   }
                 ]
               }
@@ -762,17 +762,17 @@
             },
             "id": "User",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 26.0,
+            "startLine": 11.0,
             "endLine": 0.0,
             "isExternal": false
           },
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Message",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.ChatMessage.User*",
+            "uid": "UdpChat.Lib.Message.ChatMessage.User*",
             "name": [
               {
                 "lang": "csharp",
@@ -796,36 +796,36 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.ChatMessage.User"
+                "value": "UdpChat.Lib.Message.ChatMessage.User"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.ChatMessage.User"
+                "value": "UdpChat.Lib.Message.ChatMessage.User"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.User*\" text=\"User\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.User*\" text=\"User\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.User*\" text=\"User\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.User*\" text=\"User\"/>"
               }
             ],
-            "id": "UdpChat_Lib_ChatMessage_User_"
+            "id": "UdpChat_Lib_Message_ChatMessage_User_"
           },
           "level": 0.0,
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_User.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L27",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Message_ChatMessage_User.md&value=---%0Auid%3A%20UdpChat.Lib.Message.ChatMessage.User%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L12",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_ChatMessage_User",
+          "id": "UdpChat_Lib_Message_ChatMessage_User",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -837,10 +837,10 @@
       "id": "methods",
       "children": [
         {
-          "uid": "UdpChat.Lib.ChatMessage.ToString",
+          "uid": "UdpChat.Lib.Message.ChatMessage.ToString",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.ChatMessage",
+          "parent": "UdpChat.Lib.Message.ChatMessage",
           "isExternal": false,
           "name": [
             {
@@ -865,21 +865,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.ChatMessage.ToString()"
+              "value": "UdpChat.Lib.Message.ChatMessage.ToString()"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.ChatMessage.ToString()"
+              "value": "UdpChat.Lib.Message.ChatMessage.ToString()"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.ToString\" text=\"ToString()\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.ToString\" text=\"ToString()\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.ChatMessage.ToString\" text=\"ToString()\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.ToString\" text=\"ToString()\"/>"
             }
           ],
           "syntax": {
@@ -937,7 +937,7 @@
                   }
                 ]
               },
-              "description": "<p sourcefile=\"api/UdpChat.Lib.ChatMessage.yml\" sourcestartlinenumber=\"1\">A string that represents the current object.</p>\n"
+              "description": "<p sourcefile=\"api/UdpChat.Lib.Message.ChatMessage.yml\" sourcestartlinenumber=\"1\">A string that represents the current object.</p>\n"
             }
           },
           "source": {
@@ -948,14 +948,14 @@
             },
             "id": "ToString",
             "path": "../UdpChat.Lib/Message.cs",
-            "startLine": 38.0,
+            "startLine": 23.0,
             "endLine": 0.0,
             "isExternal": false
           },
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Message",
           "example": [],
           "overridden": {
             "uid": "System.Object.ToString",
@@ -1001,7 +1001,7 @@
             ]
           },
           "overload": {
-            "uid": "UdpChat.Lib.ChatMessage.ToString*",
+            "uid": "UdpChat.Lib.Message.ChatMessage.ToString*",
             "name": [
               {
                 "lang": "csharp",
@@ -1025,36 +1025,36 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.ChatMessage.ToString"
+                "value": "UdpChat.Lib.Message.ChatMessage.ToString"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.ChatMessage.ToString"
+                "value": "UdpChat.Lib.Message.ChatMessage.ToString"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.ToString*\" text=\"ToString\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.ToString*\" text=\"ToString\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.ChatMessage.ToString*\" text=\"ToString\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage.ToString*\" text=\"ToString\"/>"
               }
             ],
-            "id": "UdpChat_Lib_ChatMessage_ToString_"
+            "id": "UdpChat_Lib_Message_ChatMessage_ToString_"
           },
           "level": 0.0,
           "type": "method",
-          "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessage.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Message.ChatMessage.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L39",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Message_ChatMessage_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.Message.ChatMessage.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L24",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_ChatMessage_ToString",
+          "id": "UdpChat_Lib_Message_ChatMessage_ToString",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -1088,11 +1088,11 @@
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Lib.ChatMessage"
+      "value": "UdpChat.Lib.Message.ChatMessage"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Lib.ChatMessage"
+      "value": "UdpChat.Lib.Message.ChatMessage"
     }
   ],
   "type": "class",
@@ -1104,7 +1104,7 @@
     },
     "id": "ChatMessage",
     "path": "../UdpChat.Lib/Message.cs",
-    "startLine": 22.0,
+    "startLine": 7.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -1112,53 +1112,53 @@
     "UdpChat.Lib"
   ],
   "namespace": {
-    "uid": "UdpChat.Lib",
+    "uid": "UdpChat.Lib.Message",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Message"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Message.html\">Message</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Message.html\">Message</a>"
       }
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatMessage.yml\" sourcestartlinenumber=\"1\">A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message.</p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Lib.Message.ChatMessage.yml\" sourcestartlinenumber=\"1\">A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message.</p>\n",
   "example": [],
   "syntax": {
     "content": [
@@ -1779,11 +1779,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Lib.ChatMessage.yml",
+  "_key": "api/UdpChat.Lib.Message.ChatMessage.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Lib.ChatMessage.html",
+  "_path": "api/UdpChat.Lib.Message.ChatMessage.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -1853,13 +1853,13 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatMessage.md&value=---%0Auid%3A%20UdpChat.Lib.ChatMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L23",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Message_ChatMessage.md&value=---%0Auid%3A%20UdpChat.Lib.Message.ChatMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Message.cs/#L8",
   "remarks": "",
   "conceptual": "",
   "implements": "",
   "seealso": null,
-  "id": "UdpChat_Lib_ChatMessage",
+  "id": "UdpChat_Lib_Message_ChatMessage",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": true,

@@ -264,7 +264,7 @@
             },
             "id": ".ctor",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 29.0,
+            "startLine": 32.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -370,7 +370,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"UdpChat.Client.ChatClient\" data-throw-if-not-resolved=\"false\"></xref> class with the specified client port and central server IP and port.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient__ctor_System_Int32_System_String_System_Int32_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.%23ctor(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L30",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L33",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -446,7 +446,7 @@
             "return": null,
             "fieldValue": {
               "type": {
-                "uid": "UdpChat.Lib.ChatUser",
+                "uid": "UdpChat.Lib.ChatUser.ChatUser",
                 "name": [
                   {
                     "lang": "csharp",
@@ -470,21 +470,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.ChatUser"
+                    "value": "UdpChat.Lib.ChatUser.ChatUser"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.ChatUser"
+                    "value": "UdpChat.Lib.ChatUser.ChatUser"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+                    "value": "<xref uid=\"UdpChat.Lib.ChatUser.ChatUser\" text=\"ChatUser\"/>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<xref uid=\"UdpChat.Lib.ChatUser\" text=\"ChatUser\"/>"
+                    "value": "<xref uid=\"UdpChat.Lib.ChatUser.ChatUser\" text=\"ChatUser\"/>"
                   }
                 ]
               },
@@ -499,7 +499,7 @@
             },
             "id": "user",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 17.0,
+            "startLine": 20.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -513,7 +513,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_user.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.user%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L18",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L21",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -641,7 +641,7 @@
             },
             "id": "PingCentralServer",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 49.0,
+            "startLine": 52.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -699,7 +699,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Pings the central server to check if it is reachable</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_PingCentralServer.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.PingCentralServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L50",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L53",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -709,7 +709,7 @@
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Request.RequestType)",
+          "uid": "UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)",
           "isEii": false,
           "isExtensionMethod": false,
           "parent": "UdpChat.Client.ChatClient",
@@ -737,21 +737,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.ChatClient.SendAuthRequest(string, string, UdpChat.Lib.Request.RequestType)"
+              "value": "UdpChat.Client.ChatClient.SendAuthRequest(string, string, UdpChat.Lib.Authentication.Request.RequestType)"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.ChatClient.SendAuthRequest(String, String, UdpChat.Lib.Request.RequestType)"
+              "value": "UdpChat.Client.ChatClient.SendAuthRequest(String, String, UdpChat.Lib.Authentication.Request.RequestType)"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Request.RequestType)\" text=\"SendAuthRequest(string, string, RequestType)\"/>"
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)\" text=\"SendAuthRequest(string, string, RequestType)\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Request.RequestType)\" text=\"SendAuthRequest(string, string, RequestType)\"/>"
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)\" text=\"SendAuthRequest(string, string, RequestType)\"/>"
             }
           ],
           "syntax": {
@@ -863,7 +863,7 @@
               {
                 "id": "type",
                 "type": {
-                  "uid": "UdpChat.Lib.Request.RequestType",
+                  "uid": "UdpChat.Lib.Authentication.Request.RequestType",
                   "name": [
                     {
                       "lang": "csharp",
@@ -887,21 +887,21 @@
                   "fullName": [
                     {
                       "lang": "csharp",
-                      "value": "UdpChat.Lib.Request.RequestType"
+                      "value": "UdpChat.Lib.Authentication.Request.RequestType"
                     },
                     {
                       "lang": "vb",
-                      "value": "UdpChat.Lib.Request.RequestType"
+                      "value": "UdpChat.Lib.Authentication.Request.RequestType"
                     }
                   ],
                   "specName": [
                     {
                       "lang": "csharp",
-                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.RequestType.html\">RequestType</a>"
                     },
                     {
                       "lang": "vb",
-                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.RequestType.html\">RequestType</a>"
                     }
                   ]
                 },
@@ -917,7 +917,7 @@
             },
             "id": "SendAuthRequest",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 93.0,
+            "startLine": 96.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -972,15 +972,15 @@
           },
           "level": 0.0,
           "type": "method",
-          "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Sends a an auth request of type <xref href=\"UdpChat.Lib.Request.RequestType\" data-throw-if-not-resolved=\"false\"></xref> to the central server.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Sends a an auth request of type <xref href=\"UdpChat.Lib.Authentication.Request.RequestType\" data-throw-if-not-resolved=\"false\"></xref> to the central server.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.SendAuthRequest(System.String%2CSystem.String%2CUdpChat.Lib.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L94",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.SendAuthRequest(System.String%2CSystem.String%2CUdpChat.Lib.Authentication.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L97",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Request_RequestType_",
+          "id": "UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_",
           "hideTitleType": false,
           "hideSubtitle": false
         },
@@ -1099,7 +1099,7 @@
             },
             "id": "SendMessage",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 63.0,
+            "startLine": 66.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1157,7 +1157,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Sends a message if the user is logged in to the central server.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_SendMessage_System_String_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.SendMessage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L64",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L67",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -1212,7 +1212,7 @@
     },
     "id": "ChatClient",
     "path": "../UdpChat.Client/ChatClient.cs",
-    "startLine": 10.0,
+    "startLine": 13.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -1799,7 +1799,7 @@
   },
   "yamlmime": "ManagedReference",
   "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L11",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L14",
   "remarks": "",
   "conceptual": "",
   "implements": "",

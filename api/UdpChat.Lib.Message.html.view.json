@@ -1,5 +1,5 @@
 {
-  "uid": "UdpChat.Client",
+  "uid": "UdpChat.Lib.Message",
   "isEii": false,
   "isExtensionMethod": false,
   "children": [
@@ -9,51 +9,51 @@
       "id": "classes",
       "children": [
         {
-          "uid": "UdpChat.Client.ChatClient",
+          "uid": "UdpChat.Lib.Message.ChatMessage",
           "isExtensionMethod": false,
-          "href": "UdpChat.Client.ChatClient.html",
+          "href": "UdpChat.Lib.Message.ChatMessage.html",
           "name": [
             {
               "lang": "csharp",
-              "value": "ChatClient"
+              "value": "ChatMessage"
             },
             {
               "lang": "vb",
-              "value": "ChatClient"
+              "value": "ChatMessage"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "ChatClient"
+              "value": "ChatMessage"
             },
             {
               "lang": "vb",
-              "value": "ChatClient"
+              "value": "ChatMessage"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.ChatClient"
+              "value": "UdpChat.Lib.Message.ChatMessage"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.ChatClient"
+              "value": "UdpChat.Lib.Message.ChatMessage"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage\" text=\"ChatMessage\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage\" text=\"ChatMessage\"/>"
             }
           ],
           "level": 0.0,
-          "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">A ChatClient is a client for the chat system.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Message.ChatMessage.yml\" sourcestartlinenumber=\"1\">A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message.</p>\n",
           "type": "class",
           "platform": null,
           "isEii": false,
@@ -65,7 +65,68 @@
           "implements": "",
           "example": "",
           "seealso": null,
-          "id": "UdpChat_Client_ChatClient",
+          "id": "UdpChat_Lib_Message_ChatMessage",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.Message.ChatMessageResponse",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Lib.Message.ChatMessageResponse.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatMessageResponse"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatMessageResponse"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Message.ChatMessageResponse"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Message.ChatMessageResponse"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessageResponse\" text=\"ChatMessageResponse\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessageResponse\" text=\"ChatMessageResponse\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Message.ChatMessageResponse.yml\" sourcestartlinenumber=\"1\">The responnse to a ChatMessage from the server.</p>\n",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Message_ChatMessageResponse",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -79,36 +140,36 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Lib.Message"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Lib.Message"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Lib.Message"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Lib.Message"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Lib.Message"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Lib.Message"
     }
   ],
   "type": "namespace",
   "assemblies": [
-    "UdpChat.Client"
+    "UdpChat.Lib"
   ],
   "level": 0.0,
   "_appFaviconPath": "images/favicon.ico",
@@ -157,11 +218,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Client.yml",
+  "_key": "api/UdpChat.Lib.Message.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Client.html",
+  "_path": "api/UdpChat.Lib.Message.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -240,7 +301,7 @@
   "implements": "",
   "example": "",
   "seealso": null,
-  "id": "UdpChat_Client",
+  "id": "UdpChat_Lib_Message",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isNamespace": true,

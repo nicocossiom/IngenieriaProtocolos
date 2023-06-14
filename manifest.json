@@ -13,20 +13,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Client.ChatClient.yml",
+      "source_relative_path": "api/UdpChat.Client.CLI.ClientCLI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Client.ChatClient.html"
+          "relative_path": "api/UdpChat.Client.CLI.ClientCLI.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Client.ClientCLI.yml",
+      "source_relative_path": "api/UdpChat.Client.CLI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Client.ClientCLI.html"
+          "relative_path": "api/UdpChat.Client.CLI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Client.ChatClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Client.ChatClient.html"
         }
       },
       "version": ""
@@ -43,20 +53,50 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Lib.ChatMessage.yml",
+      "source_relative_path": "api/UdpChat.Lib.Authentication.Request.RequestType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Lib.ChatMessage.html"
+          "relative_path": "api/UdpChat.Lib.Authentication.Request.RequestType.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Lib.ChatMessageResponse.yml",
+      "source_relative_path": "api/UdpChat.Lib.Authentication.Request.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Lib.ChatMessageResponse.html"
+          "relative_path": "api/UdpChat.Lib.Authentication.Request.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Authentication.Response.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Authentication.Response.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Authentication.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Authentication.Response.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Authentication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Authentication.html"
         }
       },
       "version": ""
@@ -73,6 +113,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.ChatUser.ChatUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.ChatUser.ChatUser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UdpChat.Lib.ChatUser.yml",
       "output": {
         ".html": {
@@ -83,40 +133,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Lib.Request.RequestType.yml",
+      "source_relative_path": "api/UdpChat.Lib.Message.ChatMessage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Lib.Request.RequestType.html"
+          "relative_path": "api/UdpChat.Lib.Message.ChatMessage.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Lib.Request.yml",
+      "source_relative_path": "api/UdpChat.Lib.Message.ChatMessageResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Lib.Request.html"
+          "relative_path": "api/UdpChat.Lib.Message.ChatMessageResponse.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Lib.Response.State.yml",
+      "source_relative_path": "api/UdpChat.Lib.Message.yml",
       "output": {
         ".html": {
-          "relative_path": "api/UdpChat.Lib.Response.State.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UdpChat.Lib.Response.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UdpChat.Lib.Response.html"
+          "relative_path": "api/UdpChat.Lib.Message.html"
         }
       },
       "version": ""
@@ -133,10 +173,60 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.CLI.ServerCLI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.CLI.ServerCLI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.CLI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.CLI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UdpChat.Server.CentralRetransmissionServer.yml",
       "output": {
         ".html": {
           "relative_path": "api/UdpChat.Server.CentralRetransmissionServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.Exceptions.UserAlreadyRegisteredException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.Exceptions.UserAlreadyRegisteredException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.Exceptions.html"
         }
       },
       "version": ""

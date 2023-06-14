@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Response
+      <title>Class ChatUser
  | UDPChat </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Response
+      <meta name="title" content="Class ChatUser
  | UDPChat ">
       
       <link rel="icon" href="../images/favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response.md&amp;value=---%0Auid%3A%20UdpChat.Lib.Response%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatUser_ChatUser.md&amp;value=---%0Auid%3A%20UdpChat.Lib.ChatUser.ChatUser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <script type="module">
@@ -77,26 +77,27 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="UdpChat.Lib.Response">
+        <article data-uid="UdpChat.Lib.ChatUser.ChatUser">
 
 
 
-  <h1 id="UdpChat_Lib_Response" data-uid="UdpChat.Lib.Response" class="text-break">
-    Class Response
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <h1 id="UdpChat_Lib_ChatUser_ChatUser" data-uid="UdpChat.Lib.ChatUser.ChatUser" class="text-break">
+    Class ChatUser
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/User.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="UdpChat.html">UdpChat</a>.<a class="xref" href="UdpChat.Lib.html">Lib</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UdpChat.html">UdpChat</a>.<a class="xref" href="UdpChat.Lib.html">Lib</a>.<a class="xref" href="UdpChat.Lib.ChatUser.html">ChatUser</a></dd></dl>
   <dl><dt>Assembly</dt><dd>UdpChat.Lib.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Response to a <a class="xref" href="UdpChat.Lib.Request.html">Request</a>. It has a message and a state.</p>
+  <div class="markdown summary"><p>A ChatUser is a user of the chat system. It has a username and two endpoints, one for sending and one for receiving.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Response : ChatSendable</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ChatUser</code></pre>
   </div>
 
 
@@ -106,8 +107,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="UdpChat.Lib.ChatSendable.html">ChatSendable</a></div>
-      <div><span class="xref">Response</span></div>
+      <div><span class="xref">ChatUser</span></div>
     </dd>
   </dl>
 
@@ -116,18 +116,6 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_Timestamp">ChatSendable.Timestamp</a>
-    </div>
-    <div>
-      <a class="xref" href="UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__">ChatSendable.SerializeAndSend(ref IPEndPoint, ref UdpClient)</a>
-    </div>
-    <div>
-      <a class="xref" href="UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint_System_Net_Sockets_UdpClient__">ChatSendable.SerializeAndSend(IPEndPoint, ref UdpClient)</a>
-    </div>
-    <div>
-      <a class="xref" href="UdpChat.Lib.ChatSendable.html#UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint_System_Net_Sockets_UdpClient_">ChatSendable.SerializeAndSend(IPEndPoint, UdpClient)</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -146,6 +134,9 @@
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
   </dd></dl>
 
 
@@ -157,25 +148,25 @@
 </h2>
 
 
-  <a id="UdpChat_Lib_Response__ctor_" data-uid="UdpChat.Lib.Response.#ctor*"></a>
+  <a id="UdpChat_Lib_ChatUser_ChatUser__ctor_" data-uid="UdpChat.Lib.ChatUser.ChatUser.#ctor*"></a>
 
-  <h3 id="UdpChat_Lib_Response__ctor_UdpChat_Lib_Response_State_System_String_" data-uid="UdpChat.Lib.Response.#ctor(UdpChat.Lib.Response.State,System.String)">
-  Response(State, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Lib_ChatUser_ChatUser__ctor_System_String_System_String_" data-uid="UdpChat.Lib.ChatUser.ChatUser.#ctor(System.String,System.String)">
+  ChatUser(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/User.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Response(Response.State responseState, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ChatUser(string username, string password)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>responseState</code> <a class="xref" href="UdpChat.Lib.Response.html">Response</a>.<a class="xref" href="UdpChat.Lib.Response.State.html">State</a></dt>
+    <dt><code>username</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -194,18 +185,18 @@
 </h2>
 
 
-  <a id="UdpChat_Lib_Response_Message_" data-uid="UdpChat.Lib.Response.Message*"></a>
+  <a id="UdpChat_Lib_ChatUser_ChatUser_Password_" data-uid="UdpChat.Lib.ChatUser.ChatUser.Password*"></a>
 
-  <h3 id="UdpChat_Lib_Response_Message" data-uid="UdpChat.Lib.Response.Message">
-  Message
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Lib_ChatUser_ChatUser_Password" data-uid="UdpChat.Lib.ChatUser.ChatUser.Password">
+  Password
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/User.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Message { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Password { get; set; }</code></pre>
   </div>
 
 
@@ -225,18 +216,18 @@
 
 
 
-  <a id="UdpChat_Lib_Response_ResponseState_" data-uid="UdpChat.Lib.Response.ResponseState*"></a>
+  <a id="UdpChat_Lib_ChatUser_ChatUser_Username_" data-uid="UdpChat.Lib.ChatUser.ChatUser.Username*"></a>
 
-  <h3 id="UdpChat_Lib_Response_ResponseState" data-uid="UdpChat.Lib.Response.ResponseState">
-  ResponseState
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Lib_ChatUser_ChatUser_Username" data-uid="UdpChat.Lib.ChatUser.ChatUser.Username">
+  Username
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/User.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Response.State ResponseState { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Username { get; set; }</code></pre>
   </div>
 
 
@@ -245,46 +236,9 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="UdpChat.Lib.Response.html">Response</a>.<a class="xref" href="UdpChat.Lib.Response.State.html">State</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="UdpChat_Lib_Response_ToString_" data-uid="UdpChat.Lib.Response.ToString*"></a>
-
-  <h3 id="UdpChat_Lib_Response_ToString" data-uid="UdpChat.Lib.Response.ToString">
-  ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L95"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A string that represents the current object.</p>
-</dd>
-  </dl>
-
-
-
 
 
 
@@ -297,7 +251,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L63" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/User.cs/#L6" class="edit-link">Edit this page</a>
         </div>
 
         

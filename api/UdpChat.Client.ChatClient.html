@@ -83,7 +83,7 @@
 
   <h1 id="UdpChat_Client_ChatClient" data-uid="UdpChat.Client.ChatClient" class="text-break">
     Class ChatClient
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,7 +151,7 @@
 
   <h3 id="UdpChat_Client_ChatClient__ctor_System_Int32_System_String_System_Int32_" data-uid="UdpChat.Client.ChatClient.#ctor(System.Int32,System.String,System.Int32)">
   ChatClient(int, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="UdpChat.Client.ChatClient.html">ChatClient</a> class with the specified client port and central server IP and port.</p>
@@ -199,7 +199,7 @@
 
   <h3 id="UdpChat_Client_ChatClient_user" data-uid="UdpChat.Client.ChatClient.user">
   user
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -214,7 +214,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="UdpChat.Lib.ChatUser.html">ChatUser</a></dt>
+    <dt><a class="xref" href="UdpChat.Lib.ChatUser.ChatUser.html">ChatUser</a></dt>
     <dd><p>ChatUser instance representing this ChatClient</p>
 </dd>
   </dl>
@@ -235,7 +235,7 @@
 
   <h3 id="UdpChat_Client_ChatClient_PingCentralServer" data-uid="UdpChat.Client.ChatClient.PingCentralServer">
   PingCentralServer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Pings the central server to check if it is reachable</p>
@@ -266,12 +266,12 @@
 
   <a id="UdpChat_Client_ChatClient_SendAuthRequest_" data-uid="UdpChat.Client.ChatClient.SendAuthRequest*"></a>
 
-  <h3 id="UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Request_RequestType_" data-uid="UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Request.RequestType)">
+  <h3 id="UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_" data-uid="UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)">
   SendAuthRequest(string, string, RequestType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sends a an auth request of type <a class="xref" href="UdpChat.Lib.Request.RequestType.html">Request.RequestType</a> to the central server.</p>
+  <div class="markdown level1 summary"><p>Sends a an auth request of type <a class="xref" href="UdpChat.Lib.Authentication.Request.RequestType.html">Request.RequestType</a> to the central server.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -285,7 +285,7 @@
     <dd></dd>
     <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>type</code> <a class="xref" href="UdpChat.Lib.Request.html">Request</a>.<a class="xref" href="UdpChat.Lib.Request.RequestType.html">RequestType</a></dt>
+    <dt><code>type</code> <a class="xref" href="UdpChat.Lib.Authentication.Request.html">Request</a>.<a class="xref" href="UdpChat.Lib.Authentication.Request.RequestType.html">RequestType</a></dt>
     <dd></dd>
   </dl>
 
@@ -304,7 +304,7 @@
 
   <h3 id="UdpChat_Client_ChatClient_SendMessage_System_String_" data-uid="UdpChat.Client.ChatClient.SendMessage(System.String)">
   SendMessage(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends a message if the user is logged in to the central server.</p>
@@ -336,7 +336,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
         

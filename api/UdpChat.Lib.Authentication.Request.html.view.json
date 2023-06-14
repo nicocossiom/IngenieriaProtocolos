@@ -1,50 +1,50 @@
 {
-  "uid": "UdpChat.Lib.Request",
+  "uid": "UdpChat.Lib.Authentication.Request",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
-    "uid": "UdpChat.Lib",
+    "uid": "UdpChat.Lib.Authentication",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       }
     ],
     "level": 0.0
@@ -56,10 +56,10 @@
       "id": "constructors",
       "children": [
         {
-          "uid": "UdpChat.Lib.Request.#ctor(System.String,System.String,UdpChat.Lib.Request.RequestType)",
+          "uid": "UdpChat.Lib.Authentication.Request.#ctor(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Request",
+          "parent": "UdpChat.Lib.Authentication.Request",
           "isExternal": false,
           "name": [
             {
@@ -84,21 +84,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Request.Request(string, string, UdpChat.Lib.Request.RequestType)"
+              "value": "UdpChat.Lib.Authentication.Request.Request(string, string, UdpChat.Lib.Authentication.Request.RequestType)"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Request.New(String, String, UdpChat.Lib.Request.RequestType)"
+              "value": "UdpChat.Lib.Authentication.Request.New(String, String, UdpChat.Lib.Authentication.Request.RequestType)"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Request.#ctor(System.String,System.String,UdpChat.Lib.Request.RequestType)\" text=\"Request(string, string, RequestType)\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.#ctor(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)\" text=\"Request(string, string, RequestType)\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Request.#ctor(System.String,System.String,UdpChat.Lib.Request.RequestType)\" text=\"Request(string, string, RequestType)\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.#ctor(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)\" text=\"Request(string, string, RequestType)\"/>"
             }
           ],
           "syntax": {
@@ -158,7 +158,7 @@
                     }
                   ]
                 },
-                "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The username of the user.</p>\n"
+                "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">The username of the user.</p>\n"
               },
               {
                 "id": "password",
@@ -205,12 +205,12 @@
                     }
                   ]
                 },
-                "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The password of the user.</p>\n"
+                "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">The password of the user.</p>\n"
               },
               {
                 "id": "type",
                 "type": {
-                  "uid": "UdpChat.Lib.Request.RequestType",
+                  "uid": "UdpChat.Lib.Authentication.Request.RequestType",
                   "name": [
                     {
                       "lang": "csharp",
@@ -234,25 +234,25 @@
                   "fullName": [
                     {
                       "lang": "csharp",
-                      "value": "UdpChat.Lib.Request.RequestType"
+                      "value": "UdpChat.Lib.Authentication.Request.RequestType"
                     },
                     {
                       "lang": "vb",
-                      "value": "UdpChat.Lib.Request.RequestType"
+                      "value": "UdpChat.Lib.Authentication.Request.RequestType"
                     }
                   ],
                   "specName": [
                     {
                       "lang": "csharp",
-                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.RequestType.html\">RequestType</a>"
                     },
                     {
                       "lang": "vb",
-                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                      "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.RequestType.html\">RequestType</a>"
                     }
                   ]
                 },
-                "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The type of the request.</p>\n"
+                "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">The type of the request.</p>\n"
               }
             ]
           },
@@ -271,10 +271,10 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.Request.#ctor*",
+            "uid": "UdpChat.Lib.Authentication.Request.#ctor*",
             "name": [
               {
                 "lang": "csharp",
@@ -298,36 +298,36 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.Request.Request"
+                "value": "UdpChat.Lib.Authentication.Request.Request"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.Request.New"
+                "value": "UdpChat.Lib.Authentication.Request.New"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.Request.#ctor*\" text=\"Request\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.#ctor*\" text=\"Request\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.Request.#ctor*\" text=\"Request\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.#ctor*\" text=\"Request\"/>"
               }
             ],
-            "id": "UdpChat_Lib_Request__ctor_"
+            "id": "UdpChat_Lib_Authentication_Request__ctor_"
           },
           "level": 0.0,
           "type": "constructor",
-          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref> class with the specified username, password, and request type.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"UdpChat.Lib.Authentication.Request\" data-throw-if-not-resolved=\"false\"></xref> class with the specified username, password, and request type.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request__ctor_System_String_System_String_UdpChat_Lib_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Lib.Request.%23ctor(System.String%2CSystem.String%2CUdpChat.Lib.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Request__ctor_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Request.%23ctor(System.String%2CSystem.String%2CUdpChat.Lib.Authentication.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L44",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Request__ctor_System_String_System_String_UdpChat_Lib_Request_RequestType_",
+          "id": "UdpChat_Lib_Authentication_Request__ctor_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -339,10 +339,10 @@
       "id": "properties",
       "children": [
         {
-          "uid": "UdpChat.Lib.Request.Password",
+          "uid": "UdpChat.Lib.Authentication.Request.Password",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Request",
+          "parent": "UdpChat.Lib.Authentication.Request",
           "isExternal": false,
           "name": [
             {
@@ -367,21 +367,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Request.Password"
+              "value": "UdpChat.Lib.Authentication.Request.Password"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Request.Password"
+              "value": "UdpChat.Lib.Authentication.Request.Password"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Request.Password\" text=\"Password\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Password\" text=\"Password\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Request.Password\" text=\"Password\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Password\" text=\"Password\"/>"
             }
           ],
           "syntax": {
@@ -441,7 +441,7 @@
                   }
                 ]
               },
-              "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The password of the user</p>\n"
+              "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">The password of the user</p>\n"
             }
           },
           "source": {
@@ -459,10 +459,10 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.Request.Password*",
+            "uid": "UdpChat.Lib.Authentication.Request.Password*",
             "name": [
               {
                 "lang": "csharp",
@@ -486,44 +486,44 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.Request.Password"
+                "value": "UdpChat.Lib.Authentication.Request.Password"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.Request.Password"
+                "value": "UdpChat.Lib.Authentication.Request.Password"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.Request.Password*\" text=\"Password\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Password*\" text=\"Password\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.Request.Password*\" text=\"Password\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Password*\" text=\"Password\"/>"
               }
             ],
-            "id": "UdpChat_Lib_Request_Password_"
+            "id": "UdpChat_Lib_Authentication_Request_Password_"
           },
           "level": 0.0,
           "type": "property",
-          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Sets or gets the password of the user</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">Sets or gets the password of the user</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_Password.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Password%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Request_Password.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Request.Password%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L17",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Request_Password",
+          "id": "UdpChat_Lib_Authentication_Request_Password",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.Request.Type",
+          "uid": "UdpChat.Lib.Authentication.Request.Type",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Request",
+          "parent": "UdpChat.Lib.Authentication.Request",
           "isExternal": false,
           "name": [
             {
@@ -548,21 +548,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Request.Type"
+              "value": "UdpChat.Lib.Authentication.Request.Type"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Request.Type"
+              "value": "UdpChat.Lib.Authentication.Request.Type"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Request.Type\" text=\"Type\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Type\" text=\"Type\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Request.Type\" text=\"Type\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Type\" text=\"Type\"/>"
             }
           ],
           "syntax": {
@@ -580,7 +580,7 @@
             "return": null,
             "propertyValue": {
               "type": {
-                "uid": "UdpChat.Lib.Request.RequestType",
+                "uid": "UdpChat.Lib.Authentication.Request.RequestType",
                 "name": [
                   {
                     "lang": "csharp",
@@ -604,25 +604,25 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.Request.RequestType"
+                    "value": "UdpChat.Lib.Authentication.Request.RequestType"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.Request.RequestType"
+                    "value": "UdpChat.Lib.Authentication.Request.RequestType"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.RequestType.html\">RequestType</a>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Request.RequestType.html\">RequestType</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.html\">Request</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Request.RequestType.html\">RequestType</a>"
                   }
                 ]
               },
-              "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The type of the request. See <xref href=\"UdpChat.Lib.Request.RequestType\" data-throw-if-not-resolved=\"false\"></xref> for available request types.</p>\n"
+              "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">The type of the request. See <xref href=\"UdpChat.Lib.Authentication.Request.RequestType\" data-throw-if-not-resolved=\"false\"></xref> for available request types.</p>\n"
             }
           },
           "source": {
@@ -640,10 +640,10 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.Request.Type*",
+            "uid": "UdpChat.Lib.Authentication.Request.Type*",
             "name": [
               {
                 "lang": "csharp",
@@ -667,44 +667,44 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.Request.Type"
+                "value": "UdpChat.Lib.Authentication.Request.Type"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.Request.Type"
+                "value": "UdpChat.Lib.Authentication.Request.Type"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.Request.Type*\" text=\"Type\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Type*\" text=\"Type\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.Request.Type*\" text=\"Type\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Type*\" text=\"Type\"/>"
               }
             ],
-            "id": "UdpChat_Lib_Request_Type_"
+            "id": "UdpChat_Lib_Authentication_Request_Type_"
           },
           "level": 0.0,
           "type": "property",
-          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Gets or sets the type of the request.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">Gets or sets the type of the request.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_Type.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Request_Type.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Request.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L23",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Request_Type",
+          "id": "UdpChat_Lib_Authentication_Request_Type",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.Request.Username",
+          "uid": "UdpChat.Lib.Authentication.Request.Username",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Request",
+          "parent": "UdpChat.Lib.Authentication.Request",
           "isExternal": false,
           "name": [
             {
@@ -729,21 +729,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Request.Username"
+              "value": "UdpChat.Lib.Authentication.Request.Username"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Request.Username"
+              "value": "UdpChat.Lib.Authentication.Request.Username"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Request.Username\" text=\"Username\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Username\" text=\"Username\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Request.Username\" text=\"Username\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Username\" text=\"Username\"/>"
             }
           ],
           "syntax": {
@@ -803,7 +803,7 @@
                   }
                 ]
               },
-              "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">The username of the user</p>\n"
+              "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">The username of the user</p>\n"
             }
           },
           "source": {
@@ -821,10 +821,10 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Lib.Request.Username*",
+            "uid": "UdpChat.Lib.Authentication.Request.Username*",
             "name": [
               {
                 "lang": "csharp",
@@ -848,36 +848,36 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.Request.Username"
+                "value": "UdpChat.Lib.Authentication.Request.Username"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.Request.Username"
+                "value": "UdpChat.Lib.Authentication.Request.Username"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.Request.Username*\" text=\"Username\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Username*\" text=\"Username\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.Request.Username*\" text=\"Username\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.Username*\" text=\"Username\"/>"
               }
             ],
-            "id": "UdpChat_Lib_Request_Username_"
+            "id": "UdpChat_Lib_Authentication_Request_Username_"
           },
           "level": 0.0,
           "type": "property",
-          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Sets or gets the username of the user</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">Sets or gets the username of the user</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_Username.md&value=---%0Auid%3A%20UdpChat.Lib.Request.Username%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Request_Username.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Request.Username%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L12",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Request_Username",
+          "id": "UdpChat_Lib_Authentication_Request_Username",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -889,10 +889,10 @@
       "id": "methods",
       "children": [
         {
-          "uid": "UdpChat.Lib.Request.ToString",
+          "uid": "UdpChat.Lib.Authentication.Request.ToString",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Request",
+          "parent": "UdpChat.Lib.Authentication.Request",
           "isExternal": false,
           "name": [
             {
@@ -917,21 +917,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Request.ToString()"
+              "value": "UdpChat.Lib.Authentication.Request.ToString()"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Request.ToString()"
+              "value": "UdpChat.Lib.Authentication.Request.ToString()"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Request.ToString\" text=\"ToString()\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.ToString\" text=\"ToString()\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Request.ToString\" text=\"ToString()\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.ToString\" text=\"ToString()\"/>"
             }
           ],
           "syntax": {
@@ -989,7 +989,7 @@
                   }
                 ]
               },
-              "description": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">A string that represents the current object.</p>\n"
+              "description": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">A string that represents the current object.</p>\n"
             }
           },
           "source": {
@@ -1007,7 +1007,7 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "overridden": {
             "uid": "System.Object.ToString",
@@ -1053,7 +1053,7 @@
             ]
           },
           "overload": {
-            "uid": "UdpChat.Lib.Request.ToString*",
+            "uid": "UdpChat.Lib.Authentication.Request.ToString*",
             "name": [
               {
                 "lang": "csharp",
@@ -1077,36 +1077,36 @@
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Lib.Request.ToString"
+                "value": "UdpChat.Lib.Authentication.Request.ToString"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Lib.Request.ToString"
+                "value": "UdpChat.Lib.Authentication.Request.ToString"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Lib.Request.ToString*\" text=\"ToString\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.ToString*\" text=\"ToString\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Lib.Request.ToString*\" text=\"ToString\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Authentication.Request.ToString*\" text=\"ToString\"/>"
               }
             ],
-            "id": "UdpChat_Lib_Request_ToString_"
+            "id": "UdpChat_Lib_Authentication_Request_ToString_"
           },
           "level": 0.0,
           "type": "method",
-          "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">Returns a string that represents the current object.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.Request.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Request_ToString.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Request.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L52",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Request_ToString",
+          "id": "UdpChat_Lib_Authentication_Request_ToString",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -1140,11 +1140,11 @@
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Lib.Request"
+      "value": "UdpChat.Lib.Authentication.Request"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Lib.Request"
+      "value": "UdpChat.Lib.Authentication.Request"
     }
   ],
   "type": "class",
@@ -1164,53 +1164,53 @@
     "UdpChat.Lib"
   ],
   "namespace": {
-    "uid": "UdpChat.Lib",
+    "uid": "UdpChat.Lib.Authentication",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       }
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Lib.Request.yml\" sourcestartlinenumber=\"1\">Request to register a user to the server. After a <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref> there is associated expected <xref href=\"UdpChat.Lib.Response\" data-throw-if-not-resolved=\"false\"></xref></p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Request.yml\" sourcestartlinenumber=\"1\">Request to register a user to the server. After a <xref href=\"UdpChat.Lib.Authentication.Request\" data-throw-if-not-resolved=\"false\"></xref> there is associated expected <xref href=\"UdpChat.Lib.Authentication.Response\" data-throw-if-not-resolved=\"false\"></xref></p>\n",
   "example": [],
   "syntax": {
     "content": [
@@ -1875,11 +1875,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Lib.Request.yml",
+  "_key": "api/UdpChat.Lib.Authentication.Request.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Lib.Request.html",
+  "_path": "api/UdpChat.Lib.Authentication.Request.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -1949,13 +1949,13 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Request.md&value=---%0Auid%3A%20UdpChat.Lib.Request%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Request.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Request%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
   "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L6",
   "remarks": "",
   "conceptual": "",
   "implements": "",
   "seealso": null,
-  "id": "UdpChat_Lib_Request",
+  "id": "UdpChat_Lib_Authentication_Request",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": true,

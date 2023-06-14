@@ -81,6 +81,53 @@
 <p>This chat app is a simple UDP client/server application that allows multiple clients
 to connect to a server and send messages to each other. The server is able to handle
 multiple clients at once and will broadcast messages to all connected clients.</p>
+<h2 id="basic-functionality-of-a-udp-multichat">Basic functionality of a UDP Multichat</h2>
+<pre><code class="lang-mermaid">sequenceDiagram
+    participant Client
+    participant Server
+    participant OtherRegisteredClients
+
+    Client-&gt;&gt;Server: Sends Authentication request
+    Server-&gt;&gt;Client: Sends Authentication response
+    Client-&gt;&gt;Server: Sends Message
+    Server-&gt;&gt;OtherRegisteredClients: Broadcasts Message
+    Server-&gt;&gt;Client: Sends Message Ack
+</code></pre>
+<h2 id="possible-client-states">Possible client states</h2>
+<pre><code class="lang-mermaid">sequenceDiagram
+    participant Client
+    participant Registered
+    participant NotRegistered
+    participant LoggedIn
+    participant NotLoggedIn
+    participant SendingMessage
+    participant ReceivingChatMessage
+
+    Client -&gt;&gt; Registered: Can be
+    Client -&gt;&gt; NotRegistered: Can be
+    Registered -&gt;&gt; LoggedIn: Logs in
+    NotLoggedIn -&gt;&gt; LoggedIn: Logs in
+    NotRegistered -&gt;&gt; Registered: Register
+    Registered -&gt;&gt; NotLoggedIn: Can be
+    LoggedIn -&gt;&gt; NotLoggedIn: Log out
+    LoggedIn -&gt;&gt; NotRegistered: Unregister
+    LoggedIn -&gt;&gt; SendingMessage: Sends a message
+    LoggedIn -&gt;&gt; ReceivingChatMessage: Receives a message retransmission from the server
+</code></pre>
+<h2 id="possible-server-states">Possible server states</h2>
+<pre><code class="lang-mermaid">sequenceDiagram
+    participant Server
+    participant ListeningForMessages
+    participant ListeningForAuthenticationRequests
+    participant AnsweringAuthenticationRequests
+    participant RetransmittingMessages
+
+   
+    Server -&gt;&gt; ListeningForMessages: Can be
+    Server -&gt;&gt; ListeningForAuthenticationRequests: Can be
+    ListeningForMessages -&gt;&gt; RetransmittingMessages: Receieves a message from a client
+    ListeningForAuthenticationRequests -&gt;&gt;  AnsweringAuthenticationRequests: Receives an authentication request from a client 
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">

@@ -1,0 +1,932 @@
+{
+  "uid": "UdpChat.Server.CLI.ServerCLI",
+  "isEii": false,
+  "isExtensionMethod": false,
+  "parent": {
+    "uid": "UdpChat.Server.CLI",
+    "isEii": false,
+    "isExtensionMethod": false,
+    "href": "UdpChat.html",
+    "name": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Server.CLI"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Server.CLI"
+      }
+    ],
+    "nameWithType": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Server.CLI"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Server.CLI"
+      }
+    ],
+    "fullName": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Server.CLI"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Server.CLI"
+      }
+    ],
+    "specName": [
+      {
+        "lang": "csharp",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Server.html\">Server</a>.<a class=\"xref\" href=\"UdpChat.Server.CLI.html\">CLI</a>"
+      },
+      {
+        "lang": "vb",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Server.html\">Server</a>.<a class=\"xref\" href=\"UdpChat.Server.CLI.html\">CLI</a>"
+      }
+    ],
+    "level": 0.0
+  },
+  "children": [
+    {
+      "inMethod": true,
+      "typePropertyName": "inMethod",
+      "id": "methods",
+      "children": [
+        {
+          "uid": "UdpChat.Server.CLI.ServerCLI.ParseArgs(System.String[])",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Server.CLI.ServerCLI",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ParseArgs(string[])"
+            },
+            {
+              "lang": "vb",
+              "value": "ParseArgs(String())"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ServerCLI.ParseArgs(string[])"
+            },
+            {
+              "lang": "vb",
+              "value": "ServerCLI.ParseArgs(String())"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Server.CLI.ServerCLI.ParseArgs(string[])"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Server.CLI.ServerCLI.ParseArgs(String())"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Server.CLI.ServerCLI.ParseArgs(System.String[])\" text=\"ParseArgs(string[])\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Server.CLI.ServerCLI.ParseArgs(System.String[])\" text=\"ParseArgs(string[])\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public static int? ParseArgs(string[] args)"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Shared Function ParseArgs(args As String()) As Integer?"
+              }
+            ],
+            "parameters": [
+              {
+                "id": "args",
+                "type": {
+                  "uid": "System.String[]",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "string[]"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String()"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "string[]"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String()"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "string[]"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String()"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.string\">string</a>[]"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.string\">String</a>()"
+                    }
+                  ]
+                },
+                "description": ""
+              }
+            ],
+            "return": {
+              "type": {
+                "uid": "System.Nullable{System.Int32}",
+                "definition": "System.Nullable`1",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "int?"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Integer?"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "int?"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Integer?"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "int?"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Integer?"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.int32\">int</a>?"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.int32\">Integer</a>?"
+                  }
+                ]
+              },
+              "description": ""
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Server/ServerCLI.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "ParseArgs",
+            "path": "../UdpChat.Server/ServerCLI.cs",
+            "startLine": 20.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Server"
+          ],
+          "namespace": "UdpChat.Server.CLI",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Server.CLI.ServerCLI.ParseArgs*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "ParseArgs"
+              },
+              {
+                "lang": "vb",
+                "value": "ParseArgs"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ServerCLI.ParseArgs"
+              },
+              {
+                "lang": "vb",
+                "value": "ServerCLI.ParseArgs"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Server.CLI.ServerCLI.ParseArgs"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Server.CLI.ServerCLI.ParseArgs"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Server.CLI.ServerCLI.ParseArgs*\" text=\"ParseArgs\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Server.CLI.ServerCLI.ParseArgs*\" text=\"ParseArgs\"/>"
+              }
+            ],
+            "id": "UdpChat_Server_CLI_ServerCLI_ParseArgs_"
+          },
+          "level": 0.0,
+          "type": "method",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.CLI.ServerCLI.yml\" sourcestartlinenumber=\"1\">Parses the command line arguments</p>\n",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CLI_ServerCLI_ParseArgs_System_String___.md&value=---%0Auid%3A%20UdpChat.Server.CLI.ServerCLI.ParseArgs(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/ServerCLI.cs/#L21",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Server_CLI_ServerCLI_ParseArgs_System_String___",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    }
+  ],
+  "langs": [
+    "csharp",
+    "vb"
+  ],
+  "name": [
+    {
+      "lang": "csharp",
+      "value": "ServerCLI"
+    },
+    {
+      "lang": "vb",
+      "value": "ServerCLI"
+    }
+  ],
+  "nameWithType": [
+    {
+      "lang": "csharp",
+      "value": "ServerCLI"
+    },
+    {
+      "lang": "vb",
+      "value": "ServerCLI"
+    }
+  ],
+  "fullName": [
+    {
+      "lang": "csharp",
+      "value": "UdpChat.Server.CLI.ServerCLI"
+    },
+    {
+      "lang": "vb",
+      "value": "UdpChat.Server.CLI.ServerCLI"
+    }
+  ],
+  "type": "class",
+  "source": {
+    "remote": {
+      "path": "UdpChat.Server/ServerCLI.cs",
+      "branch": "master",
+      "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+    },
+    "id": "ServerCLI",
+    "path": "../UdpChat.Server/ServerCLI.cs",
+    "startLine": 3.0,
+    "endLine": 0.0,
+    "isExternal": false
+  },
+  "assemblies": [
+    "UdpChat.Server"
+  ],
+  "namespace": {
+    "uid": "UdpChat.Server.CLI",
+    "isEii": false,
+    "isExtensionMethod": false,
+    "href": "UdpChat.html",
+    "name": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Server.CLI"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Server.CLI"
+      }
+    ],
+    "nameWithType": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Server.CLI"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Server.CLI"
+      }
+    ],
+    "fullName": [
+      {
+        "lang": "csharp",
+        "value": "UdpChat.Server.CLI"
+      },
+      {
+        "lang": "vb",
+        "value": "UdpChat.Server.CLI"
+      }
+    ],
+    "specName": [
+      {
+        "lang": "csharp",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Server.html\">Server</a>.<a class=\"xref\" href=\"UdpChat.Server.CLI.html\">CLI</a>"
+      },
+      {
+        "lang": "vb",
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Server.html\">Server</a>.<a class=\"xref\" href=\"UdpChat.Server.CLI.html\">CLI</a>"
+      }
+    ],
+    "level": 0.0
+  },
+  "summary": "<p sourcefile=\"api/UdpChat.Server.CLI.ServerCLI.yml\" sourcestartlinenumber=\"1\">Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.</p>\n",
+  "example": [],
+  "syntax": {
+    "content": [
+      {
+        "lang": "csharp",
+        "value": "public class ServerCLI"
+      },
+      {
+        "lang": "vb",
+        "value": "Public Class ServerCLI"
+      }
+    ]
+  },
+  "inheritance": [
+    {
+      "uid": "System.Object",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "object"
+        },
+        {
+          "lang": "vb",
+          "value": "Object"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object"
+        },
+        {
+          "lang": "vb",
+          "value": "Object"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object"
+        },
+        {
+          "lang": "vb",
+          "value": "Object"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<xref uid=\"System.Object\" text=\"object\"/>"
+        },
+        {
+          "lang": "vb",
+          "value": "<xref uid=\"System.Object\" text=\"object\"/>"
+        }
+      ],
+      "level": 0.0,
+      "index": 0.0
+    }
+  ],
+  "level": 1.0,
+  "inheritedMembers": [
+    {
+      "uid": "System.Object.Equals(System.Object)",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "Equals(object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Equals(Object)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>)"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.Equals(System.Object,System.Object)",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "Equals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Equals(Object, Object)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object, Object)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.Equals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.Equals(Object, Object)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)\">Equals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>)"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.GetHashCode",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.gethashcode",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "GetHashCode()"
+        },
+        {
+          "lang": "vb",
+          "value": "GetHashCode()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.GetHashCode()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetHashCode()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.GetHashCode()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetHashCode()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gethashcode\">GetHashCode</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gethashcode\">GetHashCode</a>()"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.GetType",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.gettype",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "GetType()"
+        },
+        {
+          "lang": "vb",
+          "value": "GetType()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.GetType()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetType()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.GetType()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.GetType()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gettype\">GetType</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.gettype\">GetType</a>()"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.MemberwiseClone",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "MemberwiseClone()"
+        },
+        {
+          "lang": "vb",
+          "value": "MemberwiseClone()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.MemberwiseClone()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.MemberwiseClone()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.MemberwiseClone()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.MemberwiseClone()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone\">MemberwiseClone</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone\">MemberwiseClone</a>()"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.referenceequals",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "ReferenceEquals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "ReferenceEquals(Object, Object)"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.ReferenceEquals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.ReferenceEquals(Object, Object)"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.ReferenceEquals(object, object)"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.ReferenceEquals(Object, Object)"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.referenceequals\">ReferenceEquals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">object</a>)"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.referenceequals\">ReferenceEquals</a>(<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>, <a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object\">Object</a>)"
+        }
+      ],
+      "level": 0.0
+    },
+    {
+      "uid": "System.Object.ToString",
+      "isEii": false,
+      "isExtensionMethod": false,
+      "parent": "System.Object",
+      "isExternal": true,
+      "href": "https://learn.microsoft.com/dotnet/api/system.object.tostring",
+      "name": [
+        {
+          "lang": "csharp",
+          "value": "ToString()"
+        },
+        {
+          "lang": "vb",
+          "value": "ToString()"
+        }
+      ],
+      "nameWithType": [
+        {
+          "lang": "csharp",
+          "value": "object.ToString()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.ToString()"
+        }
+      ],
+      "fullName": [
+        {
+          "lang": "csharp",
+          "value": "object.ToString()"
+        },
+        {
+          "lang": "vb",
+          "value": "Object.ToString()"
+        }
+      ],
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.tostring\">ToString</a>()"
+        },
+        {
+          "lang": "vb",
+          "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.object.tostring\">ToString</a>()"
+        }
+      ],
+      "level": 0.0
+    }
+  ],
+  "_appFaviconPath": "images/favicon.ico",
+  "_appFooter": "UDPChat",
+  "_appLogoPath": "images/logo.png",
+  "_appName": "UDPChat",
+  "_appTitle": "UDPChat",
+  "_enableSearch": true,
+  "_gitContribute": {
+    "repo": "https://github.com/nicocossiom/IngenieriaProtocolos",
+    "branch": "gh-pages"
+  },
+  "_systemKeys": [
+    "uid",
+    "isEii",
+    "isExtensionMethod",
+    "parent",
+    "children",
+    "href",
+    "langs",
+    "name",
+    "nameWithType",
+    "fullName",
+    "type",
+    "source",
+    "documentation",
+    "assemblies",
+    "namespace",
+    "summary",
+    "remarks",
+    "example",
+    "syntax",
+    "overridden",
+    "overload",
+    "exceptions",
+    "seealso",
+    "see",
+    "inheritance",
+    "derivedClasses",
+    "level",
+    "implements",
+    "inheritedMembers",
+    "extensionMethods",
+    "conceptual",
+    "platform",
+    "attributes",
+    "additionalNotes"
+  ],
+  "_key": "api/UdpChat.Server.CLI.ServerCLI.yml",
+  "_navKey": "~/toc.yml",
+  "_navPath": "toc.html",
+  "_navRel": "../toc.html",
+  "_path": "api/UdpChat.Server.CLI.ServerCLI.html",
+  "_rel": "../",
+  "_tocKey": "~/api/toc.yml",
+  "_tocPath": "api/toc.html",
+  "_tocRel": "toc.html",
+  "__global": {
+    "namespacesInSubtitle": "Namespaces",
+    "classesInSubtitle": "Classes",
+    "structsInSubtitle": "Structs",
+    "interfacesInSubtitle": "Interfaces",
+    "enumsInSubtitle": "Enums",
+    "delegatesInSubtitle": "Delegates",
+    "constructorsInSubtitle": "Constructors",
+    "fieldsInSubtitle": "Fields",
+    "propertiesInSubtitle": "Properties",
+    "methodsInSubtitle": "Methods",
+    "eventsInSubtitle": "Events",
+    "operatorsInSubtitle": "Operators",
+    "eiisInSubtitle": "Explicit Interface Implementations",
+    "functionsInSubtitle": "Functions",
+    "variablesInSubtitle": "Variables",
+    "typeAliasesInSubtitle": "Type Aliases",
+    "membersInSubtitle": "Members",
+    "improveThisDoc": "Improve this Doc",
+    "viewSource": "View Source",
+    "inheritance": "Inheritance",
+    "derived": "Derived",
+    "inheritedMembers": "Inherited Members",
+    "package": "Package",
+    "namespace": "Namespace",
+    "assembly": "Assembly",
+    "syntax": "Syntax",
+    "overrides": "Overrides",
+    "implements": "Implements",
+    "remarks": "Remarks",
+    "examples": "Examples",
+    "seealso": "See Also",
+    "declaration": "Declaration",
+    "parameters": "Parameters",
+    "typeParameters": "Type Parameters",
+    "type": "Type",
+    "name": "Name",
+    "description": "Description",
+    "returns": "Returns",
+    "fieldValue": "Field Value",
+    "propertyValue": "Property Value",
+    "eventType": "Event Type",
+    "variableValue": "Variable Value",
+    "typeAliasType": "Type Alias Type",
+    "exceptions": "Exceptions",
+    "condition": "Condition",
+    "extensionMethods": "Extension Methods",
+    "note": "Note",
+    "warning": "Warning",
+    "tip": "Tip",
+    "important": "Important",
+    "caution": "Caution",
+    "tocToggleButton": "Show / Hide Table of Contents",
+    "tocFilter": "Enter here to filter...",
+    "search": "Search",
+    "searchResults": "Search Results for",
+    "pageFirst": "First",
+    "pagePrev": "Previous",
+    "pageNext": "Next",
+    "pageLast": "Last",
+    "inThisArticle": "In This Article",
+    "backToTop": "Back to top",
+    "_shared": {}
+  },
+  "yamlmime": "ManagedReference",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CLI_ServerCLI.md&value=---%0Auid%3A%20UdpChat.Server.CLI.ServerCLI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/ServerCLI.cs/#L4",
+  "remarks": "",
+  "conceptual": "",
+  "implements": "",
+  "seealso": null,
+  "id": "UdpChat_Server_CLI_ServerCLI",
+  "hideTitleType": false,
+  "hideSubtitle": false,
+  "isClass": true,
+  "inClass": true,
+  "_disableToc": false,
+  "_disableNextArticle": true
+}

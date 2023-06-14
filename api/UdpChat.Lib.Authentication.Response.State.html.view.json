@@ -1,50 +1,50 @@
 {
-  "uid": "UdpChat.Lib.Response.State",
+  "uid": "UdpChat.Lib.Authentication.Response.State",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
-    "uid": "UdpChat.Lib",
+    "uid": "UdpChat.Lib.Authentication",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       }
     ],
     "level": 0.0
@@ -56,10 +56,10 @@
       "id": "fields",
       "children": [
         {
-          "uid": "UdpChat.Lib.Response.State.ALREADY_REGISTERED",
+          "uid": "UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Response.State",
+          "parent": "UdpChat.Lib.Authentication.Response.State",
           "isExternal": false,
           "name": [
             {
@@ -84,21 +84,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Response.State.ALREADY_REGISTERED"
+              "value": "UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Response.State.ALREADY_REGISTERED"
+              "value": "UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.ALREADY_REGISTERED\" text=\"ALREADY_REGISTERED\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED\" text=\"ALREADY_REGISTERED\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.ALREADY_REGISTERED\" text=\"ALREADY_REGISTERED\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED\" text=\"ALREADY_REGISTERED\"/>"
             }
           ],
           "syntax": {
@@ -115,7 +115,7 @@
             "return": null,
             "fieldValue": {
               "type": {
-                "uid": "UdpChat.Lib.Response.State",
+                "uid": "UdpChat.Lib.Authentication.Response.State",
                 "name": [
                   {
                     "lang": "csharp",
@@ -139,21 +139,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   }
                 ]
               }
@@ -174,27 +174,27 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "level": 0.0,
           "type": "field",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response_State_ALREADY_REGISTERED.md&value=---%0Auid%3A%20UdpChat.Lib.Response.State.ALREADY_REGISTERED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_ALREADY_REGISTERED.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L79",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Response_State_ALREADY_REGISTERED",
+          "id": "UdpChat_Lib_Authentication_Response_State_ALREADY_REGISTERED",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.Response.State.ERROR",
+          "uid": "UdpChat.Lib.Authentication.Response.State.ERROR",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Response.State",
+          "parent": "UdpChat.Lib.Authentication.Response.State",
           "isExternal": false,
           "name": [
             {
@@ -219,21 +219,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Response.State.ERROR"
+              "value": "UdpChat.Lib.Authentication.Response.State.ERROR"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Response.State.ERROR"
+              "value": "UdpChat.Lib.Authentication.Response.State.ERROR"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.ERROR\" text=\"ERROR\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.ERROR\" text=\"ERROR\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.ERROR\" text=\"ERROR\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.ERROR\" text=\"ERROR\"/>"
             }
           ],
           "syntax": {
@@ -250,7 +250,7 @@
             "return": null,
             "fieldValue": {
               "type": {
-                "uid": "UdpChat.Lib.Response.State",
+                "uid": "UdpChat.Lib.Authentication.Response.State",
                 "name": [
                   {
                     "lang": "csharp",
@@ -274,21 +274,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   }
                 ]
               }
@@ -309,27 +309,27 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "level": 0.0,
           "type": "field",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response_State_ERROR.md&value=---%0Auid%3A%20UdpChat.Lib.Response.State.ERROR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_ERROR.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.ERROR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L83",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Response_State_ERROR",
+          "id": "UdpChat_Lib_Authentication_Response_State_ERROR",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.Response.State.LOGIN_FAILED",
+          "uid": "UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Response.State",
+          "parent": "UdpChat.Lib.Authentication.Response.State",
           "isExternal": false,
           "name": [
             {
@@ -354,21 +354,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Response.State.LOGIN_FAILED"
+              "value": "UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Response.State.LOGIN_FAILED"
+              "value": "UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.LOGIN_FAILED\" text=\"LOGIN_FAILED\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED\" text=\"LOGIN_FAILED\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.LOGIN_FAILED\" text=\"LOGIN_FAILED\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED\" text=\"LOGIN_FAILED\"/>"
             }
           ],
           "syntax": {
@@ -385,7 +385,7 @@
             "return": null,
             "fieldValue": {
               "type": {
-                "uid": "UdpChat.Lib.Response.State",
+                "uid": "UdpChat.Lib.Authentication.Response.State",
                 "name": [
                   {
                     "lang": "csharp",
@@ -409,21 +409,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   }
                 ]
               }
@@ -444,27 +444,27 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "level": 0.0,
           "type": "field",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response_State_LOGIN_FAILED.md&value=---%0Auid%3A%20UdpChat.Lib.Response.State.LOGIN_FAILED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_LOGIN_FAILED.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L81",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Response_State_LOGIN_FAILED",
+          "id": "UdpChat_Lib_Authentication_Response_State_LOGIN_FAILED",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.Response.State.LOGIN_SUCCESS",
+          "uid": "UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Response.State",
+          "parent": "UdpChat.Lib.Authentication.Response.State",
           "isExternal": false,
           "name": [
             {
@@ -489,21 +489,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Response.State.LOGIN_SUCCESS"
+              "value": "UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Response.State.LOGIN_SUCCESS"
+              "value": "UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.LOGIN_SUCCESS\" text=\"LOGIN_SUCCESS\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS\" text=\"LOGIN_SUCCESS\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.LOGIN_SUCCESS\" text=\"LOGIN_SUCCESS\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS\" text=\"LOGIN_SUCCESS\"/>"
             }
           ],
           "syntax": {
@@ -520,7 +520,7 @@
             "return": null,
             "fieldValue": {
               "type": {
-                "uid": "UdpChat.Lib.Response.State",
+                "uid": "UdpChat.Lib.Authentication.Response.State",
                 "name": [
                   {
                     "lang": "csharp",
@@ -544,21 +544,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   }
                 ]
               }
@@ -579,27 +579,27 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "level": 0.0,
           "type": "field",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response_State_LOGIN_SUCCESS.md&value=---%0Auid%3A%20UdpChat.Lib.Response.State.LOGIN_SUCCESS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_LOGIN_SUCCESS.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.LOGIN_SUCCESS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L77",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Response_State_LOGIN_SUCCESS",
+          "id": "UdpChat_Lib_Authentication_Response_State_LOGIN_SUCCESS",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Lib.Response.State.REGISTER_SUCCESS",
+          "uid": "UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Lib.Response.State",
+          "parent": "UdpChat.Lib.Authentication.Response.State",
           "isExternal": false,
           "name": [
             {
@@ -624,21 +624,21 @@
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Lib.Response.State.REGISTER_SUCCESS"
+              "value": "UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Lib.Response.State.REGISTER_SUCCESS"
+              "value": "UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.REGISTER_SUCCESS\" text=\"REGISTER_SUCCESS\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS\" text=\"REGISTER_SUCCESS\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Lib.Response.State.REGISTER_SUCCESS\" text=\"REGISTER_SUCCESS\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS\" text=\"REGISTER_SUCCESS\"/>"
             }
           ],
           "syntax": {
@@ -655,7 +655,7 @@
             "return": null,
             "fieldValue": {
               "type": {
-                "uid": "UdpChat.Lib.Response.State",
+                "uid": "UdpChat.Lib.Authentication.Response.State",
                 "name": [
                   {
                     "lang": "csharp",
@@ -679,21 +679,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Lib.Response.State"
+                    "value": "UdpChat.Lib.Authentication.Response.State"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Response.State.html\">State</a>"
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
                   }
                 ]
               }
@@ -714,19 +714,19 @@
           "assemblies": [
             "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Lib",
+          "namespace": "UdpChat.Lib.Authentication",
           "example": [],
           "level": 0.0,
           "type": "field",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response_State_REGISTER_SUCCESS.md&value=---%0Auid%3A%20UdpChat.Lib.Response.State.REGISTER_SUCCESS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_REGISTER_SUCCESS.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.REGISTER_SUCCESS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L75",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Lib_Response_State_REGISTER_SUCCESS",
+          "id": "UdpChat_Lib_Authentication_Response_State_REGISTER_SUCCESS",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -760,11 +760,11 @@
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Lib.Response.State"
+      "value": "UdpChat.Lib.Authentication.Response.State"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Lib.Response.State"
+      "value": "UdpChat.Lib.Authentication.Response.State"
     }
   ],
   "type": "enum",
@@ -784,53 +784,53 @@
     "UdpChat.Lib"
   ],
   "namespace": {
-    "uid": "UdpChat.Lib",
+    "uid": "UdpChat.Lib.Authentication",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Lib"
+        "value": "UdpChat.Lib.Authentication"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.html\">Authentication</a>"
       }
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Lib.Response.State.yml\" sourcestartlinenumber=\"1\">The possible states of a response.</p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Lib.Authentication.Response.State.yml\" sourcestartlinenumber=\"1\">The possible states of a response.</p>\n",
   "example": [],
   "syntax": {
     "content": [
@@ -891,11 +891,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Lib.Response.State.yml",
+  "_key": "api/UdpChat.Lib.Authentication.Response.State.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Lib.Response.State.html",
+  "_path": "api/UdpChat.Lib.Authentication.Response.State.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -965,13 +965,13 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Response_State.md&value=---%0Auid%3A%20UdpChat.Lib.Response.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
   "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L72",
   "remarks": "",
   "conceptual": "",
   "implements": "",
   "seealso": null,
-  "id": "UdpChat_Lib_Response_State",
+  "id": "UdpChat_Lib_Authentication_Response_State",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": false,

@@ -217,7 +217,7 @@
             },
             "id": ".ctor",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 94.0,
+            "startLine": 98.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -275,7 +275,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Creates a new retranmission server with the specified ports</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer__ctor_System_Int32_System_Int32_.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.%23ctor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L95",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L99",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -404,7 +404,7 @@
             },
             "id": "authenticationService",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 82.0,
+            "startLine": 86.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -462,7 +462,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_authenticationService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.authenticationService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L83",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L87",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -584,7 +584,7 @@
             },
             "id": "retransmissionService",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 84.0,
+            "startLine": 88.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -642,7 +642,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_retransmissionService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.retransmissionService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L85",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L89",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -867,7 +867,7 @@
             },
             "id": "LoginUserAsync",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 178.0,
+            "startLine": 182.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -923,7 +923,7 @@
           "exceptions": [
             {
               "type": {
-                "uid": "UdpChat.Server.ChatDatabaseNotInitializedException",
+                "uid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
                 "name": [
                   {
                     "lang": "csharp",
@@ -947,21 +947,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Server.ChatDatabaseNotInitializedException"
+                    "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Server.ChatDatabaseNotInitializedException"
+                    "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<xref uid=\"UdpChat.Server.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<xref uid=\"UdpChat.Server.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
                   }
                 ]
               },
@@ -973,7 +973,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Async database query to check if a user exists and has the correct password</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L179",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L183",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -1283,7 +1283,7 @@
             },
             "id": "RegisterUserAsync",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 139.0,
+            "startLine": 143.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1339,7 +1339,7 @@
           "exceptions": [
             {
               "type": {
-                "uid": "UdpChat.Server.ChatDatabaseNotInitializedException",
+                "uid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
                 "name": [
                   {
                     "lang": "csharp",
@@ -1363,21 +1363,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Server.ChatDatabaseNotInitializedException"
+                    "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Server.ChatDatabaseNotInitializedException"
+                    "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<xref uid=\"UdpChat.Server.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<xref uid=\"UdpChat.Server.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException\" text=\"ChatDatabaseNotInitializedException\"/>"
                   }
                 ]
               },
@@ -1385,7 +1385,7 @@
             },
             {
               "type": {
-                "uid": "UdpChat.Server.UserAlreadyRegisteredException",
+                "uid": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException",
                 "name": [
                   {
                     "lang": "csharp",
@@ -1409,21 +1409,21 @@
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "UdpChat.Server.UserAlreadyRegisteredException"
+                    "value": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException"
                   },
                   {
                     "lang": "vb",
-                    "value": "UdpChat.Server.UserAlreadyRegisteredException"
+                    "value": "UdpChat.Server.Exceptions.UserAlreadyRegisteredException"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<xref uid=\"UdpChat.Server.UserAlreadyRegisteredException\" text=\"UserAlreadyRegisteredException\"/>"
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyRegisteredException\" text=\"UserAlreadyRegisteredException\"/>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<xref uid=\"UdpChat.Server.UserAlreadyRegisteredException\" text=\"UserAlreadyRegisteredException\"/>"
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyRegisteredException\" text=\"UserAlreadyRegisteredException\"/>"
                   }
                 ]
               },
@@ -1435,7 +1435,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_RegisterUserAsync_System_String_System_String_System_String_System_Int32_.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.RegisterUserAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L140",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L144",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -1510,7 +1510,7 @@
             },
             "id": "Start",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 415.0,
+            "startLine": 419.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1569,7 +1569,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Starts the server with the associated services:</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_Start.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L416",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L420",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1643,7 +1643,7 @@
             },
             "id": "StartAuthenticationService",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 199.0,
+            "startLine": 203.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1702,7 +1702,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Sets the <xref href=\"UdpChat.Server.CentralRetransmissionServer.authenticationService\" data-throw-if-not-resolved=\"false\"></xref> This service is responsible for all authentication operations.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_StartAuthenticationService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.StartAuthenticationService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L200",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L204",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1776,7 +1776,7 @@
             },
             "id": "StartRetransmissionService",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 214.0,
+            "startLine": 218.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1835,7 +1835,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Sets the <xref href=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService\" data-throw-if-not-resolved=\"false\"></xref>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_StartRetransmissionService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.StartRetransmissionService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L215",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L219",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1909,7 +1909,7 @@
             },
             "id": "Stop",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 225.0,
+            "startLine": 229.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1967,7 +1967,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Stops the services and closes the database connection</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_Stop.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L226",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L230",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -2022,7 +2022,7 @@
     },
     "id": "CentralRetransmissionServer",
     "path": "../UdpChat.Server/Server.cs",
-    "startLine": 75.0,
+    "startLine": 79.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -2609,7 +2609,7 @@
   },
   "yamlmime": "ManagedReference",
   "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L76",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L80",
   "remarks": "",
   "conceptual": "",
   "implements": "",

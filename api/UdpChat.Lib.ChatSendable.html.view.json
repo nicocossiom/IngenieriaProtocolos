@@ -169,7 +169,7 @@
             },
             "id": "Timestamp",
             "path": "../UdpChat.Lib/Common.cs",
-            "startLine": 14.0,
+            "startLine": 16.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -227,7 +227,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatSendable.yml\" sourcestartlinenumber=\"1\">Gets or sets the timestamp of the request.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatSendable_Timestamp.md&value=---%0Auid%3A%20UdpChat.Lib.ChatSendable.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L15",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L17",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -448,7 +448,7 @@
             },
             "id": "SerializeAndSend",
             "path": "../UdpChat.Lib/Common.cs",
-            "startLine": 41.0,
+            "startLine": 43.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -506,7 +506,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint_System_Net_Sockets_UdpClient_.md&value=---%0Auid%3A%20UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint%2CSystem.Net.Sockets.UdpClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L42",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L44",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -720,7 +720,7 @@
             },
             "id": "SerializeAndSend",
             "path": "../UdpChat.Lib/Common.cs",
-            "startLine": 33.0,
+            "startLine": 35.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -778,7 +778,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint_System_Net_Sockets_UdpClient__.md&value=---%0Auid%3A%20UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint%2CSystem.Net.Sockets.UdpClient%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L34",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L36",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -995,7 +995,7 @@
             },
             "id": "SerializeAndSend",
             "path": "../UdpChat.Lib/Common.cs",
-            "startLine": 26.0,
+            "startLine": 28.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1054,7 +1054,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatSendable.yml\" sourcestartlinenumber=\"1\">Serializes the object and sends it to the specified endpoint using the specified client.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatSendable_SerializeAndSend_System_Net_IPEndPoint__System_Net_Sockets_UdpClient__.md&value=---%0Auid%3A%20UdpChat.Lib.ChatSendable.SerializeAndSend(System.Net.IPEndPoint%40%2CSystem.Net.Sockets.UdpClient%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L27",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L29",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1108,7 +1108,7 @@
     },
     "id": "ChatSendable",
     "path": "../UdpChat.Lib/Common.cs",
-    "startLine": 8.0,
+    "startLine": 10.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -1162,7 +1162,7 @@
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatSendable.yml\" sourcestartlinenumber=\"1\">An abstract class that represents a sendable object in the chat system. For example a <xref href=\"UdpChat.Lib.Request\" data-throw-if-not-resolved=\"false\"></xref> or a <xref href=\"UdpChat.Lib.Response\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Lib.ChatSendable.yml\" sourcestartlinenumber=\"1\">An abstract class that represents a sendable object in the chat system. For example a <xref href=\"UdpChat.Lib.Authentication.Request\" data-throw-if-not-resolved=\"false\"></xref> or a <xref href=\"UdpChat.Lib.Authentication.Response\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
   "example": [],
   "syntax": {
     "content": [
@@ -1230,42 +1230,10 @@
   ],
   "derivedClasses": [
     {
+      "uid": "UdpChat.Lib.Authentication.Request",
       "isEii": false,
       "isExtensionMethod": false,
-      "specName": [
-        {
-          "lang": "csharp",
-          "value": "<xref uid=\"UdpChat.Lib.ChatMessage\" displayProperty=\"name\"/>"
-        },
-        {
-          "lang": "vb",
-          "value": "<xref uid=\"UdpChat.Lib.ChatMessage\" displayProperty=\"name\"/>"
-        }
-      ],
-      "level": 0.0,
-      "index": 2.0
-    },
-    {
-      "isEii": false,
-      "isExtensionMethod": false,
-      "specName": [
-        {
-          "lang": "csharp",
-          "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse\" displayProperty=\"name\"/>"
-        },
-        {
-          "lang": "vb",
-          "value": "<xref uid=\"UdpChat.Lib.ChatMessageResponse\" displayProperty=\"name\"/>"
-        }
-      ],
-      "level": 0.0,
-      "index": 2.0
-    },
-    {
-      "uid": "UdpChat.Lib.Request",
-      "isEii": false,
-      "isExtensionMethod": false,
-      "href": "UdpChat.Lib.Request.html",
+      "href": "UdpChat.Lib.Authentication.Request.html",
       "name": [
         {
           "lang": "csharp",
@@ -1289,31 +1257,31 @@
       "fullName": [
         {
           "lang": "csharp",
-          "value": "UdpChat.Lib.Request"
+          "value": "UdpChat.Lib.Authentication.Request"
         },
         {
           "lang": "vb",
-          "value": "UdpChat.Lib.Request"
+          "value": "UdpChat.Lib.Authentication.Request"
         }
       ],
       "specName": [
         {
           "lang": "csharp",
-          "value": "<xref uid=\"UdpChat.Lib.Request\" text=\"Request\"/>"
+          "value": "<xref uid=\"UdpChat.Lib.Authentication.Request\" text=\"Request\"/>"
         },
         {
           "lang": "vb",
-          "value": "<xref uid=\"UdpChat.Lib.Request\" text=\"Request\"/>"
+          "value": "<xref uid=\"UdpChat.Lib.Authentication.Request\" text=\"Request\"/>"
         }
       ],
       "level": 0.0,
       "index": 2.0
     },
     {
-      "uid": "UdpChat.Lib.Response",
+      "uid": "UdpChat.Lib.Authentication.Response",
       "isEii": false,
       "isExtensionMethod": false,
-      "href": "UdpChat.Lib.Response.html",
+      "href": "UdpChat.Lib.Authentication.Response.html",
       "name": [
         {
           "lang": "csharp",
@@ -1337,21 +1305,53 @@
       "fullName": [
         {
           "lang": "csharp",
-          "value": "UdpChat.Lib.Response"
+          "value": "UdpChat.Lib.Authentication.Response"
         },
         {
           "lang": "vb",
-          "value": "UdpChat.Lib.Response"
+          "value": "UdpChat.Lib.Authentication.Response"
         }
       ],
       "specName": [
         {
           "lang": "csharp",
-          "value": "<xref uid=\"UdpChat.Lib.Response\" text=\"Response\"/>"
+          "value": "<xref uid=\"UdpChat.Lib.Authentication.Response\" text=\"Response\"/>"
         },
         {
           "lang": "vb",
-          "value": "<xref uid=\"UdpChat.Lib.Response\" text=\"Response\"/>"
+          "value": "<xref uid=\"UdpChat.Lib.Authentication.Response\" text=\"Response\"/>"
+        }
+      ],
+      "level": 0.0,
+      "index": 2.0
+    },
+    {
+      "isEii": false,
+      "isExtensionMethod": false,
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage\" displayProperty=\"name\"/>"
+        },
+        {
+          "lang": "vb",
+          "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessage\" displayProperty=\"name\"/>"
+        }
+      ],
+      "level": 0.0,
+      "index": 2.0
+    },
+    {
+      "isEii": false,
+      "isExtensionMethod": false,
+      "specName": [
+        {
+          "lang": "csharp",
+          "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessageResponse\" displayProperty=\"name\"/>"
+        },
+        {
+          "lang": "vb",
+          "value": "<xref uid=\"UdpChat.Lib.Message.ChatMessageResponse\" displayProperty=\"name\"/>"
         }
       ],
       "level": 0.0,
@@ -1825,7 +1825,7 @@
   },
   "yamlmime": "ManagedReference",
   "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_ChatSendable.md&value=---%0Auid%3A%20UdpChat.Lib.ChatSendable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L9",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L11",
   "remarks": "",
   "conceptual": "",
   "implements": "",

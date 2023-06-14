@@ -1,5 +1,5 @@
 {
-  "uid": "UdpChat.Client",
+  "uid": "UdpChat.Server.CLI",
   "isEii": false,
   "isExtensionMethod": false,
   "children": [
@@ -9,51 +9,51 @@
       "id": "classes",
       "children": [
         {
-          "uid": "UdpChat.Client.ChatClient",
+          "uid": "UdpChat.Server.CLI.ServerCLI",
           "isExtensionMethod": false,
-          "href": "UdpChat.Client.ChatClient.html",
+          "href": "UdpChat.Server.CLI.ServerCLI.html",
           "name": [
             {
               "lang": "csharp",
-              "value": "ChatClient"
+              "value": "ServerCLI"
             },
             {
               "lang": "vb",
-              "value": "ChatClient"
+              "value": "ServerCLI"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "ChatClient"
+              "value": "ServerCLI"
             },
             {
               "lang": "vb",
-              "value": "ChatClient"
+              "value": "ServerCLI"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.ChatClient"
+              "value": "UdpChat.Server.CLI.ServerCLI"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.ChatClient"
+              "value": "UdpChat.Server.CLI.ServerCLI"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CLI.ServerCLI\" text=\"ServerCLI\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.ChatClient\" text=\"ChatClient\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CLI.ServerCLI\" text=\"ServerCLI\"/>"
             }
           ],
           "level": 0.0,
-          "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">A ChatClient is a client for the chat system.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.CLI.ServerCLI.yml\" sourcestartlinenumber=\"1\">Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.</p>\n",
           "type": "class",
           "platform": null,
           "isEii": false,
@@ -65,7 +65,7 @@
           "implements": "",
           "example": "",
           "seealso": null,
-          "id": "UdpChat_Client_ChatClient",
+          "id": "UdpChat_Server_CLI_ServerCLI",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -79,36 +79,36 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.CLI"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.CLI"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.CLI"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.CLI"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.CLI"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client"
+      "value": "UdpChat.Server.CLI"
     }
   ],
   "type": "namespace",
   "assemblies": [
-    "UdpChat.Client"
+    "UdpChat.Server"
   ],
   "level": 0.0,
   "_appFaviconPath": "images/favicon.ico",
@@ -157,11 +157,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Client.yml",
+  "_key": "api/UdpChat.Server.CLI.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Client.html",
+  "_path": "api/UdpChat.Server.CLI.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -240,7 +240,7 @@
   "implements": "",
   "example": "",
   "seealso": null,
-  "id": "UdpChat_Client",
+  "id": "UdpChat_Server_CLI",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isNamespace": true,
