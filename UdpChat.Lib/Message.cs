@@ -1,22 +1,7 @@
-namespace UdpChat.Lib
+namespace UdpChat.Lib.Message
 {
-    /// <summary>
-    /// A ChatUser is a user of the chat system. It has a username and two endpoints, one for sending and one for receiving.
-    /// </summary>
-    [Serializable]
-    public class ChatUser
-    {
-        /// <inheritdoc/>
-        public string Username { get; set; }
-        /// <inheritdoc/>
-        public string Password { get; set; }
-        /// <inheritdoc/>
-        public ChatUser(string username, string password)
-        {
-            this.Username = username;
-            this.Password = password;
-        }
-    }
+    using UdpChat.Lib.ChatUser;
+
     /// <summary>
     /// A ChatMessage is a message sent by a user to the server. It has a user, a timestamp, and a message.
     /// </summary>
@@ -44,7 +29,6 @@ namespace UdpChat.Lib
 
 
     }
-
 
     /// <summary>
     /// The responnse to a ChatMessage from the server.

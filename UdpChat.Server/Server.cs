@@ -2,7 +2,11 @@
 using System.Net;
 using System.Net.Sockets;
 using Microsoft.Data.Sqlite;
-using UdpChat.Lib;
+using UdpChat.Lib.Authentication;
+using UdpChat.Lib.Message;
+using UdpChat.Server.CLI;
+using UdpChat.Server.Exceptions;
+
 namespace UdpChat.Server
 {
     /// <summary>

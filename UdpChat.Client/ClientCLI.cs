@@ -1,6 +1,6 @@
-using UdpChat.Lib;
+using UdpChat.Lib.Authentication;
 
-namespace UdpChat.Client
+namespace UdpChat.Client.CLI
 {
     /// <summary>
     /// The ClientCLI class is a command line interface for the client. 

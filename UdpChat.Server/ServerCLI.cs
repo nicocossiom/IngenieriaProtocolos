@@ -1,6 +1,7 @@
-namespace UdpChat.Server
+namespace UdpChat.Server.CLI
 {
-    class ServerCLI
+    /// <inheritdoc/>
+    public class ServerCLI
     {
 
         private static void PrintHelp()
@@ -12,6 +13,11 @@ UdpChat.Server: Starts the server
         -h, --help -  Prints this help message
         -p, --port - Port to listen on. Defaults to 5000 for Auth requests and port+1 for Message requests");
         }
+        /// <summary>
+        /// Parses the command line arguments
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static int? ParseArgs(string[] args)
         {
             if (args.Length == 0)

@@ -1,7 +1,10 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using System.Net.NetworkInformation;
-using UdpChat.Lib;
+using UdpChat.Lib.ChatUser;
+using UdpChat.Lib.Message;
+using UdpChat.Lib.Authentication;
+
 namespace UdpChat.Client
 {
 

@@ -1,12 +1,16 @@
-namespace UdpChat.Server
+namespace UdpChat.Server.Exceptions
 {
-    class UserAlreadyRegisteredException : Exception
+    /// <inheritdoc/>
+    public class UserAlreadyRegisteredException : Exception
     {
+        /// <inheritdoc/>
         public UserAlreadyRegisteredException(string message) : base(message) { }
     }
+    /// <inheritdoc/>
 
-    class ChatDatabaseNotInitializedException : Exception
+    public class ChatDatabaseNotInitializedException : Exception
     {
+        /// <inheritdoc/>
         public ChatDatabaseNotInitializedException() : base("Database not initialized") { }
     }
 }

@@ -1,8 +1,10 @@
 using System.Net;
 using System.Net.Sockets;
+using UdpChat.Lib.Authentication;
 
 namespace UdpChat.Lib
 {
+
     /// <summary>
     /// An abstract class that represents a sendable object in the chat system. For example a <see cref="Request"/> or a <see cref="Response"/>.
     /// </summary>

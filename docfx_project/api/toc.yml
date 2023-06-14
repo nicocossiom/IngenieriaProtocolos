@@ -5,27 +5,39 @@ items:
   items:
   - uid: UdpChat.Client.ChatClient
     name: ChatClient
-  - uid: UdpChat.Client.ClientCLI
+- uid: UdpChat.Client.CLI
+  name: UdpChat.Client.CLI
+  items:
+  - uid: UdpChat.Client.CLI.ClientCLI
     name: ClientCLI
 - uid: UdpChat.Lib
   name: UdpChat.Lib
   items:
-  - uid: UdpChat.Lib.ChatMessage
-    name: ChatMessage
-  - uid: UdpChat.Lib.ChatMessageResponse
-    name: ChatMessageResponse
   - uid: UdpChat.Lib.ChatSendable
     name: ChatSendable
-  - uid: UdpChat.Lib.ChatUser
-    name: ChatUser
-  - uid: UdpChat.Lib.Request
+- uid: UdpChat.Lib.Authentication
+  name: UdpChat.Lib.Authentication
+  items:
+  - uid: UdpChat.Lib.Authentication.Request
     name: Request
-  - uid: UdpChat.Lib.Request.RequestType
+  - uid: UdpChat.Lib.Authentication.Request.RequestType
     name: Request.RequestType
-  - uid: UdpChat.Lib.Response
+  - uid: UdpChat.Lib.Authentication.Response
     name: Response
-  - uid: UdpChat.Lib.Response.State
+  - uid: UdpChat.Lib.Authentication.Response.State
     name: Response.State
+- uid: UdpChat.Lib.ChatUser
+  name: UdpChat.Lib.ChatUser
+  items:
+  - uid: UdpChat.Lib.ChatUser.ChatUser
+    name: ChatUser
+- uid: UdpChat.Lib.Message
+  name: UdpChat.Lib.Message
+  items:
+  - uid: UdpChat.Lib.Message.ChatMessage
+    name: ChatMessage
+  - uid: UdpChat.Lib.Message.ChatMessageResponse
+    name: ChatMessageResponse
 - uid: UdpChat.Server
   name: UdpChat.Server
   items:
@@ -33,4 +45,16 @@ items:
     name: CentralRetransmissionServer
   - uid: UdpChat.Server.ServerService
     name: ServerService
+- uid: UdpChat.Server.CLI
+  name: UdpChat.Server.CLI
+  items:
+  - uid: UdpChat.Server.CLI.ServerCLI
+    name: ServerCLI
+- uid: UdpChat.Server.Exceptions
+  name: UdpChat.Server.Exceptions
+  items:
+  - uid: UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException
+    name: ChatDatabaseNotInitializedException
+  - uid: UdpChat.Server.Exceptions.UserAlreadyRegisteredException
+    name: UserAlreadyRegisteredException
 memberLayout: SamePage
