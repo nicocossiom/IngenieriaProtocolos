@@ -15,7 +15,7 @@ multiple clients at once and will broadcast messages to all connected clients.
     - [Client CLI](#client-cli)
     - [Server CLI](#server-cli)
     - [Project structure](#project-structure)
-    - [Messages between Client \<-\> Server](#messages-between-client---server)
+    - [Messages between Client \<-\> Server | De/Serilization](#messages-between-client---server--deserilization)
     - [Authentication](#authentication)
     - [Persistence](#persistence)
     - [Concurrency model](#concurrency-model)
@@ -42,13 +42,15 @@ The server CLI is a simple command line interface that allows the for creating a
 
 ### Project structure
 
-See [Code Documentation](/api/index.md) for more information.
+See [Code Documentation](api/index.md) for more information.
 
-### Messages between Client <-> Server
+### Messages between Client <-> Server | De/Serilization
 
 Client and server interchange messages in the form of JSONs. The JSONs are deserialized into code usable class objects that represent the messages. Because the messages are serialized into JSONs they can be sent over the network and deserialized into the same class objects on the other side. This allows for easy communication between the client and the server.
 
 A client must be logged in to send messages to the server. The server will then broadcast the message to all other registered users.
+
+For more information about this see [UdpChat.Server.ServerService](api/UdpChat.Server.ServerService.yml)
 
 ### Authentication
 
@@ -62,13 +64,15 @@ The server has basic authentication with a user being able to:
 The user is able to send messages to the server. The server will then broadcast on the moment the message to all other users that
 are registered. Messaegs are not stored by the server, just retransmitted, hence if a user is not online and logged in they will not receive the messages they have missed.
 
+For examples on how to use the client see [Client CLI](client/examples.md).
+
 ### Persistence
 
 Registered users are persisted into an SQLite3 database. This allows for the server to be restarted and still have the registered users. This allows for user login functionality. This also means that a username must be unique and not registered.
 
 ### Concurrency model
 
-This implementation does not explicitly use the typical get request -> explicitally spawn thread/process for request.
+This implementation does not use the typical get request -> explicitly spawn thread/process for request.
 
 Instead it uses an asynchronous programming model. The `UdpClient.BeginReceive` method to start listening for incoming UDP datagrams from any client. This method is non-blocking and allows the program to continue execution while waiting for incoming messages.
 
@@ -78,7 +82,7 @@ Furthermore, the processing of each incoming message (deserialization, request h
 
 Also note that while UDP allows for the concurrent receipt of messages from multiple clients, it does not guarantee the delivery of messages (i.e., it's a connectionless protocol).
 
-To know more about the specifics of the implementation see [Code Documentation](/api/index.md).
+To know more about the specifics of the implementation see [UdpChat.Server.CentralRetransmissionServer](api/UdpChat.Server.CentralRetransmissionServer.yml) and [UdpChat.Server.ServerService](api/UdpChat.Server.ServerService.yml).
 
 ## Basic functionality of a UDP Multichat
 
