@@ -2,6 +2,8 @@
 
 This section contains examples of using the client.
 
+![Example of 8 users](../images/gif6users.gif)
+
 ## Register
 
 ```bash

@@ -18,6 +18,7 @@ multiple clients at once and will broadcast messages to all connected clients.
     - [Messages between Client \<-\> Server](#messages-between-client---server)
     - [Authentication](#authentication)
     - [Persistence](#persistence)
+    - [Concurrency model](#concurrency-model)
   - [Basic functionality of a UDP Multichat](#basic-functionality-of-a-udp-multichat)
   - [Possible client states](#possible-client-states)
   - [Possible server states](#possible-server-states)
@@ -64,6 +65,20 @@ are registered. Messaegs are not stored by the server, just retransmitted, hence
 ### Persistence
 
 Registered users are persisted into an SQLite3 database. This allows for the server to be restarted and still have the registered users. This allows for user login functionality. This also means that a username must be unique and not registered.
+
+### Concurrency model
+
+This implementation does not explicitly use the typical get request -> explicitally spawn thread/process for request.
+
+Instead it uses an asynchronous programming model. The `UdpClient.BeginReceive` method to start listening for incoming UDP datagrams from any client. This method is non-blocking and allows the program to continue execution while waiting for incoming messages.
+
+When a message is received, asynchronous handlers are called (depending on which service receives the message). These methods handle incoming messages and perform operations based on the type of message received.
+
+Furthermore, the processing of each incoming message (deserialization, request handling, etc.) is wrapped in a Task.Run call, which queues the specified work to run on the ThreadPool and returns a task handle for that work. This means that each message is processed in its own task, allowing for concurrent processing of multiple messages.
+
+Also note that while UDP allows for the concurrent receipt of messages from multiple clients, it does not guarantee the delivery of messages (i.e., it's a connectionless protocol).
+
+To know more about the specifics of the implementation see [Code Documentation](/api/index.md).
 
 ## Basic functionality of a UDP Multichat
 
