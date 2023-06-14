@@ -11,8 +11,8 @@ In this documentation you will find information about the structure of the code,
   - [Solution structure](#solution-structure)
     - [Namespace structure](#namespace-structure)
       - [Available namespaces](#available-namespaces)
+  - [Project ULM class diagram](#project-ulm-class-diagram)
   - [How to generate the documentation](#how-to-generate-the-documentation)
-  - [PlantUML diagrams](#plantuml-diagrams)
 
 ## Solution structure
 
@@ -40,6 +40,12 @@ This solution uses namespaces to separate the each CS-project's code. See the [A
   - [Lib.Message](UdpChat.Lib.Message.yml) : Serializable class representing a message.
   - [Lib.Authentication](UdpChat.Lib.Authentication.yml) : Serialiable Authentication classes representing an Auth request and response.
 
+## Project ULM class diagram
+
+Click on the image to open in a new tab. It's an SVG so you can zoom in and out and it will look well.
+
+![Solution class diargram](../images/class_diagram.svg)
+
 ## How to generate the documentation
 
 1. Install DocFX. See [here](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) for more information.
@@ -49,10 +55,3 @@ This solution uses namespaces to separate the each CS-project's code. See the [A
 3. The generated documentation will be in the `docfx_project/` folder, more specifically:
     - `docfx_project/_site/` for the HTML documentation.
     - `docfx_project/_site_pdf/` for the PDF version of the documentation.
-
-## PlantUML diagrams
-
-This solution uses PlantUML to generate diagrams. See the [PlantUML website](https://plantuml.com/) for more information.
-<!-- insert diagram -->
-
-![Solution class diargram](../images/class_diagram.png)

@@ -69,6 +69,13 @@
         ]
       }
     ],
+    "resource": [
+      {
+        "files": [
+          "images/*"
+        ]
+      }
+    ],
     "wkhtmltopdf": {
       "filePath": "/usr/local/bin/wkhtmltopdf",
       "additionalArguments": "--enable-local-file-access"

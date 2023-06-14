@@ -15,7 +15,7 @@ This CLI can be used to interact with a server in otder to register, login, send
     - [Binary executable](#binary-executable)
       - [Latest release download](#latest-release-download)
       - [Github Releases page](#github-releases-page)
-      - [Add to PATHV](#add-to-pathv)
+      - [Add to PATH](#add-to-path)
         - [MacOS and Linux](#macos-and-linux)
         - [Windows CMD or Powershell](#windows-cmd-or-powershell)
   - [Excute the client CLI](#excute-the-client-cli)
@@ -131,7 +131,7 @@ After downloading the client move the file to a folder of your choice.
 You can then place this folder wherever you want.
 You can also add the folder to your PATH environment variable to be able to run the client from anywhere.
 
-#### Add to PATHV
+#### Add to PATH
 
 ##### MacOS and Linux
 

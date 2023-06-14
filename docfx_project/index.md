@@ -4,6 +4,8 @@ This chat app is a simple UDP client/server application that allows multiple cli
 to connect to a server and send messages to each other. The server is able to handle
 multiple clients at once and will broadcast messages to all connected clients.
 
+![Example of 6 users chatting](images/gif6users.gif)
+
 ## Table of contents
 
 - [UDP Multichat CLI Application](#udp-multichat-cli-application)

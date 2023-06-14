@@ -1,7 +1,7 @@
 
 # Downloads
 
-There is no installer. There are 2 ways to get the client CLI:
+There is no installer. There are 2 ways to get the client CLI: download the binary executable or download the dotnet solution and run with the dotnet runtime.
 
 ## Table of contents
 
