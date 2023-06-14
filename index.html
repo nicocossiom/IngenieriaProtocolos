@@ -96,6 +96,7 @@ multiple clients at once and will broadcast messages to all connected clients.</
 <li><a href="#messages-between-client---server">Messages between Client &lt;-&gt; Server</a></li>
 <li><a href="#authentication">Authentication</a></li>
 <li><a href="#persistence">Persistence</a></li>
+<li><a href="#concurrency-model">Concurrency model</a></li>
 </ul>
 </li>
 <li><a href="#basic-functionality-of-a-udp-multichat">Basic functionality of a UDP Multichat</a></li>
@@ -130,6 +131,13 @@ See <a href="server/index.html">Server CLI</a> for more information.</p>
 are registered. Messaegs are not stored by the server, just retransmitted, hence if a user is not online and logged in they will not receive the messages they have missed.</p>
 <h3 id="persistence">Persistence</h3>
 <p>Registered users are persisted into an SQLite3 database. This allows for the server to be restarted and still have the registered users. This allows for user login functionality. This also means that a username must be unique and not registered.</p>
+<h3 id="concurrency-model">Concurrency model</h3>
+<p>This implementation does not explicitly use the typical get request -&gt; explicitally spawn thread/process for request.</p>
+<p>Instead it uses an asynchronous programming model. The <code>UdpClient.BeginReceive</code> method to start listening for incoming UDP datagrams from any client. This method is non-blocking and allows the program to continue execution while waiting for incoming messages.</p>
+<p>When a message is received, asynchronous handlers are called (depending on which service receives the message). These methods handle incoming messages and perform operations based on the type of message received.</p>
+<p>Furthermore, the processing of each incoming message (deserialization, request handling, etc.) is wrapped in a Task.Run call, which queues the specified work to run on the ThreadPool and returns a task handle for that work. This means that each message is processed in its own task, allowing for concurrent processing of multiple messages.</p>
+<p>Also note that while UDP allows for the concurrent receipt of messages from multiple clients, it does not guarantee the delivery of messages (i.e., it's a connectionless protocol).</p>
+<p>To know more about the specifics of the implementation see <a href="/api/index.md">Code Documentation</a>.</p>
 <h2 id="basic-functionality-of-a-udp-multichat">Basic functionality of a UDP Multichat</h2>
 <pre><code class="lang-mermaid">sequenceDiagram
     participant Client
