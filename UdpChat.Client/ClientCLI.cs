@@ -113,15 +113,18 @@ namespace UdpChat.Client.CLI
             return (username, password);
         }
         /// <inheritdoc/>
-        public static void Main(string[] args)
+        public static Task Main(string[] args)
         {
             Console.WriteLine("Welcome to the UDP chat client!");
             ChatClient client = ChatClientFromInput();
             if (!client.PingCentralServer())
             {
                 Console.WriteLine("Could not reach central server. The server is no online. Exiting...");
-                return;
+                return Task.CompletedTask;
             }
+            // start receiving messages
+            client.StartMessageService();
+
             while (true)
             {
                 Console.WriteLine(@"Input a command, available commands are 
@@ -170,7 +173,6 @@ namespace UdpChat.Client.CLI
                         Console.WriteLine("Invalid command");
                         break;
                 }
-
             }
         }
     }

@@ -76,7 +76,10 @@ namespace UdpChat.Lib.Authentication
             /// <inheritdoc/>
             LOGIN_SUCCESS,
             /// <inheritdoc/>
+
             ALREADY_REGISTERED,
+            /// <inheritdoc/>
+            ALREADY_LOGGED_IN,
             /// <inheritdoc/>
             LOGIN_FAILED,
             /// <inheritdoc/>

@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <TrimmerRootAssembly Include="UdpChat.Lib" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.5" />
   </ItemGroup>
 

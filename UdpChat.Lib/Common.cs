@@ -48,4 +48,25 @@ namespace UdpChat.Lib
             return sender.Send(bytes, bytes.Length, endpoint);
         }
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class Deserializerer<T> where T : ChatSendable
+    {
+        /// <inheritdoc/>
+        public static T? Deserialize(byte[] json)
+        {
+            try
+            {
+                return System.Text.Json.JsonSerializer.Deserialize<T>(json);
+            }
+            catch (System.Text.Json.JsonException e)
+            {
+                Console.WriteLine($"Error deserializing: {e.Message}");
+                return null;
+            }
+        }
+    }
 }

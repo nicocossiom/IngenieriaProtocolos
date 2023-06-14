@@ -6,6 +6,13 @@ namespace UdpChat.Server.Exceptions
         /// <inheritdoc/>
         public UserAlreadyRegisteredException(string message) : base(message) { }
     }
+
+    /// <inheritdoc/>
+    public class UserAlreadyLoggedInxception : Exception
+    {
+        /// <inheritdoc/>
+        public UserAlreadyLoggedInxception(string message) : base(message) { }
+    }
     /// <inheritdoc/>
 
     public class ChatDatabaseNotInitializedException : Exception

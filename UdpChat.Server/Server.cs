@@ -79,15 +79,15 @@ namespace UdpChat.Server
     /// </summary>
     public class CentralRetransmissionServer
     {
-        private int authenticationPort { get; set; } = 5000;
-        private int retransmissionPort { get; set; } = 5001;
-        private string dbPath { get; set; } = "users.db";
-        private SqliteConnection? dbConnection { get; set; }
+        private int AuthenticationPort { get; set; } = 5000;
+        private int RetransmissionPort { get; set; } = 5001;
+        private string DBPath { get; set; } = "users.db";
+        private SqliteConnection? DBConnection { get; set; }
         /// <inheritdoc/>
-        public ServerService authenticationService { get; set; }
+        public ServerService AuthenticationService { get; set; }
         /// <inheritdoc/>
-        public ServerService retransmissionService { get; set; }
-        private static readonly Dictionary<string, IPEndPoint> clients = new Dictionary<string, IPEndPoint>();
+        public ServerService RetransmissionService { get; set; }
+        private HashSet<String> LoggedUsers = new HashSet<string>();
 
 
 
@@ -99,22 +99,22 @@ namespace UdpChat.Server
         public CentralRetransmissionServer(int registerPort = 5000, int retransmissionPort = 5001) : base()
         {
             Console.WriteLine($"Creating server with ports {registerPort} and {retransmissionPort}");
-            this.authenticationPort = registerPort;
-            this.retransmissionPort = retransmissionPort;
+            this.AuthenticationPort = registerPort;
+            this.RetransmissionPort = retransmissionPort;
         }
 
         private async void InitializeDB()
         {
             var conString = new SqliteConnectionStringBuilder();
-            conString.DataSource = this.dbPath;
+            conString.DataSource = this.DBPath;
             conString.Mode = SqliteOpenMode.ReadWriteCreate;
             conString.Cache = SqliteCacheMode.Shared;
             try
             {
                 Console.WriteLine("Opening server database");
-                dbConnection = new SqliteConnection(conString.ConnectionString);
-                await dbConnection.OpenAsync();
-                var cmd = dbConnection.CreateCommand();
+                DBConnection = new SqliteConnection(conString.ConnectionString);
+                await DBConnection.OpenAsync();
+                var cmd = DBConnection.CreateCommand();
                 cmd.CommandText = @"
             CREATE TABLE IF NOT EXISTS users(
                 username TEXT PRIMARY KEY,
@@ -143,7 +143,7 @@ namespace UdpChat.Server
         /// <exception cref="UserAlreadyRegisteredException"></exception>
         public async Task RegisterUserAsync(String name, String password, String ipAddress, int port)
         {
-            if (dbConnection == null)
+            if (DBConnection == null)
             {
                 Console.WriteLine("Database not initialized");
                 throw new ChatDatabaseNotInitializedException();
@@ -159,7 +159,7 @@ namespace UdpChat.Server
                 Console.WriteLine("Invalid port number");
                 throw new ArgumentOutOfRangeException();
             }
-            var cmd = dbConnection.CreateCommand();
+            var cmd = DBConnection.CreateCommand();
             cmd.CommandText = "INSERT INTO users (username, password, ip_address, port) VALUES (@username, @password, @ip_address, @port)";
             cmd.Parameters.AddWithValue("@username", name);
             cmd.Parameters.AddWithValue("@password", password);
@@ -178,50 +178,76 @@ namespace UdpChat.Server
         /// </summary>
         /// <param name="name"></param>
         /// <param name="password"></param>
+        /// <param name="ipAddress"></param>
+        /// <param name="port"></param>
         /// <returns>An awaitable task which resolves to true if the user exists and has the correct password, false otherwhise</returns>
         /// <exception cref="ChatDatabaseNotInitializedException"></exception>
-        public async Task<bool> LoginUserAsync(string name, string password)
+        /// <exception cref="UserAlreadyLoggedInxception"></exception>
+        public async Task<bool> LoginUserAsync(string name, string password, string ipAddress, int port)
         {
-            if (dbConnection == null)
+            if (DBConnection == null)
             {
                 Console.WriteLine("Database not initialized");
                 throw new ChatDatabaseNotInitializedException();
             }
-            var cmd = dbConnection.CreateCommand();
+            var cmd = DBConnection.CreateCommand();
             cmd.CommandText = "SELECT * FROM users WHERE username = @username AND password = @password";
             cmd.Parameters.AddWithValue("@username", name);
             cmd.Parameters.AddWithValue("@password", password);
             var reader = await cmd.ExecuteReaderAsync();
+            if (!LoggedUsers.Add(name))
+            {
+                Console.WriteLine($"User {name} already logged in");
+                throw new UserAlreadyLoggedInxception($"User {name} already logged in");
+            }
+            // put the new address and port in the database
+            var updateCmd = DBConnection.CreateCommand();
+            updateCmd.CommandText = "UPDATE users SET ip_address = @ip_address, port = @port WHERE username = @username";
+            updateCmd.Parameters.AddWithValue("@username", name);
+            updateCmd.Parameters.AddWithValue("@ip_address", ipAddress);
+            updateCmd.Parameters.AddWithValue("@port", port);
+            try
+            {
+                if (await updateCmd.ExecuteNonQueryAsync() > 0)
+                {
+                    Console.WriteLine($"User {name} updated address and port");
+                }
+            }
+            catch (DbException e)
+            {
+                Console.Error.WriteLine($"Error updating user {name} address and port: {e.Message}");
+            }
+
             return reader.HasRows;
         }
         /// <summary>
-        /// Sets the <see cref="CentralRetransmissionServer.authenticationService"/> This service is responsible for all authentication operations.
+        /// Sets the <see cref="CentralRetransmissionServer.AuthenticationService"/> This service is responsible for all authentication operations.
         /// </summary>
         ///<remarks>
-        /// Starts a <see cref="ServerService"/> in localhost (127.0.0.1)with the specified port <see cref="CentralRetransmissionServer.authenticationPort"/>.
+        /// Starts a <see cref="ServerService"/> in localhost (127.0.0.1)with the specified port <see cref="CentralRetransmissionServer.AuthenticationPort"/>.
         /// </remarks>
 
         public void StartAuthenticationService()
         {
-            var authSocket = new UdpClient(authenticationPort);
-            var authEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), authenticationPort);
+            var authSocket = new UdpClient(AuthenticationPort);
+            var authEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), AuthenticationPort);
             Console.WriteLine($"Authentication server started at {authEndpoint}");
-            this.authenticationService = new ServerService(authSocket, authEndpoint);
+            this.AuthenticationService = new ServerService(authSocket, authEndpoint);
         }
 
         /// <summary>
-        /// Sets the <see cref="CentralRetransmissionServer.retransmissionService"/>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.
+        /// Sets the <see cref="CentralRetransmissionServer.RetransmissionService"/>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.
         /// </summary>
         ///<remarks>
-        /// Starts a <see cref="ServerService"/> in localhost (127.0.0.1)with the specified port <see cref="CentralRetransmissionServer.retransmissionPort"/>.
+        /// Starts a <see cref="ServerService"/> in localhost (127.0.0.1)with the specified port <see cref="CentralRetransmissionServer.RetransmissionPort"/>.
         /// </remarks>
 
         public void StartRetransmissionService()
         {
-            var retransmissionSocket = new UdpClient(retransmissionPort);
-            var retransmisionEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), retransmissionPort);
+            var retransmissionSocket = new UdpClient(RetransmissionPort);
+            var retransmisionEndpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), RetransmissionPort);
             Console.WriteLine($"Retransmission server started at {retransmisionEndpoint}");
-            this.retransmissionService = new ServerService(retransmissionSocket, retransmisionEndpoint);
+            this.RetransmissionService = new ServerService(retransmissionSocket, retransmisionEndpoint);
         }
 
         /// <summary>
@@ -230,10 +256,10 @@ namespace UdpChat.Server
         public void Stop()
         {
             Console.WriteLine("Stopping server and related services");
-            authenticationService.socket.Close();
-            retransmissionService.socket.Close();
+            AuthenticationService.socket.Close();
+            RetransmissionService.socket.Close();
             Console.WriteLine("Closing database connection");
-            dbConnection?.Close();
+            DBConnection?.Close();
             Console.WriteLine("Exited successfully");
             System.Environment.Exit(0);
         }
@@ -263,29 +289,37 @@ namespace UdpChat.Server
         private void RetransmissionHandler(IAsyncResult res)
         {
             if (!TryGetStateFromAsyncRes(ref res, out var clientState)) return;
-            var receiveBytes = clientState.socket.EndReceive(res, remoteEP: ref clientState.endpoint!);
+            var receiveBytes = clientState.socket.EndReceive(res, ref clientState.endpoint!);
             Task.Run(async () =>
             {
-                var message = System.Text.Json.JsonSerializer.Deserialize<ChatMessage>(receiveBytes);
-                if (message == null)
+                try
+                {
+                    var message = System.Text.Json.JsonSerializer.Deserialize<ChatMessage>(receiveBytes);
+                    if (message == null) throw new System.Text.Json.JsonException();
+
+                    Console.WriteLine($"Received message from {message.User.Username}@{clientState.endpoint} at {message.Timestamp}:\n\t{message.Message}");
+                    var usersEndpoints = await this.GetRegisteredUsersAndEndpointsAsync(message.User.Username);
+                    Console.WriteLine($"Retransmitting message to all {usersEndpoints.Count()} registered users");
+                    foreach (var (username, endpoint) in usersEndpoints)
+                    {
+                        Console.WriteLine($"\tRetransmitting message to {username}@{endpoint}");
+                        var sentBytesRetransmission = message.SerializeAndSend(endpoint: endpoint, ref clientState.socket);
+                        Console.WriteLine($"\tSent {sentBytesRetransmission} bytes to {endpoint}");
+                    }
+
+                    // send the message to all clients
+                    var res = new ChatMessageResponse(true, usersEndpoints.Count());
+                    var sentBytes = res.SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
+                    Console.WriteLine($"Sending response to {message.User.Username}@{clientState.endpoint}");
+                    Console.WriteLine($"Sent {sentBytes} bytes to {clientState.endpoint}");
+                }
+                catch (System.Text.Json.JsonException)
                 {
                     Console.Error.WriteLine("Error deserializing message");
                     new ChatMessageResponse(false, 0).SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
                     return;
                 }
-                Console.WriteLine($"Received message from {message.User.Username}@{clientState.endpoint} at {message.Timestamp}:\n\t{message.Message}");
-                Console.WriteLine($"Retransmitting message to all registered users");
-                var usersEndpoints = await this.GetRegisteredUsersAndEndpointsAsync();
-                foreach (var (user, endpoint) in usersEndpoints)
-                {
-                    Console.WriteLine($"Retransmitting message to {endpoint}");
-                    var sentBytesRetransmission = message.SerializeAndSend(endpoint: endpoint, ref clientState.socket);
-                    Console.WriteLine($"Sent {sentBytesRetransmission} bytes to {endpoint}");
-                }
 
-                // send the message to all clients
-                var sentBytes = new ChatMessageResponse(true, usersEndpoints.Count()).SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
-                Console.WriteLine($"Sent {sentBytes} bytes to {clientState.endpoint}");
             });
             // Start a new receive operation
             clientState.socket.BeginReceive(new AsyncCallback(RetransmissionHandler), clientState);
@@ -296,16 +330,16 @@ namespace UdpChat.Server
         /// </summary>
         /// <returns>Returns a list of pairs from the database containing the username and the endpoint of the user</returns>
         /// <exception cref="Exception"></exception>
-        private async Task<IEnumerable<(String, IPEndPoint)>> GetRegisteredUsersAndEndpointsAsync()
+        private async Task<IEnumerable<(String, IPEndPoint)>> GetRegisteredUsersAndEndpointsAsync(string? usernameToDiscard = null)
         {
             // get all users from the database
-            if (dbConnection == null)
+            if (DBConnection == null)
             {
                 Console.WriteLine("Database not initialized");
                 throw new Exception("Database not initialized");
             }
 
-            var cmd = dbConnection.CreateCommand();
+            var cmd = DBConnection.CreateCommand();
             cmd.CommandText = "SELECT * FROM users";
             var reader = await cmd.ExecuteReaderAsync();
 
@@ -325,10 +359,12 @@ namespace UdpChat.Server
                 var username = reader.GetString(nameIndex);
                 var ip = reader.GetString(ipIndex);
                 var port = reader.GetInt32(portIndex);
+                if (usernameToDiscard != null && username.Equals(usernameToDiscard)) continue;
+
                 usersEndpoints.Add(
                     (
                         username,
-                        new IPEndPoint(IPAddress.Parse(ip), port)
+                        new IPEndPoint(IPAddress.Parse(ip), port+1)
                         ));
             }
 
@@ -356,17 +392,29 @@ namespace UdpChat.Server
                 regRes = new Response(responseState: Response.State.ERROR, $"Unknown error: {e.Message}");
             }
             Console.WriteLine($"\tSending register response {regRes} to {clientState.endpoint}");
-            var sentBytes = regRes.SerializeAndSend(clientState.endpoint, this.authenticationService.socket);
+            var sentBytes = regRes.SerializeAndSend(clientState.endpoint, this.AuthenticationService.socket);
             Console.WriteLine($"\tSent {sentBytes} bytes");
         }
 
         private async Task HandleLoginRequestAsync(Request req, ServerService clientState)
         {
             Console.WriteLine($"Received login request from {req.Username} at {req.Timestamp}");
-            Response res = await LoginUserAsync(req.Username, req.Password) ?
-                        new Response(responseState: Response.State.LOGIN_SUCCESS, "User logged in successfully")
-                        :
-                        new Response(responseState: Response.State.LOGIN_FAILED, "Invalid username or password");
+            Response res;
+            try
+            {
+                var loginResult = await LoginUserAsync(req.Username,
+                                                       req.Password,
+                                                       clientState.endpoint.Address.ToString(),
+                                                       clientState.endpoint.Port);
+                res = loginResult ?
+                       new Response(responseState: Response.State.LOGIN_SUCCESS, "User logged in successfully")
+                       :
+                       new Response(responseState: Response.State.LOGIN_FAILED, "Invalid username or password");
+            }
+            catch (UserAlreadyLoggedInxception)
+            {
+                res = new Response(responseState: Response.State.ALREADY_LOGGED_IN, "User already logged in");
+            }
             var sentBytes = res.SerializeAndSend(ref clientState.endpoint, ref clientState.socket);
             Console.WriteLine($"\tSent {sentBytes} bytes");
         }
@@ -410,10 +458,10 @@ namespace UdpChat.Server
         /// The services started are:
         /// <list type="bullet">
         /// <item>
-        /// <term><see cref="CentralRetransmissionServer.authenticationService"/></term>
+        /// <term><see cref="CentralRetransmissionServer.AuthenticationService"/></term>
         /// </item>
         /// <item>
-        /// <term><see cref="CentralRetransmissionServer.retransmissionService"/></term>
+        /// <term><see cref="CentralRetransmissionServer.RetransmissionService"/></term>
         /// </item>
         /// </list>
         /// </remarks>
@@ -423,8 +471,8 @@ namespace UdpChat.Server
             InitializeDB();
             StartRetransmissionService();
             StartAuthenticationService();
-            this.retransmissionService.socket.BeginReceive(new AsyncCallback(RetransmissionHandler), this.retransmissionService);
-            this.authenticationService.socket.BeginReceive(new AsyncCallback(AuthenticationHandler), this.authenticationService);
+            this.RetransmissionService.socket.BeginReceive(new AsyncCallback(RetransmissionHandler), this.RetransmissionService);
+            this.AuthenticationService.socket.BeginReceive(new AsyncCallback(AuthenticationHandler), this.AuthenticationService);
             Console.CancelKeyPress += delegate
             {
                 Stop();

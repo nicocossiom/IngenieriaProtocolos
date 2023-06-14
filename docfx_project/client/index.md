@@ -1,7 +1,6 @@
 # Client CLI Documentation
 
-This is the documentation for the client CLI of UDPChat.
+This CLI can be used to interact with a server in otder to register, login, send messages, etc.
 
-This CLI can be used to connect to a server, register, login, send messages, etc.
+## Installation
 
-## How to use

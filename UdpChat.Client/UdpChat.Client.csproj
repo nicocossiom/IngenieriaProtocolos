@@ -4,6 +4,10 @@
     <ProjectReference Include="..\UdpChat.Lib\UdpChat.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <TrimmerRootAssembly Include="UdpChat.Lib" />
+  </ItemGroup>
+
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
