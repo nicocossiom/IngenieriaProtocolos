@@ -69,6 +69,67 @@
           "id": "UdpChat_Lib_ChatSendable",
           "hideTitleType": false,
           "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Lib.Deserializerer`1",
+          "isExtensionMethod": false,
+          "href": "UdpChat.Lib.Deserializerer-1.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "Deserializerer<T>"
+            },
+            {
+              "lang": "vb",
+              "value": "Deserializerer(Of T)"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Deserializerer<T>"
+            },
+            {
+              "lang": "vb",
+              "value": "Deserializerer(Of T)"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Deserializerer<T>"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Deserializerer(Of T)"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<a class=\"xref\" href=\"UdpChat.Lib.Deserializerer-1.html\">Deserializerer</a>&lt;T&gt;"
+            },
+            {
+              "lang": "vb",
+              "value": "<a class=\"xref\" href=\"UdpChat.Lib.Deserializerer-1.html\">Deserializerer</a>(Of T)"
+            }
+          ],
+          "level": 0.0,
+          "summary": "",
+          "type": "class",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Deserializerer_1",
+          "hideTitleType": false,
+          "hideSubtitle": false
         }
       ]
     }

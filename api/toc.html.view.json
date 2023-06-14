@@ -15,6 +15,16 @@
           "level": 3.0,
           "items": [],
           "leaf": true
+        },
+        {
+          "name": "ServerService",
+          "href": "UdpChat.Client.ServerService.html",
+          "topicHref": "UdpChat.Client.ServerService.html",
+          "topicUid": "UdpChat.Client.ServerService",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
         }
       ],
       "tocHref": null,
@@ -51,6 +61,17 @@
           "href": "UdpChat.Lib.ChatSendable.html",
           "topicHref": "UdpChat.Lib.ChatSendable.html",
           "topicUid": "UdpChat.Lib.ChatSendable",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        },
+        {
+          "name": "Deserializerer<T>",
+          "href": "UdpChat.Lib.Deserializerer-1.html",
+          "topicHref": "UdpChat.Lib.Deserializerer-1.html",
+          "topicUid": "UdpChat.Lib.Deserializerer`1",
+          "name.vb": "Deserializerer(Of T)",
           "tocHref": null,
           "level": 3.0,
           "items": [],
@@ -221,6 +242,16 @@
           "href": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html",
           "topicHref": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html",
           "topicUid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
+          "tocHref": null,
+          "level": 3.0,
+          "items": [],
+          "leaf": true
+        },
+        {
+          "name": "UserAlreadyLoggedInxception",
+          "href": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.html",
+          "topicHref": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.html",
+          "topicUid": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception",
           "tocHref": null,
           "level": 3.0,
           "items": [],

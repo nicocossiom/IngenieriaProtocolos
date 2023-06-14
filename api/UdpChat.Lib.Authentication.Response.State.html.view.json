@@ -56,6 +56,141 @@
       "id": "fields",
       "children": [
         {
+          "uid": "UdpChat.Lib.Authentication.Response.State.ALREADY_LOGGED_IN",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Lib.Authentication.Response.State",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ALREADY_LOGGED_IN"
+            },
+            {
+              "lang": "vb",
+              "value": "ALREADY_LOGGED_IN"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "Response.State.ALREADY_LOGGED_IN"
+            },
+            {
+              "lang": "vb",
+              "value": "Response.State.ALREADY_LOGGED_IN"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Lib.Authentication.Response.State.ALREADY_LOGGED_IN"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Lib.Authentication.Response.State.ALREADY_LOGGED_IN"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.ALREADY_LOGGED_IN\" text=\"ALREADY_LOGGED_IN\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Lib.Authentication.Response.State.ALREADY_LOGGED_IN\" text=\"ALREADY_LOGGED_IN\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "ALREADY_LOGGED_IN = 3"
+              },
+              {
+                "lang": "vb",
+                "value": "ALREADY_LOGGED_IN = 3"
+              }
+            ],
+            "return": null,
+            "fieldValue": {
+              "type": {
+                "uid": "UdpChat.Lib.Authentication.Response.State",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "Response.State"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Response.State"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "Response.State"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "Response.State"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "UdpChat.Lib.Authentication.Response.State"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UdpChat.Lib.Authentication.Response.State"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.html\">Response</a>.<a class=\"xref\" href=\"UdpChat.Lib.Authentication.Response.State.html\">State</a>"
+                  }
+                ]
+              }
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Lib/Requests.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "ALREADY_LOGGED_IN",
+            "path": "../UdpChat.Lib/Requests.cs",
+            "startLine": 81.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Lib"
+          ],
+          "namespace": "UdpChat.Lib.Authentication",
+          "example": [],
+          "level": 0.0,
+          "type": "field",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_ALREADY_LOGGED_IN.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.ALREADY_LOGGED_IN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L82",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Lib_Authentication_Response_State_ALREADY_LOGGED_IN",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
           "uid": "UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED",
           "isEii": false,
           "isExtensionMethod": false,
@@ -167,7 +302,7 @@
             },
             "id": "ALREADY_REGISTERED",
             "path": "../UdpChat.Lib/Requests.cs",
-            "startLine": 78.0,
+            "startLine": 79.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -181,7 +316,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_ALREADY_REGISTERED.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.ALREADY_REGISTERED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L79",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L80",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -240,11 +375,11 @@
             "content": [
               {
                 "lang": "csharp",
-                "value": "ERROR = 4"
+                "value": "ERROR = 5"
               },
               {
                 "lang": "vb",
-                "value": "ERROR = 4"
+                "value": "ERROR = 5"
               }
             ],
             "return": null,
@@ -302,7 +437,7 @@
             },
             "id": "ERROR",
             "path": "../UdpChat.Lib/Requests.cs",
-            "startLine": 82.0,
+            "startLine": 85.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -316,7 +451,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_ERROR.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.ERROR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L83",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L86",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -375,11 +510,11 @@
             "content": [
               {
                 "lang": "csharp",
-                "value": "LOGIN_FAILED = 3"
+                "value": "LOGIN_FAILED = 4"
               },
               {
                 "lang": "vb",
-                "value": "LOGIN_FAILED = 3"
+                "value": "LOGIN_FAILED = 4"
               }
             ],
             "return": null,
@@ -437,7 +572,7 @@
             },
             "id": "LOGIN_FAILED",
             "path": "../UdpChat.Lib/Requests.cs",
-            "startLine": 80.0,
+            "startLine": 83.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -451,7 +586,7 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Authentication_Response_State_LOGIN_FAILED.md&value=---%0Auid%3A%20UdpChat.Lib.Authentication.Response.State.LOGIN_FAILED%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L81",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Requests.cs/#L84",
           "remarks": "",
           "conceptual": "",
           "implements": "",

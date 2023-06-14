@@ -70,6 +70,75 @@
           "hideSubtitle": false
         }
       ]
+    },
+    {
+      "inStruct": true,
+      "typePropertyName": "inStruct",
+      "id": "structs",
+      "children": [
+        {
+          "uid": "UdpChat.Client.ServerService",
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Client",
+          "href": "UdpChat.Client.ServerService.html",
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ServerService"
+            },
+            {
+              "lang": "vb",
+              "value": "ServerService"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ServerService"
+            },
+            {
+              "lang": "vb",
+              "value": "ServerService"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Client.ServerService"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Client.ServerService"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Client.ServerService\" text=\"ServerService\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Client.ServerService\" text=\"ServerService\"/>"
+            }
+          ],
+          "level": 0.0,
+          "summary": "<p sourcefile=\"api/UdpChat.Client.ServerService.yml\" sourcestartlinenumber=\"1\">A struct to hold the state of a UdpClient</p>\n",
+          "type": "struct",
+          "platform": null,
+          "isEii": false,
+          "docurl": "",
+          "sourceurl": "",
+          "remarks": "",
+          "conceptual": "",
+          "syntax": "",
+          "implements": "",
+          "example": "",
+          "seealso": null,
+          "id": "UdpChat_Client_ServerService",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
     }
   ],
   "langs": [

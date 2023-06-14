@@ -43,6 +43,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Client.ServerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Client.ServerService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UdpChat.Client.yml",
       "output": {
         ".html": {
@@ -133,6 +143,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Lib.Deserializerer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Lib.Deserializerer-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UdpChat.Lib.Message.ChatMessage.yml",
       "output": {
         ".html": {
@@ -207,6 +227,16 @@
       "output": {
         ".html": {
           "relative_path": "api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.html"
         }
       },
       "version": ""
@@ -328,6 +358,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {

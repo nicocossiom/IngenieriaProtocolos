@@ -1,5 +1,5 @@
 {
-  "uid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
+  "uid": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
@@ -56,60 +56,109 @@
       "id": "constructors",
       "children": [
         {
-          "uid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor",
+          "uid": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.#ctor(System.String)",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException",
+          "parent": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception",
           "isExternal": false,
           "name": [
             {
               "lang": "csharp",
-              "value": "ChatDatabaseNotInitializedException()"
+              "value": "UserAlreadyLoggedInxception(string)"
             },
             {
               "lang": "vb",
-              "value": "New()"
+              "value": "New(String)"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException()"
+              "value": "UserAlreadyLoggedInxception.UserAlreadyLoggedInxception(string)"
             },
             {
               "lang": "vb",
-              "value": "ChatDatabaseNotInitializedException.New()"
+              "value": "UserAlreadyLoggedInxception.New(String)"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException()"
+              "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.UserAlreadyLoggedInxception(string)"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.New()"
+              "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.New(String)"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor\" text=\"ChatDatabaseNotInitializedException()\"/>"
+              "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.#ctor(System.String)\" text=\"UserAlreadyLoggedInxception(string)\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor\" text=\"ChatDatabaseNotInitializedException()\"/>"
+              "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.#ctor(System.String)\" text=\"UserAlreadyLoggedInxception(string)\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public ChatDatabaseNotInitializedException()"
+                "value": "public UserAlreadyLoggedInxception(string message)"
               },
               {
                 "lang": "vb",
-                "value": "Public Sub New()"
+                "value": "Public Sub New(message As String)"
+              }
+            ],
+            "parameters": [
+              {
+                "id": "message",
+                "type": {
+                  "uid": "System.String",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "string"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "string"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "string"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.String\" text=\"string\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.String\" text=\"string\"/>"
+                    }
+                  ]
+                },
+                "description": "<p sourcefile=\"api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.yml\" sourcestartlinenumber=\"1\">The message that describes the error.</p>\n"
               }
             ]
           },
@@ -121,7 +170,7 @@
             },
             "id": ".ctor",
             "path": "../UdpChat.Server/Exceptions.cs",
-            "startLine": 20.0,
+            "startLine": 13.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -131,11 +180,11 @@
           "namespace": "UdpChat.Server.Exceptions",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor*",
+            "uid": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.#ctor*",
             "name": [
               {
                 "lang": "csharp",
-                "value": "ChatDatabaseNotInitializedException"
+                "value": "UserAlreadyLoggedInxception"
               },
               {
                 "lang": "vb",
@@ -145,46 +194,46 @@
             "nameWithType": [
               {
                 "lang": "csharp",
-                "value": "ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException"
+                "value": "UserAlreadyLoggedInxception.UserAlreadyLoggedInxception"
               },
               {
                 "lang": "vb",
-                "value": "ChatDatabaseNotInitializedException.New"
+                "value": "UserAlreadyLoggedInxception.New"
               }
             ],
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.ChatDatabaseNotInitializedException"
+                "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.UserAlreadyLoggedInxception"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.New"
+                "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.New"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor*\" text=\"ChatDatabaseNotInitializedException\"/>"
+                "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.#ctor*\" text=\"UserAlreadyLoggedInxception\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.#ctor*\" text=\"ChatDatabaseNotInitializedException\"/>"
+                "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.#ctor*\" text=\"UserAlreadyLoggedInxception\"/>"
               }
             ],
-            "id": "UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException__ctor_"
+            "id": "UdpChat_Server_Exceptions_UserAlreadyLoggedInxception__ctor_"
           },
           "level": 0.0,
           "type": "constructor",
-          "summary": "<p sourcefile=\"api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"System.Exception\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"System.Exception\" data-throw-if-not-resolved=\"false\"></xref> class with a specified error message.</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException__ctor.md&value=---%0Auid%3A%20UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Exceptions.cs/#L21",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_Exceptions_UserAlreadyLoggedInxception__ctor_System_String_.md&value=---%0Auid%3A%20UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Exceptions.cs/#L14",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException__ctor",
+          "id": "UdpChat_Server_Exceptions_UserAlreadyLoggedInxception__ctor_System_String_",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -198,31 +247,31 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "ChatDatabaseNotInitializedException"
+      "value": "UserAlreadyLoggedInxception"
     },
     {
       "lang": "vb",
-      "value": "ChatDatabaseNotInitializedException"
+      "value": "UserAlreadyLoggedInxception"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "ChatDatabaseNotInitializedException"
+      "value": "UserAlreadyLoggedInxception"
     },
     {
       "lang": "vb",
-      "value": "ChatDatabaseNotInitializedException"
+      "value": "UserAlreadyLoggedInxception"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
+      "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException"
+      "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception"
     }
   ],
   "type": "class",
@@ -232,9 +281,9 @@
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
-    "id": "ChatDatabaseNotInitializedException",
+    "id": "UserAlreadyLoggedInxception",
     "path": "../UdpChat.Server/Exceptions.cs",
-    "startLine": 17.0,
+    "startLine": 10.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -288,17 +337,17 @@
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.yml\" sourcestartlinenumber=\"1\">Represents errors that occur during application execution.</p>\n",
+  "summary": "<p sourcefile=\"api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.yml\" sourcestartlinenumber=\"1\">Represents errors that occur during application execution.</p>\n",
   "example": [],
   "syntax": {
     "content": [
       {
         "lang": "csharp",
-        "value": "public class ChatDatabaseNotInitializedException : Exception, ISerializable"
+        "value": "public class UserAlreadyLoggedInxception : Exception, ISerializable"
       },
       {
         "lang": "vb",
-        "value": "Public Class ChatDatabaseNotInitializedException Inherits Exception Implements ISerializable"
+        "value": "Public Class UserAlreadyLoggedInxception Inherits Exception Implements ISerializable"
       }
     ]
   },
@@ -1380,11 +1429,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.yml",
+  "_key": "api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html",
+  "_path": "api/UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -1454,12 +1503,12 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException.md&value=---%0Auid%3A%20UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Exceptions.cs/#L18",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_Exceptions_UserAlreadyLoggedInxception.md&value=---%0Auid%3A%20UdpChat.Server.Exceptions.UserAlreadyLoggedInxception%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Exceptions.cs/#L11",
   "remarks": "",
   "conceptual": "",
   "seealso": null,
-  "id": "UdpChat_Server_Exceptions_ChatDatabaseNotInitializedException",
+  "id": "UdpChat_Server_Exceptions_UserAlreadyLoggedInxception",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": true,

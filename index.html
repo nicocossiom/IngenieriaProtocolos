@@ -81,6 +81,32 @@
 <p>This chat app is a simple UDP client/server application that allows multiple clients
 to connect to a server and send messages to each other. The server is able to handle
 multiple clients at once and will broadcast messages to all connected clients.</p>
+<h2 id="quickstart">Quickstart</h2>
+<p>To get the system started you must first start the server. This can be done by running the server CLI application.
+See <a href="server">Server CLI</a> for more information.</p>
+<p>Once you have a server clients can be started in order to interact with the server. See <a href="client">Client CLI</a> for more information.</p>
+<h2 id="design">Design</h2>
+<h3 id="client-cli">Client CLI</h3>
+<p>The client CLI is a simple command line interface that allows the user to interact with the system.</p>
+<h3 id="server-cli">Server CLI</h3>
+<p>The server CLI is a simple command line interface that allows the for creating a server in the system that can be used by clients in order to send messages to be retransmitted to other registered users.</p>
+<h3 id="project-structure">Project structure</h3>
+<p>See <a href="/api/index.md">Code Documentation</a> for more information.</p>
+<h3 id="messages-between-client---server">Messages between Client &lt;-&gt; Server</h3>
+<p>Client and server interchange messages in the form of JSONs. The JSONs are deserialized into code usable class objects that represent the messages. Because the messages are serialized into JSONs they can be sent over the network and deserialized into the same class objects on the other side. This allows for easy communication between the client and the server.</p>
+<p>A client must be logged in to send messages to the server. The server will then broadcast the message to all other registered users.</p>
+<h3 id="authentication">Authentication</h3>
+<p>The server has basic authentication with a user being able to:</p>
+<ul>
+<li>register</li>
+<li>login</li>
+<li>unregister</li>
+<li>logout</li>
+</ul>
+<p>The user is able to send messages to the server. The server will then broadcast on the moment the message to all other users that
+are registered. Messaegs are not stored by the server, just retransmitted, hence if a user is not online and logged in they will not receive the messages they have missed.</p>
+<h3 id="persistence">Persistence</h3>
+<p>Registered users are persisted into an SQLite3 database. This allows for the server to be restarted and still have the registered users. This allows for user login functionality. This also means that a username must be unique and not registered.</p>
 <h2 id="basic-functionality-of-a-udp-multichat">Basic functionality of a UDP Multichat</h2>
 <pre><code class="lang-mermaid">sequenceDiagram
     participant Client

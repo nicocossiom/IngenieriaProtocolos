@@ -185,10 +185,10 @@
 </h2>
 
 
-  <a id="UdpChat_Server_CentralRetransmissionServer_authenticationService_" data-uid="UdpChat.Server.CentralRetransmissionServer.authenticationService*"></a>
+  <a id="UdpChat_Server_CentralRetransmissionServer_AuthenticationService_" data-uid="UdpChat.Server.CentralRetransmissionServer.AuthenticationService*"></a>
 
-  <h3 id="UdpChat_Server_CentralRetransmissionServer_authenticationService" data-uid="UdpChat.Server.CentralRetransmissionServer.authenticationService">
-  authenticationService
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_AuthenticationService" data-uid="UdpChat.Server.CentralRetransmissionServer.AuthenticationService">
+  AuthenticationService
   <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -196,7 +196,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ServerService authenticationService { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ServerService AuthenticationService { get; set; }</code></pre>
   </div>
 
 
@@ -216,10 +216,10 @@
 
 
 
-  <a id="UdpChat_Server_CentralRetransmissionServer_retransmissionService_" data-uid="UdpChat.Server.CentralRetransmissionServer.retransmissionService*"></a>
+  <a id="UdpChat_Server_CentralRetransmissionServer_RetransmissionService_" data-uid="UdpChat.Server.CentralRetransmissionServer.RetransmissionService*"></a>
 
-  <h3 id="UdpChat_Server_CentralRetransmissionServer_retransmissionService" data-uid="UdpChat.Server.CentralRetransmissionServer.retransmissionService">
-  retransmissionService
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_RetransmissionService" data-uid="UdpChat.Server.CentralRetransmissionServer.RetransmissionService">
+  RetransmissionService
   <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -227,7 +227,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ServerService retransmissionService { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ServerService RetransmissionService { get; set; }</code></pre>
   </div>
 
 
@@ -253,9 +253,9 @@
 
   <a id="UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUserAsync*"></a>
 
-  <h3 id="UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)">
-  LoginUserAsync(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_System_String_System_Int32_" data-uid="UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String,System.String,System.Int32)">
+  LoginUserAsync(string, string, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Async database query to check if a user exists and has the correct password</p>
@@ -263,7 +263,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; LoginUserAsync(string name, string password)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; LoginUserAsync(string name, string password, string ipAddress, int port)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -271,6 +271,10 @@
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ipAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -291,6 +295,8 @@
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="UdpChat.Server.Exceptions.ChatDatabaseNotInitializedException.html">ChatDatabaseNotInitializedException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="UdpChat.Server.Exceptions.UserAlreadyLoggedInxception.html">UserAlreadyLoggedInxception</a></dt>
     <dd></dd>
   </dl>
 
@@ -349,7 +355,7 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_Start" data-uid="UdpChat.Server.CentralRetransmissionServer.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts the server with the associated services:</p>
@@ -370,7 +376,7 @@
 
   <h4 class="section" id="UdpChat_Server_CentralRetransmissionServer_Start_remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The services started are:</p>
-<ul><li><span class="term"><a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_authenticationService">authenticationService</a></span></li><li><span class="term"><a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_retransmissionService">retransmissionService</a></span></li></ul>
+<ul><li><span class="term"><a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_AuthenticationService">AuthenticationService</a></span></li><li><span class="term"><a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_RetransmissionService">RetransmissionService</a></span></li></ul>
 </div>
 
 
@@ -380,10 +386,10 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_StartAuthenticationService" data-uid="UdpChat.Server.CentralRetransmissionServer.StartAuthenticationService">
   StartAuthenticationService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_authenticationService">authenticationService</a> This service is responsible for all authentication operations.</p>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_AuthenticationService">AuthenticationService</a> This service is responsible for all authentication operations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -400,7 +406,7 @@
 
 
   <h4 class="section" id="UdpChat_Server_CentralRetransmissionServer_StartAuthenticationService_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Starts a <a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a> in localhost (127.0.0.1)with the specified port <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat.Server.CentralRetransmissionServer.authenticationPort">authenticationPort</a>.</p>
+  <div class="markdown level1 remarks"><p>Starts a <a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a> in localhost (127.0.0.1)with the specified port <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat.Server.CentralRetransmissionServer.AuthenticationPort">AuthenticationPort</a>.</p>
 </div>
 
 
@@ -410,10 +416,10 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_StartRetransmissionService" data-uid="UdpChat.Server.CentralRetransmissionServer.StartRetransmissionService">
   StartRetransmissionService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_retransmissionService">retransmissionService</a>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.</p>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat_Server_CentralRetransmissionServer_RetransmissionService">RetransmissionService</a>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -430,7 +436,7 @@
 
 
   <h4 class="section" id="UdpChat_Server_CentralRetransmissionServer_StartRetransmissionService_remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Starts a <a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a> in localhost (127.0.0.1)with the specified port <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat.Server.CentralRetransmissionServer.retransmissionPort">retransmissionPort</a>.</p>
+  <div class="markdown level1 remarks"><p>Starts a <a class="xref" href="UdpChat.Server.ServerService.html">ServerService</a> in localhost (127.0.0.1)with the specified port <a class="xref" href="UdpChat.Server.CentralRetransmissionServer.html#UdpChat.Server.CentralRetransmissionServer.RetransmissionPort">RetransmissionPort</a>.</p>
 </div>
 
 
@@ -440,7 +446,7 @@
 
   <h3 id="UdpChat_Server_CentralRetransmissionServer_Stop" data-uid="UdpChat.Server.CentralRetransmissionServer.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stops the services and closes the database connection</p>

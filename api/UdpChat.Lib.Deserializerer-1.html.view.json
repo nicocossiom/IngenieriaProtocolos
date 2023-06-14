@@ -1,50 +1,50 @@
 {
-  "uid": "UdpChat.Client.CLI.ClientCLI",
+  "uid": "UdpChat.Lib.Deserializerer`1",
   "isEii": false,
   "isExtensionMethod": false,
   "parent": {
-    "uid": "UdpChat.Client.CLI",
+    "uid": "UdpChat.Lib",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Client.html\">Client</a>.<a class=\"xref\" href=\"UdpChat.Client.CLI.html\">CLI</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Client.html\">Client</a>.<a class=\"xref\" href=\"UdpChat.Client.CLI.html\">CLI</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
       }
     ],
     "level": 0.0
@@ -56,105 +56,105 @@
       "id": "methods",
       "children": [
         {
-          "uid": "UdpChat.Client.CLI.ClientCLI.Main(System.String[])",
+          "uid": "UdpChat.Lib.Deserializerer`1.Deserialize(System.Byte[])",
           "isEii": false,
           "isExtensionMethod": false,
-          "parent": "UdpChat.Client.CLI.ClientCLI",
+          "parent": "UdpChat.Lib.Deserializerer`1",
           "isExternal": false,
           "name": [
             {
               "lang": "csharp",
-              "value": "Main(string[])"
+              "value": "Deserialize(byte[])"
             },
             {
               "lang": "vb",
-              "value": "Main(String())"
+              "value": "Deserialize(Byte())"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "ClientCLI.Main(string[])"
+              "value": "Deserializerer<T>.Deserialize(byte[])"
             },
             {
               "lang": "vb",
-              "value": "ClientCLI.Main(String())"
+              "value": "Deserializerer(Of T).Deserialize(Byte())"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Client.CLI.ClientCLI.Main(string[])"
+              "value": "UdpChat.Lib.Deserializerer<T>.Deserialize(byte[])"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Client.CLI.ClientCLI.Main(String())"
+              "value": "UdpChat.Lib.Deserializerer(Of T).Deserialize(Byte())"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Client.CLI.ClientCLI.Main(System.String[])\" text=\"Main(string[])\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Deserializerer`1.Deserialize(System.Byte[])\" text=\"Deserialize(byte[])\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Client.CLI.ClientCLI.Main(System.String[])\" text=\"Main(string[])\"/>"
+              "value": "<xref uid=\"UdpChat.Lib.Deserializerer`1.Deserialize(System.Byte[])\" text=\"Deserialize(byte[])\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public static Task Main(string[] args)"
+                "value": "public static T? Deserialize(byte[] json)"
               },
               {
                 "lang": "vb",
-                "value": "Public Shared Function Main(args As String()) As Task"
+                "value": "Public Shared Function Deserialize(json As Byte()) As T"
               }
             ],
             "parameters": [
               {
-                "id": "args",
+                "id": "json",
                 "type": {
-                  "uid": "System.String[]",
+                  "uid": "System.Byte[]",
                   "name": [
                     {
                       "lang": "csharp",
-                      "value": "string[]"
+                      "value": "byte[]"
                     },
                     {
                       "lang": "vb",
-                      "value": "String()"
+                      "value": "Byte()"
                     }
                   ],
                   "nameWithType": [
                     {
                       "lang": "csharp",
-                      "value": "string[]"
+                      "value": "byte[]"
                     },
                     {
                       "lang": "vb",
-                      "value": "String()"
+                      "value": "Byte()"
                     }
                   ],
                   "fullName": [
                     {
                       "lang": "csharp",
-                      "value": "string[]"
+                      "value": "byte[]"
                     },
                     {
                       "lang": "vb",
-                      "value": "String()"
+                      "value": "Byte()"
                     }
                   ],
                   "specName": [
                     {
                       "lang": "csharp",
-                      "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.string\">string</a>[]"
+                      "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.byte\">byte</a>[]"
                     },
                     {
                       "lang": "vb",
-                      "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.string\">String</a>()"
+                      "value": "<a class=\"xref\" href=\"https://learn.microsoft.com/dotnet/api/system.byte\">Byte</a>()"
                     }
                   ]
                 }
@@ -162,45 +162,46 @@
             ],
             "return": {
               "type": {
-                "uid": "System.Threading.Tasks.Task",
+                "uid": "{T}",
+                "definition": "T",
                 "name": [
                   {
                     "lang": "csharp",
-                    "value": "Task"
+                    "value": "T"
                   },
                   {
                     "lang": "vb",
-                    "value": "Task"
+                    "value": "T"
                   }
                 ],
                 "nameWithType": [
                   {
                     "lang": "csharp",
-                    "value": "Task"
+                    "value": "T"
                   },
                   {
                     "lang": "vb",
-                    "value": "Task"
+                    "value": "T"
                   }
                 ],
                 "fullName": [
                   {
                     "lang": "csharp",
-                    "value": "System.Threading.Tasks.Task"
+                    "value": "T"
                   },
                   {
                     "lang": "vb",
-                    "value": "System.Threading.Tasks.Task"
+                    "value": "T"
                   }
                 ],
                 "specName": [
                   {
                     "lang": "csharp",
-                    "value": "<xref uid=\"System.Threading.Tasks.Task\" text=\"Task\"/>"
+                    "value": "<xref uid=\"{T}\" text=\"T\"/>"
                   },
                   {
                     "lang": "vb",
-                    "value": "<xref uid=\"System.Threading.Tasks.Task\" text=\"Task\"/>"
+                    "value": "<xref uid=\"{T}\" text=\"T\"/>"
                   }
                 ]
               }
@@ -208,76 +209,76 @@
           },
           "source": {
             "remote": {
-              "path": "UdpChat.Client/ClientCLI.cs",
+              "path": "UdpChat.Lib/Common.cs",
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
-            "id": "Main",
-            "path": "../UdpChat.Client/ClientCLI.cs",
-            "startLine": 115.0,
+            "id": "Deserialize",
+            "path": "../UdpChat.Lib/Common.cs",
+            "startLine": 58.0,
             "endLine": 0.0,
             "isExternal": false
           },
           "assemblies": [
-            "UdpChat.Client"
+            "UdpChat.Lib"
           ],
-          "namespace": "UdpChat.Client.CLI",
+          "namespace": "UdpChat.Lib",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Client.CLI.ClientCLI.Main*",
+            "uid": "UdpChat.Lib.Deserializerer`1.Deserialize*",
             "name": [
               {
                 "lang": "csharp",
-                "value": "Main"
+                "value": "Deserialize"
               },
               {
                 "lang": "vb",
-                "value": "Main"
+                "value": "Deserialize"
               }
             ],
             "nameWithType": [
               {
                 "lang": "csharp",
-                "value": "ClientCLI.Main"
+                "value": "Deserializerer<T>.Deserialize"
               },
               {
                 "lang": "vb",
-                "value": "ClientCLI.Main"
+                "value": "Deserializerer(Of T).Deserialize"
               }
             ],
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Client.CLI.ClientCLI.Main"
+                "value": "UdpChat.Lib.Deserializerer<T>.Deserialize"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Client.CLI.ClientCLI.Main"
+                "value": "UdpChat.Lib.Deserializerer(Of T).Deserialize"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Client.CLI.ClientCLI.Main*\" text=\"Main\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Deserializerer`1.Deserialize*\" text=\"Deserialize\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Client.CLI.ClientCLI.Main*\" text=\"Main\"/>"
+                "value": "<xref uid=\"UdpChat.Lib.Deserializerer`1.Deserialize*\" text=\"Deserialize\"/>"
               }
             ],
-            "id": "UdpChat_Client_CLI_ClientCLI_Main_"
+            "id": "UdpChat_Lib_Deserializerer_1_Deserialize_"
           },
           "level": 0.0,
           "type": "method",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_CLI_ClientCLI_Main_System_String___.md&value=---%0Auid%3A%20UdpChat.Client.CLI.ClientCLI.Main(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ClientCLI.cs/#L116",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Deserializerer_1_Deserialize_System_Byte___.md&value=---%0Auid%3A%20UdpChat.Lib.Deserializerer%601.Deserialize(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L59",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Client_CLI_ClientCLI_Main_System_String___",
+          "id": "UdpChat_Lib_Deserializerer_1_Deserialize_System_Byte___",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -291,107 +292,113 @@
   "name": [
     {
       "lang": "csharp",
-      "value": "ClientCLI"
+      "value": "Deserializerer<T>"
     },
     {
       "lang": "vb",
-      "value": "ClientCLI"
+      "value": "Deserializerer(Of T)"
     }
   ],
   "nameWithType": [
     {
       "lang": "csharp",
-      "value": "ClientCLI"
+      "value": "Deserializerer<T>"
     },
     {
       "lang": "vb",
-      "value": "ClientCLI"
+      "value": "Deserializerer(Of T)"
     }
   ],
   "fullName": [
     {
       "lang": "csharp",
-      "value": "UdpChat.Client.CLI.ClientCLI"
+      "value": "UdpChat.Lib.Deserializerer<T>"
     },
     {
       "lang": "vb",
-      "value": "UdpChat.Client.CLI.ClientCLI"
+      "value": "UdpChat.Lib.Deserializerer(Of T)"
     }
   ],
   "type": "class",
   "source": {
     "remote": {
-      "path": "UdpChat.Client/ClientCLI.cs",
+      "path": "UdpChat.Lib/Common.cs",
       "branch": "master",
       "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
     },
-    "id": "ClientCLI",
-    "path": "../UdpChat.Client/ClientCLI.cs",
-    "startLine": 9.0,
+    "id": "Deserializerer",
+    "path": "../UdpChat.Lib/Common.cs",
+    "startLine": 55.0,
     "endLine": 0.0,
     "isExternal": false
   },
   "assemblies": [
-    "UdpChat.Client"
+    "UdpChat.Lib"
   ],
   "namespace": {
-    "uid": "UdpChat.Client.CLI",
+    "uid": "UdpChat.Lib",
     "isEii": false,
     "isExtensionMethod": false,
     "href": "UdpChat.html",
     "name": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       }
     ],
     "nameWithType": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       }
     ],
     "fullName": [
       {
         "lang": "csharp",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       },
       {
         "lang": "vb",
-        "value": "UdpChat.Client.CLI"
+        "value": "UdpChat.Lib"
       }
     ],
     "specName": [
       {
         "lang": "csharp",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Client.html\">Client</a>.<a class=\"xref\" href=\"UdpChat.Client.CLI.html\">CLI</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
       },
       {
         "lang": "vb",
-        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Client.html\">Client</a>.<a class=\"xref\" href=\"UdpChat.Client.CLI.html\">CLI</a>"
+        "value": "<a class=\"xref\" href=\"UdpChat.html\">UdpChat</a>.<a class=\"xref\" href=\"UdpChat.Lib.html\">Lib</a>"
       }
     ],
     "level": 0.0
   },
-  "summary": "<p sourcefile=\"api/UdpChat.Client.CLI.ClientCLI.yml\" sourcestartlinenumber=\"1\">The ClientCLI class is a command line interface for the client.\nIt is used to create a <xref href=\"UdpChat.Client.ChatClient\" data-throw-if-not-resolved=\"false\"></xref> instance with default or custom settings.\nSee <a href=\"/client\">Client CLI Documentation</a> for more information.</p>\n",
+  "summary": "",
   "example": [],
   "syntax": {
     "content": [
       {
         "lang": "csharp",
-        "value": "public class ClientCLI"
+        "value": "public class Deserializerer<T> where T : ChatSendable"
       },
       {
         "lang": "vb",
-        "value": "Public Class ClientCLI"
+        "value": "Public Class Deserializerer(Of T As ChatSendable)"
+      }
+    ],
+    "typeParameters": [
+      {
+        "id": "T",
+        "description": ""
       }
     ]
   },
@@ -839,11 +846,11 @@
     "attributes",
     "additionalNotes"
   ],
-  "_key": "api/UdpChat.Client.CLI.ClientCLI.yml",
+  "_key": "api/UdpChat.Lib.Deserializerer-1.yml",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
   "_navRel": "../toc.html",
-  "_path": "api/UdpChat.Client.CLI.ClientCLI.html",
+  "_path": "api/UdpChat.Lib.Deserializerer-1.html",
   "_rel": "../",
   "_tocKey": "~/api/toc.yml",
   "_tocPath": "api/toc.html",
@@ -913,13 +920,13 @@
     "_shared": {}
   },
   "yamlmime": "ManagedReference",
-  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_CLI_ClientCLI.md&value=---%0Auid%3A%20UdpChat.Client.CLI.ClientCLI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ClientCLI.cs/#L10",
+  "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Lib_Deserializerer_1.md&value=---%0Auid%3A%20UdpChat.Lib.Deserializerer%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Lib/Common.cs/#L56",
   "remarks": "",
   "conceptual": "",
   "implements": "",
   "seealso": null,
-  "id": "UdpChat_Client_CLI_ClientCLI",
+  "id": "UdpChat_Lib_Deserializerer_1",
   "hideTitleType": false,
   "hideSubtitle": false,
   "isClass": true,

@@ -264,7 +264,7 @@
             },
             "id": ".ctor",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 32.0,
+            "startLine": 100.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -370,7 +370,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Initializes a new instance of the <xref href=\"UdpChat.Client.ChatClient\" data-throw-if-not-resolved=\"false\"></xref> class with the specified client port and central server IP and port.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient__ctor_System_Int32_System_String_System_Int32_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.%23ctor(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L33",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L101",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -499,7 +499,7 @@
             },
             "id": "user",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 20.0,
+            "startLine": 85.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -513,12 +513,199 @@
           "summary": "",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_user.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.user%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L21",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L86",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
           "id": "UdpChat_Client_ChatClient_user",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        }
+      ]
+    },
+    {
+      "inProperty": true,
+      "typePropertyName": "inProperty",
+      "id": "properties",
+      "children": [
+        {
+          "uid": "UdpChat.Client.ChatClient.MessageListenerService",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Client.ChatClient",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "MessageListenerService"
+            },
+            {
+              "lang": "vb",
+              "value": "MessageListenerService"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatClient.MessageListenerService"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatClient.MessageListenerService"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Client.ChatClient.MessageListenerService"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Client.ChatClient.MessageListenerService"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.MessageListenerService\" text=\"MessageListenerService\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.MessageListenerService\" text=\"MessageListenerService\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public ServerService MessageListenerService { get; set; }"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Property MessageListenerService As ServerService"
+              }
+            ],
+            "parameters": [],
+            "return": null,
+            "propertyValue": {
+              "type": {
+                "uid": "UdpChat.Client.ServerService",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "ServerService"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "ServerService"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "ServerService"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "ServerService"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "UdpChat.Client.ServerService"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UdpChat.Client.ServerService"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<xref uid=\"UdpChat.Client.ServerService\" text=\"ServerService\"/>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<xref uid=\"UdpChat.Client.ServerService\" text=\"ServerService\"/>"
+                  }
+                ]
+              }
+            }
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Client/ChatClient.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "MessageListenerService",
+            "path": "../UdpChat.Client/ChatClient.cs",
+            "startLine": 89.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Client"
+          ],
+          "namespace": "UdpChat.Client",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Client.ChatClient.MessageListenerService*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "MessageListenerService"
+              },
+              {
+                "lang": "vb",
+                "value": "MessageListenerService"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatClient.MessageListenerService"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatClient.MessageListenerService"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Client.ChatClient.MessageListenerService"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Client.ChatClient.MessageListenerService"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Client.ChatClient.MessageListenerService*\" text=\"MessageListenerService\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Client.ChatClient.MessageListenerService*\" text=\"MessageListenerService\"/>"
+              }
+            ],
+            "id": "UdpChat_Client_ChatClient_MessageListenerService_"
+          },
+          "level": 0.0,
+          "type": "property",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_MessageListenerService.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.MessageListenerService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L90",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Client_ChatClient_MessageListenerService",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -641,7 +828,7 @@
             },
             "id": "PingCentralServer",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 52.0,
+            "startLine": 121.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -699,12 +886,193 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Pings the central server to check if it is reachable</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_PingCentralServer.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.PingCentralServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L53",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L122",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
           "id": "UdpChat_Client_ChatClient_PingCentralServer",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Client.ChatClient",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "ReceiveCallback(IAsyncResult)"
+            },
+            {
+              "lang": "vb",
+              "value": "ReceiveCallback(IAsyncResult)"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatClient.ReceiveCallback(IAsyncResult)"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatClient.ReceiveCallback(IAsyncResult)"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)\" text=\"ReceiveCallback(IAsyncResult)\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)\" text=\"ReceiveCallback(IAsyncResult)\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public void ReceiveCallback(IAsyncResult ar)"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Sub ReceiveCallback(ar As IAsyncResult)"
+              }
+            ],
+            "parameters": [
+              {
+                "id": "ar",
+                "type": {
+                  "uid": "System.IAsyncResult",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "IAsyncResult"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "IAsyncResult"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "IAsyncResult"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "IAsyncResult"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "System.IAsyncResult"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "System.IAsyncResult"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.IAsyncResult\" text=\"IAsyncResult\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.IAsyncResult\" text=\"IAsyncResult\"/>"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Client/ChatClient.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "ReceiveCallback",
+            "path": "../UdpChat.Client/ChatClient.cs",
+            "startLine": 221.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Client"
+          ],
+          "namespace": "UdpChat.Client",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Client.ChatClient.ReceiveCallback*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "ReceiveCallback"
+              },
+              {
+                "lang": "vb",
+                "value": "ReceiveCallback"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatClient.ReceiveCallback"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatClient.ReceiveCallback"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Client.ChatClient.ReceiveCallback"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Client.ChatClient.ReceiveCallback"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Client.ChatClient.ReceiveCallback*\" text=\"ReceiveCallback\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Client.ChatClient.ReceiveCallback*\" text=\"ReceiveCallback\"/>"
+              }
+            ],
+            "id": "UdpChat_Client_ChatClient_ReceiveCallback_"
+          },
+          "level": 0.0,
+          "type": "method",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_ReceiveCallback_System_IAsyncResult_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L222",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Client_ChatClient_ReceiveCallback_System_IAsyncResult_",
           "hideTitleType": false,
           "hideSubtitle": false
         },
@@ -917,7 +1285,7 @@
             },
             "id": "SendAuthRequest",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 96.0,
+            "startLine": 166.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -975,7 +1343,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Sends a an auth request of type <xref href=\"UdpChat.Lib.Authentication.Request.RequestType\" data-throw-if-not-resolved=\"false\"></xref> to the central server.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.SendAuthRequest(System.String%2CSystem.String%2CUdpChat.Lib.Authentication.Request.RequestType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L97",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L167",
           "remarks": "",
           "conceptual": "",
           "implements": "",
@@ -1099,7 +1467,7 @@
             },
             "id": "SendMessage",
             "path": "../UdpChat.Client/ChatClient.cs",
-            "startLine": 66.0,
+            "startLine": 135.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1157,12 +1525,145 @@
           "summary": "<p sourcefile=\"api/UdpChat.Client.ChatClient.yml\" sourcestartlinenumber=\"1\">Sends a message if the user is logged in to the central server.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_SendMessage_System_String_.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.SendMessage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L67",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L136",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
           "id": "UdpChat_Client_ChatClient_SendMessage_System_String_",
+          "hideTitleType": false,
+          "hideSubtitle": false
+        },
+        {
+          "uid": "UdpChat.Client.ChatClient.StartMessageService",
+          "isEii": false,
+          "isExtensionMethod": false,
+          "parent": "UdpChat.Client.ChatClient",
+          "isExternal": false,
+          "name": [
+            {
+              "lang": "csharp",
+              "value": "StartMessageService()"
+            },
+            {
+              "lang": "vb",
+              "value": "StartMessageService()"
+            }
+          ],
+          "nameWithType": [
+            {
+              "lang": "csharp",
+              "value": "ChatClient.StartMessageService()"
+            },
+            {
+              "lang": "vb",
+              "value": "ChatClient.StartMessageService()"
+            }
+          ],
+          "fullName": [
+            {
+              "lang": "csharp",
+              "value": "UdpChat.Client.ChatClient.StartMessageService()"
+            },
+            {
+              "lang": "vb",
+              "value": "UdpChat.Client.ChatClient.StartMessageService()"
+            }
+          ],
+          "specName": [
+            {
+              "lang": "csharp",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.StartMessageService\" text=\"StartMessageService()\"/>"
+            },
+            {
+              "lang": "vb",
+              "value": "<xref uid=\"UdpChat.Client.ChatClient.StartMessageService\" text=\"StartMessageService()\"/>"
+            }
+          ],
+          "syntax": {
+            "content": [
+              {
+                "lang": "csharp",
+                "value": "public void StartMessageService()"
+              },
+              {
+                "lang": "vb",
+                "value": "Public Sub StartMessageService()"
+              }
+            ]
+          },
+          "source": {
+            "remote": {
+              "path": "UdpChat.Client/ChatClient.cs",
+              "branch": "master",
+              "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
+            },
+            "id": "StartMessageService",
+            "path": "../UdpChat.Client/ChatClient.cs",
+            "startLine": 245.0,
+            "endLine": 0.0,
+            "isExternal": false
+          },
+          "assemblies": [
+            "UdpChat.Client"
+          ],
+          "namespace": "UdpChat.Client",
+          "example": [],
+          "overload": {
+            "uid": "UdpChat.Client.ChatClient.StartMessageService*",
+            "name": [
+              {
+                "lang": "csharp",
+                "value": "StartMessageService"
+              },
+              {
+                "lang": "vb",
+                "value": "StartMessageService"
+              }
+            ],
+            "nameWithType": [
+              {
+                "lang": "csharp",
+                "value": "ChatClient.StartMessageService"
+              },
+              {
+                "lang": "vb",
+                "value": "ChatClient.StartMessageService"
+              }
+            ],
+            "fullName": [
+              {
+                "lang": "csharp",
+                "value": "UdpChat.Client.ChatClient.StartMessageService"
+              },
+              {
+                "lang": "vb",
+                "value": "UdpChat.Client.ChatClient.StartMessageService"
+              }
+            ],
+            "specName": [
+              {
+                "lang": "csharp",
+                "value": "<xref uid=\"UdpChat.Client.ChatClient.StartMessageService*\" text=\"StartMessageService\"/>"
+              },
+              {
+                "lang": "vb",
+                "value": "<xref uid=\"UdpChat.Client.ChatClient.StartMessageService*\" text=\"StartMessageService\"/>"
+              }
+            ],
+            "id": "UdpChat_Client_ChatClient_StartMessageService_"
+          },
+          "level": 0.0,
+          "type": "method",
+          "summary": "",
+          "platform": null,
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient_StartMessageService.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient.StartMessageService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L246",
+          "remarks": "",
+          "conceptual": "",
+          "implements": "",
+          "seealso": null,
+          "id": "UdpChat_Client_ChatClient_StartMessageService",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -1212,7 +1713,7 @@
     },
     "id": "ChatClient",
     "path": "../UdpChat.Client/ChatClient.cs",
-    "startLine": 13.0,
+    "startLine": 78.0,
     "endLine": 0.0,
     "isExternal": false
   },
@@ -1799,7 +2300,7 @@
   },
   "yamlmime": "ManagedReference",
   "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Client_ChatClient.md&value=---%0Auid%3A%20UdpChat.Client.ChatClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L14",
+  "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L79",
   "remarks": "",
   "conceptual": "",
   "implements": "",

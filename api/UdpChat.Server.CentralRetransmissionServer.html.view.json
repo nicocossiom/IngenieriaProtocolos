@@ -292,7 +292,7 @@
       "id": "properties",
       "children": [
         {
-          "uid": "UdpChat.Server.CentralRetransmissionServer.authenticationService",
+          "uid": "UdpChat.Server.CentralRetransmissionServer.AuthenticationService",
           "isEii": false,
           "isExtensionMethod": false,
           "parent": "UdpChat.Server.CentralRetransmissionServer",
@@ -300,52 +300,52 @@
           "name": [
             {
               "lang": "csharp",
-              "value": "authenticationService"
+              "value": "AuthenticationService"
             },
             {
               "lang": "vb",
-              "value": "authenticationService"
+              "value": "AuthenticationService"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "CentralRetransmissionServer.authenticationService"
+              "value": "CentralRetransmissionServer.AuthenticationService"
             },
             {
               "lang": "vb",
-              "value": "CentralRetransmissionServer.authenticationService"
+              "value": "CentralRetransmissionServer.AuthenticationService"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.CentralRetransmissionServer.authenticationService"
+              "value": "UdpChat.Server.CentralRetransmissionServer.AuthenticationService"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.CentralRetransmissionServer.authenticationService"
+              "value": "UdpChat.Server.CentralRetransmissionServer.AuthenticationService"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.authenticationService\" text=\"authenticationService\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationService\" text=\"AuthenticationService\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.authenticationService\" text=\"authenticationService\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationService\" text=\"AuthenticationService\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public ServerService authenticationService { get; set; }"
+                "value": "public ServerService AuthenticationService { get; set; }"
               },
               {
                 "lang": "vb",
-                "value": "Public Property authenticationService As ServerService"
+                "value": "Public Property AuthenticationService As ServerService"
               }
             ],
             "parameters": [],
@@ -402,7 +402,7 @@
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
-            "id": "authenticationService",
+            "id": "AuthenticationService",
             "path": "../UdpChat.Server/Server.cs",
             "startLine": 86.0,
             "endLine": 0.0,
@@ -414,65 +414,65 @@
           "namespace": "UdpChat.Server",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Server.CentralRetransmissionServer.authenticationService*",
+            "uid": "UdpChat.Server.CentralRetransmissionServer.AuthenticationService*",
             "name": [
               {
                 "lang": "csharp",
-                "value": "authenticationService"
+                "value": "AuthenticationService"
               },
               {
                 "lang": "vb",
-                "value": "authenticationService"
+                "value": "AuthenticationService"
               }
             ],
             "nameWithType": [
               {
                 "lang": "csharp",
-                "value": "CentralRetransmissionServer.authenticationService"
+                "value": "CentralRetransmissionServer.AuthenticationService"
               },
               {
                 "lang": "vb",
-                "value": "CentralRetransmissionServer.authenticationService"
+                "value": "CentralRetransmissionServer.AuthenticationService"
               }
             ],
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Server.CentralRetransmissionServer.authenticationService"
+                "value": "UdpChat.Server.CentralRetransmissionServer.AuthenticationService"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Server.CentralRetransmissionServer.authenticationService"
+                "value": "UdpChat.Server.CentralRetransmissionServer.AuthenticationService"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.authenticationService*\" text=\"authenticationService\"/>"
+                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationService*\" text=\"AuthenticationService\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.authenticationService*\" text=\"authenticationService\"/>"
+                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationService*\" text=\"AuthenticationService\"/>"
               }
             ],
-            "id": "UdpChat_Server_CentralRetransmissionServer_authenticationService_"
+            "id": "UdpChat_Server_CentralRetransmissionServer_AuthenticationService_"
           },
           "level": 0.0,
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_authenticationService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.authenticationService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_AuthenticationService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.AuthenticationService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L87",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_CentralRetransmissionServer_authenticationService",
+          "id": "UdpChat_Server_CentralRetransmissionServer_AuthenticationService",
           "hideTitleType": false,
           "hideSubtitle": false
         },
         {
-          "uid": "UdpChat.Server.CentralRetransmissionServer.retransmissionService",
+          "uid": "UdpChat.Server.CentralRetransmissionServer.RetransmissionService",
           "isEii": false,
           "isExtensionMethod": false,
           "parent": "UdpChat.Server.CentralRetransmissionServer",
@@ -480,52 +480,52 @@
           "name": [
             {
               "lang": "csharp",
-              "value": "retransmissionService"
+              "value": "RetransmissionService"
             },
             {
               "lang": "vb",
-              "value": "retransmissionService"
+              "value": "RetransmissionService"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "CentralRetransmissionServer.retransmissionService"
+              "value": "CentralRetransmissionServer.RetransmissionService"
             },
             {
               "lang": "vb",
-              "value": "CentralRetransmissionServer.retransmissionService"
+              "value": "CentralRetransmissionServer.RetransmissionService"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.CentralRetransmissionServer.retransmissionService"
+              "value": "UdpChat.Server.CentralRetransmissionServer.RetransmissionService"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.CentralRetransmissionServer.retransmissionService"
+              "value": "UdpChat.Server.CentralRetransmissionServer.RetransmissionService"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService\" text=\"retransmissionService\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionService\" text=\"RetransmissionService\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService\" text=\"retransmissionService\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionService\" text=\"RetransmissionService\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public ServerService retransmissionService { get; set; }"
+                "value": "public ServerService RetransmissionService { get; set; }"
               },
               {
                 "lang": "vb",
-                "value": "Public Property retransmissionService As ServerService"
+                "value": "Public Property RetransmissionService As ServerService"
               }
             ],
             "parameters": [],
@@ -582,7 +582,7 @@
               "branch": "master",
               "repo": "https://github.com/nicocossiom/IngenieriaProtocolos"
             },
-            "id": "retransmissionService",
+            "id": "RetransmissionService",
             "path": "../UdpChat.Server/Server.cs",
             "startLine": 88.0,
             "endLine": 0.0,
@@ -594,60 +594,60 @@
           "namespace": "UdpChat.Server",
           "example": [],
           "overload": {
-            "uid": "UdpChat.Server.CentralRetransmissionServer.retransmissionService*",
+            "uid": "UdpChat.Server.CentralRetransmissionServer.RetransmissionService*",
             "name": [
               {
                 "lang": "csharp",
-                "value": "retransmissionService"
+                "value": "RetransmissionService"
               },
               {
                 "lang": "vb",
-                "value": "retransmissionService"
+                "value": "RetransmissionService"
               }
             ],
             "nameWithType": [
               {
                 "lang": "csharp",
-                "value": "CentralRetransmissionServer.retransmissionService"
+                "value": "CentralRetransmissionServer.RetransmissionService"
               },
               {
                 "lang": "vb",
-                "value": "CentralRetransmissionServer.retransmissionService"
+                "value": "CentralRetransmissionServer.RetransmissionService"
               }
             ],
             "fullName": [
               {
                 "lang": "csharp",
-                "value": "UdpChat.Server.CentralRetransmissionServer.retransmissionService"
+                "value": "UdpChat.Server.CentralRetransmissionServer.RetransmissionService"
               },
               {
                 "lang": "vb",
-                "value": "UdpChat.Server.CentralRetransmissionServer.retransmissionService"
+                "value": "UdpChat.Server.CentralRetransmissionServer.RetransmissionService"
               }
             ],
             "specName": [
               {
                 "lang": "csharp",
-                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService*\" text=\"retransmissionService\"/>"
+                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionService*\" text=\"RetransmissionService\"/>"
               },
               {
                 "lang": "vb",
-                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService*\" text=\"retransmissionService\"/>"
+                "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionService*\" text=\"RetransmissionService\"/>"
               }
             ],
-            "id": "UdpChat_Server_CentralRetransmissionServer_retransmissionService_"
+            "id": "UdpChat_Server_CentralRetransmissionServer_RetransmissionService_"
           },
           "level": 0.0,
           "type": "property",
           "summary": "",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_retransmissionService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.retransmissionService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_RetransmissionService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.RetransmissionService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
           "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L89",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_CentralRetransmissionServer_retransmissionService",
+          "id": "UdpChat_Server_CentralRetransmissionServer_RetransmissionService",
           "hideTitleType": false,
           "hideSubtitle": false
         }
@@ -659,7 +659,7 @@
       "id": "methods",
       "children": [
         {
-          "uid": "UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)",
+          "uid": "UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String,System.String,System.Int32)",
           "isEii": false,
           "isExtensionMethod": false,
           "parent": "UdpChat.Server.CentralRetransmissionServer",
@@ -667,52 +667,52 @@
           "name": [
             {
               "lang": "csharp",
-              "value": "LoginUserAsync(string, string)"
+              "value": "LoginUserAsync(string, string, string, int)"
             },
             {
               "lang": "vb",
-              "value": "LoginUserAsync(String, String)"
+              "value": "LoginUserAsync(String, String, String, Integer)"
             }
           ],
           "nameWithType": [
             {
               "lang": "csharp",
-              "value": "CentralRetransmissionServer.LoginUserAsync(string, string)"
+              "value": "CentralRetransmissionServer.LoginUserAsync(string, string, string, int)"
             },
             {
               "lang": "vb",
-              "value": "CentralRetransmissionServer.LoginUserAsync(String, String)"
+              "value": "CentralRetransmissionServer.LoginUserAsync(String, String, String, Integer)"
             }
           ],
           "fullName": [
             {
               "lang": "csharp",
-              "value": "UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(string, string)"
+              "value": "UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(string, string, string, int)"
             },
             {
               "lang": "vb",
-              "value": "UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(String, String)"
+              "value": "UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(String, String, String, Integer)"
             }
           ],
           "specName": [
             {
               "lang": "csharp",
-              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)\" text=\"LoginUserAsync(string, string)\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String,System.String,System.Int32)\" text=\"LoginUserAsync(string, string, string, int)\"/>"
             },
             {
               "lang": "vb",
-              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String)\" text=\"LoginUserAsync(string, string)\"/>"
+              "value": "<xref uid=\"UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String,System.String,System.String,System.Int32)\" text=\"LoginUserAsync(string, string, string, int)\"/>"
             }
           ],
           "syntax": {
             "content": [
               {
                 "lang": "csharp",
-                "value": "public Task<bool> LoginUserAsync(string name, string password)"
+                "value": "public Task<bool> LoginUserAsync(string name, string password, string ipAddress, int port)"
               },
               {
                 "lang": "vb",
-                "value": "Public Function LoginUserAsync(name As String, password As String) As Task(Of Boolean)"
+                "value": "Public Function LoginUserAsync(name As String, password As String, ipAddress As String, port As Integer) As Task(Of Boolean)"
               }
             ],
             "parameters": [
@@ -809,6 +809,100 @@
                   ]
                 },
                 "description": ""
+              },
+              {
+                "id": "ipAddress",
+                "type": {
+                  "uid": "System.String",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "string"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "string"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "string"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "String"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.String\" text=\"string\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.String\" text=\"string\"/>"
+                    }
+                  ]
+                },
+                "description": ""
+              },
+              {
+                "id": "port",
+                "type": {
+                  "uid": "System.Int32",
+                  "name": [
+                    {
+                      "lang": "csharp",
+                      "value": "int"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "Integer"
+                    }
+                  ],
+                  "nameWithType": [
+                    {
+                      "lang": "csharp",
+                      "value": "int"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "Integer"
+                    }
+                  ],
+                  "fullName": [
+                    {
+                      "lang": "csharp",
+                      "value": "int"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "Integer"
+                    }
+                  ],
+                  "specName": [
+                    {
+                      "lang": "csharp",
+                      "value": "<xref uid=\"System.Int32\" text=\"int\"/>"
+                    },
+                    {
+                      "lang": "vb",
+                      "value": "<xref uid=\"System.Int32\" text=\"int\"/>"
+                    }
+                  ]
+                },
+                "description": ""
               }
             ],
             "return": {
@@ -867,7 +961,7 @@
             },
             "id": "LoginUserAsync",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 182.0,
+            "startLine": 185.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -966,19 +1060,65 @@
                 ]
               },
               "description": ""
+            },
+            {
+              "type": {
+                "uid": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception",
+                "name": [
+                  {
+                    "lang": "csharp",
+                    "value": "UserAlreadyLoggedInxception"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UserAlreadyLoggedInxception"
+                  }
+                ],
+                "nameWithType": [
+                  {
+                    "lang": "csharp",
+                    "value": "UserAlreadyLoggedInxception"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UserAlreadyLoggedInxception"
+                  }
+                ],
+                "fullName": [
+                  {
+                    "lang": "csharp",
+                    "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "UdpChat.Server.Exceptions.UserAlreadyLoggedInxception"
+                  }
+                ],
+                "specName": [
+                  {
+                    "lang": "csharp",
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyLoggedInxception\" text=\"UserAlreadyLoggedInxception\"/>"
+                  },
+                  {
+                    "lang": "vb",
+                    "value": "<xref uid=\"UdpChat.Server.Exceptions.UserAlreadyLoggedInxception\" text=\"UserAlreadyLoggedInxception\"/>"
+                  }
+                ]
+              },
+              "description": ""
             }
           ],
           "level": 0.0,
           "type": "method",
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Async database query to check if a user exists and has the correct password</p>\n",
           "platform": null,
-          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L183",
+          "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_System_String_System_Int32_.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.LoginUserAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L186",
           "remarks": "",
           "conceptual": "",
           "implements": "",
           "seealso": null,
-          "id": "UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_",
+          "id": "UdpChat_Server_CentralRetransmissionServer_LoginUserAsync_System_String_System_String_System_String_System_Int32_",
           "hideTitleType": false,
           "hideSubtitle": false
         },
@@ -1510,7 +1650,7 @@
             },
             "id": "Start",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 419.0,
+            "startLine": 467.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1518,7 +1658,7 @@
             "UdpChat.Server"
           ],
           "namespace": "UdpChat.Server",
-          "remarks": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">The services started are:</p>\n<ul><li><span class=\"term\"><xref href=\"UdpChat.Server.CentralRetransmissionServer.authenticationService\" data-throw-if-not-resolved=\"false\"></xref></span></li><li><span class=\"term\"><xref href=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService\" data-throw-if-not-resolved=\"false\"></xref></span></li></ul>\n",
+          "remarks": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">The services started are:</p>\n<ul><li><span class=\"term\"><xref href=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationService\" data-throw-if-not-resolved=\"false\"></xref></span></li><li><span class=\"term\"><xref href=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionService\" data-throw-if-not-resolved=\"false\"></xref></span></li></ul>\n",
           "example": [],
           "overload": {
             "uid": "UdpChat.Server.CentralRetransmissionServer.Start*",
@@ -1569,7 +1709,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Starts the server with the associated services:</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_Start.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L420",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L468",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1643,7 +1783,7 @@
             },
             "id": "StartAuthenticationService",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 203.0,
+            "startLine": 229.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1651,7 +1791,7 @@
             "UdpChat.Server"
           ],
           "namespace": "UdpChat.Server",
-          "remarks": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Starts a <xref href=\"UdpChat.Server.ServerService\" data-throw-if-not-resolved=\"false\"></xref> in localhost (127.0.0.1)with the specified port <xref href=\"UdpChat.Server.CentralRetransmissionServer.authenticationPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
+          "remarks": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Starts a <xref href=\"UdpChat.Server.ServerService\" data-throw-if-not-resolved=\"false\"></xref> in localhost (127.0.0.1)with the specified port <xref href=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
           "example": [],
           "overload": {
             "uid": "UdpChat.Server.CentralRetransmissionServer.StartAuthenticationService*",
@@ -1699,10 +1839,10 @@
           },
           "level": 0.0,
           "type": "method",
-          "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Sets the <xref href=\"UdpChat.Server.CentralRetransmissionServer.authenticationService\" data-throw-if-not-resolved=\"false\"></xref> This service is responsible for all authentication operations.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Sets the <xref href=\"UdpChat.Server.CentralRetransmissionServer.AuthenticationService\" data-throw-if-not-resolved=\"false\"></xref> This service is responsible for all authentication operations.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_StartAuthenticationService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.StartAuthenticationService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L204",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L230",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1776,7 +1916,7 @@
             },
             "id": "StartRetransmissionService",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 218.0,
+            "startLine": 244.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1784,7 +1924,7 @@
             "UdpChat.Server"
           ],
           "namespace": "UdpChat.Server",
-          "remarks": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Starts a <xref href=\"UdpChat.Server.ServerService\" data-throw-if-not-resolved=\"false\"></xref> in localhost (127.0.0.1)with the specified port <xref href=\"UdpChat.Server.CentralRetransmissionServer.retransmissionPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
+          "remarks": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Starts a <xref href=\"UdpChat.Server.ServerService\" data-throw-if-not-resolved=\"false\"></xref> in localhost (127.0.0.1)with the specified port <xref href=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n",
           "example": [],
           "overload": {
             "uid": "UdpChat.Server.CentralRetransmissionServer.StartRetransmissionService*",
@@ -1832,10 +1972,10 @@
           },
           "level": 0.0,
           "type": "method",
-          "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Sets the <xref href=\"UdpChat.Server.CentralRetransmissionServer.retransmissionService\" data-throw-if-not-resolved=\"false\"></xref>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.</p>\n",
+          "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Sets the <xref href=\"UdpChat.Server.CentralRetransmissionServer.RetransmissionService\" data-throw-if-not-resolved=\"false\"></xref>. This service is responsible for receiving messages from clients and retransmitting them to the all registered users.</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_StartRetransmissionService.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.StartRetransmissionService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L219",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L245",
           "conceptual": "",
           "implements": "",
           "seealso": null,
@@ -1909,7 +2049,7 @@
             },
             "id": "Stop",
             "path": "../UdpChat.Server/Server.cs",
-            "startLine": 229.0,
+            "startLine": 255.0,
             "endLine": 0.0,
             "isExternal": false
           },
@@ -1967,7 +2107,7 @@
           "summary": "<p sourcefile=\"api/UdpChat.Server.CentralRetransmissionServer.yml\" sourcestartlinenumber=\"1\">Stops the services and closes the database connection</p>\n",
           "platform": null,
           "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/new/gh-pages/apiSpec/new?filename=UdpChat_Server_CentralRetransmissionServer_Stop.md&value=---%0Auid%3A%20UdpChat.Server.CentralRetransmissionServer.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A",
-          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L230",
+          "sourceurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Server/Server.cs/#L256",
           "remarks": "",
           "conceptual": "",
           "implements": "",

@@ -83,7 +83,7 @@
 
   <h1 id="UdpChat_Client_ChatClient" data-uid="UdpChat.Client.ChatClient" class="text-break">
     Class ChatClient
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -151,7 +151,7 @@
 
   <h3 id="UdpChat_Client_ChatClient__ctor_System_Int32_System_String_System_Int32_" data-uid="UdpChat.Client.ChatClient.#ctor(System.Int32,System.String,System.Int32)">
   ChatClient(int, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="UdpChat.Client.ChatClient.html">ChatClient</a> class with the specified client port and central server IP and port.</p>
@@ -199,7 +199,7 @@
 
   <h3 id="UdpChat_Client_ChatClient_user" data-uid="UdpChat.Client.ChatClient.user">
   user
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -227,6 +227,41 @@
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UdpChat_Client_ChatClient_MessageListenerService_" data-uid="UdpChat.Client.ChatClient.MessageListenerService*"></a>
+
+  <h3 id="UdpChat_Client_ChatClient_MessageListenerService" data-uid="UdpChat.Client.ChatClient.MessageListenerService">
+  MessageListenerService
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerService MessageListenerService { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UdpChat.Client.ServerService.html">ServerService</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -235,7 +270,7 @@
 
   <h3 id="UdpChat_Client_ChatClient_PingCentralServer" data-uid="UdpChat.Client.ChatClient.PingCentralServer">
   PingCentralServer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Pings the central server to check if it is reachable</p>
@@ -264,11 +299,42 @@
 
 
 
+  <a id="UdpChat_Client_ChatClient_ReceiveCallback_" data-uid="UdpChat.Client.ChatClient.ReceiveCallback*"></a>
+
+  <h3 id="UdpChat_Client_ChatClient_ReceiveCallback_System_IAsyncResult_" data-uid="UdpChat.Client.ChatClient.ReceiveCallback(System.IAsyncResult)">
+  ReceiveCallback(IAsyncResult)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReceiveCallback(IAsyncResult ar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncresult">IAsyncResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="UdpChat_Client_ChatClient_SendAuthRequest_" data-uid="UdpChat.Client.ChatClient.SendAuthRequest*"></a>
 
   <h3 id="UdpChat_Client_ChatClient_SendAuthRequest_System_String_System_String_UdpChat_Lib_Authentication_Request_RequestType_" data-uid="UdpChat.Client.ChatClient.SendAuthRequest(System.String,System.String,UdpChat.Lib.Authentication.Request.RequestType)">
   SendAuthRequest(string, string, RequestType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends a an auth request of type <a class="xref" href="UdpChat.Lib.Authentication.Request.RequestType.html">Request.RequestType</a> to the central server.</p>
@@ -304,7 +370,7 @@
 
   <h3 id="UdpChat_Client_ChatClient_SendMessage_System_String_" data-uid="UdpChat.Client.ChatClient.SendMessage(System.String)">
   SendMessage(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sends a message if the user is logged in to the central server.</p>
@@ -332,11 +398,37 @@
 
 
 
+  <a id="UdpChat_Client_ChatClient_StartMessageService_" data-uid="UdpChat.Client.ChatClient.StartMessageService*"></a>
+
+  <h3 id="UdpChat_Client_ChatClient_StartMessageService" data-uid="UdpChat.Client.ChatClient.StartMessageService">
+  StartMessageService()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartMessageService()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/master/UdpChat.Client/ChatClient.cs/#L79" class="edit-link">Edit this page</a>
         </div>
 
         

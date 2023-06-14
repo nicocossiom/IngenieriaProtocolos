@@ -1,5 +1,5 @@
 {
-  "conceptual": "\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"3\">This is the documentation for the client CLI of UDPChat.</p>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"5\">This CLI can be used to connect to a server, register, login, send messages, etc.</p>\n<h2 id=\"how-to-use\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"7\">How to use</h2>\n",
+  "conceptual": "\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"3\">This CLI can be used to interact with a server in otder to register, login, send messages, etc.</p>\n<h2 id=\"installation\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"5\">Installation</h2>\n",
   "type": "Conceptual",
   "source": {
     "remote": {
@@ -44,7 +44,7 @@
   ],
   "rawTitle": "<h1 id=\"client-cli-documentation\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"1\">Client CLI Documentation</h1>",
   "title": "Client CLI Documentation",
-  "wordCount": 28.0,
+  "wordCount": 19.0,
   "_key": "client/index.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",
