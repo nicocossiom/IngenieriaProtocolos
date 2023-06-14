@@ -292,19 +292,6 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
-        ".json": {
-          "relative_path": "api/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "client/examples.md",
       "output": {
@@ -325,14 +312,11 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "client/toc.yml",
+      "type": "Conceptual",
+      "source_relative_path": "cover.md",
       "output": {
         ".html": {
-          "relative_path": "client/toc.html"
-        },
-        ".json": {
-          "relative_path": "client/toc.json"
+          "relative_path": "cover.html"
         }
       },
       "version": ""
@@ -343,6 +327,16 @@
       "output": {
         ".html": {
           "relative_path": "download/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/class_diagram.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/class_diagram.png"
         }
       },
       "version": ""
@@ -378,9 +372,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -411,22 +402,6 @@
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "server/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "server/toc.html"
-        },
-        ".json": {
-          "relative_path": "server/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {

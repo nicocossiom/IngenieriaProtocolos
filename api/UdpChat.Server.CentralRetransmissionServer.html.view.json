@@ -2680,9 +2680,9 @@
   "_navRel": "../toc.html",
   "_path": "api/UdpChat.Server.CentralRetransmissionServer.html",
   "_rel": "../",
-  "_tocKey": "~/api/toc.yml",
-  "_tocPath": "api/toc.html",
-  "_tocRel": "toc.html",
+  "_tocKey": "~/toc.yml",
+  "_tocPath": "toc.html",
+  "_tocRel": "../toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",
     "classesInSubtitle": "Classes",
@@ -2759,6 +2759,6 @@
   "hideSubtitle": false,
   "isClass": true,
   "inClass": true,
-  "_disableToc": false,
+  "_disableToc": true,
   "_disableNextArticle": true
 }

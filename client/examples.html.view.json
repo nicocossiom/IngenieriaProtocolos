@@ -51,9 +51,9 @@
   "_navRel": "../toc.html",
   "_path": "client/examples.html",
   "_rel": "../",
-  "_tocKey": "~/client/toc.yml",
-  "_tocPath": "client/toc.html",
-  "_tocRel": "toc.html",
+  "_tocKey": "~/toc.yml",
+  "_tocPath": "toc.html",
+  "_tocRel": "../toc.html",
   "__global": {
     "namespacesInSubtitle": "Namespaces",
     "classesInSubtitle": "Classes",
@@ -118,6 +118,6 @@
     "backToTop": "Back to top",
     "_shared": {}
   },
-  "_disableToc": false,
+  "_disableToc": true,
   "docurl": "https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/client/examples.md/#L1"
 }
