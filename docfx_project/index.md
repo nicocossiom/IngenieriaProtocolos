@@ -4,12 +4,28 @@ This chat app is a simple UDP client/server application that allows multiple cli
 to connect to a server and send messages to each other. The server is able to handle
 multiple clients at once and will broadcast messages to all connected clients.
 
+## Table of contents
+
+- [UDP Multichat CLI Application](#udp-multichat-cli-application)
+  - [Table of contents](#table-of-contents)
+  - [Quickstart](#quickstart)
+  - [Design](#design)
+    - [Client CLI](#client-cli)
+    - [Server CLI](#server-cli)
+    - [Project structure](#project-structure)
+    - [Messages between Client \<-\> Server](#messages-between-client---server)
+    - [Authentication](#authentication)
+    - [Persistence](#persistence)
+  - [Basic functionality of a UDP Multichat](#basic-functionality-of-a-udp-multichat)
+  - [Possible client states](#possible-client-states)
+  - [Possible server states](#possible-server-states)
+
 ## Quickstart
 
 To get the system started you must first start the server. This can be done by running the server CLI application.
-See [Server CLI](server) for more information.
+See [Server CLI](server/index.md) for more information.
 
-Once you have a server clients can be started in order to interact with the server. See [Client CLI](client) for more information.
+Once you have a server clients can be started in order to interact with the server. See [Client CLI](client/index.md) for more information.
 
 ## Design
 

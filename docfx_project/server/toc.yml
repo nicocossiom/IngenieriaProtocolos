@@ -1,7 +1,8 @@
-- name: Server CLI Documentation
-  href: index.md
-  homepage: index.md
+items:
+  - name: Documentation
+    href: index.md
+    homepage: index.md
 
-- name: Examples of Server CLI Usage
-  href: examples.md
-  homepage: examples.md
+  - name: Examples of Usage
+    href: examples.md
+    homepage: examples.md

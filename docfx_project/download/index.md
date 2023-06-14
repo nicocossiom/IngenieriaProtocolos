@@ -1,6 +1,19 @@
+
 # Downloads
 
 There is no installer. There are 2 ways to get the client CLI:
+
+## Table of contents
+
+- [Downloads](#downloads)
+  - [Table of contents](#table-of-contents)
+  - [Binary executable](#binary-executable)
+    - [Latest release download](#latest-release-download)
+    - [Github Releases page](#github-releases-page)
+      - [Add to PATH](#add-to-path)
+        - [MacOS and Linux](#macos-and-linux)
+        - [Windows CMD or Powershell](#windows-cmd-or-powershell)
+  - [Dotnet solution (.NET source code)](#dotnet-solution-net-source-code)
 
 ## Binary executable
 

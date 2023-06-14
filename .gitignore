@@ -292,3 +292,4 @@ __pycache__/
 *.db
 .DS_Store
 docfx_project/.manifest
+uml

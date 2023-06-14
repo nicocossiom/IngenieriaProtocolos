@@ -2,6 +2,29 @@
 
 This CLI can be used to interact with a server in otder to register, login, send messages, etc.
 
+## Table of contents
+
+- [Client CLI Documentation](#client-cli-documentation)
+  - [Table of contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Default settings](#default-settings)
+    - [Custom settings](#custom-settings)
+    - [Commands](#commands)
+  - [Installation](#installation)
+    - [With dotnet (.NET)](#with-dotnet-net)
+    - [Binary executable](#binary-executable)
+      - [Latest release download](#latest-release-download)
+      - [Github Releases page](#github-releases-page)
+      - [Add to PATHV](#add-to-pathv)
+        - [MacOS and Linux](#macos-and-linux)
+        - [Windows CMD or Powershell](#windows-cmd-or-powershell)
+  - [Excute the client CLI](#excute-the-client-cli)
+    - [Binary](#binary)
+      - [Windows](#windows)
+      - [MacOS](#macos)
+      - [Linux](#linux)
+    - [Dotnet (.NET)](#dotnet-net)
+
 ## Usage
 
 ### Default settings

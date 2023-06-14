@@ -3,6 +3,14 @@
 
 This CLI launches a server that can be used for the UDPChat client.
 
+## Table of contents
+
+- [Server CLI Documentation](#server-cli-documentation)
+  - [Table of contents](#table-of-contents)
+  - [Usage](#usage)
+    - [Default settings](#default-settings)
+    - [Custom settings](#custom-settings)
+
 ## Usage
 
 Available argunents are:
