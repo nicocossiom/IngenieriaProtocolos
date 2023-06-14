@@ -338,6 +338,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "download/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "download/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "images/favicon.ico",
       "output": {
@@ -414,6 +424,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {

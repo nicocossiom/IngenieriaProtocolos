@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Server CLI Documentation | UDPChat </title>
+      <title>Downloads | UDPChat </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Server CLI Documentation | UDPChat ">
+      <meta name="title" content="Downloads | UDPChat ">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/server/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/download/index.md/#L1">
   </head>
 
   <script type="module">
@@ -76,45 +76,65 @@
         </div>
 
         <article data-uid="">
-<h1 id="server-cli-documentation">Server CLI Documentation</h1>
+<h1 id="downloads">Downloads</h1>
 
-<p>This CLI launches a server that can be used for the UDPChat client.</p>
-<h2 id="usage">Usage</h2>
-<p>Available argunents are:</p>
+<p>There is no installer. There are 2 ways to get the client CLI:</p>
+<h2 id="binary-executable">Binary executable</h2>
+<p>You can download a binary from the releases page and run it directly. There are binaries for Windowsx64, Linux64 and MacOSarm64.</p>
+<h3 id="latest-release-download">Latest release download</h3>
+<p>Client:</p>
 <ul>
-<li>-p or --port: The port the server will listen on. Default is 5000.</li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/linux-x64_UdpChat.Client">Linux</a></li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/osx-arm64_UdpChat.Client">MacOS</a></li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/win-x64_UdpChat.Client.exe">Windows</a></li>
 </ul>
-<blockquote>
-<p>NOTE: The server uses two ports, so the specified port and port + 1 will be used.</p>
-</blockquote>
-<p>To exit the server in a controlled manner press <code>Ctrl + C</code>. This will ensure the server closes its
-opened resources in an orderly fashion.</p>
-<h3 id="default-settings">Default settings</h3>
-<pre><code class="lang-bash">dotnet run --project UdpChat.Server/
-Creating server with ports 5000 and 5001
-Starting server
-Opening server database
-Users table created with 0 changes
-Retransmission server started at 127.0.0.1:5001
-Authentication server started at 127.0.0.1:5000
+<p>Server:</p>
+<ul>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/linux-x64_UdpChat.Server">Linux</a></li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/osx-arm64_UdpChat.Server">MacOS</a></li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/win-x64_UdpChat.Server.exe">Windows</a></li>
+</ul>
+<h3 id="github-releases-page">Github Releases page</h3>
+<p>You can laso go to the <a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/">releases page on Github</a> to see all available releases and platforms.</p>
+<p><img src="../images/releases.png" alt="Github Releass webpage"></p>
+<p>After downloading the client move the file to a folder of your choice and run the executable.</p>
+<h4 id="add-to-path">Add to PATH</h4>
+<h5 id="macos-and-linux">MacOS and Linux</h5>
+<pre><code class="lang-bash">export PATH=$PATH:/path/to/folder
 </code></pre>
-<h3 id="custom-settings">Custom settings</h3>
-<pre><code class="lang-bash">dotnet run --port 6000 --project UdpChat.Server/
-Creating server with ports 6000 and 6001
-Starting server
-Opening server database
-Users table created with 0 changes
-Retransmission server started at 127.0.0.1:6001
-Authentication server started at 127.0.0.1:6000
+<h5 id="windows-cmd-or-powershell">Windows CMD or Powershell</h5>
+<p>Windows CMD in Admin mode</p>
+<pre><code class="lang-cmd">set PATH=%PATH%;C:\path\to\folder
 </code></pre>
-<blockquote>
-<p>NOTE: If using the dotnet cli to run the server, if the server is run with the --project flag argyments
-for the server must be right after <code>dotnet run [server_args] --project &lt;project&gt; [dotnet_args]</code>.</p>
-</blockquote>
+<p>Windows Powershell in Admin mode</p>
+<pre><code class="lang-powershell">$env:Path += &quot;;C:\path\to\folder&quot;
+</code></pre>
+<p>In Windows you can run the executable from the command line. Or from double clicking it.</p>
+<h2 id="dotnet-solution-net-source-code">Dotnet solution (.NET source code)</h2>
+<pre><code class="lang-bash">git clone git@github.com:nicocossiom/IngenieriaProtocolos.git UDPChat
+Cloning into 'UDPChat'...
+remote: Enumerating objects: 584, done.
+remote: Counting objects: 100% (584/584), done.
+remote: Compressing objects: 100% (291/291), done.
+remote: Total 584 (delta 340), reused 514 (delta 270), pack-reused 0
+Receiving objects: 100% (584/584), 6.78 MiB | 1.57 MiB/s, done.
+Resolving deltas: 100% (340/340), done.
+</code></pre>
+<pre><code class="lang-bash">cd UDPChat
+</code></pre>
+<pre><code class="lang-bash">dotnet run --project UdpChat.Client
+Welcome to the UDP chat client!
+
+        Default settings:
+        Client ports: Recieve 4000 - Send 4001
+        Central Server: Adress 127.0.0.1 - Port 5000
+
+Do you want to use the default settings? (y/n) (↩️  after input))
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/server/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nicocossiom/IngenieriaProtocolos/blob/gh-pages/docfx_project/download/index.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

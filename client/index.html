@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Installation | UDPChat </title>
+      <title>Client CLI Documentation | UDPChat </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Installation | UDPChat ">
+      <meta name="title" content="Client CLI Documentation | UDPChat ">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -76,30 +76,135 @@
         </div>
 
         <article data-uid="">
+<h1 id="client-cli-documentation">Client CLI Documentation</h1>
 
-<p>l# Client CLI Documentation</p>
 <p>This CLI can be used to interact with a server in otder to register, login, send messages, etc.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="default-settings">Default settings</h3>
+<pre><code class="lang-bash">$ UdpChat.Client
+Welcome to the UDP chat client!
+
+        Default settings:
+        Client ports: Recieve 4000 - Send 4001
+        Central Server: Adress 127.0.0.1 - Port 5000
+
+Do you want to use the default settings? (y/n) (↩️  after input))
+y
+Client created at 4000 with central server at 127.0.0.1:5000
+Messages that are sent by the server will be displayed, waiting for messages...
+Input a command, available commands are
+            - register
+            - login
+            - send
+            - unregister
+</code></pre>
+<h3 id="custom-settings">Custom settings</h3>
+<pre><code class="lang-bash">$ UdpChat.Client
+Welcome to the UDP chat client!
+
+        Default settings:
+        Client ports: Recieve 4000 - Send 4001
+        Central Server: Adress 127.0.0.1 - Port 5000
+
+Do you want to use the default settings? (y/n) (↩️  after input))
+n
+Enter a port for the client (enter for 4000):
+4004
+IP of central server (enter for 127.0.0.1):
+
+Port of central server (enter for 5000):
+
+    Client config:
+        Client ports: Receive=4004 - Send=4005
+        Central Server: Address=127.0.0.1 - Port=5000
+
+Is this correct? (y/n)
+
+Client created at 4004 with central server at 127.0.0.1:5000
+Messages that are sent by the server will be displayed, waiting for messages...
+Input a command, available commands are
+            - register
+            - login
+            - send
+            - unregister
+</code></pre>
+<h3 id="commands">Commands</h3>
+<ul>
+<li>register</li>
+<li>login</li>
+<li>send</li>
+<li>unregister</li>
+</ul>
+<p>To see examples of using the client go to <a href="examples.html">examples</a></p>
+<p>To exit the server in a controlled manner press <code>Ctrl + C</code>. This will ensure the client closes its
+opened resources in an orderly fashion.</p>
 <h2 id="installation">Installation</h2>
 <p>There is no installer. There are 2 ways to get the client CLI:</p>
+<h3 id="with-dotnet-net">With dotnet (.NET)</h3>
+<pre><code class="lang-bash">git clone git@github.com:nicocossiom/IngenieriaProtocolos.git UDPChat
+Cloning into 'UDPChat'...
+remote: Enumerating objects: 584, done.
+remote: Counting objects: 100% (584/584), done.
+remote: Compressing objects: 100% (291/291), done.
+remote: Total 584 (delta 340), reused 514 (delta 270), pack-reused 0
+Receiving objects: 100% (584/584), 6.78 MiB | 1.57 MiB/s, done.
+Resolving deltas: 100% (340/340), done.
+</code></pre>
 <h3 id="binary-executable">Binary executable</h3>
 <p>You can download a binary from the releases page and run it directly. There are binaries for Windowsx64, Linux64 and MacOSarm64.</p>
-<p>Go to the <a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/">releases page on Github</a> to download the latest release.[]</p>
+<h4 id="latest-release-download">Latest release download</h4>
+<ul>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/linux-x64_UdpChat.Client">Linux</a></li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/osx-arm64_UdpChat.Client">MacOS</a></li>
+<li><a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/download/latest/win-x64_UdpChat.Client.exe">Windows</a></li>
+</ul>
+<h4 id="github-releases-page">Github Releases page</h4>
+<p>You can laso go to the <a href="https://github.com/nicocossiom/IngenieriaProtocolos/releases/">releases page on Github</a> to see all available releases and platforms.</p>
 <p><img src="../images/releases.png" alt="Github Releass webpage"></p>
-<p>Move the files to a folder of your choice and run the executable.</p>
+<p>After downloading the client move the file to a folder of your choice.</p>
+<p>You can then place this folder wherever you want.
+You can also add the folder to your PATH environment variable to be able to run the client from anywhere.</p>
+<h4 id="add-to-pathv">Add to PATHV</h4>
+<h5 id="macos-and-linux">MacOS and Linux</h5>
+<pre><code class="lang-bash">export PATH=$PATH:/path/to/folder
+</code></pre>
+<h5 id="windows-cmd-or-powershell">Windows CMD or Powershell</h5>
+<p>Windows CMD in Admin mode</p>
+<pre><code class="lang-cmd">set PATH=%PATH%;C:\path\to\folder
+</code></pre>
+<p>Windows Powershell in Admin mode</p>
+<pre><code class="lang-powershell">$env:Path += &quot;;C:\path\to\folder&quot;
+</code></pre>
+<p>In Windows you can run the executable from the command line. Or from double clicking it.</p>
+<h2 id="excute-the-client-cli">Excute the client CLI</h2>
+<h3 id="binary">Binary</h3>
+<h4 id="windows">Windows</h4>
 <pre><code class="lang-bash"># Windows
-win-x64_UdpChat.Client.exe --help
+win-x64_UdpChat.Client.exe
 </code></pre>
-<pre><code class="lang-bash"># MacOSarm64
-
-
-chmod +x osx-arm64_UdpChat.Client ./osx-arm64_UdpChat.Client --help
+<p>In MacOS and Linux you may need to give the executable permissions before running it.</p>
+<h4 id="macos">MacOS</h4>
+<pre><code class="lang-bash">chmod +x osx-arm64_UdpChat.Client ./osx-arm64_UdpChat.Client
 </code></pre>
-<pre><code class="lang-bash"># Linux64
-chmod +x linux-x64_UdpChat.Client &amp;&amp; ./linux-x64_UdpChat.Client --help
-
+<blockquote>
+<p>Note: On MacOS you may need to open in Finder the folder where you have the binaries, then right Click -&gt; Open to allow the executable to run
+you will get a popup saying something like:
+<code>&quot;osx-arm64_UdpChat .Client&quot; can't be opened because Apple cannot check it for malicious software. ...</code>. Click OK. And try again.</p>
+</blockquote>
+<h4 id="linux">Linux</h4>
+<pre><code class="lang-bash">chmod +x linux-x64_UdpChat.Client &amp;&amp; ./linux-x64_UdpChat.Client
 </code></pre>
-<pre><code>
-&gt; Note: You may need to make the file executable with `chmod +x ./client`
+<h3 id="dotnet-net">Dotnet (.NET)</h3>
+<pre><code class="lang-bash">cd UDPChat
+</code></pre>
+<pre><code class="lang-bash">dotnet run --project UdpChat.Client
+Welcome to the UDP chat client!
+
+        Default settings:
+        Client ports: Recieve 4000 - Send 4001
+        Central Server: Adress 127.0.0.1 - Port 5000
+
+Do you want to use the default settings? (y/n) (↩️  after input))
 </code></pre>
 </article>
 
