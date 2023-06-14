@@ -343,10 +343,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/class_diagram.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/class_diagram.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ejemplo6clientes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ejemplo6clientes.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/favicon.ico",
       "output": {
         "resource": {
           "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gif6users.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/gif6users.gif"
         }
       },
       "version": ""
