@@ -11,7 +11,7 @@ items:
     href: client/toc.yml
     homepage: client/index.md
 
-  - name: Downlaod
+  - name: Download
     href: download/toc.yml
     homepage: download/index.md
 
