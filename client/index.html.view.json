@@ -1,5 +1,5 @@
 {
-  "conceptual": "\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"3\">This CLI can be used to interact with a server in otder to register, login, send messages, etc.</p>\n<h2 id=\"installation\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"5\">Installation</h2>\n",
+  "conceptual": "<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"1\">l# Client CLI Documentation</p>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"3\">This CLI can be used to interact with a server in otder to register, login, send messages, etc.</p>\n<h2 id=\"installation\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"5\">Installation</h2>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"7\">There is no installer. There are 2 ways to get the client CLI:</p>\n<h3 id=\"binary-executable\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"9\">Binary executable</h3>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"11\">You can download a binary from the releases page and run it directly. There are binaries for Windowsx64, Linux64 and MacOSarm64.</p>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"13\">Go to the <a href=\"https://github.com/nicocossiom/IngenieriaProtocolos/releases/\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"13\">releases page on Github</a> to download the latest release.[]</p>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"15\"><img src=\"~/images/releases.png\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"15\" alt=\"Github Releass webpage\"></p>\n<p sourcefile=\"client/index.md\" sourcestartlinenumber=\"17\">Move the files to a folder of your choice and run the executable.</p>\n<pre><code class=\"lang-bash\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"19\"># Windows\nwin-x64_UdpChat.Client.exe --help\n</code></pre>\n<pre><code class=\"lang-bash\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"24\"># MacOSarm64\n\n\nchmod +x osx-arm64_UdpChat.Client ./osx-arm64_UdpChat.Client --help\n</code></pre>\n<pre><code class=\"lang-bash\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"31\"># Linux64\nchmod +x linux-x64_UdpChat.Client &amp;&amp; ./linux-x64_UdpChat.Client --help\n\n</code></pre>\n<pre><code sourcefile=\"client/index.md\" sourcestartlinenumber=\"37\">\n&gt; Note: You may need to make the file executable with `chmod +x ./client`\n</code></pre>\n",
   "type": "Conceptual",
   "source": {
     "remote": {
@@ -42,9 +42,9 @@
     "rawTitle",
     "wordCount"
   ],
-  "rawTitle": "<h1 id=\"client-cli-documentation\" sourcefile=\"client/index.md\" sourcestartlinenumber=\"1\">Client CLI Documentation</h1>",
-  "title": "Client CLI Documentation",
-  "wordCount": 19.0,
+  "rawTitle": "",
+  "title": "Installation",
+  "wordCount": 116.0,
   "_key": "client/index.md",
   "_navKey": "~/toc.yml",
   "_navPath": "toc.html",

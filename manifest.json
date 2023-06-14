@@ -358,6 +358,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/releases.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/releases.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
